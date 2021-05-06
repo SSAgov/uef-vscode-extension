@@ -135,8 +135,13 @@ Use the following quick table snippets to automatically insert tables of a prede
 
 Trigger | Description
 ------- | -----------
-uef-table21-2col | Table with 2 columns
-uef-table21-3col | Table with 3 columns
+uef21-table-2col | Table with 2 columns
+uef21-table-3col | Table with 3 columns
+uef21-table-4col | Table with 4 columns
+uef21-table-5col | Table with 5 columns
+uef21-table-6col | Table with 6 columns
+uef21-table-7col | Table with 7 columns
+uef21-table-8col | Table with 8 columns
 
 UEF 2.0 Snippets
 ------------------
