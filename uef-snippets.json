@@ -38,8 +38,6 @@
     "description": "UEF Page: Pro Template Side Container\n\nRemove 'left' or 'right' to position accordingly."
   },
 
-  /* MODALS */
-
   "UEF Document Viewer": {
     "prefix": "uef-docviewer",
     "body": [
@@ -211,8 +209,6 @@
     ],
     "description": "UEF Modal Link as a Button"
   },
-
-  /* GRIDS */
 
   "UEF Grid: 100% (Full Width)": {
     "prefix": "uef-grid-1-column-100%",
@@ -510,8 +506,6 @@
     ],
     "description": "UEF Grid: 5 Column - 20%, 20%, 20%, 20%, 20%"
   },
-
-  /* INPUTS */
 
   "UEF Instruction Text": {
     "prefix": "uef-instruction-text",
@@ -3217,8 +3211,6 @@
     "description": "UEF Input: Zip Code"
   },
 
-  /* READ-ONLY INPUTS */
-
   "UEF Read-Only: Label": {
     "prefix": "uef-readonly-label",
     "body": [
@@ -3288,8 +3280,6 @@
     ],
     "description": "UEF Read-Only: Not Answered (Bold)"
   },
-
-  /* CONTAINERS */
 
   "UEF Container: Basic": {
     "prefix": "uef-container-basic",
@@ -3548,8 +3538,6 @@
     "description": "UEF Container with Tabs: Add Tab"
   },
 
-  /* NAVIGATION */
-
   "UEF Back to Top": {
     "prefix": "uef-back-to-top",
     "body": [
@@ -3670,8 +3658,6 @@
     ],
     "description": "Add UEF Sub-Navigation Link"
   },
-
-  /* NOTICES */
 
   "UEF Error Summary": {
     "prefix": "uef-error-summary",
@@ -4057,8 +4043,6 @@
     "description": "UEF Re-Entry Number Notice"
   },
 
-  /* LINKS */
-
   "UEF Link: Definition": {
     "prefix": "uef-link-definition",
     "body": [
@@ -4217,8 +4201,6 @@
     "description": "Zipped File Link"
   },
 
-  /* BUTTONS */
-
   "UEF Button": {
     "prefix": "uef-button",
     "body": [
@@ -4229,8 +4211,6 @@
     ],
     "description": "Button (Primary or Secondary)"
   },
-
-  /* TABLES */
 
   "UEF Table: Basic & Single-Row Action": {
     "prefix": "uef-table",
@@ -5519,8 +5499,6 @@
     "description": "UEF Table: 8 Columns"
   },
 
-  /* UEF ICONS */
-
   "UEF Icon": {
     "prefix": "uef-icon",
     "body": [
@@ -5529,10 +5507,8 @@
     "description": "UEF Icon"
   },
 
-  /* UEF 2.1 Web Component Snippets */
-
   "UEF 2.1 Page Template": {
-    "prefix": "uef21-page",
+    "prefix": "!!uef21",
     "body": [
       "<!DOCTYPE html>",
       "<html lang=\"en\">",
@@ -5541,7 +5517,7 @@
       "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
       "    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
       "    <title>${1:INSERT PAGE TITLE}</title>",
-      "    <script src=\"../../components/uef-2.1/uef-web-components.js\"></script>",
+      "    <script src=\"https://www.ssa.gov/uef/uef2_1/latest/uef-web-components.js\"></script>",
       "</head>",
       "<body>",
       "<uef-template type=\"${2|public,pro|}\" app-title=\"${1:INSERT PAGE TITLE}\" nav=\"\">",
@@ -5551,6 +5527,29 @@
       "</html>"
     ],
     "description": "UEF 2.1 Page Template"
+  },
+
+  "UEF 3 Page Template": {
+    "prefix": "!!uef3",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
+      "    <title>${1:INSERT PAGE TITLE}</title>",
+      "    <script src=\"https://www.ssa.gov/uef/uef2_1/latest/uef-web-components.js\"></script>",
+      "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef-3-theme.min.css\" />",
+      "</head>",
+      "<body>",
+      "<uef-template type=\"${2|public,pro|}\" app-title=\"${1:INSERT PAGE TITLE}\" nav=\"\">",
+      "    ${0:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
+      "</uef-template>",
+      "</body>",
+      "</html>"
+    ],
+    "description": "UEF 3 Page Template"
   },
 
   "UEF 2.1 Page Template (Add Navigation Tab)": {
