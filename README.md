@@ -3,7 +3,7 @@ UEF Snippets
 
 A set of User Experience Framework (UEF 2) Snippets for Visual Studio Code. UEF is the official web application design system of the Social Security Administration.
 
-Create a new HTML document and type `uef` to see all available snippets. Note: For these snippets to accurately render page content you need to have the appropriate UEF libraries loaded in HEAD.
+Create a new HTML document and type `uef` to see all available snippets. Note: For these snippets to accurately render page content you need to have the appropriate UEF libraries loaded in HEAD. See the `!!uef3` or `!!uef21` snippets to see how this is done--or just start with a blank HTML page and use one of those snippets.
 
 UEF (Web Component Edition) Snippets
 --------------------------------
@@ -12,7 +12,8 @@ UEF (Web Component Edition) Snippets
 
 Trigger | Description
 ------- | -----------
-uef21-page | Start a new UEF 2.1 Public or Pro page from a blank document
+!!uef3 | Start a new UEF 3 page from a blank document
+!!uef21 | Start a new UEF 2.1 Public or Pro page from a blank document
 uef21-page-add-tab | Add a navigation tab to the page
 
 **LAYOUT GRIDS**
