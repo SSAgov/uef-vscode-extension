@@ -1,4 +1,4 @@
-UEF Snippets
+![UEF logo](https://github.com/SSAgov/uef-vscode-extension/blob/main/UEF.png) UEF Snippets
 ============
 
 A set of User Experience Framework (UEF) Snippets for Visual Studio Code. UEF is the official web application design system of the Social Security Administration.
