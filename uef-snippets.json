@@ -5520,8 +5520,9 @@
       "    <script src=\"https://www.ssa.gov/uef/uef2_1/latest/uef-web-components.js\"></script>",
       "</head>",
       "<body>",
-      "<uef-template type=\"${2|public,pro|}\" app-title=\"${1:INSERT PAGE TITLE}\" nav=\"\">",
-      "    ${0:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
+      "<uef-template type=\"${2|public,pro|}\" app-title=\"${3:INSERT PAGE TITLE}\" nav=\"\">",
+      "    ${4:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
+      "    ${0:[INSERT OPTIONAL PAGE FOOTER HERE: uef21-page-footer]}",
       "</uef-template>",
       "</body>",
       "</html>"
@@ -5543,8 +5544,9 @@
       "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef-3-theme.min.css\" />",
       "</head>",
       "<body>",
-      "<uef-template type=\"${2|public,pro|}\" app-title=\"${1:INSERT PAGE TITLE}\" nav=\"\">",
-      "    ${0:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
+      "<uef-template type=\"${2|public,pro|}\" app-title=\"${3:INSERT PAGE TITLE}\" nav=\"\">",
+      "    ${4:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
+      "    ${0:[INSERT OPTIONAL PAGE FOOTER HERE: uef21-page-footer]}",
       "</uef-template>",
       "</body>",
       "</html>"
@@ -5560,7 +5562,31 @@
     "description": "UEF 2.1 Page Template: Add Navigation Tab"
   },
 
-  // GRIDS
+  "UEF 2.1 Page Footer": {
+    "prefix": "uef21-page-footer",
+    "body": [
+      "<uef-footer>",
+      "    <p>",
+      "        <a href=\"#\">[Link Text]</a>&nbsp;&nbsp;",
+      "        <a href=\"#\">[Link Text]</a>&nbsp;&nbsp;",
+      "        <a href=\"#\">[Link Text]</a>&nbsp;&nbsp;",
+      "        <a href=\"#\">[Link Text]</a>",
+      "    </p>",
+      "    <p>[Extra text can go here]</p>",
+      "</uef-footer>",
+      "<script>",
+      "    var myObj = [",
+      "        { \"label\": \"OMB No. 0000-0000\", \"href\": \"#\" },",
+      "        { \"label\": \"Privacy Policy\", \"href\": \"https://www.ssa.gov/agency/privacy.html\" },",
+      "        { \"label\": \"Privacy Act Statement\", \"href\": \"https://www.ssa.gov/agency/privacyact.html\" },",
+      "        { \"label\": \"Accessibility\", \"href\": \"https://www.ssa.gov/accessibility/\" }",
+      "    ]",
+      "    var myJSON = JSON.stringify(myObj);",
+      "    document.querySelector('uef-footer').setAttribute(\"navitems\", myJSON)",
+      "</script>"
+    ],
+    "description": "UEF 2.1 Page Footer"
+  },
 
   "UEF 2.1 Start New Grid": {
     "prefix": "uef21-new-grid",
@@ -5824,8 +5850,6 @@
     "description": "UEF 2.1 Grid 5 Column - 20%, 20%, 20%, 20%, 20%"
   },
 
-  // ICONS
-
   "UEF 2.1 Icon": {
     "prefix": "uef21-icon",
     "body": [
@@ -5833,8 +5857,6 @@
     ],
     "description": "UEF 2.1 Icon"
   },
-
-  // CONDITIONAL DISPLAY
 
   "UEF 2.1 Condition": {
     "prefix": "uef21-condition",
@@ -5846,8 +5868,6 @@
     ],
     "description": "UEF 2.1 Condition"
   },
-
-  // CONTAINERS
 
   "UEF 2.1 Basic Container": {
     "prefix": "uef21-container",
@@ -5874,6 +5894,31 @@
     "description": "UEF 2.1 Container Row"
   },
 
+  "UEF 2.1 Container with Tabs": {
+    "prefix": "uef21-container-tabs",
+    "body": [
+      "<uef-container>",
+      "    <uef-container-header container-title=\"${1:[INSERT TITLE]}\" instructions=\"${2:[Instruction Text]}\"></uef-container-header>",
+      "    <uef-container-tab-group>",
+      "        <uef-container-tab label=\"${4:[Tab 1]}\" id=\"tab1\">",
+      "            <p>[Sample content text]</p>",
+      "            <p>[Sample content text]</p>",
+      "            <p>[Sample content text]</p>",
+      "        </uef-container-tab>",
+      "        <uef-container-tab label=\"${5:[Tab 2]}\" id=\"tab2\">",
+      "            <p>[Sample content text]</p>",
+      "            <p>[Sample content text]</p>",
+      "        </uef-container-tab>",
+      "        <uef-container-tab label=\"${6:[Tab 3]}\" id=\"tab3\">",
+      "            <p>[Sample content text]</p>",
+      "        </uef-container-tab>",
+      "    </uef-container-tab-group>",
+      "    <uef-container-footer>${0:[Footer Content]}</uef-container-footer>",
+      "</uef-container>"
+    ],
+    "description": "UEF 2.1 Container with Tabs"
+  },
+
   "UEF 2.1 Summary Container": {
     "prefix": "uef21-container-summary",
     "body": [
@@ -5898,8 +5943,6 @@
     ],
     "description": "UEF 2.1 Summary Container Group"
   },
-
-  // INPUTS
 
   "UEF 2.1 Address (International)": {
     "prefix": "uef21-input-address-intl",
@@ -8590,8 +8633,6 @@
     "description": "UEF 2.1 Zip Code"
   },
 
-  // MODALS
-
   "UEF 2.1 Document Viewer": {
     "prefix": "uef21-docviewer",
     "body": [
@@ -8638,8 +8679,6 @@
     "description": "UEF 2.1 Popover"
   },
 
-  // NAVIGATION
-
   "UEF 2.1 Form Controls": {
     "prefix": "uef21-form-controls",
     "body": [
@@ -8652,8 +8691,6 @@
     ],
     "description": "UEF 2.1 Form Controls"
   },
-
-  // NAVIGATION
 
   "UEF 2.1 Sub-Navigation": {
     "prefix": "uef21-subnav",
@@ -8709,8 +8746,6 @@
     ],
     "description": "UEF 2.1 Sub-Navigation Link"
   },
-
-  // NOTICES
 
   "UEF 2.1 Badge": {
     "prefix": "uef21-badge",
@@ -8821,8 +8856,6 @@
     "description": "UEF 2.1 Waiting Indicator"
   },
 
-  // LINKS
-
   "UEF 2.1 Link": {
     "prefix": "uef21-link",
     "body": [
@@ -8878,8 +8911,6 @@
     "description": "UEF 2.1 Tooltip"
   },
 
-  // BUTTONS
-
   "UEF 2.1 Button": {
     "prefix": "uef21-button",
     "body": [
@@ -8913,8 +8944,6 @@
     ],
     "description": "UEF 2.1 Drop Down Button"
   },
-
-  // Tables
 
   "UEF 2.1 Table: Basic, Single-Row Action, Paginated": {
     "prefix": "uef21-table",
