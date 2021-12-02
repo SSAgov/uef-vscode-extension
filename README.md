@@ -15,6 +15,7 @@ Trigger | Description
 !!uef3 | Start a new UEF 3 page from a blank document
 !!uef21 | Start a new UEF 2.1 Public or Pro page from a blank document
 uef21-page-add-tab | Add a navigation tab to the page
+uef21-page-footer | Add an optional page footer
 
 **LAYOUT GRIDS**
 
@@ -39,6 +40,7 @@ Trigger | Description
 ------- | -----------
 uef21-container-basic | Basic Container
 uef21-container-summary | Summary/Receipt Container
+uef21-container-tabs | Container with Tabs
 
 **INPUTS**
 
