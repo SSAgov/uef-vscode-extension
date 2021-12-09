@@ -226,14 +226,14 @@ uef-input-amount | Amount/Currency
 uef-input-bankinfo-us | Bank Information (US)
 uef-input-checkbox | Check Box
 uef-input-checkbox-critical | Critical Check Box
-uef-input-checklist | Check List (**NEED 'OTHER' VARIATION**)
+uef-input-checklist | Check List
 uef-input-compound | Compound Pattern
 uef-input-country | Country
 uef-input-credit-card | Credit Card
 uef-input-date | Date
 uef-input-date-calendar | Date (Calendar)
-uef-input-date-range | Date (Calendar) Range  (**NOT WORKING**)
-uef-input-date-time | Date & Time (**NEEDS FIXED**)
+uef-input-date-range | Date (Calendar) Range
+uef-input-date-time | Date & Time
 uef-input-droplist | Drop List
 uef-input-droplist-add-item | Add Drop List Item
 uef-input-ein | Employee Information Number (EIN)
@@ -243,12 +243,12 @@ uef-input-file-upload | File Upload
 uef-input-gender | Gender
 uef-input-name | Name
 uef-input-password-create | Password (Create)
-uef-input-password-enter | Password (Enter) (**NEEDS UPDATED**)
+uef-input-password-enter | Password (Enter)
 uef-input-phone-us | Phone (US)
 uef-input-phone-only-us | Phone (US) Phone-Only Field
-uef-input-phone-intl | Phone (International) (**NOT WORKING**)
-uef-input-place | Place (of Event) (**NOT WORKING**)
-uef-input-radio | Radio List (**NEED OTHER VARIATION**)
+uef-input-phone-intl | Phone (International)
+uef-input-place | Place (of Event)
+uef-input-radio | Radio List
 uef-input-radio-add-item | Add item to Radio List
 uef-input-ssn |SSN
 uef-input-state | State
@@ -312,7 +312,7 @@ Trigger | Description
 ------- | -----------
 uef-notice-agreement | Agreement
 uef-notice-agreement-container | Agreement Container
-uef-notice-agreement-ssa | Agreement with SSA Text (**NOT IMPLEMENTED YET**)
+uef-notice-agreement-ssa | Agreement with SSA Text
 uef-badge | Badges
 uef-notice-danger | Danger
 uef-notice-danger-compact | Compact Danger
