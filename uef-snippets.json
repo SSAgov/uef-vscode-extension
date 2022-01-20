@@ -8382,8 +8382,8 @@
     "body": [
       "<!-- Radio List ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-radiolist required=\"${1|true,false|}\" field-name=\"${2:insert-field-name}\" label=\"${3:[Pattern Label]}\" instructions=\"${4:[Instruction Text]}\">",
-      "    <uef-radio label=\"${5:[Option 1]}\" value=\"${6:option-1}\"></uef-radio>",
-      "    <uef-radio label=\"${7:[Option 2]}\" value=\"${8:option-2}\"></uef-radio>",
+      "    <uef-radio label=\"${5:[Option 1]}\" value=\"${6:option-1}\" support-info=\"${7:option-1-support-info}\"></uef-radio>",
+      "    <uef-radio label=\"${8:[Option 2]}\" value=\"${9:option-2}\" support-info=\"${10:option-2-support-info}\"></uef-radio>",
       "    ${0:<!-- Add Radio List Item: uef21-input-radio-list-item -->}",
       "</uef-radiolist>"
     ],
@@ -8393,7 +8393,7 @@
   "UEF 2.1 Radio List Item": {
     "prefix": "uef21-input-radio-list-item",
     "body": [
-      "<uef-radio label=\"${1:[Option X]}\" value=\"${0:option-X}\"></uef-radio>"
+      "<uef-radio label=\"${1:[Option X]}\" value=\"${2:option-X}\" support-info=\"${0:option-X-support-info}\"></uef-radio>"
     ],
     "description": "Add UEF 2.1 Radio List Item"
   },
