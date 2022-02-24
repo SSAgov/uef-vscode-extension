@@ -9118,8 +9118,8 @@
     "body": [
       "<!-- Form Controls ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-form-controls>",
-      "    <uef-button primary=\"true\" onclick='location.href='${1:insert-target-filename.html}';'>${2:[Primary Button]}</uef-button>",
-      "    <uef-button onclick='location.href='${3:insert-target-filename.html}';'>${4:[Secondary Button]}</uef-button>",
+      "    <uef-button primary=\"true\" onclick=\"location.href='${1:insert-target-filename.html}';\">${2:[Primary Button]}</uef-button>",
+      "    <uef-button onclick=\"location.href='${3:insert-target-filename.html}';\">${4:[Secondary Button]}</uef-button>",
       "    ${0:<!-- ADD ANOTHER BUTTON: uef21-button -->}",
       "</uef-form-controls>"
     ],
@@ -9350,7 +9350,7 @@
     "body": [
       "<!-- Button ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<!-- Change the onclick value, as appropriate, such as onclick='alert('Indicate some action that would occur');' -->",
-      "<uef-button primary=\"${1|true,false|}\" target=\"${2:#}\" name=\"${3:insert-id}\" onclick='location.href='${4:insert-target-filename.html}';'>${0:[Button]}</uef-button>"
+      "<uef-button primary=\"${1|true,false|}\" target=\"${2:#}\" name=\"${3:insert-id}\" onclick=\"location.href='${4:insert-target-filename.html}';\">${0:[Button]}</uef-button>"
     ],
     "description": "UEF 2.1 Button"
   },
@@ -9360,7 +9360,7 @@
     "body": [
       "<!-- Button ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<!-- Change the onclick value, as appropriate, such as onclick='alert('Indicate some action that would occur');' -->",
-      "<uef-button primary=\"${1|true,false|}\" target=\"${2:#}\" name=\"${3:insert-id}\" onclick='location.href='${4:insert-target-filename.html}';'>",
+      "<uef-button primary=\"${1|true,false|}\" target=\"${2:#}\" name=\"${3:insert-id}\" onclick=\"location.href='${4:insert-target-filename.html}';\">",
       "    <uef-icon name=\"${5|angle-double-left,angle-double,right,angle-left,angle-right,asterisk,bar-chart,calendar,caret-down,caret-right,caret-up,check,check-circle,check-square,chevron-down,chevron-left,chevron-right,chevron-up,circle-oclock,columns,comment,dot-circle,envelope,exclamation-circle,external-link,file,file-o,file-excel-o,file-pdf,file-powerpoint,file-text,file-word,file-zip,flag,gear,folder,home,info-circle,leaf,lock,map-marker,minus-circle,minus-square,navicon,paperclip,pencil,phone,plus,plus-circle,plus-square,power-off,print,question-circle,save,search,spinner,square,square-ostar,times,times-circle,trash,user,video-camera,youtube-play|}\" color=\"${5:black}\" size=\"${6:16}\"></uef-icon>",
       "    ${0:[Button]}",
       "</uef-button>"
