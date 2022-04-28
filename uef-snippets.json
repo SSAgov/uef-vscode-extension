@@ -5947,11 +5947,12 @@
       "</head>",
       "<body>",
       "<uef-template type=\"${2|public,pro,myssa|}\" app-title=\"${3:INSERT PAGE TITLE}\" nav=\"\">",
+      "    ${4:[INSERT OPTIONAL GLOBAL NAVIGATION: uef21-page-add-tab or uef21-page-add-tab-dropdown]}",
       "    <!-- REMOVE THE NEXT 3 LINES IF YOU DON'T WANT TO SHOW USER LOGIN INFO -->",
       "    <uef-header-content slotname=\"signin\">",
       "        John Public &nbsp;&nbsp;&nbsp; <a href=\"#0\">Sign Out</a>",
       "    </uef-header-content>",
-      "    ${4:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
+      "    ${5:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
       "    ${0:[INSERT OPTIONAL PAGE FOOTER HERE: uef21-page-footer]}",
       "</uef-template>",
       "</body>",
@@ -5975,11 +5976,12 @@
       "</head>",
       "<body>",
       "<uef-template type=\"${2|public,pro|}\" app-title=\"${3:INSERT PAGE TITLE}\" nav=\"\">",
+      "    ${4:[INSERT OPTIONAL GLOBAL NAVIGATION: uef21-page-add-tab or uef21-page-add-tab-dropdown]}",
       "    <!-- REMOVE THE NEXT 3 LINES IF YOU DON'T WANT TO SHOW USER LOGIN INFO -->",
       "    <uef-header-content slotname=\"signin\">",
       "        John Public &nbsp;&nbsp;&nbsp; <a href=\"#0\">Sign Out</a>",
       "    </uef-header-content>",
-      "    ${4:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
+      "    ${5:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
       "    ${0:[INSERT OPTIONAL PAGE FOOTER HERE: uef21-page-footer]}",
       "</uef-template>",
       "</body>",
@@ -5994,6 +5996,17 @@
     "<uef-nav-item current=\"${1|false,true|}\" mobile-only=\"${2|false,true|}\" href=\"${3:#}\">${0:[Tab Name]}</uef-nav-item>"
     ],
     "description": "UEF 2.1 Page Template: Add Navigation Tab"
+  },
+
+  "UEF 2.1 Page Template (Add Dropdown Navigation Tab)": {
+    "prefix": "uef21-page-add-tab-dropdown",
+    "body": [
+        "<uef-navlist label=\"Tab\" slot=\"nav\">",
+        "    <uef-navlist-item href=\"#0\">Item 1</uef-navlist-item>",
+        "    <uef-navlist-item href=\"#0\">Item 2</uef-navlist-item>",
+        "</uef-navlist>"
+    ],
+    "description": "UEF 2.1 Page Template: Add Dropdown Navigation Tab"
   },
 
   "UEF 2.1 Page Footer": {
@@ -9150,6 +9163,7 @@
       "    <uef-subnav-group subheader=\"${5:[Group Title 2]}\">",
       "        <uef-subnav-link href=\"${6:#}\">${7:[Link 2.1]}</uef-subnav-link>",
       "    </uef-subnav-group>",
+      "    <uef-subnav-link href=\"${8:#}\">${9:[Link 3]}</uef-subnav-link>",
       "</uef-subnav>",
       "<!-- ▀▀▀▀▀▀▀▀▀ END: Sub-Navigation ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ -->",
     ],
