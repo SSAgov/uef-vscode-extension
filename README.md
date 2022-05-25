@@ -1,6 +1,10 @@
 ![UEF logo](https://github.com/SSAgov/uef-vscode-extension/blob/main/UEF.png) UEF Snippets
 ============
 
+[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
+![](https://vsmarketplacebadge.apphb.com/version/CraigCecil.uef-snippets.svg)
+![Last Commit](https://img.shields.io/github/last-commit/SSAgov/uef-vscode-extension)
+
 A set of User Experience Framework (UEF) Snippets for Visual Studio Code. UEF is the official web application design system of the Social Security Administration.
 
 Create a new HTML document and type `uef` to see all available snippets. Note: For these snippets to accurately render page content you need to have the appropriate UEF libraries loaded in HEAD. See the `!!uef3` or `!!uef21` snippets to see how this is done--or just start with a blank HTML page and use one of those snippets.
