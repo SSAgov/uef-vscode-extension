@@ -5971,23 +5971,24 @@
       "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
       "    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
       "    <title>${1:INSERT PAGE TITLE}</title>",
-      "    <script src=\"https://www.ssa.gov/uef/uef2_1/latest/uef-web-components.js\"></script>",
-      "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef-3-theme.min.css\" />",
+      "    <link type=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/beta/assets/css/variables.css\" />",
+      "    <link type=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/beta/assets/css/uef-global.css\" />",
+      "    <script type=\"module\" src=\"https://www.ssa.gov/uef/uef3/beta/uef3-web-components.esm.js\"></script>",
       "</head>",
       "<body>",
-      "<uef-template type=\"${2|public,pro|}\" app-title=\"${3:INSERT PAGE TITLE}\" nav=\"\">",
-      "    ${4:[INSERT OPTIONAL GLOBAL NAVIGATION: uef21-page-add-tab or uef21-page-add-tab-dropdown]}",
-      "    <!-- REMOVE THE NEXT 3 LINES IF YOU DON'T WANT TO SHOW USER LOGIN INFO -->",
-      "    <uef-header-content slotname=\"signin\">",
-      "        John Public &nbsp;&nbsp;&nbsp; <a href=\"#0\">Sign Out</a>",
-      "    </uef-header-content>",
-      "    ${5:[INSERT TABS, GRIDS AND PAGE CONTENT]}",
-      "    ${0:[INSERT OPTIONAL PAGE FOOTER HERE: uef21-page-footer]}",
-      "</uef-template>",
+      "    INSERT YOUR PAGE CONTENT HERE",
       "</body>",
       "</html>"
     ],
     "description": "UEF 3 Page Template"
+  },
+
+  "Add UEF 3 Theme File": {
+    "prefix": "uef21-add-uef3-theme",
+    "body": [
+      "<link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef-3-theme.min.css\" />"
+    ],
+    "description": "Adds UEF 3 Theme file"
   },
 
   "UEF 2.1 Page Template (Add Navigation Tab)": {
