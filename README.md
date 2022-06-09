@@ -20,6 +20,7 @@ Trigger | Description
 ------- | -----------
 !!uef3 | Start a new UEF 3 page from a blank document
 !!uef21 | Start a new UEF 2.1 Public or Pro page from a blank document
+uef21-add-uef3-theme | Adds the UEF 3 Theme for Legacy UEF
 uef21-page-add-tab | Add a navigation tab to the page
 uef21-page-add-tab-dropdown | Add a Pro dropdown navigation tab to the page
 uef21-page-footer | Add an optional page footer
