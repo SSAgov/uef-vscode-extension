@@ -25,6 +25,18 @@ uef21-page-add-tab | Add a navigation tab to the page
 uef21-page-add-tab-dropdown | Add a Pro dropdown navigation tab to the page
 uef21-page-footer | Add an optional page footer
 
+UEF 3 Snippets
+------------------
+
+**BUTTONS**
+
+Trigger | Description
+------- | -----------
+uef3-button | Insert a Button
+
+UEF 2.1 Snippets
+------------------
+
 **LAYOUT GRIDS**
 
 Trigger | Description
