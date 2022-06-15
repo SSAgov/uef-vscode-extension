@@ -6269,7 +6269,7 @@
   },
 
   "UEF 3 Date (Month, Year)": {
-    "prefix": "uef3-date-month-year",
+    "prefix": "uef3-date-my",
     "body": [
       "<uef-date",
       "  label=\"[Pattern Label]\"",
@@ -6303,7 +6303,7 @@
   },
 
   "UEF 3 Date (MDY, Day Textbox)": {
-    "prefix": "uef3-date-MDY",
+    "prefix": "uef3-date-mdy",
     "body": [
       "<uef-date label=\"[Pattern Label]\" instructions=\"[Instructions]\"",
       "  field-name-day=\"date-day\"",
@@ -6702,7 +6702,7 @@
   },
 
   "UEF 3 Textbox with Custom Icon": {
-    "prefix": "uef3-textbox-overlay",
+    "prefix": "uef3-textbox-icon",
     "body": [
       "<uef-textbox",
       "  label=\"[Pattern Label]\"",
@@ -6831,7 +6831,7 @@
   },
 
   "UEF 3 Name (default)": {
-    "prefix": "uef3-name",
+    "prefix": "uef3-name-default",
     "body": [
       "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
       "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
@@ -6862,11 +6862,11 @@
       "</uef-compound>",
       ""
     ],
-    "description": "UEF 3 Name (default)"
+    "description": "UEF 3 Name (Title dropdown, First|Middle|Last textboxes, Suffix dropdown)"
   },
 
   "UEF 3 Name (Suffix--Textbox)": {
-    "prefix": "uef3-name-suffix-text",
+    "prefix": "uef3-name-f-m-l-s",
     "body": [
       "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
       "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
@@ -6886,11 +6886,11 @@
       "</uef-compound>",
       ""
     ],
-    "description": "UEF 3 Name (Suffix--Textbox)"
+    "description": "UEF 3 Name (First|Middle|Last|Suffix textboxes)"
   },
 
   "UEF 3 Name (MI, Suffix--Textbox)": {
-    "prefix": "uef3-name-mi-suffix-text",
+    "prefix": "uef3-name-f-mi-l-s",
     "body": [
       "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
       "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
@@ -6913,11 +6913,11 @@
       "</uef-compound>",
       ""
     ],
-    "description": "UEF 3 Name (MI, Suffix--Textbox)"
+    "description": "UEF 3 Name (First|Middle Initial|Last|Suffix textboxes)"
   },
 
   "UEF 3 Name (Suffix-- Dropdown)": {
-    "prefix": "uef3-name-suffix-dropdown",
+    "prefix": "uef3-name-f-m-l-s",
     "body": [
       "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
       "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
@@ -6941,11 +6941,11 @@
       "</uef-compound>",
       ""
     ],
-    "description": "UEF 3 Name (Suffix-- Dropdown)"
+    "description": "UEF 3 Name (First|Middle|Last textboxes, Suffix dropdown)"
   },
 
   "UEF 3 Name (Title--Dropdown, Suffix--Textbox))": {
-    "prefix": "uef3-name-title-suffix",
+    "prefix": "uef3-name-t-f-m-l-s",
     "body": [
       "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
       "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
@@ -6972,11 +6972,11 @@
       "</uef-compound>",
       ""
     ],
-    "description": "UEF 3 Name (Title--Dropdown, Suffix--Textbox))"
+    "description": "UEF 3 Name (Title dropdown, First|Middle|Last|Suffix textboxes)"
   },
 
   "UEF 3 Name (Title--Dropdown, MI, Suffix--Textbox))": {
-    "prefix": "uef3-name-title-mi-suffix",
+    "prefix": "uef3-name-t-f-mi-l-s-textbox",
     "body": [
       "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
       "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
@@ -7006,11 +7006,11 @@
       "</uef-compound>",
       ""
     ],
-    "description": "UEF 3 Name (Title--Dropdown, MI, Suffix--Textbox))"
+    "description": "UEF 3 Name (Title dropdown, First|Middle Initial|Last|Suffix textboxes)"
   },
 
   "UEF 3 Name (Title, MI, Suffix--Dropdown))": {
-    "prefix": "uef3-name-title-mi-suffix-dropdown",
+    "prefix": "uef3-name-t-f-mi-l-s",
     "body": [
       "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
       "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
@@ -7044,11 +7044,11 @@
       "</uef-compound>",
       ""
     ],
-    "description": "UEF 3 Name (Title, MI, Suffix--Dropdown))"
+    "description": "UEF 3 Name (Title dropdown, First|Middle Initial|Last texboxes, Suffix dropdown)"
   },
 
   "UEF 3 Name (First, Last)": {
-    "prefix": "uef3-name-first-last",
+    "prefix": "uef3-name-f-l",
     "body": [
       "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
       "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
@@ -7062,7 +7062,224 @@
       "</uef-compound>",
       ""
     ],
-    "description": "UEF 3 Name (First, Last)"
+    "description": "UEF 3 Name (First|Last textboxes)"
+  },
+
+  "UEF 3 Alert": {
+    "prefix": "uef3-alert",
+    "body": [
+      "<uef-alert header=\"[A Heading Is Required]\" type=\"info\">",
+      "  [Example Text]",
+      "  <p slot=\"uef-alert-footer\">[Alert Footer]</p>",
+      "</uef-alert>",
+      ""
+    ],
+    "description": "UEF 3 Alert"
+  },
+
+  "UEF 3 Reentry Number": {
+    "prefix": "uef3-reentry-number",
+    "body": [
+      "<uef-alert header=\"[Re-Entry Number and Website]\" color=\"info\">",
+      "  <p>",
+      "    [We are providing you with a Re-Entry Number that can be used to restart an",
+      "    incomplete application. You may need it to complete your online application",
+      "    if you decide to continue the application later or to check the status.]",
+      "  </p>",
+      "  <p>[Re-Entry Number:] <strong>[12345678]</strong></p>",
+      "  <p>[Re-Entry Website:] <strong>http://www.socialsecurity.gov</strong></p>",
+      "  <p slot=\"uef-alert-footer\">",
+      "    [Print or save this page, or write down the number or website, so you will",
+      "    have what you need to return to your report at a later time.]",
+      "    <br /><br />",
+      "    <uef-link href=\"javascript:window.print()\">",
+      "      <uef-icon name=\"print\" type=\"solid\"></uef-icon> Print this page",
+      "    </uef-link>",
+      "  </p>",
+      "</uef-alert>",
+      ""
+    ],
+    "description": "UEF 3 Reentry Number"
+  },
+
+  "UEF 3 Confirmation Number": {
+    "prefix": "uef3-confirmation-number",
+    "body": [
+      "<uef-alert header=\"[Confirmation Number and Website]\" color=\"success\">",
+      "  <p>[You may need this number to confirm your application request.]</p>",
+      "  <p>[Confirmation Number:] <strong>[12345678]</strong></p>",
+      "  <p>[Website:] <strong>http://www.socialsecurity.gov</strong></p>",
+      "  <p slot=\"uef-alert-footer\">",
+      "    [Print or save this page, or write down the number or website, so you will",
+      "    have what you need to return to your report at a later time.]",
+      "    <br /><br />",
+      "    <uef-link href=\"javascript:window.print()\">",
+      "      <uef-icon name=\"print\" type=\"solid\"></uef-icon> Print this page",
+      "    </uef-link>",
+      "  </p>",
+      "</uef-alert>",
+      ""
+    ],
+    "description": "UEF 3 Confirmation Number"
+  },
+
+  "UEF 3 Dialog": {
+    "prefix": "uef3-dialog",
+    "body": [
+      "<uef-dialog open backdrop close-button width=\"80%\" accessibility-text=\"Test Dialog\">",
+      "  <uef-typography variant=\"heading2\" slot=\"uef-dialog-header\">[Dialog Title]</uef-typography>",
+      "  <uef-typography variant=\"body-m\" line-height=\"1.5\" slot=\"uef-dialog-body\">",
+      "    Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "    Lorem Ipsum has been the industry's standard dummy text ever since the",
+      "    1500s, when an unknown printer took a galley of type and scrambled it to",
+      "    make a type specimen book. It has survived not only five centuries, but also",
+      "    the leap into electronic typesetting, remaining essentially unchanged. It",
+      "    was popularised in the 1960s with the release of Letraset sheets containing",
+      "    Lorem Ipsum passages, and more recently with desktop publishing software",
+      "    like Aldus PageMaker including versions of Lorem Ipsum.",
+      "  </uef-typography>",
+      "  <uef-button-group slot=\"uef-dialog-footer\" alignment=\"right\" direction=\"rtl\">",
+      "    <uef-button fill=\"solid\">[Accept]</uef-button>",
+      "    <uef-button fill=\"outline\">[Cancel]</uef-button>",
+      "  </uef-button-group>",
+      "</uef-dialog>",
+      ""
+    ],
+    "description": "UEF 3 Dialog"
+  },
+
+  "UEF 3 Figure (Slotted Caption)": {
+    "prefix": "uef3-figure",
+    "body": [
+      "<uef-figure>",
+      "  <img src=\"https://api.lorem.space/image/face?w=500&amp;h=500\" alt=\"Your Alternate text for image goes here\" />",
+      "  <div slot=\"uef-figure-caption\">",
+      "    Demonstration images courtesy of <a href=\"https://lorem.space/\">lorem.space</a>.",
+      "  </div>",
+      "</uef-figure>",
+      ""
+    ],
+    "description": "UEF 3 Figure"
+  },
+
+  "UEF 3 Icon": {
+    "prefix": "uef3-icon",
+    "body": [
+      "<uef-icon name=\"arrow-left\" type=\"solid\" sx=\"{}\"></uef-icon>"
+    ],
+    "description": "UEF 3 Icon"
+  },
+
+  "UEF 3 Indicator": {
+    "prefix": "uef3-indicator",
+    "body": [
+      "<uef-indicator open size=\"75px\" type=\"continuous\" variant=\"circle\" placement=\"overlay\"></uef-indicator>"
+    ],
+    "description": "UEF 3 Indicator"
+  },
+
+  "UEF 3 Popover": {
+    "prefix": "uef3-popover",
+    "body": [
+      "<div>",
+      "  <div>",
+      "    <uef-popover>",
+      "      <div slot=\"popover-content\">[Popover Content]</div>",
+      "      <uef-button color=\"info\" fill=\"outline\">Placement</uef-button>",
+      "    </uef-popover>",
+      "  </div>",
+      "</div>",
+      ""
+    ],
+    "description": "UEF 3 Popover"
+  },
+
+  "UEF 3 Progress": {
+    "prefix": "uef3-progress",
+    "body": [
+      "<uef-progress",
+      "  label=\"[Pattern Label]\"",
+      "  support-info=\"[Support Info]\"",
+      "  field-name=\"uef-progress-1\" max=\"100\" value=\"10\"",
+      "></uef-progress>",
+      ""
+    ],
+    "description": "UEF 3 Progress"
+  },
+
+  "UEF 3 Tag": {
+    "prefix": "uef3-tag",
+    "body": [
+      "<uef-tag>[Insert Tag Text]</uef-tag>"
+    ],
+    "description": "UEF 3 Tag"
+  },
+
+  "UEF 3 Toggle": {
+    "prefix": "uef3-toggle",
+    "body": [
+      "<uef-toggle-group field-name=\"toggle-group\">",
+      "  <uef-toggle-button value=\"1\">Selection 1</uef-toggle-button>",
+      "  <uef-toggle-button value=\"2\">Selection 2</uef-toggle-button>",
+      "  <uef-toggle-button value=\"3\">Selection 3</uef-toggle-button>",
+      "</uef-toggle-group>",
+      ""
+    ],
+    "description": "UEF 3 Toggle"
+  },
+
+  "UEF 3 Tooltip": {
+    "prefix": "uef3-tooltip",
+    "body": [
+      "<uef-tooltip>",
+      "  [Example Text]",
+      "  <span slot=\"content\">Sample tooltip text</span>",
+      "</uef-tooltip>",
+      ""
+    ],
+    "description": "UEF 3 Tooltip"
+  },
+
+  "UEF 3 Optional Info": {
+    "prefix": "uef3-optional-info",
+    "body": [
+      "<uef-typography sx=\"{}\" variant=\"label\" tag=\"span\">",
+      "  All information is required, unless noted optional.",
+      "</uef-typography>",
+      ""
+    ],
+    "description": "UEF 3 Optional Info"
+  },
+
+  "UEF 3 Required Info": {
+    "prefix": "uef3-required-info",
+    "body": [
+      "<uef-typography sx=\"{}\" variant=\"label\" tag=\"span\">",
+      "  <uef-icon name=\"asterisk\" type=\"solid\" size=\"7.5\" color=\"#c00\"",
+      "    accessibility-text=\"asterisk\"",
+      "    sx='{\"verticalAlign\":\"super\",\"marginLeft\":\"-0.6rem\"}'",
+      "  ></uef-icon>",
+      "  Indicates required information.",
+      "</uef-typography>",
+      ""
+    ],
+    "description": "UEF 3 Required Info"
+  },
+
+  "UEF 3 Typography": {
+    "prefix": "uef3-typography",
+    "body": [
+      "<uef-typography sx=\"{}\">Typography</uef-typography>"
+    ],
+    "description": "UEF 3 Typography"
+  },
+
+  "UEF 3 Visually Hidden": {
+    "prefix": "uef3-visually-hidden",
+    "body": [
+      "<uef-visuallyhidden>[Insert Hidden Text]</uef-visuallyhidden>"
+    ],
+    "description": "UEF 3 Visually Hidden"
   },
 
   "Add UEF 3 Theme File": {
