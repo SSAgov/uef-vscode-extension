@@ -14,7 +14,7 @@ Create a new HTML document and type `uef` to see all available snippets. Note: F
 UEF (Web Component Edition) Snippets
 --------------------------------
 
-**PAGE TEMPLATE**
+**PAGE TEMPLATES**
 
 Trigger | Description
 ------- | -----------
@@ -24,6 +24,93 @@ uef21-add-uef3-theme | Adds the UEF 3 Theme for Legacy UEF
 uef21-page-add-tab | Add a navigation tab to the page
 uef21-page-add-tab-dropdown | Add a Pro dropdown navigation tab to the page
 uef21-page-footer | Add an optional page footer
+
+UEF 3 Snippets
+------------------
+
+**FORMS**
+
+Trigger | Description
+------- | -----------
+uef3-address | Address (US)
+uef3-address-intl | Address (International)
+uef3-bank-info | Bank Information
+uef3-checkbox | Checkbox
+uef3-checklist | Checklist
+uef3-compound | Compound
+uef3-country | Country (Current)
+uef3-country-historical | Country (Historical) -- useful for place of birth
+uef3-credit-card | Credit Card
+uef3-currency | Currency ($,£,€)
+uef3-date-mdy | Date (Month, Day, Year -- month dropdown, day textbox, year dropdown)
+uef3-date-mdy-dropdowns | Date (Month, Day, Year -- all dropdowns)
+uef3-date-my | Date (Month, Year -- month dropdown, year textbox)
+uef3-date-picker | Date Picker
+uef3-droplist | Drop List
+uef3-ein | Employee Information Number (EIN)
+uef3-email | Email Address
+uef3-email-confirmation | Email Address with Confirmation
+uef3-error-summary | Error Summary
+uef3-file-input | File Input
+uef3-form | Form wrapper
+uef3-gender | Gender (Male, Female, Non-Binary)
+uef3-name-default | Name (Title dropdown, First|Middle|Last textboxes, Suffix dropdown)
+uef3-name-f-l | Name (First|Last textboxes)
+uef3-name-f-m-l-s | Name (First|Middle|Last|Suffix textboxes)
+uef3-name-f-m-l-s-dropdown | Name (First|Middle|Last textboxes, Suffix dropdown)
+uef3-name-f-mi-l-s | Name (First|Middle Initial|Last|Suffix textboxes)
+uef3-name-f-mi-l-s-text | Name (First|Middle Initial|Last|Suffix textboxes)
+uef3-name-t-f-m-l-s | Name (Title dropdown, First|Middle|Last|Suffix textboxes)
+uef3-name-t-f-mi-l-s | Name (Title dropdown, First|Middle Initial|Last texboxes, Suffix dropdown)
+uef3-name-t-f-mi-l-s-textbox | Name (Title dropdown, First|Middle Initial|Last|Suffix textboxes)
+uef3-password | Password
+uef3-percent | Percent textbox
+uef3-phone | U.S. Phone Number (10-digit number, extension, type dropdown)
+uef3-phone-intl | International Phone Number (country code and number, extension, type dropdown)
+uef3-phone-simple | Simple U.S. Phone Number (Area Code + Number)
+uef3-place | Place of an event
+uef3-radiolist | Radio List
+uef3-ssn | Social Security Number (SSN)
+uef3-state | State
+uef3-textarea | Textarea
+uef3-textbox | Textbox
+uef3-textbox-icon | Textbox with embedded icon
+uef3-time | Time selection with dropdowns
+uef3-time-textbox | Time selection with textbox
+uef3-timezone | Time Zone
+uef3-yesno | Yes/No
+uef3-zipcode | Zip Code
+uef3-zipcode-plus-4 | Zip Code plus 4-digit extension
+
+**INFORMATIONAL**
+
+Trigger | Description
+------- | -----------
+uef3-alert | Alert (Info, Warning, Danger, Success)
+uef3-confirmation-number | Confirmation Number
+uef3-dialog | Dialog
+uef3-figure | Figure
+uef3-icon | Icon
+uef3-indicator | Indicator
+uef3-optional-info | Optional Info
+uef3-popover | Popover
+uef3-progress | Progress
+uef3-reentry-number | Reentry Number
+uef3-required-info | Required Info
+uef3-tag | Tag
+uef3-toggle | Toggle
+uef3-tooltip | Tooltip
+uef3-typography | Typography
+uef-visually-hidden | Visually hidden text
+
+**BUTTONS**
+
+Trigger | Description
+------- | -----------
+uef3-button | Insert a Button
+
+UEF 2.1 Snippets
+------------------
 
 **LAYOUT GRIDS**
 
