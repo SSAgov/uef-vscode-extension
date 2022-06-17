@@ -54,15 +54,15 @@ uef3-error-summary | Error Summary
 uef3-file-input | File Input
 uef3-form | Form wrapper
 uef3-gender | Gender (Male, Female, Non-Binary)
-uef3-name-default | Name (Title dropdown, First|Middle|Last textboxes, Suffix dropdown)
+uef3-name-default | Name (Title dropdown, First/Middle/Last textboxes, Suffix dropdown)
 uef3-name-f-l | Name (First|Last textboxes)
-uef3-name-f-m-l-s | Name (First|Middle|Last|Suffix textboxes)
-uef3-name-f-m-l-s-dropdown | Name (First|Middle|Last textboxes, Suffix dropdown)
-uef3-name-f-mi-l-s | Name (First|Middle Initial|Last|Suffix textboxes)
-uef3-name-f-mi-l-s-text | Name (First|Middle Initial|Last|Suffix textboxes)
-uef3-name-t-f-m-l-s | Name (Title dropdown, First|Middle|Last|Suffix textboxes)
-uef3-name-t-f-mi-l-s | Name (Title dropdown, First|Middle Initial|Last texboxes, Suffix dropdown)
-uef3-name-t-f-mi-l-s-textbox | Name (Title dropdown, First|Middle Initial|Last|Suffix textboxes)
+uef3-name-f-m-l-s | Name (First/Middle/Last/Suffix textboxes)
+uef3-name-f-m-l-s-dropdown | Name (First/Middle/Last textboxes, Suffix dropdown)
+uef3-name-f-mi-l-s | Name (First/Middle Initial/Last/Suffix textboxes)
+uef3-name-f-mi-l-s-text | Name (First/Middle Initial/Last/Suffix textboxes)
+uef3-name-t-f-m-l-s | Name (Title dropdown, First/Middle/Last/Suffix textboxes)
+uef3-name-t-f-mi-l-s | Name (Title dropdown, First/Middle Initial/Last texboxes, Suffix dropdown)
+uef3-name-t-f-mi-l-s-textbox | Name (Title dropdown, First/Middle Initial/Last/Suffix textboxes)
 uef3-password | Password
 uef3-percent | Percent textbox
 uef3-phone | U.S. Phone Number (10-digit number, extension, type dropdown)
@@ -102,6 +102,22 @@ uef3-toggle | Toggle
 uef3-tooltip | Tooltip
 uef3-typography | Typography
 uef-visually-hidden | Visually hidden text
+
+**LAYOUT**
+
+Trigger | Description
+------- | -----------
+uef3-button-group | Button Group
+uef3-card | Card (with header and buttons)
+uef3-card-basic | Basic Card
+uef3-card-h-layout | Card with horizontal layout
+uef3-container | Generic Container
+uef3-federal-banner | Federal Website banner
+uef3-flex-layout | FlexBox layout
+uef3-footer-identifier | Federal Footer Identifier
+uef3-footer-slim | Slim version of Federal Footer
+uef3-footer-medium | Medium version of Federal Footer
+uef3-footer-big | Big version of Federal Footer
 
 **BUTTONS**
 
