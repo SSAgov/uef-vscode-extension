@@ -35,6 +35,7 @@ Trigger | Description
 uef3-address | Address (US)
 uef3-address-intl | Address (International)
 uef3-bank-info | Bank Information
+uef3-button | Insert a Button
 uef3-checkbox | Checkbox
 uef3-checklist | Checklist
 uef3-compound | Compound
@@ -118,12 +119,35 @@ uef3-footer-identifier | Federal Footer Identifier
 uef3-footer-slim | Slim version of Federal Footer
 uef3-footer-medium | Medium version of Federal Footer
 uef3-footer-big | Big version of Federal Footer
+uef3-grid-3col | 3-column layout grid
+uef3-grid-3col-template | 3-column layout grid using a template
+uef3-grid-fluid | Fluid layout grid
+uef3-section | Section
+uef3-show-hide  | Show/Hide
+uef3-show-hide-targets | Show/Hide with External Targets
+uef3-table | Table
+uef3-tabs | Tabs
 
-**BUTTONS**
+**NAVIGATION**
 
 Trigger | Description
 ------- | -----------
-uef3-button | Insert a Button
+uef3-link | Insert hyperlink
+uef3-link-download | Download link
+uef3-link-email | Email link
+uef3-link-excel | Excel link
+uef3-link-external | External site link
+uef3-link-print | Print page link
+uef3-link-pdf | PDF link
+uef3-link-video | Video link
+uef3-link-word | Link to Microsoft Word file
+uef3-link-zip | Link to compressed Zip file
+uef3-navigation | Navigation menu
+uef3-pagination | Pagination control
+uef3-skipnav | Skip Navigation control
+uef3-subnav | Sub-Navigation
+uef3-subnav-nested | Sub-Navigation with Nested Levels
+uef3-subnav-icons | Sub-Navigation with icons
 
 UEF 2.1 Snippets
 ------------------
