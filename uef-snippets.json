@@ -5971,8 +5971,8 @@
       "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
       "    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
       "    <title>${1:INSERT PAGE TITLE}</title>",
-      "    <link type=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/beta/assets/css/variables.css\" />",
-      "    <link type=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/beta/assets/css/uef-global.css\" />",
+      "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/beta/assets/css/variables.css\" />",
+      "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/beta/assets/css/uef-global.css\" />",
       "    <script type=\"module\" src=\"https://www.ssa.gov/uef/uef3/beta/uef3-web-components.esm.js\"></script>",
       "</head>",
       "<body>",
@@ -7280,6 +7280,822 @@
       "<uef-visuallyhidden>[Insert Hidden Text]</uef-visuallyhidden>"
     ],
     "description": "UEF 3 Visually Hidden"
+  },
+
+  "UEF 3 Federal Banner": {
+    "prefix": "uef3-federal-banner",
+    "body": [
+      "<uef-banner></uef-banner>"
+    ],
+    "description": "UEF 3 Federal Banner"
+  },
+
+  "UEF 3 Button Group": {
+    "prefix": "uef3-button-group",
+    "body": [
+      "<uef-button-group>",
+      "  <uef-button fill=\"solid\">Button 1</uef-button>",
+      "  <uef-button fill=\"outline\">Button 2</uef-button>",
+      "  <uef-button fill=\"outline\">Button 3</uef-button>",
+      "</uef-button-group>",
+      ""
+    ],
+    "description": "UEF 3 Button Group"
+  },
+
+  "UEF 3 Card": {
+    "prefix": "uef3-card",
+    "body": [
+      "<uef-card",
+      "    width=\"272px\" sx='{\"border\":\"1px solid #dadada\",\"padding\":\"--uef-space-inset-4x\",\"borderRadius\":\"--uef-border-radius-softest\"}'>",
+      "    <uef-typography variant=\"heading3\" slot=\"uef-card-header\" sx='{\"paddingBottom\":\"--uef-space-stack-2x\"}'>",
+      "      Card Title",
+      "    </uef-typography>",
+      "    <uef-typography slot=\"uef-card-header\" variant=\"subtitle1\">",
+      "      Sub Title",
+      "    </uef-typography>",
+      "    <uef-typography slot=\"uef-card-body\" variant=\"body-m\" line-height=\"1.5\"",
+      "      sx='{\"paddingTop\":\"--uef-space-stack-4x\",\"paddingBottom\":\"--uef-space-stack-3x\"}'",
+      "    >",
+      "      This is text within a card body. Lorem ipsum dolor sit amet consectetur",
+      "      adipisicing elit. Facilis earum tenetur quo.",
+      "    </uef-typography>",
+      "    <uef-button slot=\"uef-card-footer\" width=\"50%\" fill=\"none\">Button 1</uef-button>",
+      "    <uef-button slot=\"uef-card-footer\" width=\"50%\" fill=\"none\">Button 2</uef-button>",
+      "  </uef-card>"
+    ],
+    "description": "UEF 3 Card"
+  },
+
+  "UEF 3 Card (Basic)": {
+    "prefix": "uef3-card-basic",
+    "body": [
+      "<uef-card sx='{\"padding\":\"--uef-space-inset-4x\",\"boxShadow\":\"--uef-elevation-20\",\"borderRadius\":\"--uef-border-radius-softest\"}'>",
+      "  <uef-typography variant=\"body-m\" line-height=\"1.2\">",
+      "    This is text within a card body.",
+      "  </uef-typography>",
+      "</uef-card>",
+      ""
+    ],
+    "description": "UEF 3 Card (Basic)"
+  },
+
+  "UEF 3 Card (Horizontal Layout)": {
+    "prefix": "uef3-card-h-layout",
+    "body": [
+      "<uef-card width=\"450px\" sx='{\"boxShadow\":\"--uef-elevation-10\",\"borderRadius\":\"--uef-border-radius-softest\"}'>",
+      "  <uef-flex direction=\"row\" gap=\"5px\">",
+      "    <uef-flex-item sx='{\"backgroundColor\":\"blue\",\"width\":\"100px\",\"borderTopLeftRadius\":\"--uef-border-radius-softest\",\"borderBottomLeftRadius\":\"--uef-border-radius-softest\"}'></uef-flex-item>",
+      "    <uef-flex-item sx='{\"padding\":\"--uef-space-inset-4x\"}'>",
+      "      <uef-typography variant=\"heading2\" sx='{\"paddingBottom\":\"--uef-space-stack-2x\"}'>",
+      "        Title",
+      "      </uef-typography>",
+      "      <uef-typography variant=\"body-m\" line-height=\"1.2\" sx='{\"paddingBottom\":\"--uef-space-stack-2x\"}'>",
+      "        This is an example of body text to build on the card title. In this example. The body is the focus.",
+      "      </uef-typography>",
+      "      <uef-button fill=\"solid\">Button</uef-button>",
+      "    </uef-flex-item>",
+      "  </uef-flex>",
+      "</uef-card>",
+      ""
+    ],
+    "description": "UEF 3 Card (Horizontal Layout)"
+  },
+
+  "UEF 3 Container": {
+    "prefix": "uef3-container",
+    "body": [
+      "<uef-container sx=\"{}\">",
+      "  <uef-flex display=\"flex\" direction=\"row\">",
+      "    <uef-flex-item sx='{\"width\":\"50%\"}'>Section 1</uef-flex-item>",
+      "    <uef-flex-item sx='{\"width\":\"50%\"}'>Section 2</uef-flex-item>",
+      "  </uef-flex>",
+      "</uef-container>",
+      ""
+    ],
+    "description": "UEF 3 Container"
+  },
+
+  "UEF 3 Flex Layout": {
+    "prefix": "uef3-flex",
+    "body": [
+      "<uef-flex sx='{\"height\": \"400px\"}' justify-content=\"space-between\" align-content=\"center\" wrap=\"wrap\" align-items=\"center\" gap=\"2em\">",
+      "  <uef-flex-item>",
+      "    INSERT CONTENT HERE",
+      "  </uef-flex-item>",
+      "  <uef-flex-item sx=\"{}\">",
+      "    INSERT CONTENT HERE",
+      "  </uef-flex-item>",
+      "</uef-flex>",
+      ""
+    ],
+    "description": "UEF 3 Flex Layout"
+  },
+
+  "UEF 3 Flex Item": {
+    "prefix": "uef3-flex-item",
+    "body": [
+      "  <uef-flex-item sx=\"{}\">",
+      "    INSERT CONTENT HERE",
+      "  </uef-flex-item>",
+      ""
+    ],
+    "description": "UEF 3 Flex Item"
+  },
+
+  "UEF 3 Footer (Identifier)": {
+    "prefix": "uef3-footer-identifier",
+    "body": [
+      "<uef-footer>",
+      "  <div slot=\"uef-identifier\" style='{\"padding\":\"2em 1em\"}'>",
+      "    <uef-flex align-items=\"center\" wrap=\"wrap\" gap=\"1em\" sx='{\"padding\":\"1em 2em\"}'>",
+      "      <span>",
+      "        <img",
+      "          src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PHRpdGxlPk92YWw8L3RpdGxlPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjYwIiBmaWxsPSIjQzlDOUM5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=\"",
+      "          width=\"40\" height=\"40\" alt=\"[Agency] Seal\"",
+      "        />",
+      "      </span>",
+      "      <div>",
+      "        <div>[domain.gov]</div>",
+      "        <div>An official website of the [Parent agency]</div>",
+      "      </div>",
+      "    </uef-flex>",
+      "    <nav>",
+      "      <uef-grid grid-template-columns=\"repeat(4, minmax(10em,1fr))\" gap=\".5em\" sx='{\"padding\":\"1em\"}'>",
+      "        <a href=\"https://www.ssa.gov/agency/\">About [Parent shortname]</a>",
+      "        <a href=\"https://www.ssa.gov/accessibility/\">Accessibility support</a>",
+      "        <a href=\"https://www.ssa.gov/foia/\">FOIA requests</a>",
+      "        <a href=\"https://www.ssa.gov/eeo/nofear/index.htm\">No FEAR Act data</a>",
+      "        <a href=\"https://oig.ssa.gov/\">Office of the Inspector General</a>",
+      "        <a href=\"https://www.ssa.gov/agency/performance/\">Performance reports</a>",
+      "        <a href=\"https://www.ssa.gov/privacy/\">Privacy policy</a>",
+      "      </uef-grid>",
+      "    </nav>",
+      "    <section aria-label=\"U.S. government information and services\">",
+      "      <p>Looking for U.S. government information and services? <a href=\"https://www.usa.gov/\">Visit USA.gov</a></p>",
+      "    </section>",
+      "  </div>",
+      "</uef-footer>",
+      ""
+    ],
+    "description": "UEF 3 Footer (Identifier)"
+  },
+
+  "UEF 3 Footer (Slim)": {
+    "prefix": "uef3-footer-slim",
+    "body": [
+      "<uef-footer>",
+      "  <div slot=\"uef-footer-nav\">",
+      "    <uef-grid",
+      "      grid-template-columns=\"minmax(50%,4fr) minmax(30%,1fr)\" gap=\"1em\" sx='{\"padding\":\"1em\"}'>",
+      "      <nav>",
+      "        <uef-flex wrap=\"wrap\" gap=\"1em\">",
+      "          <strong><a href=\"#\">Primary link</a></strong>",
+      "          <strong><a href=\"#\">Primary link</a></strong>",
+      "          <strong><a href=\"#\">Primary link</a></strong>",
+      "          <strong><a href=\"#\">Primary link</a></strong>",
+      "          <strong><a href=\"#\">Primary link</a></strong>",
+      "          <strong><a href=\"#\">Primary link</a></strong>",
+      "        </uef-flex>",
+      "      </nav>",
+      "      <uef-flex wrap=\"wrap\" gap=\"10px\">",
+      "        <a href=\"tel:1-800-555-5555\">[(800) 555-GOVT]</a>",
+      "        <a href=\"mailto:info@example.com\">[info@example.com]</a>",
+      "      </uef-flex>",
+      "    </uef-grid>",
+      "  </div>",
+      "  <uef-flex align-items=\"center\" wrap=\"wrap\" gap=\"1em\" sx='{\"padding\":\"1em\"}'>",
+      "    <span>",
+      "      <img",
+      "        src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PHRpdGxlPk92YWw8L3RpdGxlPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjYwIiBmaWxsPSIjQzlDOUM5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=\"",
+      "        width=\"80\" height=\"80\" alt=\"[Agency] Seal\" />",
+      "    </span>",
+      "    <span>[Agency Contact Center]</span>",
+      "  </uef-flex>",
+      "  <div slot=\"uef-identifier\" style='{\"padding\":\"2em 1em\"}'>",
+      "    <uef-flex align-items=\"center\" wrap=\"wrap\" gap=\"1em\" sx='{\"padding\":\"1em 2em\"}'>",
+      "      <span>",
+      "        <img",
+      "          src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PHRpdGxlPk92YWw8L3RpdGxlPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjYwIiBmaWxsPSIjQzlDOUM5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=\"",
+      "          width=\"40\" height=\"40\" alt=\"[Agency] Seal\" />",
+      "      </span>",
+      "      <div>",
+      "        <div>[domain.gov]</div>",
+      "        <div>An official website of the [Parent agency]</div>",
+      "      </div>",
+      "    </uef-flex>",
+      "    <nav>",
+      "      <uef-grid",
+      "        grid-template-columns=\"repeat(4, minmax(10em,1fr))\" gap=\".5em\" sx='{\"padding\":\"1em\"}'>",
+      "        <a href=\"https://www.ssa.gov/agency/\">About [Parent shortname]</a>",
+      "        <a href=\"https://www.ssa.gov/accessibility/\">Accessibility support</a>",
+      "        <a href=\"https://www.ssa.gov/foia/\">FOIA requests</a>",
+      "        <a href=\"https://www.ssa.gov/eeo/nofear/index.htm\">No FEAR Act data</a>",
+      "        <a href=\"https://oig.ssa.gov/\">Office of the Inspector General</a>",
+      "        <a href=\"https://www.ssa.gov/agency/performance/\">Performance reports</a>",
+      "        <a href=\"https://www.ssa.gov/privacy/\">Privacy policy</a>",
+      "      </uef-grid>",
+      "    </nav>",
+      "    <section aria-label=\"U.S. government information and services\">",
+      "      <p>Looking for U.S. government information and services? <a href=\"https://www.usa.gov/\">Visit USA.gov</a></p>",
+      "    </section>",
+      "  </div>",
+      "</uef-footer>",
+      ""
+    ],
+    "description": "UEF 3 Footer (Slim)"
+  },
+
+  "UEF 3 Footer (Medium)": {
+    "prefix": "uef3-footer-medium",
+    "body": [
+      "<uef-footer>",
+      "  <div slot=\"uef-footer-nav\">",
+      "    <nav>",
+      "      <uef-flex wrap=\"wrap\" gap=\"1em\" sx='{\"padding\":\"1em\"}'>",
+      "        <strong><a href=\"#\">Primary link</a></strong>",
+      "        <strong><a href=\"#\">Primary link</a></strong>",
+      "        <strong><a href=\"#\">Primary link</a></strong>",
+      "        <strong><a href=\"#\">Primary link</a></strong>",
+      "        <strong><a href=\"#\">Primary link</a></strong>",
+      "        <strong><a href=\"#\">Primary link</a></strong>",
+      "      </uef-flex>",
+      "    </nav>",
+      "  </div>",
+      "  <uef-flex align-items=\"center\" justify-content=\"space-between\" wrap=\"wrap\" gap=\"1em\" sx='{\"padding\":\"1em\"}'>",
+      "    <uef-flex align-items=\"center\" wrap=\"wrap\" gap=\"1em\">",
+      "      <span>",
+      "        <img",
+      "          src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PHRpdGxlPk92YWw8L3RpdGxlPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjYwIiBmaWxsPSIjQzlDOUM5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=\"",
+      "          width=\"80\" height=\"80\" alt=\"[Agency] Seal\" />",
+      "      </span>",
+      "      <span>[Name of Agency]</span>",
+      "    </uef-flex>",
+      "    <uef-flex direction=\"column\" align-items=\"center\" justify-content=\"center\">",
+      "      <uef-flex align-items=\"center\" justify-content=\"center\" align-content=\"center\" wrap=\"wrap\" gap=\"1em\">",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"facebook-square\" type=\"brand\" size=\"40\" color=\"black\" accessibility-text=\"[Organization] Facebook\"></uef-icon>",
+      "        </a>",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"twitter-square\" type=\"brand\" size=\"40\" color=\"black\" accessibility-text=\"[Organization] Twitter\"></uef-icon>",
+      "        </a>",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"youtube-square\" type=\"brand\" size=\"40\" color=\"black\" accessibility-text=\"[Organization] YouTube Channel\"></uef-icon>",
+      "        </a>",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"instagram-square\" type=\"brand\" size=\"40\" color=\"black\" accessibility-text=\"[Organization] Instagram\"></uef-icon>",
+      "        </a>",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"rss\" type=\"solid\" size=\"40\" color=\"black\" accessibility-text=\"RSS Feed\"></uef-icon>",
+      "        </a>",
+      "      </uef-flex>",
+      "      <h3>[Agency Contact Center]</h3>",
+      "      <div>",
+      "        <a href=\"tel:1-800-555-5555\">[(800) 555-GOVT]</a>",
+      "        <a href=\"mailto:info@example.com\">[info@example.com]</a>",
+      "      </div>",
+      "    </uef-flex>",
+      "  </uef-flex>",
+      "  <div slot=\"uef-identifier\" style='{\"padding\":\"2em 1em\"}'>",
+      "    <uef-flex align-items=\"center\" wrap=\"wrap\" gap=\"1em\" sx='{\"padding\":\"1em 2em\"}'>",
+      "      <span>",
+      "        <img",
+      "          src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PHRpdGxlPk92YWw8L3RpdGxlPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjYwIiBmaWxsPSIjQzlDOUM5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=\"",
+      "          width=\"40\" height=\"40\" alt=\"[Agency] Seal\" />",
+      "      </span>",
+      "      <div>",
+      "        <div>[domain.gov]</div>",
+      "        <div>An official website of the [Parent agency]</div>",
+      "      </div>",
+      "    </uef-flex>",
+      "    <nav>",
+      "      <uef-grid grid-template-columns=\"repeat(4, minmax(10em,1fr))\" gap=\".5em\" sx='{\"padding\":\"1em\"}'>",
+      "        <a href=\"https://www.ssa.gov/agency/\">About [Parent shortname]</a>",
+      "        <a href=\"https://www.ssa.gov/accessibility/\">Accessibility support</a>",
+      "        <a href=\"https://www.ssa.gov/foia/\">FOIA requests</a>",
+      "        <a href=\"https://www.ssa.gov/eeo/nofear/index.htm\">No FEAR Act data</a>",
+      "        <a href=\"https://oig.ssa.gov/\">Office of the Inspector General</a>",
+      "        <a href=\"https://www.ssa.gov/agency/performance/\">Performance reports</a>",
+      "        <a href=\"https://www.ssa.gov/privacy/\">Privacy policy</a>",
+      "      </uef-grid>",
+      "    </nav>",
+      "    <section aria-label=\"U.S. government information and services\">",
+      "      <p>Looking for U.S. government information and services? <a href=\"https://www.usa.gov/\">Visit USA.gov</a></p>",
+      "    </section>",
+      "  </div>",
+      "</uef-footer>",
+      ""
+    ],
+    "description": "UEF 3 Footer (Medium)"
+  },
+
+  "UEF 3 Footer (Big)": {
+    "prefix": "uef3-footer-big",
+    "body": [
+      "<uef-footer>",
+      "  <div slot=\"uef-footer-nav\">",
+      "    <uef-grid grid-template-columns=\"minmax(50%,4fr) minmax(200px,1fr)\" gap=\"10px\" sx='{\"padding\":\"1em\"}'>",
+      "      <nav>",
+      "        <uef-grid grid-template-columns=\"repeat(auto-fit, minmax(175px,1fr))\" gap=\"10px\">",
+      "          <div>",
+      "            <h4>Heading</h4>",
+      "            <ul>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link that's a bit longer than most of the others</a></li>",
+      "              <li><a href=\"#\">Secondary link</a></li>",
+      "            </ul>",
+      "          </div>",
+      "          <div>",
+      "            <h4>Heading</h4>",
+      "            <ul>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link that's pretty long</a></li>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "            </ul>",
+      "          </div>",
+      "          <div>",
+      "            <h4>Heading</h4>",
+      "            <ul>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "            </ul>",
+      "          </div>",
+      "          <div>",
+      "            <h4>Heading</h4>",
+      "            <ul>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "              <li><a href=\"#0\">Secondary link</a></li>",
+      "            </ul>",
+      "          </div>",
+      "        </uef-grid>",
+      "      </nav>",
+      "      <form action=\"#0\">",
+      "        <uef-textbox field-name=\"sign-up\" label=\"Sign Up\" instructions=\"Your email address\"></uef-textbox>",
+      "        <uef-button type=\"submit\" fill=\"solid\">Submit</uef-button>",
+      "      </form>",
+      "    </uef-grid>",
+      "  </div>",
+      "  <uef-flex align-items=\"center\" justify-content=\"space-between\" wrap=\"wrap\" gap=\"1em\" sx='{\"padding\":\"1em\"}'>",
+      "    <uef-flex align-items=\"center\" wrap=\"wrap\" gap=\"1em\">",
+      "      <span>",
+      "        <img",
+      "          src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PHRpdGxlPk92YWw8L3RpdGxlPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjYwIiBmaWxsPSIjQzlDOUM5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=\"",
+      "          width=\"80\" height=\"80\" alt=\"[Agency] Seal\" />",
+      "      </span>",
+      "      <span>[Name of Agency]</span>",
+      "    </uef-flex>",
+      "    <uef-flex direction=\"column\" align-items=\"center\" justify-content=\"center\">",
+      "      <uef-flex align-items=\"center\" justify-content=\"center\" align-content=\"center\" wrap=\"wrap\" gap=\"1em\">",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"facebook-square\" type=\"brand\" size=\"40\" color=\"black\" accessibility-text=\"[Organization] Facebook\"></uef-icon>",
+      "        </a>",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"twitter-square\" type=\"brand\" size=\"40\" color=\"black\" accessibility-text=\"[Organization] Twitter\"></uef-icon>",
+      "        </a>",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"youtube-square\" type=\"brand\" size=\"40\" color=\"black\" accessibility-text=\"[Organization] YouTube Channel\"></uef-icon>",
+      "        </a>",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"instagram-square\" type=\"brand\" size=\"40\" color=\"black\" accessibility-text=\"[Organization] Instagram\"></uef-icon>",
+      "        </a>",
+      "        <a href=\"#0\">",
+      "          <uef-icon name=\"rss\" type=\"solid\" size=\"40\" color=\"black\" accessibility-text=\"RSS Feed\"></uef-icon>",
+      "        </a>",
+      "      </uef-flex>",
+      "      <h3>[Agency Contact Center]</h3>",
+      "      <div>",
+      "        <a href=\"tel:1-800-555-5555\">[(800) 555-GOVT]</a>",
+      "        <a href=\"mailto:info@example.com\">[info@example.com]</a>",
+      "      </div>",
+      "    </uef-flex>",
+      "  </uef-flex>",
+      "  <div slot=\"uef-identifier\" style='{\"padding\":\"2em 1em\"}'>",
+      "    <uef-flex align-items=\"center\" wrap=\"wrap\" gap=\"1em\" sx='{\"padding\":\"1em 2em\"}'>",
+      "      <span>",
+      "        <img",
+      "          src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PHRpdGxlPk92YWw8L3RpdGxlPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjYwIiBmaWxsPSIjQzlDOUM5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=\"",
+      "          width=\"40\" height=\"40\" alt=\"[Agency] Seal\" />",
+      "      </span>",
+      "      <div>",
+      "        <div>[domain.gov]</div>",
+      "        <div>An official website of the [Parent agency]</div>",
+      "      </div>",
+      "    </uef-flex>",
+      "    <nav>",
+      "      <uef-grid grid-template-columns=\"repeat(4, minmax(10em,1fr))\" gap=\".5em\" sx='{\"padding\":\"1em\"}'>",
+      "        <a href=\"https://www.ssa.gov/agency/\">About [Parent shortname]</a>",
+      "        <a href=\"https://www.ssa.gov/accessibility/\">Accessibility support</a>",
+      "        <a href=\"https://www.ssa.gov/foia/\">FOIA requests</a>",
+      "        <a href=\"https://www.ssa.gov/eeo/nofear/index.htm\">No FEAR Act data</a>",
+      "        <a href=\"https://oig.ssa.gov/\">Office of the Inspector General</a>",
+      "        <a href=\"https://www.ssa.gov/agency/performance/\">Performance reports</a>",
+      "        <a href=\"https://www.ssa.gov/privacy/\">Privacy policy</a>",
+      "      </uef-grid>",
+      "    </nav>",
+      "    <section aria-label=\"U.S. government information and services\">",
+      "      <p>Looking for U.S. government information and services? <a href=\"https://www.usa.gov/\">Visit USA.gov</a></p>",
+      "    </section>",
+      "  </div>",
+      "</uef-footer>",
+      ""
+    ],
+    "description": "UEF 3 Footer (Big)"
+  },
+
+  "UEF 3 Grid (Fluid)": {
+    "prefix": "uef3-grid-fluid",
+    "body": [
+      "<uef-grid",
+      "  grid-template-columns=\"repeat(auto-fit, minmax(175px,1fr))\"",
+      "  grid-auto-rows=\"100px\" sx=\"{}\"",
+      ">",
+      "  <div>Grid Item 1</div>",
+      "  <div>Grid Item 2</div>",
+      "  <div>",
+      "    Grid Item 3",
+      "    <br />",
+      "    <br />",
+      "  </div>",
+      "  <div>Grid Item 4</div>",
+      "  <div>Grid Item 5</div>",
+      "</uef-grid>",
+      ""
+    ],
+    "description": "UEF 3 Grid (Fluid)"
+  },
+
+  "UEF 3 Grid (3 Column)": {
+    "prefix": "uef3-grid-3col",
+    "body": [
+      "<uef-grid",
+      "  grid-template-columns=\"minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr)\"",
+      "  display=\"grid\" grid-auto-flow=\"column\" sx=\"{}\"",
+      ">",
+      "  <nav>Subnavigation</nav>",
+      "  <main>Main Content</main>",
+      "  <aside>Sidebar content</aside>",
+      "</uef-grid>",
+      ""
+    ],
+    "description": "UEF 3 Grid (3 Column)"
+  },
+
+  "UEF 3 Grid (3 Column Template)": {
+    "prefix": "uef3-grid-3col-template",
+    "body": [
+      "<uef-grid display=\"grid\"",
+      "  grid-template-areas='\"header header header\"",
+      "                       \"subnav main sidebar\"",
+      "                       \"footer footer footer\"'",
+      "  grid-template-columns=\"minmax(150px, 1fr) minmax(300px, 3fr) minmax(150px, 1fr)\"",
+      "  sx=\"{}\"",
+      ">",
+      "  <uef-grid-item grid-area=\"header\"><header>Header</header></uef-grid-item>",
+      "  <uef-grid-item grid-area=\"subnav\"><nav>Subnavigation</nav></uef-grid-item>",
+      "  <uef-grid-item grid-area=\"main\"><main>Main Content</main></uef-grid-item>",
+      "  <uef-grid-item grid-area=\"sidebar\">",
+      "    <aside>Sidebar content</aside>",
+      "  </uef-grid-item>",
+      "  <uef-grid-item grid-area=\"footer\"><footer>Footer</footer></uef-grid-item>",
+      "</uef-grid>",
+      ""
+    ],
+    "description": "UEF 3 Grid (3 Column Template)"
+  },
+
+  "UEF 3 Section": {
+    "prefix": "uef3-section",
+    "body": [
+      "<uef-section sx=\"{}\">[Example Text]</uef-section>"
+    ],
+    "description": "UEF 3 Section"
+  },
+
+  "UEF 3 Show/Hide": {
+    "prefix": "uef3-show-hide",
+    "body": [
+      "<uef-show-hide",
+      "  show-label=\"[Show something hidden]\"",
+      "  hide-label=\"[Hide something shown]\"",
+      ">",
+      "  [Example Text]",
+      "</uef-show-hide>"
+    ],
+    "description": "UEF 3 Show/Hide"
+  },
+
+  "UEF 3 Show/Hide (External Targets)": {
+    "prefix": "uef3-show-hide-targets",
+    "body": [
+      "<div>",
+      "  <uef-show-hide",
+      "    show-label=\"[Show something hidden]\"",
+      "    hide-label=\"[Hide something shown]\"",
+      "    target-ids=\"id-1,id-2,id-3\"",
+      "  ></uef-show-hide>",
+      "  <p>[Example Text]</p>",
+      "  <p id=\"id-1\">[Example Text 1]</p>",
+      "  <p id=\"id-2\">[Example Text 2]</p>",
+      "</div>",
+      ""
+    ],
+    "description": "UEF 3 Show/Hide (External Targets)"
+  },
+
+  "UEF 3 Table": {
+    "prefix": "uef3-table",
+    "body": [
+      "<uef-table search>",
+      "  <uef-pagination slot=\"uef-table-controls-top\"",
+      "    show-text page=\"1\" dial=\"3\" limit=\"10\" results=\"25\"",
+      "  ></uef-pagination>",
+      "  <uef-thead>",
+      "    <uef-tr>",
+      "      <uef-th sortable=\"\">Col 1</uef-th>",
+      "      <uef-th sortable=\"\">Col 2</uef-th>",
+      "      <uef-th>Col 3</uef-th>",
+      "      <uef-th sortable=\"\" accessibility-text=\"Example Text\">",
+      "        <uef-tooltip placement=\"bottom\">",
+      "          Example Text",
+      "          <span slot=\"content\">Sample tooltip text</span>",
+      "        </uef-tooltip>",
+      "      </uef-th>",
+      "    </uef-tr>",
+      "  </uef-thead>",
+      "  <uef-tbody>",
+      "    <uef-tr>",
+      "      <uef-td data-label=\"COL 1\">Cell 1</uef-td>",
+      "      <uef-td data-label=\"COL 2\">ish sdaoph gops dpsgiho sd ihdsgi hsdg ihodgih odsghi odsi hdgs Cell 2</uef-td>",
+      "      <uef-td data-label=\"COL 3\">Cell 3</uef-td>",
+      "      <uef-td data-label=\"COL 4\">Cell 4</uef-td>",
+      "    </uef-tr>",
+      "    <uef-tr>",
+      "      <uef-td data-label=\"COL 1\">Cell 1</uef-td>",
+      "      <uef-td data-label=\"COL 2\">ish sdaoph gops dpsgiho sd ihdsgi hsdg ihodgih odsghi odsi hdgs Cell 2</uef-td>",
+      "      <uef-td data-label=\"COL 3\">Cell 3</uef-td>",
+      "      <uef-td data-label=\"COL 4\">Cell 4</uef-td>",
+      "    </uef-tr>",
+      "  </uef-tbody>",
+      "  <uef-pagination slot=\"uef-table-controls-bottom\"",
+      "    show-text page=\"1\" dial=\"3\" limit=\"10\" results=\"25\"",
+      "  ></uef-pagination>",
+      "</uef-table>",
+      ""
+    ],
+    "description": "UEF 3 Table"
+  },
+
+  "UEF 3 Tabs": {
+    "prefix": "uef3-tabs",
+    "body": [
+      "<uef-tabs>",
+      "  <uef-tab name=\"panel-1\" selected>Tab 1</uef-tab>",
+      "  <uef-tab name=\"panel-2\">Tab 2</uef-tab>",
+      "  <uef-tab name=\"panel-3\">Tab 3</uef-tab>",
+      "  <uef-tab name=\"panel-4\">Tab 4</uef-tab>",
+      "</uef-tabs>",
+      "<uef-tab-panel name=\"panel-1\">",
+      "  INSERT TAB PANEL 1 CONTENT",
+      "</uef-tab-panel>",
+      "<uef-tab-panel name=\"panel-2\">",
+      "  INSERT TAB PANEL 2 CONTENT",
+      "</uef-tab-panel>",
+      "<uef-tab-panel name=\"panel-3\">",
+      "  INSERT TAB PANEL 3 CONTENT",
+      "</uef-tab-panel>",
+      "<uef-tab-panel name=\"panel-4\">",
+      "  INSERT TAB PANEL 4 CONTENT",
+      "</uef-tab-panel>",
+      ""
+    ],
+    "description": "UEF 3 Tabs"
+  },
+
+  "UEF 3 Link": {
+    "prefix": "uef3-link",
+    "body": [
+      "<uef-link href=\"#0\">INSERT LINK TEXT</uef-link>"
+    ],
+    "description": "UEF 3 Link"
+  },
+
+  "UEF 3 Download Link": {
+    "prefix": "uef3-link-download",
+    "body": [
+      "<uef-link href=\"#0\" download>",
+      "  <uef-icon type=\"solid\" name=\"download\"></uef-icon> Download this file",
+      "</uef-link>"
+    ],
+    "description": "UEF 3 Download Link"
+  },
+
+  "UEF 3 Email Link": {
+    "prefix": "uef3-link-email",
+    "body": [
+      "<uef-link href=\"mailto:someone@example.com\">",
+      "  <uef-icon name=\"envelope\"></uef-icon> [someone@example.com]",
+      "</uef-link>"
+    ],
+    "description": "UEF 3 Email Link"
+  },
+
+  "UEF 3 Excel Link": {
+    "prefix": "uef3-link-excel",
+    "body": [
+      "<uef-link href=\"https://www.ssa.gov/forms/ss-5.pdf\">",
+      "  <uef-icon name=\"file-excel\" accessibility-text=\"Excel File\" color=\"--uef-color-green-primary\"></uef-icon>",
+      "  [Document Title]",
+      "</uef-link>"
+    ],
+    "description": "UEF 3 Excel Link"
+  },
+
+  "UEF 3 External Link": {
+    "prefix": "uef3-link-external",
+    "body": [
+      "<uef-link href=\"#0\" type=\"external\">",
+      "  <uef-icon type=\"solid\" name=\"external-link-alt\" accessibility-text=\"External website\"></uef-icon>",
+      "  [External site name]",
+      "</uef-link>"
+    ],
+    "description": "UEF 3 External Link"
+  },
+
+  "UEF 3 Print Link": {
+    "prefix": "uef3-link-print",
+    "body": [
+      "<uef-link href=\"javascript:window.print();\">",
+      "  <uef-icon type=\"solid\" name=\"print\"></uef-icon> Print this page",
+      "</uef-link>"
+    ],
+    "description": "UEF 3 Print Link"
+  },
+
+  "UEF 3 PDF Link": {
+    "prefix": "uef3-link-pdf",
+    "body": [
+      "<uef-link href=\"https://www.ssa.gov/forms/ss-5.pdf\">",
+      "  <uef-icon name=\"file-pdf\" accessibility-text=\"PDF file\" color=\"--uef-color-red-primary\"></uef-icon>",
+      "  [Document Title]",
+      "</uef-link>"
+    ],
+    "description": "UEF 3 PDF Link"
+  },
+
+  "UEF 3 Video Link": {
+    "prefix": "uef3-link-video",
+    "body": [
+      "<uef-link href=\"#0\">",
+      "  <uef-icon name=\"video\" type=\"solid\" accessibility-text=\"Video\"></uef-icon>",
+      "  [Video Title] (mm:ss)",
+      "</uef-link>"
+    ],
+    "description": "UEF 3 Video Link"
+  },
+
+  "UEF 3 Word Link": {
+    "prefix": "uef3-link-word",
+    "body": [
+      "<uef-link href=\"#0\">",
+      "  <uef-icon name=\"file-word\" accessibility-text=\"Word file\"></uef-icon>",
+      "  [Document Title]",
+      "</uef-link>"
+    ],
+    "description": "UEF 3 Word Link"
+  },
+
+  "UEF 3 Zip File Link": {
+    "prefix": "uef3-link-zip",
+    "body": [
+      "<uef-link href=\"#0\">",
+      "  <uef-icon name=\"file-archive\" accessibility-text=\"Zip file\"></uef-icon>",
+      "  [Archive Title]",
+      "</uef-link>"
+    ],
+    "description": "UEF 3 Zip File Link"
+  },
+
+  "UEF 3 Navigation": {
+    "prefix": "uef3-navigation",
+    "body": [
+      "<uef-nav>",
+      "  <uef-nav-item href=\"#0\" current>Home</uef-nav-item>",
+      "  <uef-nav-item href=\"#0\">Nav Item 1</uef-nav-item>",
+      "  <uef-nav-item href=\"#0\">Nav Item 2</uef-nav-item>",
+      "  <uef-nav-item href=\"#0\">Nav Item 3</uef-nav-item>",
+      "</uef-nav>"
+    ],
+    "description": "UEF 3 Navigation"
+  },
+
+  "UEF 3 Pagination": {
+    "prefix": "uef3-pagination",
+    "body": [
+      "<uef-pagination page=\"1\" dial=\"3\" limit=\"10\" results=\"100\"></uef-pagination>"
+    ],
+    "description": "UEF 3 Pagination"
+  },
+
+  "UEF 3 Skip Navigation": {
+    "prefix": "uef3-skipnav",
+    "body": [
+      "<uef-skip-nav target-id=\"main\" shortcut-key=\"K\"></uef-skip-nav>"
+    ],
+    "description": "UEF 3 Skip Navigation"
+  },
+
+  "UEF 3 Sub-Navigation": {
+    "prefix": "uef3-subnav",
+    "body": [
+      "<uef-subnav header=\"SubNav Heading\" sx=\"{}\">",
+      "  <uef-subnav-item href=\"#0\">Item 1</uef-subnav-item>",
+      "  <uef-subnav-item href=\"#0\" selected>Item 2",
+      "  </uef-subnav-item>",
+      "  <uef-subnav-group label=\"Group A\">",
+      "    <uef-subnav-item href=\"#0\">Item A.1</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item A.2</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "  <uef-subnav-group label=\"Group B\">",
+      "    <uef-subnav-item href=\"#0\">Item B.1</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item B.2</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item B.3</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "  <uef-subnav-group label=\"Group C\">",
+      "    <uef-subnav-item href=\"#0\">Item C.1</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item C.2</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item C.3</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "</uef-subnav>"
+    ],
+    "description": "UEF 3 Sub-Navigation"
+  },
+
+  "UEF 3 Sub-Navigation (Nested)": {
+    "prefix": "uef3-subnav-nested",
+    "body": [
+      "<uef-subnav header=\"SubNav Heading\" sx=\"{}\">",
+      "  <uef-subnav-group label=\"Group A\">",
+      "    <uef-subnav-item href=\"#0\">Item 1</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item 2</uef-subnav-item>",
+      "    <uef-subnav-group label=\"Group A.1\">",
+      "      <uef-subnav-item href=\"#0\">Item 3</uef-subnav-item>",
+      "      <uef-subnav-item href=\"#0\">Item 4</uef-subnav-item>",
+      "      <uef-subnav-item href=\"#0\">Item 5</uef-subnav-item>",
+      "    </uef-subnav-group>",
+      "  </uef-subnav-group>",
+      "  <uef-subnav-group label=\"Group B\">",
+      "    <uef-subnav-item href=\"#0\">Item 6</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\" selected>Item 7</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item 8</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "  <uef-subnav-group label=\"Group C\">",
+      "    <uef-subnav-item href=\"#0\">Item 9</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item 10</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item 11</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "</uef-subnav>"
+    ],
+    "description": "UEF 3 Sub-Navigation (Nested)"
+  },
+
+  "UEF 3 Sub-Navigation (Icons)": {
+    "prefix": "uef3-subnav-icons",
+    "body": [
+      "<uef-subnav header=\"SubNav Heading\" sx=\"{}\">",
+      "  <uef-subnav-group>",
+      "    <uef-icon slot=\"uef-subnav-group-label\" name=\"check-circle\" type=\"solid\" color=\"--uef-color-green-primary\" accessibility-text=\"Complete\"></uef-icon>",
+      "    <span slot=\"uef-subnav-group-label\">Group A</span>",
+      "    <uef-subnav-item href=\"#0\">Item 1</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item 2</uef-subnav-item>",
+      "    <uef-subnav-group label=\"Group A.1\">",
+      "      <uef-subnav-item href=\"#0\">Item 4</uef-subnav-item>",
+      "      <uef-subnav-item href=\"#0\">Item 2</uef-subnav-item>",
+      "      <uef-subnav-item href=\"#0\">Item 5</uef-subnav-item>",
+      "    </uef-subnav-group>",
+      "  </uef-subnav-group>",
+      "  <uef-subnav-group>",
+      "    <uef-icon slot=\"uef-subnav-group-label\" name=\"check-circle\" type=\"solid\" color=\"--uef-color-green-primary\" accessibility-text=\"Complete\"></uef-icon>",
+      "    <span slot=\"uef-subnav-group-label\">Group B</span>",
+      "    <uef-subnav-item href=\"#0\">Item 6</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item 7</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item 8</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "  <uef-subnav-group>",
+      "    <uef-icon slot=\"uef-subnav-group-label\" name=\"check-circle\" type=\"solid\" color=\"--uef-color-green-primary\" accessibility-text=\"Complete\"></uef-icon>",
+      "    <span slot=\"uef-subnav-group-label\">Group C has a really long label</span>",
+      "    <uef-subnav-item href=\"#0\">Item 9</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item 10</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">Item 11</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "</uef-subnav>"
+    ],
+    "description": "UEF 3 Sub-Navigation (Icons)"
   },
 
   "Add UEF 3 Theme File": {
