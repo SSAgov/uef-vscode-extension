@@ -56,7 +56,7 @@ uef3-file-input | File Input
 uef3-form | Form wrapper
 uef3-gender | Gender (Male, Female, Non-Binary)
 uef3-name-default | Name (Title dropdown, First/Middle/Last textboxes, Suffix dropdown)
-uef3-name-f-l | Name (First|Last textboxes)
+uef3-name-f-l | Name (First/Last textboxes)
 uef3-name-f-m-l-s | Name (First/Middle/Last/Suffix textboxes)
 uef3-name-f-m-l-s-dropdown | Name (First/Middle/Last textboxes, Suffix dropdown)
 uef3-name-f-mi-l-s | Name (First/Middle Initial/Last/Suffix textboxes)
