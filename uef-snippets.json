@@ -5986,7 +5986,7 @@
   "UEF 3 Button": {
     "prefix": "uef3-button",
     "body": [
-      "<uef-button color=\"${1|default,info,danger,warning,success|}\" fill=\"${2|outline,fill,none|}\">${3:Button}</uef-button>"
+      "<uef-button color=\"${1|default,info,danger,warning,success|}\" fill=\"${2|outline,solid,none|}\" ${3:rounded}>${4:Button Label}</uef-button>"
     ],
     "description": "UEF 3 Button"
   },
@@ -7068,9 +7068,9 @@
   "UEF 3 Alert": {
     "prefix": "uef3-alert",
     "body": [
-      "<uef-alert header=\"[A Heading Is Required]\" type=\"info\">",
-      "  [Example Text]",
-      "  <p slot=\"uef-alert-footer\">[Alert Footer]</p>",
+      "<uef-alert color=\"${1|info,warning,danger,success|}\" header=\"${2:Insert Alert Heading}\">",
+      "  ${3:Insert Alert Content}",
+      "  ${4:<p slot=\"uef-alert-footer\">${0:Insert Optional Alert Footer Content}</p>}",
       "</uef-alert>",
       ""
     ],
@@ -7080,18 +7080,11 @@
   "UEF 3 Reentry Number": {
     "prefix": "uef3-reentry-number",
     "body": [
-      "<uef-alert header=\"[Re-Entry Number and Website]\" color=\"info\">",
-      "  <p>",
-      "    [We are providing you with a Re-Entry Number that can be used to restart an",
-      "    incomplete application. You may need it to complete your online application",
-      "    if you decide to continue the application later or to check the status.]",
-      "  </p>",
-      "  <p>[Re-Entry Number:] <strong>[12345678]</strong></p>",
-      "  <p>[Re-Entry Website:] <strong>http://www.socialsecurity.gov</strong></p>",
-      "  <p slot=\"uef-alert-footer\">",
-      "    [Print or save this page, or write down the number or website, so you will",
-      "    have what you need to return to your report at a later time.]",
-      "    <br /><br />",
+      "<uef-alert color=\"info\" header=\"${1:[Re-Entry Number]}\">",
+      "  <p>[We are providing you with a Re-Entry Number that can be used to restart an incomplete application. You may need it to complete your online application if you decide to continue the application later or to check the status.]</p>",
+      "  <p>[Re-Entry Number:] <strong>${2:12345678}</strong></p>",
+      "  <p>[Re-Entry Website:] <strong>${0:http://www.socialsecurity.gov}</strong></p>",
+      "  <p slot=\"uef-alert-footer\">[Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.]<br /><br />",
       "    <uef-link href=\"javascript:window.print()\">",
       "      <uef-icon name=\"print\" type=\"solid\"></uef-icon> Print this page",
       "    </uef-link>",
@@ -7105,14 +7098,12 @@
   "UEF 3 Confirmation Number": {
     "prefix": "uef3-confirmation-number",
     "body": [
-      "<uef-alert header=\"[Confirmation Number and Website]\" color=\"success\">",
+      "<uef-alert color=\"success\" header=\"${1:[Confirmation Number]}\">",
       "  <p>[You may need this number to confirm your application request.]</p>",
-      "  <p>[Confirmation Number:] <strong>[12345678]</strong></p>",
-      "  <p>[Website:] <strong>http://www.socialsecurity.gov</strong></p>",
+      "  <p>[Confirmation Number:] <strong>${2:12345678}</strong></p>",
+      "  <p>[Website:] <strong>${0:http://www.socialsecurity.gov}</strong></p>",
       "  <p slot=\"uef-alert-footer\">",
-      "    [Print or save this page, or write down the number or website, so you will",
-      "    have what you need to return to your report at a later time.]",
-      "    <br /><br />",
+      "    [Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.<br /><br />",
       "    <uef-link href=\"javascript:window.print()\">",
       "      <uef-icon name=\"print\" type=\"solid\"></uef-icon> Print this page",
       "    </uef-link>",
@@ -7285,7 +7276,7 @@
   "UEF 3 Federal Banner": {
     "prefix": "uef3-federal-banner",
     "body": [
-      "<uef-banner></uef-banner>"
+      "<uef-banner tld=\"${1|gov,mil|}\"></uef-banner>"
     ],
     "description": "UEF 3 Federal Banner"
   },
@@ -7293,12 +7284,11 @@
   "UEF 3 Button Group": {
     "prefix": "uef3-button-group",
     "body": [
-      "<uef-button-group>",
-      "  <uef-button fill=\"solid\">Button 1</uef-button>",
-      "  <uef-button fill=\"outline\">Button 2</uef-button>",
-      "  <uef-button fill=\"outline\">Button 3</uef-button>",
-      "</uef-button-group>",
-      ""
+      "<uef-button-group alignment=\"${1|left,right|}\" direction=\"${2|ltr,rtl|}\">",
+      "  <uef-button fill=\"solid\">${3:Button 1 Label}</uef-button>",
+      "  <uef-button fill=\"outline\">${4:Button 2 Label}</uef-button>",
+      "  <uef-button fill=\"outline\">${5:Button 3 Label}</uef-button>",
+      "</uef-button-group>"
     ],
     "description": "UEF 3 Button Group"
   },
@@ -7311,14 +7301,11 @@
       "    <uef-typography variant=\"heading3\" slot=\"uef-card-header\" sx='{\"paddingBottom\":\"--uef-space-stack-2x\"}'>",
       "      Card Title",
       "    </uef-typography>",
-      "    <uef-typography slot=\"uef-card-header\" variant=\"subtitle1\">",
-      "      Sub Title",
-      "    </uef-typography>",
+      "    <uef-typography slot=\"uef-card-header\" variant=\"subtitle1\">Sub Title</uef-typography>",
       "    <uef-typography slot=\"uef-card-body\" variant=\"body-m\" line-height=\"1.5\"",
       "      sx='{\"paddingTop\":\"--uef-space-stack-4x\",\"paddingBottom\":\"--uef-space-stack-3x\"}'",
       "    >",
-      "      This is text within a card body. Lorem ipsum dolor sit amet consectetur",
-      "      adipisicing elit. Facilis earum tenetur quo.",
+      "      This is text within a card body. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo.",
       "    </uef-typography>",
       "    <uef-button slot=\"uef-card-footer\" width=\"50%\" fill=\"none\">Button 1</uef-button>",
       "    <uef-button slot=\"uef-card-footer\" width=\"50%\" fill=\"none\">Button 2</uef-button>",
