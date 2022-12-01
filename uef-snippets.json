@@ -5961,7 +5961,7 @@
     "description": "UEF 2.1 Page Template"
   },
 
-  "UEF 3 Page Template": {
+  "UEF 3 Basic Page Template": {
     "prefix": "!!uef3",
     "body": [
       "<!DOCTYPE html>",
@@ -5971,31 +5971,163 @@
       "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
       "    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
       "    <title>${1:INSERT PAGE TITLE}</title>",
-      "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/beta/assets/css/variables.css\" />",
-      "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/beta/assets/css/uef-global.css\" />",
-      "    <script type=\"module\" src=\"https://www.ssa.gov/uef/uef3/beta/uef3-web-components.esm.js\"></script>",
+      "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/latest/assets/css/uef-variables.css\" />",
+      "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/latest/assets/css/uef-global.css\" />",
+      "    <script type=\"module\" src=\"https://www.ssa.gov/uef/uef3/latest/uef3-web-components.esm.js\"></script>",
       "</head>",
       "<body>",
       "    INSERT YOUR PAGE CONTENT HERE",
       "</body>",
       "</html>"
     ],
-    "description": "UEF 3 Page Template"
+    "description": "UEF 3 Basic Page Template"
+  },
+
+  "UEF 3 Accordion": {
+    "prefix": "uef3-accordion",
+    "body": [
+      "<uef-accordion icon-position=\"${1|left,right|}\" ${2:multiple}>",
+      "  <uef-accordion-item label=\"${3:[Label 1]}\" ${4:open}>",
+      "    <uef-typography variant=\"body-m\" line-height=\"1.5\">",
+      "      ${5:[INSERT ACCORDION ITEM 1 CONTENT]}",
+      "    </uef-typography>",
+      "  </uef-accordion-item>",
+      "  <uef-accordion-item label=\"${6:[Label 2]}\" ${7:open}>",
+      "    <uef-typography variant=\"body-m\" line-height=\"1.5\">",
+      "      ${8:[INSERT ACCORDION ITEM 2 CONTENT]}",
+      "    </uef-typography>",
+      "  </uef-accordion-item>",
+      "  <uef-accordion-item label=\"${9:[Label 3]} ${10:open}\">",
+      "    <uef-typography variant=\"body-m\" line-height=\"1.5\">",
+      "      ${0:[INSERT ACCORDION ITEM 3 CONTENT]}",
+      "    </uef-typography>",
+      "  </uef-accordion-item>",
+      "</uef-accordion>",
+      ""
+    ],
+    "description": "UEF 3 Accordion"
+  },
+
+  "UEF 3 Accordion Item": {
+    "prefix": "uef3-accordion-item",
+    "body": [
+      "<uef-accordion-item label=\"${1:[Label]}\" ${2:open}>",
+      "  <uef-typography variant=\"body-m\" line-height=\"1.5\">",
+      "    ${0:[INSERT ACCORDION ITEM CONTENT]}",
+      "  </uef-typography>",
+      "</uef-accordion-item>",
+      ""
+    ],
+    "description": "UEF 3 Accordion Item"
+  },
+
+  "UEF 3 Alert": {
+    "prefix": "uef3-alert",
+    "body": [
+      "<uef-alert color=\"${1|info,warning,danger,success|}\" header=\"${2:Insert Alert Heading}\" ${3:compact} ${4:dismissible} ${5:autofocus}>",
+      "  ${6:Insert Alert Content}",
+      "  ${7:<p slot=\"uef-alert-footer\">${0:Insert Optional Alert Footer Content}</p>}",
+      "</uef-alert>",
+      ""
+    ],
+    "description": "UEF 3 Alert"
+  },
+
+  "UEF 3 Reentry Number": {
+    "prefix": "uef3-reentry-number",
+    "body": [
+      "<uef-alert color=\"info\" header=\"${1:[Re-Entry Number]}\">",
+      "  <p>[We are providing you with a Re-Entry Number that can be used to restart an incomplete application. You may need it to complete your online application if you decide to continue the application later or to check the status.]</p>",
+      "  <p>${2:[Re-Entry Number:]} <strong>${3:12345678}</strong></p>",
+      "  <p>${4:[Re-Entry Website:]} <strong>${5:http://www.socialsecurity.gov}</strong></p>",
+      "  <p slot=\"uef-alert-footer\">${0:[Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.]}<br /><br />",
+      "    <uef-link href=\"javascript:window.print()\">",
+      "      <uef-icon name=\"print\" type=\"solid\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon> Print this page",
+      "    </uef-link>",
+      "  </p>",
+      "</uef-alert>",
+      ""
+    ],
+    "description": "UEF 3 Reentry Number"
+  },
+
+  "UEF 3 Confirmation Number": {
+    "prefix": "uef3-confirmation-number",
+    "body": [
+      "<uef-alert color=\"success\" header=\"${1:[Confirmation Number and Website]}\">",
+      "  <p>${2:[You may need this number to confirm your application request.]}</p>",
+      "  <p>${3:[Confirmation Number:]} <strong>${4:12345678}</strong></p>",
+      "  <p>${5:[Website:]} <strong>${6:http://www.socialsecurity.gov}</strong></p>",
+      "  <p slot=\"uef-alert-footer\">",
+      "    ${0:[Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.]}<br /><br />",
+      "    <uef-link href=\"javascript:window.print()\">",
+      "      <uef-icon name=\"print\" type=\"solid\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon> Print this page",
+      "    </uef-link>",
+      "  </p>",
+      "</uef-alert>",
+      ""
+    ],
+    "description": "UEF 3 Confirmation Number"
+  },
+
+  "UEF 3 Banner": {
+    "prefix": "uef3-banner",
+    "body": [
+      "<uef-banner tld=\"${1|gov,mil|}\" variant=\"${0|light,dark|}\"></uef-banner>"
+    ],
+    "description": "UEF 3 Banner"
   },
 
   "UEF 3 Button": {
     "prefix": "uef3-button",
     "body": [
-      "<uef-button color=\"${1|default,info,danger,warning,success|}\" fill=\"${2|outline,solid,none|}\" ${3:rounded}>${4:Button Label}</uef-button>"
+      "<uef-button name=\"${1:[INSERT BUTTON NAME]}\" fill=\"${2|outline,solid,none|}\" type=\"${3|submit,button,reset|}\" ${4:rounded} ${5:width=\"\"} ${6:height=\"\"}>${0:Button Label}</uef-button>"
     ],
     "description": "UEF 3 Button"
+  },
+
+  "UEF 3 Button Group": {
+    "prefix": "uef3-button-group",
+    "body": [
+      "<uef-button-group alignment=\"${1|left,right|}\" direction=\"${2|ltr,rtl|}\">",
+      "  ${3:[TYPE uef-3-button TO INSERT A BUTTON HERE]}",
+      "  ${4:[TYPE uef-3-button TO INSERT A BUTTON HERE]}",
+      "  ${0:[TYPE uef-3-button TO INSERT A BUTTON HERE]}",
+      "</uef-button-group>"
+    ],
+    "description": "UEF 3 Button Group"
+  },
+
+  "UEF 3 Card": {
+    "prefix": "uef3-card",
+    "body": [
+      "<uef-card width=\"${1:350px}\" sx='{\"padding\":\"--uef-space-inset-4x\",\"boxShadow\":\"--uef-elevation-20\",\"borderRadius\":\"--uef-border-radius-softest\"}'>",
+      "  <uef-typography variant=\"body-m\" line-height=\"1.2\">",
+      "    ${0:[INSERT YOUR CARD CONTENT HERE]}",
+      "  </uef-typography>",
+      "</uef-card>"
+    ],
+    "description": "UEF 3 Card"
+  },
+
+  "UEF 3 Card with Title": {
+    "prefix": "uef3-card-with-title",
+    "body": [
+      "<uef-card width=\"${1:272px}\" sx='{\"border\":\"1px solid #dadada\",\"padding\":\"--uef-space-inset-4x\",\"borderRadius\":\"--uef-border-radius-softest\"}'>",
+      "  <uef-typography variant=\"heading3\" slot=\"uef-card-header\" sx='{\"paddingBottom\":\"--uef-space-stack-2x\"}'>${2:Card Title}</uef-typography>",
+      "  <uef-typography slot=\"uef-card-body\" variant=\"body-m\" line-height=\"1.5\" sx='{\"paddingTop\":\"--uef-space-stack-4x\",\"paddingBottom\":\"--uef-space-stack-3x\"}'>",
+      "    ${0:[INSERT YOUR CARD CONTENT HERE]}",
+      "  </uef-typography>",
+      "</uef-card>"
+    ],
+    "description": "UEF 3 Card with Title"
   },
 
   "UEF 3 Checkbox": {
     "prefix": "uef3-checkbox",
     "body": [
-      "<uef-checkbox ${1:standalone} field-name=\"${2:insert-field-name}\" value=\"${3:Yes}\"",
-      "  label=\"${4:[I have read and agree with the above statement.]}\"",
+      "<uef-checkbox ${1:required} ${2:standalone} ${3:critical} field-name=\"${4:INSERT-FIELD-NAME}\" value=\"${5:Yes}\"",
+      "  label=\"${0:[I have read and agree with the above statement.]}\"",
       "></uef-checkbox>"
     ],
     "description": "UEF 3 Checkbox"
@@ -6004,50 +6136,105 @@
   "UEF 3 Checklist": {
     "prefix": "uef3-checklist",
     "body": [
-      "<uef-checklist label=\"${1:[Pattern Label]}\" field-name=\"${2:insert-field-name}\" other-value=\"${3:2}\" other-text-field-name=\"${4:other-field}\">",
-      "  <uef-checkbox field-name=\"n-1\" field-id=\"checkbox-1\" label=\"[Label 1]\" value=\"0\"></uef-checkbox>",
-      "  <uef-checkbox field-name=\"n-2\" field-id=\"checkbox-2\" label=\"[Label 2]\" value=\"1\"></uef-checkbox>",
-      "  <uef-checkbox field-name=\"n-3\" field-id=\"checkbox-3\" label=\"[Label 3]\" value=\"2\"></uef-checkbox>",
+      "<uef-checklist ${1:required} variant=\"${2|none,inline,series|}\" field-name=\"${3:INSERT-FIELD-NAME}\"",
+      "  label=\"${3:[Pattern Label]}\" instructions=\"${4:[[Instructions]]}\" select-all-label=\"${5:}\">",
+      "  ${6:[TYPE uef-3-checklist TO INSERT A CHECKBOX HERE]}",
+      "  ${7:[TYPE uef-3-checklist TO INSERT A CHECKBOX HERE]}",
+      "  ${0:[TYPE uef-3-checklist TO INSERT A CHECKBOX HERE]}",
       "</uef-checklist>"
     ],
     "description": "UEF 3 Checklist"
   },
 
+  "UEF 3 Checklist with Other": {
+    "prefix": "uef3-checklist-other",
+    "body": [
+      "<uef-checklist ${1:required} variant=\"${2|none,inline,series|}\" field-name=\"${3:INSERT-FIELD-NAME}\"",
+      "  label=\"${3:[Pattern Label]}\" instructions=\"${4:[[Instructions]]}\"",
+      "  select-all-label=\"${5:Select All}\" other-value=\"${6:3}\" other-text-field-name=\"${7:other}\">",
+      "  <uef-checkbox field-name=\"n1\" field-id=\"checkbox-1\" label=\"[Label 1]\" support-info=\"[[Support Info]]\" value=\"1\"></uef-checkbox>",
+      "  <uef-checkbox field-name=\"n2\" field-id=\"checkbox-2\" label=\"[Label 2]\" support-info=\"[[Support Info]]\" value=\"2\"></uef-checkbox>",
+      "<uef-checkbox field-name=\"n3\" field-id=\"checkbox-3\" label=\"[Label 3]\" value=\"3\"></uef-checkbox>",
+      "</uef-checklist>"
+    ],
+    "description": "UEF 3 Checklist with Other"
+  },
+
+  "UEF 3 Compound": {
+    "prefix": "uef3-compound",
+    "body": [
+      "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Insert optional instructions.]}\">",
+      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "    <uef-flex-item flex-grow=\"1\">",
+      "      [INSERT A FORM COMPONENT HERE]",
+      "    </uef-flex-item>",
+      "    <uef-flex-item flex-grow=\"1\">",
+      "      [INSERT A FORM COMPONENT HERE]",
+      "    </uef-flex-item>",
+      "  </uef-flex>",
+      "</uef-compound>"
+    ],
+    "description": "UEF 3 Compound"
+  },
+
   "UEF 3 Address": {
     "prefix": "uef3-address",
     "body": [
-      "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"street1\" label=\"Street Address\"></uef-textbox>",
+      "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\" ${3:compound-id=\"\"}>",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
+      "    <uef-flex-item flex-grow=\"1\" flex-basis=\"25ch\">",
+      "      <uef-textbox field-name=\"${4:INSERT-FIELD-NAME}\" label=\"Street Address\"></uef-textbox>",
       "    </uef-flex-item>",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"street2\" label=\"Apartment, Suite, Building, Etc.\"></uef-textbox>",
+      "    <uef-flex-item flex-grow=\"1\" flex-basis=\"25ch\">",
+      "      <uef-textbox field-name=\"${5:INSERT-FIELD-NAME}\" label=\"Apartment, Suite, Building, Etc.\"></uef-textbox>",
       "    </uef-flex-item>",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"street3\" label=\"Street 3\"></uef-textbox>",
+      "    <uef-flex-item flex-grow=\"1\" flex-basis=\"25ch\">",
+      "      <uef-textbox field-name=\"${6:INSERT-FIELD-NAME}\" label=\"Line 3\"></uef-textbox>",
       "    </uef-flex-item>",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"street4\" label=\"Street 4\"></uef-textbox>",
+      "    <uef-flex-item flex-grow=\"1\" flex-basis=\"25ch\">",
+      "      <uef-textbox field-name=\"${7:INSERT-FIELD-NAME}\" label=\"Line 4\"></uef-textbox>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"city\" label=\"City\"></uef-textbox>",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
+      "    <uef-flex-item flex-grow=\"1\" flex-basis=\"25ch\">",
+      "      <uef-textbox field-name=\"${8:INSERT-FIELD-NAME}\" label=\"City/Town\"></uef-textbox>",
       "    </uef-flex-item>",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-droplist field-name=\"state\" label=\"State\">",
+      "    <uef-flex-item flex-grow=\"1\" flex-basis=\"25ch\">",
+      "      <uef-droplist field-name=\"${9:INSERT-FIELD-NAME}\" label=\"State\" items=\"[{\"label\":Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"American Samoa\",\"value\":\"AS\"},{\"label\":\"Arizona\",\"value\":\"AZ\"},{\"label\":\"Arkansas\",\"value\":\"AR\"},{\"label\":\"Armed Forces Africa (AE Also Equals Canada Europe and the Middle East)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Americas (Except Canada)\",\"value\":\"AA\"},{\"label\":\"Armed Forces Canada (AE Also Equals Africa Europe and the Middle East)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Europe (AE Also Equals Africa Canada and the Middle East)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Middle East (AE Also Equals Africa Canada and Europe)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Pacific\",\"value\":\"AP\"},{\"label\":\"California\",\"value\":\"CA\"},{\"label\":\"Colorado\",\"value\":\"CO\"},{\"label\":\"Connecticut\",\"value\":\"CT\"},{\"label\":\"Delaware\",\"value\":\"DE\"},{\"label\":\"District of Columbia\",\"value\":\"DC\"},{\"label\":\"Federated States of Micronesia\",\"value\":\"FM\"},{\"label\":\"Florida\",\"value\":\"FL\"},{\"label\":\"Georgia\",\"value\":\"GA\"},{\"label\":\"Guam\",\"value\":\"GU\"},{\"label\":\"Hawaii\",\"value\":\"HI\"},{\"label\":\"Idaho\",\"value\":\"ID\"},{\"label\":\"Illinois\",\"value\":\"IL\"},{\"label\":\"Indiana\",\"value\":\"IN\"},{\"label\":\"Iowa\",\"value\":\"IA\"},{\"label\":\"Kansas\",\"value\":\"KS\"},{\"label\":\"Kentucky\",\"value\":\"KY\"},{\"label\":\"Louisiana\",\"value\":\"LA\"},{\"label\":\"Maine\",\"value\":\"ME\"},{\"label\":\"Marshall Islands\",\"value\":\"MH\"},{\"label\":\"Maryland\",\"value\":\"MD\"},{\"label\":\"Massachusetts\",\"value\":\"MA\"},{\"label\":\"Michigan\",\"value\":\"MI\"},{\"label\":\"Minnesota\",\"value\":\"MN\"},{\"label\":\"Mississippi\",\"value\":\"MS\"},{\"label\":\"Missouri\",\"value\":\"MO\"},{\"label\":\"Montana\",\"value\":\"MT\"},{\"label\":\"Nebraska\",\"value\":\"NE\"},{\"label\":\"Nevada\",\"value\":\"NV\"},{\"label\":\"New Hampshire\",\"value\":\"NH\"},{\"label\":\"New Jersey\",\"value\":\"NJ\"},{\"label\":\"New Mexico\",\"value\":\"NM\"},{\"label\":\"New York\",\"value\":\"NY\"},{\"label\":\"North Carolina\",\"value\":\"NC\"},{\"label\":\"North Dakota\",\"value\":\"ND\"},{\"label\":\"Northern Mariana Islands\",\"value\":\"MP\"},{\"label\":\"Ohio\",\"value\":\"OH\"},{\"label\":\"Oklahoma\",\"value\":\"OK\"},{\"label\":\"Oregon\",\"value\":\"OR\"},{\"label\":\"Palau\",\"value\":\"PW\"},{\"label\":\"Pennsylvania\",\"value\":\"PA\"},{\"label\":\"Puerto Rico\",\"value\":\"PR\"},{\"label\":\"Rhode Island\",\"value\":\"RI\"},{\"label\":\"South Carolina\",\"value\":\"SC\"},{\"label\":\"South Dakota\",\"value\":\"SD\"},{\"label\":\"Tennessee\",\"value\":\"TN\"},{\"label\":\"Texas\",\"value\":\"TX\"},{\"label\":\"Utah\",\"value\":\"UT\"},{\"label\":\"Vermont\",\"value\":\"VT\"},{\"label\":\"Virgin Islands\",\"value\":\"VI\"},{\"label\":\"Virginia\",\"value\":\"VA\"},{\"label\":\"Washington\",\"value\":\"WA\"},{\"label\":\"West Virginia\",\"value\":\"WV\"},{\"label\":\"Wisconsin\",\"value\":\"WI\"},{\"label\":\"Wyoming\",\"value\":\"WY\">",
       "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"Maryland\" value=\"MD\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
       "    <uef-flex-item>",
-      "      <uef-textbox field-name=\"zip\" label=\"ZIP Code\" maxlength=\"9\" width=\"9em\" format=\"*****-****\" inputmode=\"numeric\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-FIELD-NAME}\" label=\"ZIP Code\" maxlength=\"9\" width=\"9em\" format=\"*****-****\" inputmode=\"numeric\"></uef-textbox>",
       "    </uef-flex-item>",
       "  </uef-flex>",
       "</uef-compound>"
     ],
     "description": "UEF 3 Address"
+  },
+
+  "UEF 3 Bank Information": {
+    "prefix": "uef3-bank-info",
+    "body": [
+      "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\" ${3:compound-id=\"\"}>",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
+      "    <uef-flex-item flex-grow=\"1\">",
+      "      <uef-droplist field-name=\"${4:INSERT-FIELD-NAME}\" label=\"Account Type\">",
+      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"Checking\" value=\"1\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"Savings\" value=\"2\"></uef-droplist-item>",
+      "      </uef-droplist>",
+      "    </uef-flex-item>",
+      "    <uef-flex-item flex-grow=\"1\">",
+      "      <uef-textbox field-name=\"${5:INSERT-FIELD-NAME}\" label=\"Routing Number\" maxlength=\"9\" inputmode=\"numeric\"></uef-textbox>",
+      "    </uef-flex-item>",
+      "    <uef-flex-item flex-grow=\"1\">",
+      "      <uef-textbox field-name=\"${0:INSERT-FIELD-NAME}\" label=\"Account Number\" maxlength=\"17\" inputmode=\"numeric\"></uef-textbox>",
+      "    </uef-flex-item>",
+      "  </uef-flex>",
+      "</uef-compound>"
+    ],
+    "description": "UEF 3 Bank Information"
   },
 
   "UEF 3 Address (International)": {
@@ -6110,47 +6297,6 @@
       "</uef-compound>"
     ],
     "description": "UEF 3 Address (International)"
-  },
-
-  "UEF 3 Bank Information": {
-    "prefix": "uef3-bank-info",
-    "body": [
-      "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-droplist field-name=\"account-type\" label=\"Account Type\">",
-      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"Checking\" value=\"1\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"Savings\" value=\"2\"></uef-droplist-item>",
-      "      </uef-droplist>",
-      "    </uef-flex-item>",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"routing-number\" label=\"Routing Number\" maxlength=\"9\"></uef-textbox>",
-      "    </uef-flex-item>",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"account-number\" label=\"Account Number\" maxlength=\"17\"></uef-textbox>",
-      "    </uef-flex-item>",
-      "  </uef-flex>",
-      "</uef-compound>"
-    ],
-    "description": "UEF 3 Bank Information"
-  },
-
-  "UEF 3 Compound": {
-    "prefix": "uef3-compound",
-    "body": [
-      "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:Insert optional instructions.}\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
-      "    <uef-flex-item flex-grow=\"3\">",
-      "      <uef-textbox field-name=\"textbox1\" label=\"Textbox 1 Label\" value=\"MY VALUE\"></uef-textbox>",
-      "    </uef-flex-item>",
-      "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"textbox2\" label=\"Textbox 2 Label\"></uef-textbox>",
-      "    </uef-flex-item>",
-      "  </uef-flex>",
-      "</uef-compound>"
-    ],
-    "description": "UEF 3 Compound"
   },
 
   "UEF 3 Country": {
@@ -6949,55 +7095,6 @@
     "description": "UEF 3 Name (First|Last textboxes)"
   },
 
-  "UEF 3 Alert": {
-    "prefix": "uef3-alert",
-    "body": [
-      "<uef-alert color=\"${1|info,warning,danger,success|}\" header=\"${2:Insert Alert Heading}\">",
-      "  ${3:Insert Alert Content}",
-      "  ${4:<p slot=\"uef-alert-footer\">${0:Insert Optional Alert Footer Content}</p>}",
-      "</uef-alert>",
-      ""
-    ],
-    "description": "UEF 3 Alert"
-  },
-
-  "UEF 3 Reentry Number": {
-    "prefix": "uef3-reentry-number",
-    "body": [
-      "<uef-alert color=\"info\" header=\"${1:[Re-Entry Number]}\">",
-      "  <p>[We are providing you with a Re-Entry Number that can be used to restart an incomplete application. You may need it to complete your online application if you decide to continue the application later or to check the status.]</p>",
-      "  <p>[Re-Entry Number:] <strong>${2:12345678}</strong></p>",
-      "  <p>[Re-Entry Website:] <strong>${0:http://www.socialsecurity.gov}</strong></p>",
-      "  <p slot=\"uef-alert-footer\">[Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.]<br /><br />",
-      "    <uef-link href=\"javascript:window.print()\">",
-      "      <uef-icon name=\"print\" type=\"solid\"></uef-icon> Print this page",
-      "    </uef-link>",
-      "  </p>",
-      "</uef-alert>",
-      ""
-    ],
-    "description": "UEF 3 Reentry Number"
-  },
-
-  "UEF 3 Confirmation Number": {
-    "prefix": "uef3-confirmation-number",
-    "body": [
-      "<uef-alert color=\"success\" header=\"${1:[Confirmation Number]}\">",
-      "  <p>[You may need this number to confirm your application request.]</p>",
-      "  <p>[Confirmation Number:] <strong>${2:12345678}</strong></p>",
-      "  <p>[Website:] <strong>${0:http://www.socialsecurity.gov}</strong></p>",
-      "  <p slot=\"uef-alert-footer\">",
-      "    [Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.<br /><br />",
-      "    <uef-link href=\"javascript:window.print()\">",
-      "      <uef-icon name=\"print\" type=\"solid\"></uef-icon> Print this page",
-      "    </uef-link>",
-      "  </p>",
-      "</uef-alert>",
-      ""
-    ],
-    "description": "UEF 3 Confirmation Number"
-  },
-
   "UEF 3 Dialog": {
     "prefix": "uef3-dialog",
     "body": [
@@ -7157,81 +7254,6 @@
     "description": "UEF 3 Visually Hidden"
   },
 
-  "UEF 3 Federal Banner": {
-    "prefix": "uef3-federal-banner",
-    "body": [
-      "<uef-banner tld=\"${1|gov,mil|}\"></uef-banner>"
-    ],
-    "description": "UEF 3 Federal Banner"
-  },
-
-  "UEF 3 Button Group": {
-    "prefix": "uef3-button-group",
-    "body": [
-      "<uef-button-group alignment=\"${1|left,right|}\" direction=\"${2|ltr,rtl|}\">",
-      "  <uef-button fill=\"solid\">${3:Button 1 Label}</uef-button>",
-      "  <uef-button fill=\"outline\">${4:Button 2 Label}</uef-button>",
-      "  <uef-button fill=\"outline\">${5:Button 3 Label}</uef-button>",
-      "</uef-button-group>"
-    ],
-    "description": "UEF 3 Button Group"
-  },
-
-  "UEF 3 Card": {
-    "prefix": "uef3-card",
-    "body": [
-      "<uef-card",
-      "    width=\"272px\" sx='{\"border\":\"1px solid #dadada\",\"padding\":\"--uef-space-inset-4x\",\"borderRadius\":\"--uef-border-radius-softest\"}'>",
-      "    <uef-typography variant=\"heading3\" slot=\"uef-card-header\" sx='{\"paddingBottom\":\"--uef-space-stack-2x\"}'>",
-      "      Card Title",
-      "    </uef-typography>",
-      "    <uef-typography slot=\"uef-card-header\" variant=\"subtitle1\">Sub Title</uef-typography>",
-      "    <uef-typography slot=\"uef-card-body\" variant=\"body-m\" line-height=\"1.5\"",
-      "      sx='{\"paddingTop\":\"--uef-space-stack-4x\",\"paddingBottom\":\"--uef-space-stack-3x\"}'",
-      "    >",
-      "      This is text within a card body. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum tenetur quo.",
-      "    </uef-typography>",
-      "    <uef-button slot=\"uef-card-footer\" width=\"50%\" fill=\"none\">Button 1</uef-button>",
-      "    <uef-button slot=\"uef-card-footer\" width=\"50%\" fill=\"none\">Button 2</uef-button>",
-      "  </uef-card>"
-    ],
-    "description": "UEF 3 Card"
-  },
-
-  "UEF 3 Card (Basic)": {
-    "prefix": "uef3-card-basic",
-    "body": [
-      "<uef-card sx='{\"padding\":\"--uef-space-inset-4x\",\"boxShadow\":\"--uef-elevation-20\",\"borderRadius\":\"--uef-border-radius-softest\"}'>",
-      "  <uef-typography variant=\"body-m\" line-height=\"1.2\">",
-      "    This is text within a card body.",
-      "  </uef-typography>",
-      "</uef-card>",
-      ""
-    ],
-    "description": "UEF 3 Card (Basic)"
-  },
-
-  "UEF 3 Card (Horizontal Layout)": {
-    "prefix": "uef3-card-h-layout",
-    "body": [
-      "<uef-card width=\"450px\" sx='{\"boxShadow\":\"--uef-elevation-10\",\"borderRadius\":\"--uef-border-radius-softest\"}'>",
-      "  <uef-flex direction=\"row\" gap=\"5px\">",
-      "    <uef-flex-item sx='{\"backgroundColor\":\"blue\",\"width\":\"100px\",\"borderTopLeftRadius\":\"--uef-border-radius-softest\",\"borderBottomLeftRadius\":\"--uef-border-radius-softest\"}'></uef-flex-item>",
-      "    <uef-flex-item sx='{\"padding\":\"--uef-space-inset-4x\"}'>",
-      "      <uef-typography variant=\"heading2\" sx='{\"paddingBottom\":\"--uef-space-stack-2x\"}'>",
-      "        Title",
-      "      </uef-typography>",
-      "      <uef-typography variant=\"body-m\" line-height=\"1.2\" sx='{\"paddingBottom\":\"--uef-space-stack-2x\"}'>",
-      "        This is an example of body text to build on the card title. In this example. The body is the focus.",
-      "      </uef-typography>",
-      "      <uef-button fill=\"solid\">Button</uef-button>",
-      "    </uef-flex-item>",
-      "  </uef-flex>",
-      "</uef-card>",
-      ""
-    ],
-    "description": "UEF 3 Card (Horizontal Layout)"
-  },
 
   "UEF 3 Container": {
     "prefix": "uef3-container",

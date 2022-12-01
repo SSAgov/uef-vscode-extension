@@ -10,23 +10,51 @@
     <script type="module" src="https://www.ssa.gov/uef/uef3/beta/uef3-web-components.esm.js"></script>
 </head>
 <body>
-    <uef-alert header="[A Heading Is Required]" type="info">
-      [Example Text]
-      <p slot="uef-alert-footer">[Alert Footer]</p>
+    <uef-banner tld="gov"></uef-banner>
+
+    <uef-alert color="danger" header="Insert Alert Heading">
+      Insert Alert Content
+      <p slot="uef-alert-footer">Insert Optional Alert Footer Content</p>
     </uef-alert>
-    <uef-alert header="[Confirmation Number and Website]" color="success">
-      <p>[You may need this number to confirm your application request.]</p>
-      <p>[Confirmation Number:] <strong>[12345678]</strong></p>
-      <p>[Website:] <strong>http://www.socialsecurity.gov</strong></p>
-      <p slot="uef-alert-footer">
-        [Print or save this page, or write down the number or website, so you will
-        have what you need to return to your report at a later time.]
-        <br /><br />
+
+    <uef-alert color="info" header="[Re-Entry Number]">
+      <p>[We are providing you with a Re-Entry Number that can be used to restart an incomplete application. You may need it to complete your online application if you decide to continue the application later or to check the status.]</p>
+      <p>[Re-Entry Number:] <strong>12345678</strong></p>
+      <p>[Re-Entry Website:] <strong>http://www.socialsecurity.gov</strong></p>
+      <p slot="uef-alert-footer">[Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.]<br /><br />
         <uef-link href="javascript:window.print()">
           <uef-icon name="print" type="solid"></uef-icon> Print this page
         </uef-link>
       </p>
     </uef-alert>
+
+    <uef-alert color="success" header="[Confirmation Number]">
+      <p>[You may need this number to confirm your application request.]</p>
+      <p>[Confirmation Number:] <strong>12345678</strong></p>
+      <p>[Website:] <strong>http://www.socialsecurity.gov</strong></p>
+      <p slot="uef-alert-footer">
+        [Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.<br /><br />
+        <uef-link href="javascript:window.print()">
+          <uef-icon name="print" type="solid"></uef-icon> Print this page
+        </uef-link>
+      </p>
+    </uef-alert>
+
+    <uef-button color="default" fill="outline" >Button Label</uef-button>
+
+    <uef-button-group alignment="left" direction="ltr">
+      <uef-button fill="solid">Button 1 Label</uef-button>
+      <uef-button fill="outline">Button 2 Label</uef-button>
+      <uef-button fill="outline">Button 3 Label</uef-button>
+    </uef-button-group>
+
+    <uef-droplist label="[Pattern Label]" instructions="[Instruction Text]" field-name="field-name" value="">
+      <option>--</option>
+      <uef-droplist-item label="Test" value="Test"></uef-droplist-item>
+      <uef-droplist-item label="Item 2" value="Item 2"></uef-droplist-item>
+      <uef-droplist-item label="Item 3" value="Item 3"></uef-droplist-item>
+    </uef-droplist>
+
     <uef-compound label="[Pattern Label]" instructions="[Instructions]">
       <uef-flex gap="10px" direction="row" wrap="wrap">
         <uef-flex-item flex-grow="1">
