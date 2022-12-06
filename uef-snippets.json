@@ -6559,20 +6559,48 @@
     "description": "UEF 3 Date (MDY, Day Textbox)"
   },
 
+  "UEF 3 Date (Month, Day)": {
+    "prefix": "uef3-date-md",
+    "body": [
+      "<!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-date label=\"${1:[Pattern Label]}\" instructions=\"${2:[[Instruction Text]]}\"",
+      "  field-name-month=\"${3:INSERT-FIELD-NAME}-month\" field-name-year=\"${3:INSERT-FIELD-NAME}-day\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
+      "    <uef-flex-item>",
+      "      <uef-droplist field-name=\"${3:INSERT-FIELD-NAME}-month\" label=\"Month\" width=\"auto\">",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
+      "      </uef-droplist>",
+      "    </uef-flex-item>",
+      "    <uef-flex-item>",
+      "      <uef-droplist field-name=\"${3:INSERT-FIELD-NAME}-day\" label=\"Day\" width=\"auto\">",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
+      "      </uef-droplist>",
+      "    </uef-flex-item>",
+      "  </uef-flex>",
+      "</uef-date>",
+      "─────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Date (Month, Day)"
+  },
+
   "UEF 3 Date (Month, Year)": {
     "prefix": "uef3-date-my",
     "body": [
+      "<!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-date label=\"${1:[Pattern Label]}\" instructions=\"${2:[[Instruction Text]]}\"",
-      "  field-name-month=\"date-month\" field-name-year=\"date-year\" format=\"MM-DD-YYYY\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "  field-name-month=\"${3:INSERT-FIELD-NAME}-month\" field-name-year=\"${3:INSERT-FIELD-NAME}-year\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item>",
-      "      <uef-droplist field-name=\"date-month\" label=\"Month\" width=\"auto\"></uef-droplist>",
+      "      <uef-droplist field-name=\"${3:INSERT-FIELD-NAME}-month\" label=\"Month\" width=\"auto\">",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
+      "      </uef-droplist>",
       "    </uef-flex-item>",
       "    <uef-flex-item>",
-      "      <uef-textbox field-name=\"date-year\" label=\"Year\" maxlength=\"4\" width=\"4em\" inputmode=\"numeric\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${3:INSERT-FIELD-NAME}-year\" label=\"Year\" maxlength=\"4\" width=\"4em\" inputmode=\"numeric\"></uef-textbox>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "</uef-date>"
+      "</uef-date>",
+      "─────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Date (Month, Year)"
   },
@@ -6580,9 +6608,7 @@
   "UEF 3 Date Picker": {
     "prefix": "uef3-date-picker",
     "body": [
-      "<uef-flex sx='{\"width\":\"200px\"}'>",
-      "  <uef-datepicker label=\"${1:[Pattern Label]}\" field-name=\"${2:datepicker}\" instructions=\"${3:[Instructions]}\"></uef-datepicker>",
-      "</uef-flex>"
+      "<uef-datepicker label=\"${1:[Pattern Label]}\" field-name=\"${2:INSERT-FIELD-NAME}-datepicker\" instructions=\"${0:[Instruction Text]}\"></uef-datepicker>",
     ],
     "description": "UEF 3 Date Picker"
   },
@@ -7162,25 +7188,42 @@
   "UEF 3 Dialog": {
     "prefix": "uef3-dialog",
     "body": [
-      "<uef-dialog open backdrop close-button width=\"80%\" accessibility-text=\"Test Dialog\">",
-      "  <uef-typography variant=\"heading2\" slot=\"uef-dialog-header\">[Dialog Title]</uef-typography>",
-      "  <uef-typography variant=\"body-m\" line-height=\"1.5\" slot=\"uef-dialog-body\">",
-      "    Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "    Lorem Ipsum has been the industry's standard dummy text ever since the",
-      "    1500s, when an unknown printer took a galley of type and scrambled it to",
-      "    make a type specimen book. It has survived not only five centuries, but also",
-      "    the leap into electronic typesetting, remaining essentially unchanged. It",
-      "    was popularised in the 1960s with the release of Letraset sheets containing",
-      "    Lorem Ipsum passages, and more recently with desktop publishing software",
-      "    like Aldus PageMaker including versions of Lorem Ipsum.",
-      "  </uef-typography>",
-      "  <uef-button-group slot=\"uef-dialog-footer\" alignment=\"right\" direction=\"rtl\">",
-      "    <uef-button fill=\"solid\">[Accept]</uef-button>",
-      "    <uef-button fill=\"outline\">[Cancel]</uef-button>",
-      "  </uef-button-group>",
-      "</uef-dialog>"
+      "<!-- DIALOG ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<div>",
+      "  <uef-dialog id=\"${1:INSERT-DIALOG-ID}\" ${2:backdrop} ${3:close-button} ${4:action-required} width=\"${5:500px}\">",
+      "    <uef-typography variant=\"heading2\" slot=\"uef-dialog-header\">${6:[Dialog Title]}</uef-typography>",
+      "    <uef-typography variant=\"body-m\" line-height=\"1.5\" slot=\"uef-dialog-body\">",
+      "      ${7:[INSERT DIALOG CONTENT]}",
+      "    </uef-typography>",
+      "    <uef-button-group slot=\"uef-dialog-footer\" alignment=\"right\" direction=\"rtl\">",
+      "      <uef-button fill=\"solid\">${8:[Accept]}</uef-button>",
+      "      <uef-button fill=\"outline\">${0:[Cancel]}</uef-button>",
+      "    </uef-button-group>",
+      "  </uef-dialog>",
+      "</div>",
+      "────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Dialog"
+  },
+
+  "UEF 3 Drawer": {
+    "prefix": "uef3-drawer",
+    "body": [
+      "<!-- DRAWER ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<div>",
+      "  <uef-control target=\"${1:INSERT-DRAWER-NAME}\">",
+      "    <uef-button>",
+      "      <uef-icon type=\"solid\" name=\"bars\" sx='{\"margin-right\":\"var(--uef-space-1x)\"}'></uef-icon>",
+      "      ${2:[Menu]}",
+      "    </uef-button>",
+      "  </uef-control>",
+      "  <uef-drawer id=\"${1:INSERT-DRAWER-NAME}\">",
+      "    ${0:[INSERT SUB-NAV OR CONTENT]}",
+      "  </uef-drawer>",
+      "</div>",
+      "───────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Drawer"
   },
 
   "UEF 3 Figure (Slotted Caption)": {
