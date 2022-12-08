@@ -7397,8 +7397,9 @@
   "UEF 3 Flex Layout": {
     "prefix": "uef3-flex",
     "body": [
-      "<uef-flex display=\"${1|flex,inline-flex|}\" direction=\"${2|row,row-reverse,column,column-reverse|}\" align-items=\"center\" align-content=\"center\"",
-      "  justify-content=\"space-between\" wrap=\"wrap\" gap=\"2em\"",
+      "<uef-flex display=\"${1|flex,inline-flex|}\" direction=\"${2|row,row-reverse,column,column-reverse|}\" align-items=\"${3|flex-start,flex-end,center,space-between,space-around,stretch|}\"",
+      "  align-content=\"${4|flex-start,flex-end,center,space-between,space-around,stretch|}\" justify-content=\"${5|flex-start,flex-end,center,space-between,space-around,space-evenly|}\"",
+      "  wrap=\"${6|nowrap,wrap,wrap-reverse|}\" gap=\"${0:2em}\"",
       ">",
       "  TYPE uef3-flex-item TO INSERT FLEX ITEMS",
       "</uef-flex>"
@@ -7409,8 +7410,8 @@
   "UEF 3 Flex Item": {
     "prefix": "uef3-flex-item",
     "body": [
-      "  <uef-flex-item sx=\"{}\">",
-      "    INSERT CONTENT HERE",
+      "  <uef-flex-item align-self=\"${1|auto,baseline,center,flex-start,flex-end,stretch|}\" flex-basis=\"${2|auto,content,insert-custom-css-size|}\" flex-grow=\"${3:0}\" flex-shrink=\"${4:1}\" ${5:order=\"\"} >",
+      "    ${0:INSERT CONTENT HERE}",
       "  </uef-flex-item>"
     ],
     "description": "UEF 3 Flex Item"
