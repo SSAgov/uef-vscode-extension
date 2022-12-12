@@ -6004,7 +6004,7 @@
       "    </uef-typography>",
       "  </uef-accordion-item>",
       "</uef-accordion>",
-      "───────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Accordion"
   },
@@ -6029,7 +6029,7 @@
       "  ${6:Insert Alert Content}",
       "  ${7:<p slot=\"uef-alert-footer\">${0:Insert Optional Alert Footer Content}</p>}",
       "</uef-alert>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Alert"
   },
@@ -6048,7 +6048,7 @@
       "    </uef-link>",
       "  </p>",
       "</uef-alert>",
-      "────────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Reentry Number"
   },
@@ -6068,7 +6068,7 @@
       "    </uef-link>",
       "  </p>",
       "</uef-alert>",
-      "────────────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Confirmation Number"
   },
@@ -6098,7 +6098,7 @@
       "  ${4:[TYPE uef-3-button TO INSERT A BUTTON HERE]}",
       "  ${0:[TYPE uef-3-button TO INSERT A BUTTON HERE]}",
       "</uef-button-group>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Button Group"
   },
@@ -6112,7 +6112,7 @@
       "    ${0:[INSERT YOUR CARD CONTENT HERE]}",
       "  </uef-typography>",
       "</uef-card>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Card"
   },
@@ -6129,7 +6129,7 @@
       "    ${0:[INSERT YOUR CARD CONTENT HERE]}",
       "  </uef-typography>",
       "</uef-card>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Card with Title"
   },
@@ -6160,7 +6160,7 @@
       "    label=\"[Label 3]\" support-info=\"[[Support Text]]\" value=\"3\">",
       "  </uef-checkbox>",
       "</uef-checklist>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Checklist"
   },
@@ -6182,7 +6182,7 @@
       "    label=\"[Label 3]\" support-info=\"[[Support Text]]\" value=\"3\">",
       "  </uef-checkbox>",
       "</uef-checklist>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Checklist with Other"
   },
@@ -6201,7 +6201,7 @@
       "    </uef-flex-item>",
       "  </uef-flex>",
       "</uef-compound>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Compound"
   },
@@ -6239,7 +6239,7 @@
       "    </uef-flex-item>",
       "  </uef-flex>",
       "</uef-compound>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Address"
   },
@@ -6311,7 +6311,7 @@
       "    </uef-flex>",
       "  </uef-toggle-input>",
       "</uef-compound>",
-      "───────────────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Address (International)"
   },
@@ -6337,7 +6337,7 @@
       "    </uef-flex-item>",
       "  </uef-flex>",
       "</uef-compound>",
-      "────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Bank Information"
   },
@@ -6351,7 +6351,7 @@
       "  support-info=\"${0:[[Support Text]]}\"",
       "  maxlength=\"10\" width=\"15ch\" inputmode=\"numeric\" mask=\"(   )    -    \" format=\"(***) ***-****\"",
       "></uef-textbox>",
-      "───────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Phone (Simple)"
   },
@@ -6380,7 +6380,7 @@
       "    </uef-flex-item>",
       "  </uef-flex>",
       "</uef-compound>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Phone"
   },
@@ -6440,7 +6440,7 @@
       "    </uef-flex>",
       "  </uef-toggle-input>",
       "</uef-compound>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Phone (International)"
   },
@@ -6455,7 +6455,7 @@
       ">",
       "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "</uef-droplist>",
-      "────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Country"
   },
@@ -6470,7 +6470,7 @@
       ">",
       "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "</uef-droplist>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Country (Historical/Birth)"
   },
@@ -6478,6 +6478,7 @@
   "UEF 3 Credit Card": {
     "prefix": "uef3-credit-card",
     "body": [
+      "<!-- COMPOUND ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\">",
       "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\" align-items=\"center\" align-content=\"flex-start\">",
       "    <span>XXXX</span>",
@@ -6488,7 +6489,8 @@
       "    <span>-</span>",
       "    <uef-textbox field-name=\"creditcard2\" maxlength=\"4\" width=\"4em\"></uef-textbox>",
       "  </uef-flex>",
-      "</uef-compound>"
+      "</uef-compound>",
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Credit Card"
   },
@@ -6496,9 +6498,11 @@
   "UEF 3 Currency": {
     "prefix": "uef3-currency",
     "body": [
+      "<!-- CURRENCY ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox label=\"${1:[Pattern Label]}\" instructions=\"${2:[[Instruction Text]]}\" support-info=\"${3:[Support Info]}\" field-name=\"${4:uef-currency-1}\" width=\"10em\" inputmode=\"numeric\">",
       "  <span slot=\"input-overlay\">$</span>",
-      "</uef-textbox>"
+      "</uef-textbox>",
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Currency"
   },
@@ -6529,7 +6533,7 @@
       "    </uef-flex-item>",
       "  </uef-flex>",
       "</uef-date>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Date (MDY Dropdowns)"
   },
@@ -6558,7 +6562,7 @@
       "    </uef-flex-item>",
       "  </uef-flex>",
       "</uef-date>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Date (MDY, Day Textbox)"
   },
@@ -6582,7 +6586,7 @@
       "    </uef-flex-item>",
       "  </uef-flex>",
       "</uef-date>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Date (Month, Day)"
   },
@@ -6604,7 +6608,7 @@
       "    </uef-flex-item>",
       "  </uef-flex>",
       "</uef-date>",
-      "─────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Date (Month, Year)"
   },
@@ -6628,7 +6632,7 @@
       "  <uef-droplist-item label=\"${6:Item 1}\" value=\"${6:Item 1}\"></uef-droplist-item>",
       "  <uef-droplist-item label=\"${0:Item 1}\" value=\"${0:Item 1}\"></uef-droplist-item>",
       "</uef-droplist>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Drop List"
   },
@@ -6644,11 +6648,13 @@
   "UEF 3 EIN": {
     "prefix": "uef3-ein",
     "body": [
+      "<!-- EIN ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox label=\"${1:[Person's] }Employer Identification Number (EIN)\"",
       "  instructions=\"${2:[Instructions]}\"",
       "  support-info=\"${3:[Support Info]}\"",
       "  field-name=\"${4:uef-ein-1}\" width=\"9em\" maxlength=\"9\" inputmode=\"numeric\" mask=\"  -       \" format=\"**-*******\"",
-      "></uef-textbox>"
+      "></uef-textbox>",
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 EIN"
   },
@@ -6656,11 +6662,13 @@
   "UEF 3 Email": {
     "prefix": "uef3-email",
     "body": [
+      "<!-- EMAIL ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox label=\"${1:[Person's] }Email Address\"",
       "  instructions=\"${2:[Instructions]}\"",
       "  support-info=\"${3:[Support Info]}\"",
       "  field-name=\"${4:email}\" inputmode=\"email\"",
-      "></uef-textbox>"
+      "></uef-textbox>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Email"
   },
@@ -6668,6 +6676,7 @@
   "UEF 3 Email with Confirmation": {
     "prefix": "uef3-email-confirmation",
     "body": [
+      "<!-- EMAIL (WITH CONFIRMATION) ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<div>",
       "  <uef-textbox label=\"${1:[Person′s] }Email Address\"",
       "    instructions=\"${2:[Instructions]}\"",
@@ -6676,7 +6685,8 @@
       "  <uef-textbox label=\"Confirm ${1:[Person′s] }Email Address\" field-name=\"confirmation-${3:email}\" inputmode=\"email\">",
       "    <div slot=\"instructions\"><span>Emails must match</span></div>",
       "  </uef-textbox>",
-      "</div>"
+      "</div>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Email with Confirmation"
   },
@@ -6695,7 +6705,7 @@
       "    }",
       "  ]'",
       "></uef-error-summary>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Error Summary"
   },
@@ -6711,7 +6721,7 @@
       "  >",
       "    <uef-visuallyhidden slot=\"uef-input-support-info\">Drag files here or choose files</uef-visuallyhidden></uef-file-input>",
       "</uef-form>",
-      "───────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 File Input"
   },
@@ -6731,11 +6741,13 @@
   "UEF 3 Gender": {
     "prefix": "uef3-gender",
     "body": [
+      "<!-- GENDER ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-radiolist field-name=\"${1:gender-field-name}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instructions]}\" variant=\"${4|inline,series,none|}\">",
       "  <uef-radio label=\"Male\" value=\"m\"></uef-radio>",
       "  <uef-radio label=\"Female\" value=\"f\"></uef-radio>",
       "  <uef-radio label=\"Non-Binary\" value=\"n\"></uef-radio>",
-      "</uef-radiolist>"
+      "</uef-radiolist>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Gender"
   },
@@ -6751,13 +6763,15 @@
   "UEF 3 Percent": {
     "prefix": "uef3-percent",
     "body": [
+      "<!-- PERCENT ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox label=\"${1:[Pattern Label]}\"",
       "  instructions=\"${2:[Instructions]}\"",
       "  support-info=\"${3:[Support Info]}\"",
       "  field-name=\"${4:percent-field-name}\" width=\"10em\" inputmode=\"numeric\" overlay-alignment=\"right\"",
       ">",
       "  <span slot=\"input-overlay\">%</span>",
-      "</uef-textbox>"
+      "</uef-textbox>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Percent"
   },
@@ -6801,7 +6815,7 @@
       "    </uef-flex>",
       "  </uef-toggle-input>",
       "</uef-compound>",
-      "────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Place"
   },
@@ -6840,7 +6854,7 @@
       ">",
       "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "</uef-droplist>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 State"
   },
@@ -6922,7 +6936,7 @@
       ">",
       "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "</uef-droplist>",
-      "────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Time Zone"
   },
@@ -7230,7 +7244,7 @@
       "    </uef-button-group>",
       "  </uef-dialog>",
       "</div>",
-      "────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Dialog"
   },
@@ -7250,7 +7264,7 @@
       "    ${0:[INSERT SUB-NAV OR CONTENT]}",
       "  </uef-drawer>",
       "</div>",
-      "───────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Drawer"
   },
@@ -7266,7 +7280,7 @@
       "    ${0:INSERT OPTIONAL FIGURE CAPTION}",
       "  </div>",
       "</uef-figure>",
-      "───────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Figure"
   },
@@ -7274,7 +7288,7 @@
   "UEF 3 Icon": {
     "prefix": "uef3-icon",
     "body": [
-      "<uef-icon name=\"arrow-left\" type=\"solid\" sx=\"{}\"></uef-icon>"
+      "<uef-icon name=\"${1:INSERT-ICON-NAME}\" type=\"${2|solid,regular,brand|}\" ${3:color=\"\"} ${0:size=\"\"}></uef-icon>"
     ],
     "description": "UEF 3 Icon"
   },
@@ -7282,7 +7296,12 @@
   "UEF 3 Indicator": {
     "prefix": "uef3-indicator",
     "body": [
-      "<uef-indicator open size=\"75px\" type=\"continuous\" variant=\"circle\" placement=\"overlay\"></uef-indicator>"
+      "<!-- INDICATOR ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-indicator open type=\"${1|continuous,determinant,buffer|}\" variant=\"${2|circle,linear|}\"",
+      "  placement=\"${3|inline,block,overlay|}\" accessibility-text=\"${4:INSERT ACCESSIBILITY TEXT}\"",
+      "  size=\"${5:75px}\" ${6:color=\"\"} ${0:value=\"\"} aria-live=\"assertive\">",
+      "</uef-indicator>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Indicator"
   },
@@ -7389,7 +7408,7 @@
       "<uef-container>",
       "  ${0:[INSERT CONTENT]}",
       "</uef-container>",
-      "────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Container"
   },
@@ -7469,7 +7488,7 @@
       "    </uef-section>",
       "  </div>",
       "</uef-footer>",
-      "───────────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Footer (Identifier)"
   },
@@ -7545,7 +7564,7 @@
       "    </uef-section>",
       "  </div>",
       "</uef-footer>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Footer (Slim)"
   },
@@ -7672,7 +7691,7 @@
       "    </uef-section>",
       "  </div>",
       "</uef-footer>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Footer (Medium)"
   },
@@ -7837,29 +7856,35 @@
       "    </uef-section>",
       "  </div>",
       "</uef-footer>",
-      "──────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Footer (Big)"
+  },
+
+  "UEF 3 Grid": {
+    "prefix": "uef3-grid",
+    "body": [
+      "<!-- GRID - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
+      "<uef-grid ${1:Add your Grid attribute settings}>",
+      "  ${0:INSERT GRID ITEMS: uef-grid-item}",
+      "</uef-grid>",
+      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
+    ],
+    "description": "UEF 3 Grid"
   },
 
   "UEF 3 Grid (Fluid)": {
     "prefix": "uef3-grid-fluid",
     "body": [
-      "<uef-grid",
-      "  grid-template-columns=\"repeat(auto-fit, minmax(175px,1fr))\"",
-      "  grid-auto-rows=\"100px\" sx=\"{}\"",
-      ">",
+      "<!-- GRID (FLUID) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
+      "<uef-grid grid-template-columns=\"repeat(auto-fit, minmax(175px,1fr)) grid-auto-rows=\"100px\">",
       "  <div>Grid Item 1</div>",
       "  <div>Grid Item 2</div>",
-      "  <div>",
-      "    Grid Item 3",
-      "    <br />",
-      "    <br />",
-      "  </div>",
+      "  <div>Grid Item 3</div>",
       "  <div>Grid Item 4</div>",
       "  <div>Grid Item 5</div>",
       "</uef-grid>",
-      ""
+      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
     ],
     "description": "UEF 3 Grid (Fluid)"
   },
@@ -7867,15 +7892,13 @@
   "UEF 3 Grid (3 Column)": {
     "prefix": "uef3-grid-3col",
     "body": [
-      "<uef-grid",
-      "  grid-template-columns=\"minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr)\"",
-      "  display=\"grid\" grid-auto-flow=\"column\" sx=\"{}\"",
-      ">",
-      "  <nav>Subnavigation</nav>",
-      "  <main>Main Content</main>",
-      "  <aside>Sidebar content</aside>",
+      "<!-- GRID (3 COLUMN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
+      "<uef-grid grid-template-columns=\"minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr)\" display=\"grid\" grid-auto-flow=\"column\">",
+      "  <nav>${1:[[INSERT SUB-NAVIGATION]]}</nav>",
+      "  <main>${2:[[INSERT MAIN CONTENT]]}</main>",
+      "  <aside>${0:[[INSERT SIDEBAR CONTENT]]}</aside>",
       "</uef-grid>",
-      ""
+      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
     ],
     "description": "UEF 3 Grid (3 Column)"
   },
@@ -7883,24 +7906,61 @@
   "UEF 3 Grid (3 Column Template)": {
     "prefix": "uef3-grid-3col-template",
     "body": [
+      "<!-- GRID (3 COLUMN TEMPLATE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-grid display=\"grid\"",
       "  grid-template-areas='\"header header header\"",
       "                       \"subnav main sidebar\"",
       "                       \"footer footer footer\"'",
       "  grid-template-columns=\"minmax(150px, 1fr) minmax(300px, 3fr) minmax(150px, 1fr)\"",
-      "  sx=\"{}\"",
       ">",
-      "  <uef-grid-item grid-area=\"header\"><header>Header</header></uef-grid-item>",
-      "  <uef-grid-item grid-area=\"subnav\"><nav>Subnavigation</nav></uef-grid-item>",
-      "  <uef-grid-item grid-area=\"main\"><main>Main Content</main></uef-grid-item>",
-      "  <uef-grid-item grid-area=\"sidebar\">",
-      "    <aside>Sidebar content</aside>",
+      "  <uef-grid-item grid-area=\"header\"><header>[[Header]]</header></uef-grid-item>",
+      "  <uef-grid-item grid-area=\"subnav\">",
+      "    <nav>[[${1:INSERT SUB-NAVIGATION]]}</nav>",
       "  </uef-grid-item>",
-      "  <uef-grid-item grid-area=\"footer\"><footer>Footer</footer></uef-grid-item>",
+      "  <uef-grid-item grid-area=\"main\">",
+      "    <main>${2:[[INSERT MAIN CONTENT]]}</main>",
+      "  </uef-grid-item>",
+      "  <uef-grid-item grid-area=\"sidebar\">",
+      "    <aside>${3:[[INSERT SIDEBAR CONTENT]]}</aside>",
+      "  </uef-grid-item>",
+      "  <uef-grid-item grid-area=\"footer\">",
+      "    <footer>${0:[[INSERT FOOTER CONTENT]]}</footer>",
+      "  </uef-grid-item>",
       "</uef-grid>",
-      ""
+      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
     ],
     "description": "UEF 3 Grid (3 Column Template)"
+  },
+
+  "UEF 3 Grid Item": {
+    "prefix": "uef3-grid-item",
+    "body": [
+      "<uef-grid-item>${0:[[INSERT GRID ITEM CONTENT]]}</uef-grid-item>"
+    ],
+    "description": "UEF 3 Grid Item"
+  },
+
+  "UEF 3 Help": {
+    "prefix": "uef3-help",
+    "body": [
+      "<!-- HELP ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<div>",
+      "  <uef-help target=\"#${1:INSERT-HELP-TARGET}\" label=\"Help\"></uef-help>",
+      "  <uef-dialog id=\"${1:INSERT-HELP-TARGET}\" backdrop=\"\" close-button=\"\" width=\"30em\">",
+      "    <uef-typography variant=\"heading2\" slot=\"uef-dialog-header\">",
+      "      ${2:INSERT HELP TITLE}",
+      "    </uef-typography>",
+      "    <uef-typography variant=\"body-m\" line-height=\"1.5\" slot=\"uef-dialog-body\">",
+      "      ${0:INSERT HELP CONTENT}",
+      "    </uef-typography>",
+      "    <uef-button-group slot=\"uef-dialog-footer\" alignment=\"right\">",
+      "      <uef-button fill=\"outline\">Close</uef-button>",
+      "    </uef-button-group>",
+      "  </uef-dialog>",
+      "</div>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Help"
   },
 
   "UEF 3 Section": {
