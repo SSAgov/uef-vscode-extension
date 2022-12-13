@@ -7963,6 +7963,144 @@
     "description": "UEF 3 Help"
   },
 
+  "UEF 3 Link": {
+    "prefix": "uef3-link",
+    "body": [
+      "<uef-link href=\"${1:#0}\">${0:INSERT LINK TEXT}</uef-link>"
+    ],
+    "description": "UEF 3 Link"
+  },
+
+  "UEF 3 Download Link": {
+    "prefix": "uef3-link-download",
+    "body": [
+      "<!-- DOWNLOAD LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"${1:#0}\" download>",
+      "  <uef-icon type=\"solid\" name=\"download\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "  ${0:[[Download this file]]}",
+      "</uef-link>",
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Download Link"
+  },
+
+  "UEF 3 Email Link": {
+    "prefix": "uef3-link-email",
+    "body": [
+      "<!-- EMAIL LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"mailto:${0:someone@example.com}\">",
+      "  <uef-icon name=\"envelope\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "  ${0:[someone@example.com]}",
+      "</uef-link>",
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Email Link"
+  },
+
+  "UEF 3 Excel Link": {
+    "prefix": "uef3-link-excel",
+    "body": [
+      "<!-- EXCEL LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"${1:}\">",
+      "  <uef-icon name=\"file-excel\" accessibility-text=\"Spreadsheet file\" color=\"--uef-color-green-primary\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "  ${0:[Document Title]}",
+      "</uef-link>",
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Excel Link"
+  },
+
+  "UEF 3 External Link": {
+    "prefix": "uef3-link-external",
+    "body": [
+      "<!-- EXTERNAL LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"${1:#0}\" type=\"external\">",
+      "  ${0:[External site name]}",
+      "  <uef-icon type=\"solid\" name=\"external-link-alt\" accessibility-text=\"External website\" color=\"--uef-color-text-link-on-light\" sx='{\"marginLeft\":\"--uef-link-gap\"}'></uef-icon>",
+      "</uef-link>",
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 External Link"
+  },
+
+  "UEF 3 Print Link": {
+    "prefix": "uef3-link-print",
+    "body": [
+      "<!-- PRINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"javascript:window.print();\">",
+      "  <uef-icon type=\"solid\" name=\"print\" color=\"--uef-color-text-link-on-light='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "  ${0:Print this page}",
+      "</uef-link>",
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Print Link"
+  },
+
+  "UEF 3 PDF Link": {
+    "prefix": "uef3-link-pdf",
+    "body": [
+      "<!-- PDF LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"${1:0#}\">",
+      "  <uef-icon name=\"file-pdf\" accessibility-text=\"PDF file\" color=\"--uef-color-red-primary\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "  ${0:[Document Title]}",
+      "</uef-link>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 PDF Link"
+  },
+
+  "UEF 3 PowerPoint Link": {
+    "prefix": "uef3-link-powerpoint",
+    "body": [
+      "<!-- POWERPOINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"${1:0#}\">",
+      "  <uef-icon name=\"file-powerpoint\" accessibility-text=\"Powerpoint file\" color=\"--uef-color-red-primary\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "  ${0:[Document Title]}",
+      "</uef-link>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 PowerPoint Link"
+  },
+
+  "UEF 3 Video Link": {
+    "prefix": "uef3-link-video",
+    "body": [
+      "<!-- VIDEO LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"${1:#0}\">",
+      "  <uef-icon name=\"video\" type=\"solid\" accessibility-text=\"Video\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "  ${2:[Video Title]} (${3:[mm]}:${0:[ss]})",
+      "</uef-link>",
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Video Link"
+  },
+
+  "UEF 3 Word Link": {
+    "prefix": "uef3-link-word",
+    "body": [
+      "<!-- WORD LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"${1:#0}\">",
+      "  <uef-icon name=\"file-word\" accessibility-text=\"Word processing file\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "  ${0:[Document Title]}",
+      "</uef-link>",
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Word Link"
+  },
+
+  "UEF 3 Zip Link": {
+    "prefix": "uef3-link-zip",
+    "body": [
+      "<!-- ZIP LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-link href=\"${1:#0}\">",
+      "  <uef-icon name=\"file-archive\" accessibility-text=\"Archive file\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "  ${0:[Archive Title]}",
+      "</uef-link>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Zip Link"
+  },
+
   "UEF 3 Section": {
     "prefix": "uef3-section",
     "body": [
@@ -8065,114 +8203,9 @@
       "</uef-tab-panel>",
       "<uef-tab-panel name=\"panel-4\">",
       "  INSERT TAB PANEL 4 CONTENT",
-      "</uef-tab-panel>",
-      ""
+      "</uef-tab-panel>"
     ],
     "description": "UEF 3 Tabs"
-  },
-
-  "UEF 3 Link": {
-    "prefix": "uef3-link",
-    "body": [
-      "<uef-link href=\"#0\">INSERT LINK TEXT</uef-link>"
-    ],
-    "description": "UEF 3 Link"
-  },
-
-  "UEF 3 Download Link": {
-    "prefix": "uef3-link-download",
-    "body": [
-      "<uef-link href=\"#0\" download>",
-      "  <uef-icon type=\"solid\" name=\"download\"></uef-icon> Download this file",
-      "</uef-link>"
-    ],
-    "description": "UEF 3 Download Link"
-  },
-
-  "UEF 3 Email Link": {
-    "prefix": "uef3-link-email",
-    "body": [
-      "<uef-link href=\"mailto:someone@example.com\">",
-      "  <uef-icon name=\"envelope\"></uef-icon> [someone@example.com]",
-      "</uef-link>"
-    ],
-    "description": "UEF 3 Email Link"
-  },
-
-  "UEF 3 Excel Link": {
-    "prefix": "uef3-link-excel",
-    "body": [
-      "<uef-link href=\"https://www.ssa.gov/forms/ss-5.pdf\">",
-      "  <uef-icon name=\"file-excel\" accessibility-text=\"Excel File\" color=\"--uef-color-green-primary\"></uef-icon>",
-      "  [Document Title]",
-      "</uef-link>"
-    ],
-    "description": "UEF 3 Excel Link"
-  },
-
-  "UEF 3 External Link": {
-    "prefix": "uef3-link-external",
-    "body": [
-      "<uef-link href=\"#0\" type=\"external\">",
-      "  <uef-icon type=\"solid\" name=\"external-link-alt\" accessibility-text=\"External website\"></uef-icon>",
-      "  [External site name]",
-      "</uef-link>"
-    ],
-    "description": "UEF 3 External Link"
-  },
-
-  "UEF 3 Print Link": {
-    "prefix": "uef3-link-print",
-    "body": [
-      "<uef-link href=\"javascript:window.print();\">",
-      "  <uef-icon type=\"solid\" name=\"print\"></uef-icon> Print this page",
-      "</uef-link>"
-    ],
-    "description": "UEF 3 Print Link"
-  },
-
-  "UEF 3 PDF Link": {
-    "prefix": "uef3-link-pdf",
-    "body": [
-      "<uef-link href=\"https://www.ssa.gov/forms/ss-5.pdf\">",
-      "  <uef-icon name=\"file-pdf\" accessibility-text=\"PDF file\" color=\"--uef-color-red-primary\"></uef-icon>",
-      "  [Document Title]",
-      "</uef-link>"
-    ],
-    "description": "UEF 3 PDF Link"
-  },
-
-  "UEF 3 Video Link": {
-    "prefix": "uef3-link-video",
-    "body": [
-      "<uef-link href=\"#0\">",
-      "  <uef-icon name=\"video\" type=\"solid\" accessibility-text=\"Video\"></uef-icon>",
-      "  [Video Title] (mm:ss)",
-      "</uef-link>"
-    ],
-    "description": "UEF 3 Video Link"
-  },
-
-  "UEF 3 Word Link": {
-    "prefix": "uef3-link-word",
-    "body": [
-      "<uef-link href=\"#0\">",
-      "  <uef-icon name=\"file-word\" accessibility-text=\"Word file\"></uef-icon>",
-      "  [Document Title]",
-      "</uef-link>"
-    ],
-    "description": "UEF 3 Word Link"
-  },
-
-  "UEF 3 Zip File Link": {
-    "prefix": "uef3-link-zip",
-    "body": [
-      "<uef-link href=\"#0\">",
-      "  <uef-icon name=\"file-archive\" accessibility-text=\"Zip file\"></uef-icon>",
-      "  [Archive Title]",
-      "</uef-link>"
-    ],
-    "description": "UEF 3 Zip File Link"
   },
 
   "UEF 3 Navigation": {
