@@ -8101,6 +8101,172 @@
     "description": "UEF 3 Zip Link"
   },
 
+  "UEF 3 Media": {
+    "prefix": "uef3-media",
+    "body": [
+      "<!-- MEDIA ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-media src=\"${1:https://api.lorem.space/image/face?w=2000&amp;h=2000}\" accessibility-text=\"${2:INSERT ACCESSIBILITY TEXT}\"",
+      "  width=\"${3:100px}\" height=\"${4:100px}\" ${5:overlay} fit=\"${6|cover,contain,fill,none|}\" placement=\"${0|left,right,top,bottom,center|}\"",
+      ">",
+      "  <picture>",
+      "    <source media=\"(min-width: 800px)\" src-set=\"${1:https://api.lorem.space/image/face?w=2000&amp;h=2000}\"/>",
+      "    <img src=\"${1:https://api.lorem.space/image/face?w=2000&amp;h=2000}\" alt=\"${2:INSERT ACCESSIBILITY TEXT}\"/>",
+      "  </picture>",
+      "</uef-media>",
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Media"
+  },
+
+  "UEF 3 Video": {
+    "prefix": "uef3-video",
+    "body": [
+      "<!-- VIDEO ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-media src=\"${1:https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm}\" accessibility-text=\"${2:INSERT ACCESSIBILITY TEXT}\"",
+      "  width=\"${3:100px}\" height=\"${4:100px}\" ${5:overlay} fit=\"${6|cover,contain,fill,none|}\" placement=\"${7|left,right,top,bottom,center|}\"",
+      ">",
+      "  <video ${8:controls}>",
+      "    <source src=\"${1:https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm}\" type=\"video/webm\"/>",
+      "    <source src=\"${0:https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4}\" type=\"video/mp4\"/>",
+      "    Sorry, your browser doesn't support embedded videos.",
+      "  </video>",
+      "</uef-media>",
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Video"
+  },
+
+  "UEF 3 Hero": {
+    "prefix": "uef3-hero",
+    "body": [
+      "<!-- HERO ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-container sx='{\"height\":\"${1:300px}\",\"background\":\"${2:#000}\"}'>",
+      "  <h3>${3:[INSERT HERO TEXT]}</h3>",
+      "  <uef-media slot=\"uef-container-background\"",
+      "    src=\"${4:https://api.lorem.space/image/face?w=2000&amp;h=2000}\" accessibility-text=\"${5:INSERT ACCESSIBILITY TEXT}\"",
+      "    fit=\"${6|cover,contain,fill,none|}\" placement=\"${7|left,right,top,bottom,center|}\"",
+      "  >",
+      "    <picture>",
+      "      <source src-set=\"${4:https://api.lorem.space/image/face?w=2000&amp;h=2000}\" media=\"(min-width: 800px)\"/>",
+      "      <img src=\"${0:https://api.lorem.space/image/face?w=2000&amp;h=2000}\" alt=\"${5:INSERT ACCESSIBILITY TEXT}\"/>",
+      "    </picture>",
+      "  </uef-media>",
+      "</uef-container>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Hero"
+  },
+
+  "UEF 3 Menu": {
+    "prefix": "uef3-menu",
+    "body": [
+      "<!-- MENU ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-container width=\"${1:500px}\" height=\"${2:500px}\" sx='{\"border\": \"1px solid #dadada\"}'>",
+      "  <uef-flex align-items=\"center\" justify-content=\"center\" sx='{ \"height\": \"100%\" }'>",
+      "    <uef-menu label=\"Menu\" placement=\"${0|bottom-start,bottom-end,bottom,top-start,top-end,top,left,left-start,left-end,right,right-start,right-end|}\" sx='{\"--uef-menu-offset\":\"-50px\"}'>",
+      "      <uef-flex direction=\"column\" gap=\"var(--uef-space-4x)\">",
+      "        <uef-link href=\"javascript:void(0)\">[Link 1]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 2]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 3]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 4]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 5]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 6]</uef-link>",
+      "      </uef-flex>",
+      "    </uef-menu>",
+      "  </uef-flex>",
+      "</uef-container>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Menu"
+  },
+
+  "UEF 3 Navigation": {
+    "prefix": "uef3-nav-menu",
+    "body": [
+      "<!-- NAVIGATION MENU ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-nav>",
+      "  <uef-nav-item href=\"javascript:void(0)\">[Item 1]</uef-nav-item>",
+      "  <uef-nav-item href=\"javascript:void(0)\" current>[Item 2]</uef-nav-item>",
+      "  <uef-nav-item href=\"javascript:void(0)\">[Item 3]</uef-nav-item>",
+      "  <uef-nav-item href=\"javascript:void(0)\">[Item 4]</uef-nav-item>",
+      "  <uef-nav-item>",
+      "    <uef-menu label=\"[Item 5]\" placement=\"bottom-end\"",
+      "      sx='{\"--uef-menu-offset\":\"var(--uef-space-3x)\",\"--uef-button-color2\":\"transparent\"}'",
+      "    >",
+      "      <uef-flex direction=\"column\" gap=\"var(--uef-space-stack-4x)\">",
+      "        <uef-link href=\"javascript:void(0)\">[Link 1]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 2]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 3]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 4]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 5]</uef-link>",
+      "        <uef-link href=\"javascript:void(0)\">[Link 6]</uef-link>",
+      "      </uef-flex>",
+      "    </uef-menu>",
+      "  </uef-nav-item>",
+      "</uef-nav>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Navigation Menu"
+  },
+
+  "UEF 3 Mega Menu": {
+    "prefix": "uef3-mega-menu",
+    "body": [
+      "<uef-nav sx='{\"position\": \"relative\"}'>",
+      "  <uef-nav-item href=\"javascript:void(0)\" current=\"\">[Home]</uef-nav-item>",
+      "  <uef-nav-item href=\"javascript:void(0)\">[Item 1]</uef-nav-item>",
+      "  <uef-nav-item href=\"javascript:void(0)\">[[Item 2]]</uef-nav-item>",
+      "  <uef-nav-item>",
+      "    <uef-menu placement=\"bottom\" megamenu label=\"[[Item 3]]\">",
+      "      <uef-grid grid-template-columns=\"repeat(auto-fit, minmax(10em,1fr))\" gap=\"var(--uef-space-4x)\">",
+      "        <uef-grid-item>",
+      "          <uef-flex direction=\"column\" gap=\"var(--uef-space-4x)\">",
+      "            <uef-typography weight=\"var(--uef-font-weight-semibold)\" color=\"var(--uef-color-uswds-blue-70)\">",
+      "              [Group Header 1]",
+      "            </uef-typography>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 1]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 2]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 3]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 4]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 5]</uef-link>",
+      "          </uef-flex>",
+      "        </uef-grid-item>",
+      "        <uef-grid-item>",
+      "          <uef-flex direction=\"column\" gap=\"var(--uef-space-4x)\">",
+      "            <uef-typography weight=\"var(--uef-font-weight-semibold)\" color=\"var(--uef-color-uswds-blue-70)\">",
+      "              [Group Header 2]",
+      "            </uef-typography>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 6]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 7]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 8]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 9]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 10]</uef-link>",
+      "          </uef-flex>",
+      "        </uef-grid-item>",
+      "        <uef-grid-item>",
+      "          <uef-flex direction=\"column\" gap=\"var(--uef-space-4x)\">",
+      "            <uef-typography weight=\"var(--uef-font-weight-semibold)\" color=\"var(--uef-color-uswds-blue-70)\">",
+      "              [Group Header 3]",
+      "            </uef-typography>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 11]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 12]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 13]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 14]</uef-link>",
+      "            <uef-link href=\"javascript:void(0)\">[Link 15]</uef-link>",
+      "          </uef-flex>",
+      "        </uef-grid-item>",
+      "      </uef-grid>",
+      "      <uef-section sx='{\"border-bottom\":\"1px solid rgb(27, 27, 27)\", \"margin-top\": \"var(--uef-space-stack-4x)\", \"margin-bottom\": \"var(--uef-space-stack-4x)\" }'></uef-section>",
+      "      <uef-typography weight=\"var(--uef-font-weight-light)\" color=\"var(--uef-color-uswds-blue-70)\">",
+      "        [[Support Text]]",
+      "      </uef-typography>",
+      "    </uef-menu>",
+      "  </uef-nav-item>",
+      "</uef-nav>"
+    ],
+    "description": "UEF 3 Mega Menu"
+  },
+
   "UEF 3 Section": {
     "prefix": "uef3-section",
     "body": [
@@ -8206,19 +8372,6 @@
       "</uef-tab-panel>"
     ],
     "description": "UEF 3 Tabs"
-  },
-
-  "UEF 3 Navigation": {
-    "prefix": "uef3-navigation",
-    "body": [
-      "<uef-nav>",
-      "  <uef-nav-item href=\"#0\" current>Home</uef-nav-item>",
-      "  <uef-nav-item href=\"#0\">Nav Item 1</uef-nav-item>",
-      "  <uef-nav-item href=\"#0\">Nav Item 2</uef-nav-item>",
-      "  <uef-nav-item href=\"#0\">Nav Item 3</uef-nav-item>",
-      "</uef-nav>"
-    ],
-    "description": "UEF 3 Navigation"
   },
 
   "UEF 3 Pagination": {
