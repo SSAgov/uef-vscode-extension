@@ -6820,222 +6820,43 @@
     "description": "UEF 3 Place"
   },
 
-  "UEF 3 Radio List": {
-    "prefix": "uef3-radiolist",
-    "body": [
-      "<uef-radiolist field-name=\"${1:radiolist-field-name}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instructions]}\"",
-      "  other-value=\"3\" other-text-field-name=\"other-field-name\"",
-      ">",
-      "  <uef-radio field-id=\"radio-1\" label=\"Option 1\" value=\"1\"></uef-radio>",
-      "  <uef-radio field-id=\"radio-2\" label=\"Option 2\" value=\"2\"></uef-radio>",
-      "  <uef-radio field-id=\"radio-3\" label=\"Other\" value=\"3\"></uef-radio>",
-      "</uef-radiolist>"
-    ],
-    "description": "UEF 3 Radio List"
-  },
-
-  "UEF 3 SSN": {
-    "prefix": "uef3-ssn",
-    "body": [
-      "<uef-ssn field-name=\"${1:ssn-field-name}\" label=\"${2:[Person's] }Social Security Number (SSN)\"",
-      "  instructions=\"${3:[Instructions]}\" support-info=\"${4:[Support Info]}\" width=\"12ch\"",
-      "></uef-ssn>"
-    ],
-    "description": "UEF 3 SSN"
-  },
-
-  "UEF 3 State": {
-    "prefix": "uef3-state",
-    "body": [
-      "<!-- STATE ───────────────────────────────────────────────────────────────────────────────────── -->",
-      "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
-      "  field-name=\"${4:INSERT-FIELD-NAME}\" value=\"${0:}\"",
-      "  items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"American Samoa\",\"value\":\"AS\"},{\"label\":\"Arizona\",\"value\":\"AZ\"},{\"label\":\"Arkansas\",\"value\":\"AR\"},{\"label\":\"Armed Forces Africa (AE Also Equals Canada Europe and the Middle East)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Americas (Except Canada)\",\"value\":\"AA\"},{\"label\":\"Armed Forces Canada (AE Also Equals Africa Europe and the Middle East)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Europe (AE Also Equals Africa Canada and the Middle East)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Middle East (AE Also Equals Africa Canada and Europe)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Pacific\",\"value\":\"AP\"},{\"label\":\"California\",\"value\":\"CA\"},{\"label\":\"Colorado\",\"value\":\"CO\"},{\"label\":\"Connecticut\",\"value\":\"CT\"},{\"label\":\"Delaware\",\"value\":\"DE\"},{\"label\":\"District of Columbia\",\"value\":\"DC\"},{\"label\":\"Federated States of Micronesia\",\"value\":\"FM\"},{\"label\":\"Florida\",\"value\":\"FL\"},{\"label\":\"Georgia\",\"value\":\"GA\"},{\"label\":\"Guam\",\"value\":\"GU\"},{\"label\":\"Hawaii\",\"value\":\"HI\"},{\"label\":\"Idaho\",\"value\":\"ID\"},{\"label\":\"Illinois\",\"value\":\"IL\"},{\"label\":\"Indiana\",\"value\":\"IN\"},{\"label\":\"Iowa\",\"value\":\"IA\"},{\"label\":\"Kansas\",\"value\":\"KS\"},{\"label\":\"Kentucky\",\"value\":\"KY\"},{\"label\":\"Louisiana\",\"value\":\"LA\"},{\"label\":\"Maine\",\"value\":\"ME\"},{\"label\":\"Marshall Islands\",\"value\":\"MH\"},{\"label\":\"Maryland\",\"value\":\"MD\"},{\"label\":\"Massachusetts\",\"value\":\"MA\"},{\"label\":\"Michigan\",\"value\":\"MI\"},{\"label\":\"Minnesota\",\"value\":\"MN\"},{\"label\":\"Mississippi\",\"value\":\"MS\"},{\"label\":\"Missouri\",\"value\":\"MO\"},{\"label\":\"Montana\",\"value\":\"MT\"},{\"label\":\"Nebraska\",\"value\":\"NE\"},{\"label\":\"Nevada\",\"value\":\"NV\"},{\"label\":\"New Hampshire\",\"value\":\"NH\"},{\"label\":\"New Jersey\",\"value\":\"NJ\"},{\"label\":\"New Mexico\",\"value\":\"NM\"},{\"label\":\"New York\",\"value\":\"NY\"},{\"label\":\"North Carolina\",\"value\":\"NC\"},{\"label\":\"North Dakota\",\"value\":\"ND\"},{\"label\":\"Northern Mariana Islands\",\"value\":\"MP\"},{\"label\":\"Ohio\",\"value\":\"OH\"},{\"label\":\"Oklahoma\",\"value\":\"OK\"},{\"label\":\"Oregon\",\"value\":\"OR\"},{\"label\":\"Palau\",\"value\":\"PW\"},{\"label\":\"Pennsylvania\",\"value\":\"PA\"},{\"label\":\"Puerto Rico\",\"value\":\"PR\"},{\"label\":\"Rhode Island\",\"value\":\"RI\"},{\"label\":\"South Carolina\",\"value\":\"SC\"},{\"label\":\"South Dakota\",\"value\":\"SD\"},{\"label\":\"Tennessee\",\"value\":\"TN\"},{\"label\":\"Texas\",\"value\":\"TX\"},{\"label\":\"Utah\",\"value\":\"UT\"},{\"label\":\"Vermont\",\"value\":\"VT\"},{\"label\":\"Virgin Islands\",\"value\":\"VI\"},{\"label\":\"Virginia\",\"value\":\"VA\"},{\"label\":\"Washington\",\"value\":\"WA\"},{\"label\":\"West Virginia\",\"value\":\"WV\"},{\"label\":\"Wisconsin\",\"value\":\"WI\"},{\"label\":\"Wyoming\",\"value\":\"WY\"}]'",
-      ">",
-      "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
-      "</uef-droplist>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
-    ],
-    "description": "UEF 3 State"
-  },
-
-  "UEF 3 Textarea": {
-    "prefix": "uef3-textarea",
-    "body": [
-      "<uef-textarea label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instruction Text]} (${3:[500]} characters maximum)\" maxlength=\"${3:500}\" value=\"\"></uef-textarea>"
-    ],
-    "description": "UEF 3 Textarea"
-  },
-
-  "UEF 3 Textbox": {
-    "prefix": "uef3-textbox",
-    "body": [
-      "<uef-textbox field-name=\"${1:textbox-field-name}\" label=\"${2:[Pattern label]}\"",
-      "  instructions=\"${3:[Instructions]}\"",
-      "  support-info=\"${4:[Support Info]}\"",
-      "></uef-textbox>"
-    ],
-    "description": "UEF 3 Textbox"
-  },
-
-  "UEF 3 Textbox with Custom Icon": {
-    "prefix": "uef3-textbox-icon",
-    "body": [
-      "<uef-textbox field-name=\"${1:textbox-field-name}\" label=\"${2:[Pattern Label]}\"",
-      "  instructions=\"${3:[Instructions]}\"",
-      "  support-info=\"${4:[Support Info]}\"",
-      ">",
-      "  <uef-icon name=\"${5:address-card}\" slot=\"input-overlay\"></uef-icon>",
-      "</uef-textbox>"
-    ],
-    "description": "UEF 3 Textbox with Custom Icon"
-  },
-
-  "UEF 3 Time": {
-    "prefix": "uef3-time",
-    "body": [
-      "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\" ${3:compound-id=\"\">",
-      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
-      "    <uef-flex-item>",
-      "      <uef-droplist field-name=\"INSERT-FIELD-NAME\" label=\"Time\">",
-      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"1:00\" value=\"1:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"2:00\" value=\"2:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"3:00\" value=\"3:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"4:00\" value=\"4:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"5:00\" value=\"5:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"6:00\" value=\"6:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"7:00\" value=\"7:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"8:00\" value=\"8:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"9:00\" value=\"9:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"10:00\" value=\"10:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"11:00\" value=\"11:00\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"12:00\" value=\"12:00\"></uef-droplist-item>",
-      "      </uef-droplist>",
-      "    </uef-flex-item>",
-      "    <uef-flex-item>",
-      "      <uef-droplist field-name=\"INSERT-FIELD-NAME\" label=\"AM/PM\">",
-      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"AM\" value=\"AM\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"PM\" value=\"PM\"></uef-droplist-item>",
-      "      </uef-droplist>",
-      "    </uef-flex-item>",
-      "  </uef-flex>",
-      "</uef-compound>"
-    ],
-    "description": "UEF 3 Time (Dropdowns)"
-  },
-
-  "UEF 3 Time Zone": {
-    "prefix": "uef3-timezone",
-    "body": [
-      "<!-- TIME ZONE ───────────────────────────────────────────────────────────────────────────────────── -->",
-      "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
-      "  field-name=\"${3:INSERT-FIELD-NAME}\" value=\"${0:}\"",
-      "  items='[{\"label\":\"Alaska Standard Time (AKST)\",\"value\":\"AKST\"},{\"label\":\"Central Standard Time (CST)\",\"value\":\"CST\"},{\"label\":\"Eastern Standard Time (EST)\",\"value\":\"EST\"},{\"label\":\"Hawaii-Aleutian Standard Time (HAST)\",\"value\":\"HAST\"},{\"label\":\"Mountain Standard Time (MST)\",\"value\":\"MST\"},{\"label\":\"Pacific Standard Time (PST)\",\"value\":\"PST\"}]'",
-      ">",
-      "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
-      "</uef-droplist>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->"
-    ],
-    "description": "UEF 3 Time Zone"
-  },
-
-  "UEF 3 Yes/No": {
-    "prefix": "uef3-yesno",
-    "body": [
-      "<uef-radiolist field-name=\"${1:yesno-field-name}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instructions]}\">",
-      "  <uef-radio label=\"Yes\" value=\"true\"></uef-radio>",
-      "  <uef-radio label=\"No\" value=\"false\"></uef-radio>",
-      "  ${4:<uef-radio label=\"Not Yet Answered\" value=\"nya\"></uef-radio>}",
-      "</uef-radiolist>"
-    ],
-    "description": "UEF 3 Yes/No"
-  },
-
-  "UEF 3 Time (Textbox)": {
-    "prefix": "uef3-time-textbox",
-    "body": [
-      "<uef-compound label=\"[Pattern Label]\" instructions=\"[Instructions]\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
-      "    <uef-flex-item>",
-      "      <uef-textbox field-name=\"time\" label=\"Time\" maxlength=\"5\" width=\"5em\"></uef-textbox>",
-      "    </uef-flex-item>",
-      "    <uef-flex-item>",
-      "      <uef-droplist field-name=\"time-ampm\" label=\"AM/PM\">",
-      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"AM\" value=\"AM\"></uef-droplist-item>",
-      "        <uef-droplist-item label=\"PM\" value=\"PM\"></uef-droplist-item>",
-      "      </uef-droplist>",
-      "    </uef-flex-item>",
-      "  </uef-flex>",
-      "</uef-compound>"
-    ],
-    "description": "UEF 3 Time (Textbox)"
-  },
-
-  "UEF 3 ZIP Code": {
-    "prefix": "uef3-zipcode",
-    "body": [
-      "<uef-textbox",
-      "  label=\"[Person's] ZIP Code\"",
-      "  instructions=\"[Instructions]\"",
-      "  support-info=\"[Support Info]\"",
-      "  field-name=\"uef-zip-code-1\" inputmode=\"numeric\" width=\"5em\" maxlength=\"5\"",
-      "></uef-textbox>"
-    ],
-    "description": "UEF 3 ZIP Code"
-  },
-
-  "UEF 3 ZIP Code (+4)": {
-    "prefix": "uef3-zipcode-plus-4",
-    "body": [
-      "<uef-textbox",
-      "  label=\"[Person's] ZIP Code\"",
-      "  instructions=\"[Instructions]\"",
-      "  support-info=\"[Support Info]\"",
-      "  field-name=\"uef-zip-code-2\"",
-      "  width=\"9em\" maxlength=\"9\" inputmode=\"numeric\" mask=\"     -    \" format=\"*****-****\"",
-      "></uef-textbox>"
-    ],
-    "description": "UEF 3 ZIP Code (+4)"
-  },
-
   "UEF 3 Name (default)": {
     "prefix": "uef3-name-default",
     "body": [
-      "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item flex-grow=\"0\">",
-      "      <uef-droplist field-name=\"name-title\" label=\"Title\"",
+      "      <uef-droplist field-name=\"${3:INSERT-NAME}-title\" label=\"Title\"",
       "        items='[{\"label\":\"Attorney\",\"value\":\"Attorney\"},{\"label\":\"Coach\",\"value\":\"Coach\"},{\"label\":\"Dr.\",\"value\":\"Dr.\"},{\"label\":\"Father\",\"value\":\"Father\"},{\"label\":\"Governor\",\"value\":\"Governor\"},{\"label\":\"Honorable\",\"value\":\"Honorable\"},{\"label\":\"Officer\",\"value\":\"Officer\"},{\"label\":\"Master\",\"value\":\"Master\"},{\"label\":\"Miss\",\"value\":\"Miss\"},{\"label\":\"Mr.\",\"value\":\"Mr.\"},{\"label\":\"Mrs\",\"value\":\"Mrs.\"},{\"label\":\"Ms.\",\"value\":\"Ms\"},{\"label\":\"President\",\"value\":\"President\"},{\"label\":\"Professor\",\"value\":\"Professor\"},{\"label\":\"Reverend\",\"value\":\"Reverend\"}]'",
       "      >",
-      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\">",
-      "      <uef-textbox field-name=\"first-name\" label=\"First\"maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${3:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\">",
-      "      <uef-textbox field-name=\"middle-name\" label=\"Middle\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${3:INSERT-NAME}-middle-name\" label=\"Middle\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\">",
-      "      <uef-textbox field-name=\"last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${3:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"0\">",
-      "      <uef-droplist field-name=\"suffix\" label=\"Suffix\"",
+      "      <uef-droplist field-name=\"${3:INSERT-NAME}-suffix\" label=\"Suffix\"",
       "        items='[{\"label\":\"I\",\"value\":\"First\"},{\"label\":\"II\",\"value\":\"Second\"},{\"label\":\"III\",\"value\":\"Third\"},{\"label\":\"IV\",\"value\":\"Fourth\"},{\"label\":\"IX\",\"value\":\"Ninth\"},{\"label\":\"JR\",\"value\":\"Junior\"},{\"label\":\"SR\",\"value\":\"Senior\"},{\"label\":\"V\",\"value\":\"Fifth\"},{\"label\":\"VI\",\"value\":\"Sixth\"},{\"label\":\"VII\",\"value\":\"Seventh\"},{\"label\":\"VIII\",\"value\":\"Eighth\"},{\"label\":\"X\",\"value\":\"Tenth\"},{\"label\":\"XI\",\"value\":\"Eleventh\"},{\"label\":\"XII\",\"value\":\"Twelfth\"},{\"label\":\"XIII\",\"value\":\"Thirteenth\"},{\"label\":\"XIV\",\"value\":\"Fourteenth\"},{\"label\":\"XV\",\"value\":\"Fifteenth\"},{\"label\":\"XVI\",\"value\":\"Sixteenth\"},{\"label\":\"XVII\",\"value\":\"Seventeenth\"}]'",
       "      >",
-      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "</uef-compound>"
+      "</uef-compound>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Name (Title dropdown, First|Middle|Last textboxes, Suffix dropdown)"
   },
 
-  "UEF 3 Name (Suffix--Textbox)": {
+  "UEF 3 Name (Suffix Textbox)": {
     "prefix": "uef3-name-f-m-l-s",
     "body": [
       "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
@@ -7226,6 +7047,187 @@
       "</uef-compound>"
     ],
     "description": "UEF 3 Name (First|Last textboxes)"
+  },
+
+  "UEF 3 Radio List": {
+    "prefix": "uef3-radiolist",
+    "body": [
+      "<uef-radiolist field-name=\"${1:radiolist-field-name}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instructions]}\"",
+      "  other-value=\"3\" other-text-field-name=\"other-field-name\"",
+      ">",
+      "  <uef-radio field-id=\"radio-1\" label=\"Option 1\" value=\"1\"></uef-radio>",
+      "  <uef-radio field-id=\"radio-2\" label=\"Option 2\" value=\"2\"></uef-radio>",
+      "  <uef-radio field-id=\"radio-3\" label=\"Other\" value=\"3\"></uef-radio>",
+      "</uef-radiolist>"
+    ],
+    "description": "UEF 3 Radio List"
+  },
+
+  "UEF 3 SSN": {
+    "prefix": "uef3-ssn",
+    "body": [
+      "<uef-ssn field-name=\"${1:ssn-field-name}\" label=\"${2:[Person's] }Social Security Number (SSN)\"",
+      "  instructions=\"${3:[Instructions]}\" support-info=\"${4:[Support Info]}\" width=\"12ch\"",
+      "></uef-ssn>"
+    ],
+    "description": "UEF 3 SSN"
+  },
+
+  "UEF 3 State": {
+    "prefix": "uef3-state",
+    "body": [
+      "<!-- STATE ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
+      "  field-name=\"${4:INSERT-FIELD-NAME}\" value=\"${0:}\"",
+      "  items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"American Samoa\",\"value\":\"AS\"},{\"label\":\"Arizona\",\"value\":\"AZ\"},{\"label\":\"Arkansas\",\"value\":\"AR\"},{\"label\":\"Armed Forces Africa (AE Also Equals Canada Europe and the Middle East)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Americas (Except Canada)\",\"value\":\"AA\"},{\"label\":\"Armed Forces Canada (AE Also Equals Africa Europe and the Middle East)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Europe (AE Also Equals Africa Canada and the Middle East)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Middle East (AE Also Equals Africa Canada and Europe)\",\"value\":\"AE\"},{\"label\":\"Armed Forces Pacific\",\"value\":\"AP\"},{\"label\":\"California\",\"value\":\"CA\"},{\"label\":\"Colorado\",\"value\":\"CO\"},{\"label\":\"Connecticut\",\"value\":\"CT\"},{\"label\":\"Delaware\",\"value\":\"DE\"},{\"label\":\"District of Columbia\",\"value\":\"DC\"},{\"label\":\"Federated States of Micronesia\",\"value\":\"FM\"},{\"label\":\"Florida\",\"value\":\"FL\"},{\"label\":\"Georgia\",\"value\":\"GA\"},{\"label\":\"Guam\",\"value\":\"GU\"},{\"label\":\"Hawaii\",\"value\":\"HI\"},{\"label\":\"Idaho\",\"value\":\"ID\"},{\"label\":\"Illinois\",\"value\":\"IL\"},{\"label\":\"Indiana\",\"value\":\"IN\"},{\"label\":\"Iowa\",\"value\":\"IA\"},{\"label\":\"Kansas\",\"value\":\"KS\"},{\"label\":\"Kentucky\",\"value\":\"KY\"},{\"label\":\"Louisiana\",\"value\":\"LA\"},{\"label\":\"Maine\",\"value\":\"ME\"},{\"label\":\"Marshall Islands\",\"value\":\"MH\"},{\"label\":\"Maryland\",\"value\":\"MD\"},{\"label\":\"Massachusetts\",\"value\":\"MA\"},{\"label\":\"Michigan\",\"value\":\"MI\"},{\"label\":\"Minnesota\",\"value\":\"MN\"},{\"label\":\"Mississippi\",\"value\":\"MS\"},{\"label\":\"Missouri\",\"value\":\"MO\"},{\"label\":\"Montana\",\"value\":\"MT\"},{\"label\":\"Nebraska\",\"value\":\"NE\"},{\"label\":\"Nevada\",\"value\":\"NV\"},{\"label\":\"New Hampshire\",\"value\":\"NH\"},{\"label\":\"New Jersey\",\"value\":\"NJ\"},{\"label\":\"New Mexico\",\"value\":\"NM\"},{\"label\":\"New York\",\"value\":\"NY\"},{\"label\":\"North Carolina\",\"value\":\"NC\"},{\"label\":\"North Dakota\",\"value\":\"ND\"},{\"label\":\"Northern Mariana Islands\",\"value\":\"MP\"},{\"label\":\"Ohio\",\"value\":\"OH\"},{\"label\":\"Oklahoma\",\"value\":\"OK\"},{\"label\":\"Oregon\",\"value\":\"OR\"},{\"label\":\"Palau\",\"value\":\"PW\"},{\"label\":\"Pennsylvania\",\"value\":\"PA\"},{\"label\":\"Puerto Rico\",\"value\":\"PR\"},{\"label\":\"Rhode Island\",\"value\":\"RI\"},{\"label\":\"South Carolina\",\"value\":\"SC\"},{\"label\":\"South Dakota\",\"value\":\"SD\"},{\"label\":\"Tennessee\",\"value\":\"TN\"},{\"label\":\"Texas\",\"value\":\"TX\"},{\"label\":\"Utah\",\"value\":\"UT\"},{\"label\":\"Vermont\",\"value\":\"VT\"},{\"label\":\"Virgin Islands\",\"value\":\"VI\"},{\"label\":\"Virginia\",\"value\":\"VA\"},{\"label\":\"Washington\",\"value\":\"WA\"},{\"label\":\"West Virginia\",\"value\":\"WV\"},{\"label\":\"Wisconsin\",\"value\":\"WI\"},{\"label\":\"Wyoming\",\"value\":\"WY\"}]'",
+      ">",
+      "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
+      "</uef-droplist>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 State"
+  },
+
+  "UEF 3 Textarea": {
+    "prefix": "uef3-textarea",
+    "body": [
+      "<uef-textarea label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instruction Text]} (${3:[500]} characters maximum)\" maxlength=\"${3:500}\" value=\"\"></uef-textarea>"
+    ],
+    "description": "UEF 3 Textarea"
+  },
+
+  "UEF 3 Textbox": {
+    "prefix": "uef3-textbox",
+    "body": [
+      "<uef-textbox field-name=\"${1:textbox-field-name}\" label=\"${2:[Pattern label]}\"",
+      "  instructions=\"${3:[Instructions]}\"",
+      "  support-info=\"${4:[Support Info]}\"",
+      "></uef-textbox>"
+    ],
+    "description": "UEF 3 Textbox"
+  },
+
+  "UEF 3 Textbox with Custom Icon": {
+    "prefix": "uef3-textbox-icon",
+    "body": [
+      "<uef-textbox field-name=\"${1:textbox-field-name}\" label=\"${2:[Pattern Label]}\"",
+      "  instructions=\"${3:[Instructions]}\"",
+      "  support-info=\"${4:[Support Info]}\"",
+      ">",
+      "  <uef-icon name=\"${5:address-card}\" slot=\"input-overlay\"></uef-icon>",
+      "</uef-textbox>"
+    ],
+    "description": "UEF 3 Textbox with Custom Icon"
+  },
+
+  "UEF 3 Time": {
+    "prefix": "uef3-time",
+    "body": [
+      "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\" ${3:compound-id=\"\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
+      "    <uef-flex-item>",
+      "      <uef-droplist field-name=\"INSERT-FIELD-NAME\" label=\"Time\">",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"1:00\" value=\"1:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"2:00\" value=\"2:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"3:00\" value=\"3:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"4:00\" value=\"4:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"5:00\" value=\"5:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"6:00\" value=\"6:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"7:00\" value=\"7:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"8:00\" value=\"8:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"9:00\" value=\"9:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"10:00\" value=\"10:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"11:00\" value=\"11:00\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"12:00\" value=\"12:00\"></uef-droplist-item>",
+      "      </uef-droplist>",
+      "    </uef-flex-item>",
+      "    <uef-flex-item>",
+      "      <uef-droplist field-name=\"INSERT-FIELD-NAME\" label=\"AM/PM\">",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"AM\" value=\"AM\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"PM\" value=\"PM\"></uef-droplist-item>",
+      "      </uef-droplist>",
+      "    </uef-flex-item>",
+      "  </uef-flex>",
+      "</uef-compound>"
+    ],
+    "description": "UEF 3 Time (Dropdowns)"
+  },
+
+  "UEF 3 Time Zone": {
+    "prefix": "uef3-timezone",
+    "body": [
+      "<!-- TIME ZONE ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
+      "  field-name=\"${3:INSERT-FIELD-NAME}\" value=\"${0:}\"",
+      "  items='[{\"label\":\"Alaska Standard Time (AKST)\",\"value\":\"AKST\"},{\"label\":\"Central Standard Time (CST)\",\"value\":\"CST\"},{\"label\":\"Eastern Standard Time (EST)\",\"value\":\"EST\"},{\"label\":\"Hawaii-Aleutian Standard Time (HAST)\",\"value\":\"HAST\"},{\"label\":\"Mountain Standard Time (MST)\",\"value\":\"MST\"},{\"label\":\"Pacific Standard Time (PST)\",\"value\":\"PST\"}]'",
+      ">",
+      "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
+      "</uef-droplist>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Time Zone"
+  },
+
+  "UEF 3 Yes/No": {
+    "prefix": "uef3-yesno",
+    "body": [
+      "<uef-radiolist field-name=\"${1:yesno-field-name}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instructions]}\">",
+      "  <uef-radio label=\"Yes\" value=\"true\"></uef-radio>",
+      "  <uef-radio label=\"No\" value=\"false\"></uef-radio>",
+      "  ${4:<uef-radio label=\"Not Yet Answered\" value=\"nya\"></uef-radio>}",
+      "</uef-radiolist>"
+    ],
+    "description": "UEF 3 Yes/No"
+  },
+
+  "UEF 3 Time (Textbox)": {
+    "prefix": "uef3-time-textbox",
+    "body": [
+      "<uef-compound label=\"[Pattern Label]\" instructions=\"[Instructions]\">",
+      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "    <uef-flex-item>",
+      "      <uef-textbox field-name=\"time\" label=\"Time\" maxlength=\"5\" width=\"5em\"></uef-textbox>",
+      "    </uef-flex-item>",
+      "    <uef-flex-item>",
+      "      <uef-droplist field-name=\"time-ampm\" label=\"AM/PM\">",
+      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"AM\" value=\"AM\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"PM\" value=\"PM\"></uef-droplist-item>",
+      "      </uef-droplist>",
+      "    </uef-flex-item>",
+      "  </uef-flex>",
+      "</uef-compound>"
+    ],
+    "description": "UEF 3 Time (Textbox)"
+  },
+
+  "UEF 3 ZIP Code": {
+    "prefix": "uef3-zipcode",
+    "body": [
+      "<uef-textbox",
+      "  label=\"[Person's] ZIP Code\"",
+      "  instructions=\"[Instructions]\"",
+      "  support-info=\"[Support Info]\"",
+      "  field-name=\"uef-zip-code-1\" inputmode=\"numeric\" width=\"5em\" maxlength=\"5\"",
+      "></uef-textbox>"
+    ],
+    "description": "UEF 3 ZIP Code"
+  },
+
+  "UEF 3 ZIP Code (+4)": {
+    "prefix": "uef3-zipcode-plus-4",
+    "body": [
+      "<uef-textbox",
+      "  label=\"[Person's] ZIP Code\"",
+      "  instructions=\"[Instructions]\"",
+      "  support-info=\"[Support Info]\"",
+      "  field-name=\"uef-zip-code-2\"",
+      "  width=\"9em\" maxlength=\"9\" inputmode=\"numeric\" mask=\"     -    \" format=\"*****-****\"",
+      "></uef-textbox>"
+    ],
+    "description": "UEF 3 ZIP Code (+4)"
   },
 
   "UEF 3 Dialog": {
