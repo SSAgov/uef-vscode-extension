@@ -6755,7 +6755,11 @@
   "UEF 3 Password": {
     "prefix": "uef3-password",
     "body": [
-      "<uef-password label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\" support-info=\"${3:[Support Info]}\" field-name=\"${4:password-field-name}\"></uef-password>",
+      "<!-- PASSWORD ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-password ${1:required} label=\"${2:[[Current]]} Password\" instructions=\"${3:[[Instruction Text]]}\" field-name=\"${4:INSERT-FIELD-NAME}\">",
+      "  <uef-link href=\"${5:INSERT-FORGOT-PASSWORD-URL}\" slot=\"uef-input-support-info\">${0:[Forgot Password?]}</uef-link>",
+      "</uef-password>",
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Password"
   },
@@ -6827,23 +6831,23 @@
       "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
       "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item flex-grow=\"0\">",
-      "      <uef-droplist field-name=\"${3:INSERT-NAME}-title\" label=\"Title\"",
+      "      <uef-droplist field-name=\"${0:INSERT-NAME}-title\" label=\"Title\"",
       "        items='[{\"label\":\"Attorney\",\"value\":\"Attorney\"},{\"label\":\"Coach\",\"value\":\"Coach\"},{\"label\":\"Dr.\",\"value\":\"Dr.\"},{\"label\":\"Father\",\"value\":\"Father\"},{\"label\":\"Governor\",\"value\":\"Governor\"},{\"label\":\"Honorable\",\"value\":\"Honorable\"},{\"label\":\"Officer\",\"value\":\"Officer\"},{\"label\":\"Master\",\"value\":\"Master\"},{\"label\":\"Miss\",\"value\":\"Miss\"},{\"label\":\"Mr.\",\"value\":\"Mr.\"},{\"label\":\"Mrs\",\"value\":\"Mrs.\"},{\"label\":\"Ms.\",\"value\":\"Ms\"},{\"label\":\"President\",\"value\":\"President\"},{\"label\":\"Professor\",\"value\":\"Professor\"},{\"label\":\"Reverend\",\"value\":\"Reverend\"}]'",
       "      >",
       "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\">",
-      "      <uef-textbox field-name=\"${3:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\">",
-      "      <uef-textbox field-name=\"${3:INSERT-NAME}-middle-name\" label=\"Middle\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-middle-name\" label=\"Middle\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\">",
-      "      <uef-textbox field-name=\"${3:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"0\">",
-      "      <uef-droplist field-name=\"${3:INSERT-NAME}-suffix\" label=\"Suffix\"",
+      "      <uef-droplist field-name=\"${0:INSERT-NAME}-suffix\" label=\"Suffix\"",
       "        items='[{\"label\":\"I\",\"value\":\"First\"},{\"label\":\"II\",\"value\":\"Second\"},{\"label\":\"III\",\"value\":\"Third\"},{\"label\":\"IV\",\"value\":\"Fourth\"},{\"label\":\"IX\",\"value\":\"Ninth\"},{\"label\":\"JR\",\"value\":\"Junior\"},{\"label\":\"SR\",\"value\":\"Senior\"},{\"label\":\"V\",\"value\":\"Fifth\"},{\"label\":\"VI\",\"value\":\"Sixth\"},{\"label\":\"VII\",\"value\":\"Seventh\"},{\"label\":\"VIII\",\"value\":\"Eighth\"},{\"label\":\"X\",\"value\":\"Tenth\"},{\"label\":\"XI\",\"value\":\"Eleventh\"},{\"label\":\"XII\",\"value\":\"Twelfth\"},{\"label\":\"XIII\",\"value\":\"Thirteenth\"},{\"label\":\"XIV\",\"value\":\"Fourteenth\"},{\"label\":\"XV\",\"value\":\"Fifteenth\"},{\"label\":\"XVI\",\"value\":\"Sixteenth\"},{\"label\":\"XVII\",\"value\":\"Seventeenth\"}]'",
       "      >",
       "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
@@ -6859,192 +6863,203 @@
   "UEF 3 Name (Suffix Textbox)": {
     "prefix": "uef3-name-f-m-l-s",
     "body": [
-      "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item flex-grow=\"3\" flex-basis=\"30ch\">",
-      "      <uef-textbox field-name=\"first-name\" label=\"First\" maxlength=\"30\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"30\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"3\" flex-basis=\"30ch\">",
-      "      <uef-textbox field-name=\"middle-name\" label=\"Middle\" maxlength=\"30\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-middle-name\" label=\"Middle\" maxlength=\"30\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"3\" flex-basis=\"30ch\">",
-      "      <uef-textbox field-name=\"last-name\" label=\"Last\" maxlength=\"30\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"30\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"1\" flex-basis=\"5em\">",
-      "      <uef-textbox field-name=\"suffix\" label=\"Suffix\" maxlength=\"5\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-suffix\" label=\"Suffix\" maxlength=\"5\"></uef-textbox>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "</uef-compound>"
+      "</uef-compound>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
-    "description": "UEF 3 Name (First|Middle|Last|Suffix textboxes)"
+    "description": "UEF 3 Name (Suffix Textbox)"
   },
 
   "UEF 3 Name (MI, Suffix--Textbox)": {
     "prefix": "uef3-name-f-mi-l-s",
     "body": [
-      "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"30ch\">",
-      "      <uef-textbox field-name=\"first-name\" label=\"First\" maxlength=\"30\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"30\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"0\" flex-basis=\"2em\">",
-      "      <uef-tooltip>",
-      "        <uef-textbox field-name=\"middle-initial\" label=\"M.I.\" maxlength=\"1\" width=\"2em\"></uef-textbox>",
-      "        <span slot=\"content\">Middle Initial</span>",
-      "      </uef-tooltip>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-middle-initial\" label=\"M.I.\" maxlength=\"1\" width=\"2em\">",
+      "        <uef-tooltip slot=\"uef-input-label\" underline>M.I.<span slot=\"uef-tooltip-content\">Middle Initial</span></uef-tooltip>",
+      "      </uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"30ch\">",
-      "      <uef-textbox field-name=\"last-name\" label=\"Last\" maxlength=\"30\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"30\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"1\" flex-basis=\"5em\">",
-      "      <uef-textbox field-name=\"suffix\" label=\"Suffix\" maxlength=\"5\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-suffix\" label=\"Suffix\" maxlength=\"5\"></uef-textbox>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "</uef-compound>"
+      "</uef-compound>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
-    "description": "UEF 3 Name (First|Middle Initial|Last|Suffix textboxes)"
+    "description": "UEF 3 Name (MI, Suffix Textbox)"
   },
 
   "UEF 3 Name (Suffix-- Dropdown)": {
     "prefix": "uef3-name-f-m-l-s",
     "body": [
-      "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"first-name\" label=\"First\" maxlength=\"30\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"30\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"middle-name\" label=\"Middle\" maxlength=\"30\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-middle-name\" label=\"Middle\" maxlength=\"30\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"last-name\" label=\"Last\" maxlength=\"30\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"30\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"0\">",
-      "      <uef-droplist field-name=\"suffix\" label=\"Suffix\"",
+      "      <uef-droplist field-name=\"${0:INSERT-NAME}-suffix\" label=\"Suffix\"",
       "        items='[{\"label\":\"I\",\"value\":\"First\"},{\"label\":\"II\",\"value\":\"Second\"},{\"label\":\"III\",\"value\":\"Third\"},{\"label\":\"IV\",\"value\":\"Fourth\"},{\"label\":\"IX\",\"value\":\"Ninth\"},{\"label\":\"JR\",\"value\":\"Junior\"},{\"label\":\"SR\",\"value\":\"Senior\"},{\"label\":\"V\",\"value\":\"Fifth\"},{\"label\":\"VI\",\"value\":\"Sixth\"},{\"label\":\"VII\",\"value\":\"Seventh\"},{\"label\":\"VIII\",\"value\":\"Eighth\"},{\"label\":\"X\",\"value\":\"Tenth\"},{\"label\":\"XI\",\"value\":\"Eleventh\"},{\"label\":\"XII\",\"value\":\"Twelfth\"},{\"label\":\"XIII\",\"value\":\"Thirteenth\"},{\"label\":\"XIV\",\"value\":\"Fourteenth\"},{\"label\":\"XV\",\"value\":\"Fifteenth\"},{\"label\":\"XVI\",\"value\":\"Sixteenth\"},{\"label\":\"XVII\",\"value\":\"Seventeenth\"}]'",
       "      >",
-      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "</uef-compound>"
+      "</uef-compound>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Name (First|Middle|Last textboxes, Suffix dropdown)"
   },
 
-  "UEF 3 Name (Title--Dropdown, Suffix--Textbox))": {
+  "UEF 3 Name (Title--Dropdown, Suffix--Textbox)": {
     "prefix": "uef3-name-t-f-m-l-s",
     "body": [
-      "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-droplist field-name=\"name-title\" label=\"Title\"",
+      "      <uef-droplist field-name=\"${0:INSERT-NAME}-name-title\" label=\"Title\"",
       "        items='[{\"label\":\"Attorney\",\"value\":\"Attorney\"},{\"label\":\"Coach\",\"value\":\"Coach\"},{\"label\":\"Dr.\",\"value\":\"Dr.\"},{\"label\":\"Father\",\"value\":\"Father\"},{\"label\":\"Governor\",\"value\":\"Governor\"},{\"label\":\"Honorable\",\"value\":\"Honorable\"},{\"label\":\"Officer\",\"value\":\"Officer\"},{\"label\":\"Master\",\"value\":\"Master\"},{\"label\":\"Miss\",\"value\":\"Miss\"},{\"label\":\"Mr.\",\"value\":\"Mr.\"},{\"label\":\"Mrs\",\"value\":\"Mrs.\"},{\"label\":\"Ms.\",\"value\":\"Ms\"},{\"label\":\"President\",\"value\":\"President\"},{\"label\":\"Professor\",\"value\":\"Professor\"},{\"label\":\"Reverend\",\"value\":\"Reverend\"}]'",
       "      >",
-      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"30ch\">",
-      "      <uef-textbox field-name=\"first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"30ch\">",
-      "      <uef-textbox field-name=\"middle-name\" label=\"Middle\"maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-middle-name\" label=\"Middle\"maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"30ch\">",
-      "      <uef-textbox field-name=\"last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"1\" flex-basis=\"5em\">",
-      "      <uef-textbox field-name=\"suffix\" label=\"Suffix\" maxlength=\"5\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-suffix\" label=\"Suffix\" maxlength=\"5\"></uef-textbox>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "</uef-compound>"
+      "</uef-compound>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
-    "description": "UEF 3 Name (Title dropdown, First|Middle|Last|Suffix textboxes)"
+    "description": "UEF 3 Name (Title dropdown, Suffix textbox)"
   },
 
-  "UEF 3 Name (Title--Dropdown, MI, Suffix--Textbox))": {
+  "UEF 3 Name (Title--Dropdown, MI, Suffix--Textbox)": {
     "prefix": "uef3-name-t-f-mi-l-s-textbox",
     "body": [
-      "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-droplist field-name=\"name-title\" label=\"Title\"",
+      "      <uef-droplist field-name=\"${0:INSERT-NAME}-name-title\" label=\"Title\"",
       "        items='[{\"label\":\"Attorney\",\"value\":\"Attorney\"},{\"label\":\"Coach\",\"value\":\"Coach\"},{\"label\":\"Dr.\",\"value\":\"Dr.\"},{\"label\":\"Father\",\"value\":\"Father\"},{\"label\":\"Governor\",\"value\":\"Governor\"},{\"label\":\"Honorable\",\"value\":\"Honorable\"},{\"label\":\"Officer\",\"value\":\"Officer\"},{\"label\":\"Master\",\"value\":\"Master\"},{\"label\":\"Miss\",\"value\":\"Miss\"},{\"label\":\"Mr.\",\"value\":\"Mr.\"},{\"label\":\"Mrs\",\"value\":\"Mrs.\"},{\"label\":\"Ms.\",\"value\":\"Ms\"},{\"label\":\"President\",\"value\":\"President\"},{\"label\":\"Professor\",\"value\":\"Professor\"},{\"label\":\"Reverend\",\"value\":\"Reverend\"}]'",
       "      >",
-      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"20ch\">",
-      "      <uef-textbox field-name=\"first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"0\">",
-      "      <uef-tooltip>",
-      "        <uef-textbox field-name=\"middle-initial\" label=\"M.I.\" maxlength=\"1\" width=\"2em\"></uef-textbox>",
-      "        <span slot=\"content\">Middle Initial</span>",
-      "      </uef-tooltip>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-middle-initial\" label=\"M.I.\" maxlength=\"1\" width=\"2em\">",
+      "        <uef-tooltip slot=\"uef-input-label\" underline>M.I.<span slot=\"uef-tooltip-content\">Middle Initial</span></uef-tooltip>",
+      "      </uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"20ch\">",
-      "      <uef-textbox field-name=\"last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"5em\">",
-      "      <uef-textbox field-name=\"suffix\" label=\"Suffix\" maxlength=\"5\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-suffix\" label=\"Suffix\" maxlength=\"5\"></uef-textbox>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "</uef-compound>"
+      "</uef-compound>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
-    "description": "UEF 3 Name (Title dropdown, First|Middle Initial|Last|Suffix textboxes)"
+    "description": "UEF 3 Name (Title dropdown, MI, Suffix textbox)"
   },
 
-  "UEF 3 Name (Title, MI, Suffix--Dropdown))": {
+  "UEF 3 Name (Title, MI, Suffix--Dropdown)": {
     "prefix": "uef3-name-t-f-mi-l-s",
     "body": [
-      "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-droplist field-name=\"name-title\" label=\"Title\"",
+      "      <uef-droplist field-name=\"${0:INSERT-NAME}-name-title\" label=\"Title\"",
       "        items='[{\"label\":\"Attorney\",\"value\":\"Attorney\"},{\"label\":\"Coach\",\"value\":\"Coach\"},{\"label\":\"Dr.\",\"value\":\"Dr.\"},{\"label\":\"Father\",\"value\":\"Father\"},{\"label\":\"Governor\",\"value\":\"Governor\"},{\"label\":\"Honorable\",\"value\":\"Honorable\"},{\"label\":\"Officer\",\"value\":\"Officer\"},{\"label\":\"Master\",\"value\":\"Master\"},{\"label\":\"Miss\",\"value\":\"Miss\"},{\"label\":\"Mr.\",\"value\":\"Mr.\"},{\"label\":\"Mrs\",\"value\":\"Mrs.\"},{\"label\":\"Ms.\",\"value\":\"Ms\"},{\"label\":\"President\",\"value\":\"President\"},{\"label\":\"Professor\",\"value\":\"Professor\"},{\"label\":\"Reverend\",\"value\":\"Reverend\"}]'",
       "      >",
-      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"20ch\">",
-      "      <uef-textbox field-name=\"first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"0\">",
-      "      <uef-tooltip>",
-      "        <uef-textbox field-name=\"middle-initial\" label=\"M.I.\" maxlength=\"1\" width=\"2em\"></uef-textbox>",
-      "        <span slot=\"content\">Middle Initial</span>",
-      "      </uef-tooltip>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-middle-initial\" label=\"M.I.\" maxlength=\"1\" width=\"2em\">",
+      "        <uef-tooltip slot=\"uef-input-label\" underline>M.I.<span slot=\"uef-tooltip-content\">Middle Initial</span></uef-tooltip>",
+      "      </uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"2\" flex-basis=\"20ch\">",
-      "      <uef-textbox field-name=\"last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-droplist field-name=\"suffix\" label=\"Suffix\"",
+      "      <uef-droplist field-name=\"${0:INSERT-NAME}-suffix\" label=\"Suffix\"",
       "        items='[{\"label\":\"I\",\"value\":\"First\"},{\"label\":\"II\",\"value\":\"Second\"},{\"label\":\"III\",\"value\":\"Third\"},{\"label\":\"IV\",\"value\":\"Fourth\"},{\"label\":\"IX\",\"value\":\"Ninth\"},{\"label\":\"JR\",\"value\":\"Junior\"},{\"label\":\"SR\",\"value\":\"Senior\"},{\"label\":\"V\",\"value\":\"Fifth\"},{\"label\":\"VI\",\"value\":\"Sixth\"},{\"label\":\"VII\",\"value\":\"Seventh\"},{\"label\":\"VIII\",\"value\":\"Eighth\"},{\"label\":\"X\",\"value\":\"Tenth\"},{\"label\":\"XI\",\"value\":\"Eleventh\"},{\"label\":\"XII\",\"value\":\"Twelfth\"},{\"label\":\"XIII\",\"value\":\"Thirteenth\"},{\"label\":\"XIV\",\"value\":\"Fourteenth\"},{\"label\":\"XV\",\"value\":\"Fifteenth\"},{\"label\":\"XVI\",\"value\":\"Sixteenth\"},{\"label\":\"XVII\",\"value\":\"Seventeenth\"}]'",
       "      >",
-      "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
+      "        <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "</uef-compound>"
+      "</uef-compound>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
-    "description": "UEF 3 Name (Title dropdown, First|Middle Initial|Last texboxes, Suffix dropdown)"
+    "description": "UEF 3 Name (Title, Middle Initial, Suffix dropdown)"
   },
 
   "UEF 3 Name (First, Last)": {
     "prefix": "uef3-name-f-l",
     "body": [
-      "<uef-compound label=\"[Person's] Name\" instructions=\"[Instructions]\">",
-      "  <uef-flex gap=\"10px\" direction=\"row\" wrap=\"wrap\">",
+      "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
+      "  <uef-flex gap=\"0 var(--uef-space-inline-4x)\" direction=\"row\" wrap=\"wrap\">",
       "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-first-name\" label=\"First\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"1\">",
-      "      <uef-textbox field-name=\"last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
+      "      <uef-textbox field-name=\"${0:INSERT-NAME}-last-name\" label=\"Last\" maxlength=\"20\"></uef-textbox>",
       "    </uef-flex-item>",
       "  </uef-flex>",
-      "</uef-compound>"
+      "</uef-compound>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Name (First|Last textboxes)"
   },
@@ -7052,7 +7067,7 @@
   "UEF 3 Radio List": {
     "prefix": "uef3-radiolist",
     "body": [
-      "<uef-radiolist field-name=\"${1:radiolist-field-name}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instructions]}\"",
+      "<uef-radiolist field-name=\"${1:INSERT-FIELD-NAME}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
       "  other-value=\"3\" other-text-field-name=\"other-field-name\"",
       ">",
       "  <uef-radio field-id=\"radio-1\" label=\"Option 1\" value=\"1\"></uef-radio>",
@@ -7306,29 +7321,6 @@
       "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Indicator"
-  },
-
-  "UEF 3 Popover": {
-    "prefix": "uef3-popover",
-    "body": [
-      "<div>",
-      "  <div>",
-      "    <uef-popover>",
-      "      <div slot=\"popover-content\">[Popover Content]</div>",
-      "      <uef-button color=\"info\" fill=\"outline\">Placement</uef-button>",
-      "    </uef-popover>",
-      "  </div>",
-      "</div>"
-    ],
-    "description": "UEF 3 Popover"
-  },
-
-  "UEF 3 Progress": {
-    "prefix": "uef3-progress",
-    "body": [
-      "<uef-progress label=\"[Pattern Label]\" support-info=\"[Support Info]\" field-name=\"uef-progress-1\" max=\"100\" value=\"10\"></uef-progress>"
-    ],
-    "description": "UEF 3 Progress"
   },
 
   "UEF 3 Tag": {
@@ -8185,15 +8177,14 @@
   "UEF 3 Navigation": {
     "prefix": "uef3-nav-menu",
     "body": [
-      "<!-- NAVIGATION MENU ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<!-- NAVIGATION ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-nav>",
       "  <uef-nav-item href=\"javascript:void(0)\">[Item 1]</uef-nav-item>",
       "  <uef-nav-item href=\"javascript:void(0)\" current>[Item 2]</uef-nav-item>",
       "  <uef-nav-item href=\"javascript:void(0)\">[Item 3]</uef-nav-item>",
-      "  <uef-nav-item href=\"javascript:void(0)\">[Item 4]</uef-nav-item>",
       "  <uef-nav-item>",
-      "    <uef-menu label=\"[Item 5]\" placement=\"bottom-end\"",
-      "      sx='{\"--uef-menu-offset\":\"var(--uef-space-3x)\",\"--uef-button-color2\":\"transparent\"}'",
+      "    <uef-menu label=\"[Item 4]\" placement=\"bottom-end\"",
+      "      sx='{\"--uef-menu-offset\":\"var(--uef-space-3x)\"}'",
       "    >",
       "      <uef-flex direction=\"column\" gap=\"var(--uef-space-stack-4x)\">",
       "        <uef-link href=\"javascript:void(0)\">[Link 1]</uef-link>",
@@ -8206,7 +8197,7 @@
       "    </uef-menu>",
       "  </uef-nav-item>",
       "</uef-nav>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Navigation Menu"
   },
@@ -8214,6 +8205,7 @@
   "UEF 3 Mega Menu": {
     "prefix": "uef3-mega-menu",
     "body": [
+      "<!-- MEGA MENU ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-nav sx='{\"position\": \"relative\"}'>",
       "  <uef-nav-item href=\"javascript:void(0)\" current=\"\">[Home]</uef-nav-item>",
       "  <uef-nav-item href=\"javascript:void(0)\">[Item 1]</uef-nav-item>",
@@ -8264,9 +8256,65 @@
       "      </uef-typography>",
       "    </uef-menu>",
       "  </uef-nav-item>",
-      "</uef-nav>"
+      "</uef-nav>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Mega Menu"
+  },
+
+  "UEF 3 Pagination": {
+    "prefix": "uef3-pagination",
+    "body": [
+      "<uef-pagination page=\"${1:1}\" dial=\"${2:3}\" limit=\"${3:10}\" results=\"${4:100}\" ${0:showtext}></uef-pagination>"
+    ],
+    "description": "UEF 3 Pagination"
+  },
+
+  "UEF 3 Popover": {
+    "prefix": "uef3-popover",
+    "body": [
+      "<!-- POPOVER ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-popover placement=\"${1|top,bottom,left,right,top-start,top-end,bottom-start,bottom-end|}\" ${2:close-button}>",
+      "  <uef-typography slot=\"uef-popover-title\" variant=\"heading3\">",
+      "    ${3:[[Popover Title]]}",
+      "  </uef-typography>",
+      "  <uef-typography slot=\"uef-popover-content\" variant=\"body-m\" line-height=\"1.5\">",
+      "    ${4:[INSERT POPOVER CONTENT]}",
+      "  </uef-typography>",
+      "  <uef-button color=\"info\" fill=\"outline\">[${0:INSERT BUTTON LABEL]}</uef-button>",
+      "</uef-popover>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Popover"
+  },
+
+  "UEF 3 Progress": {
+    "prefix": "uef3-progress",
+    "body": [
+      "<!-- PROGRESS ─────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-progress label=\"${1:[Step X of Y]}\" support-info=\"${2:[Current Step Title]}\"",
+      "  field-name=\"${3:INSERT-FIELD-NAME}\" max=\"${4:100}\" value=\"${5:10}\"",
+      ">",
+      "  <uef-popover slot=\"uef-input-help\" close-button>",
+      "    <div slot=\"uef-popover-content\">",
+      "      <uef-typography variant=\"heading3\">${6:[Steps]}</uef-typography>",
+      "      <ol>",
+      "        <li>[NAME OF STEP 1]</li>",
+      "        <li>[NAME OF STEP 2]</li>",
+      "        <li>[NAME OF STEP 3]</li>",
+      "        <li>[NAME OF STEP 4]</li>",
+      "        <li>[NAME OF STEP 5]</li>",
+      "      </ol>",
+      "    </div>",
+      "    <uef-link href=\"javascript:void(0)\">",
+      "      <uef-icon name=\"question-circle\" type=\"solid\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>",
+      "      ${0:[View More Steps]}",
+      "    </uef-link>",
+      "  </uef-popover>",
+      "</uef-progress>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Progress"
   },
 
   "UEF 3 Section": {
@@ -8374,14 +8422,6 @@
       "</uef-tab-panel>"
     ],
     "description": "UEF 3 Tabs"
-  },
-
-  "UEF 3 Pagination": {
-    "prefix": "uef3-pagination",
-    "body": [
-      "<uef-pagination page=\"1\" dial=\"3\" limit=\"10\" results=\"100\"></uef-pagination>"
-    ],
-    "description": "UEF 3 Pagination"
   },
 
   "UEF 3 Skip Navigation": {
