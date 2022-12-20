@@ -6742,10 +6742,10 @@
     "prefix": "uef3-gender",
     "body": [
       "<!-- GENDER ───────────────────────────────────────────────────────────────────────────────────── -->",
-      "<uef-radiolist field-name=\"${1:gender-field-name}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instructions]}\" variant=\"${4|inline,series,none|}\">",
-      "  <uef-radio label=\"Male\" value=\"m\"></uef-radio>",
-      "  <uef-radio label=\"Female\" value=\"f\"></uef-radio>",
-      "  <uef-radio label=\"Non-Binary\" value=\"n\"></uef-radio>",
+      "<uef-radiolist ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\" instructions=\"${4:[[Instruction text]]}\" variant=\"inline\">",
+      "  <uef-radio label=\"Male\" value=\"male\"></uef-radio>",
+      "  <uef-radio label=\"Female\" value=\"female\"></uef-radio>",
+      "  <uef-radio label=\"Non-Binary\" value=\"non-binary\"></uef-radio>",
       "</uef-radiolist>",
       "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
@@ -7067,15 +7067,65 @@
   "UEF 3 Radio List": {
     "prefix": "uef3-radiolist",
     "body": [
-      "<uef-radiolist field-name=\"${1:INSERT-FIELD-NAME}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
-      "  other-value=\"3\" other-text-field-name=\"other-field-name\"",
+      "<!-- RADIO LIST ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-radiolist ${1|none,series,inline|} ${2:required} field-name=\"${3:INSERT-FIELD-NAME}\"",
+      "  label=\"${4:[Pattern Label]}\" instructions=\"${5:[[Instruction Text]]}\"",
       ">",
-      "  <uef-radio field-id=\"radio-1\" label=\"Option 1\" value=\"1\"></uef-radio>",
-      "  <uef-radio field-id=\"radio-2\" label=\"Option 2\" value=\"2\"></uef-radio>",
-      "  <uef-radio field-id=\"radio-3\" label=\"Other\" value=\"3\"></uef-radio>",
-      "</uef-radiolist>"
+      "  <uef-radio field-id=\"${3:INSERT-FIELD-NAME}-radio-1\" label=\"${6:Option 1}\" value=\"1\"></uef-radio>",
+      "  <uef-radio field-id=\"${3:INSERT-FIELD-NAME}-radio-2\" label=\"${7:Option 2}\" value=\"2\"></uef-radio>",
+      "  <uef-radio field-id=\"${3:INSERT-FIELD-NAME}-radio-3\" label=\"${0:Option 3}\" value=\"3\"></uef-radio>",
+      "  TYPE uef-radio-item TO INSERT ANOTHER RADIO LIST ITEM",
+      "</uef-radiolist>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Radio List"
+  },
+
+  "UEF 3 Radio List (with Other)": {
+    "prefix": "uef3-radiolist-other",
+    "body": [
+      "<!-- RADIO LIST ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-radiolist ${1|none,series,inline|} ${2:required} field-name=\"${3:INSERT-FIELD-NAME}\"",
+      "  label=\"${4:[Pattern Label]}\" instructions=\"${5:[[Instruction Text]]}\"",
+      "  other-value=\"${6:3}\" other-text-field-name=\"${3:INSERT-FIELD-NAME}_other\"",
+      ">",
+      "  <uef-radio field-id=\"${3:INSERT-FIELD-NAME}-radio-1\" value=\"1\"",
+      "    label=\"${7:[Option 1]}\"",
+      "    support-info=\"${8:[[Support Info]]}\"",
+      "  ></uef-radio>",
+      "  <uef-radio field-id=\"${3:INSERT-FIELD-NAME}-radio-2\" value=\"2\"",
+      "    label=\"${9:[Option 2]}\"",
+      "    support-info=\"${10:[[Support Info]]}\"",
+      "  ></uef-radio>",
+      "  <uef-radio field-id=\"${3:INSERT-FIELD-NAME}-radio-3\" label=\"${0:[[Option 3]]}\" value=\"3\"></uef-radio>",
+      "</uef-radiolist>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Radio List (with Other)"
+  },
+
+  "UEF 3 Radio List (Series)": {
+    "prefix": "uef3-radiolist-series",
+    "body": [
+      "<!-- RADIO LIST ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-radiolist ${1:required} label=\"${2:[Pattern Label]}\" field-name=\"${3:INSERT-FIELD-NAME}-radiolist1\" variant=\"series\">",
+      "  <uef-radio label=\"Yes\" value=\"true\"></uef-radio>",
+      "  <uef-radio label=\"No\" value=\"false\"></uef-radio>",
+      "  <uef-radio label=\"${0:[Option 3]}\" value=\"option-3-value\"></uef-radio>",
+      "</uef-radiolist>",
+      "<uef-radiolist required label=\"[Pattern Label]\" field-name=\"${3:INSERT-FIELD-NAME}-radiolist2\" variant=\"series\">",
+      "  <uef-radio label=\"Yes\" value=\"true\"></uef-radio>",
+      "  <uef-radio label=\"No\" value=\"false\"></uef-radio>",
+      "  <uef-radio label=\"${0:[Option 3]}\" value=\"option-3-value\"></uef-radio>",
+      "</uef-radiolist>",
+      "<uef-radiolist required label=\"[Pattern Label]\" field-name=\"${3:INSERT-FIELD-NAME}-radiolist3\" variant=\"series\">",
+      "  <uef-radio label=\"Yes\" value=\"true\"></uef-radio>",
+      "  <uef-radio label=\"No\" value=\"false\"></uef-radio>",
+      "  <uef-radio label=\"${0:[Option 3]}\" value=\"option-3-value\"></uef-radio>",
+      "</uef-radiolist>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Radio List (Series)"
   },
 
   "UEF 3 SSN": {
@@ -7188,11 +7238,15 @@
   "UEF 3 Yes/No": {
     "prefix": "uef3-yesno",
     "body": [
-      "<uef-radiolist field-name=\"${1:yesno-field-name}\" label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instructions]}\">",
+      "<!-- YES/NO ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-radiolist ${1:required} variant=\"${2|none,inline,series|}\" field-name=\"${3:INSERT-FIELD-NAME}\"",
+      "  label=\"${4:[Pattern Label]}\" instructions=\"${0:[[Instruction Text]]}\"",
+      ">",
       "  <uef-radio label=\"Yes\" value=\"true\"></uef-radio>",
       "  <uef-radio label=\"No\" value=\"false\"></uef-radio>",
       "  ${4:<uef-radio label=\"Not Yet Answered\" value=\"nya\"></uef-radio>}",
-      "</uef-radiolist>"
+      "</uef-radiolist>",
+      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Yes/No"
   },
@@ -8320,7 +8374,7 @@
   "UEF 3 Section": {
     "prefix": "uef3-section",
     "body": [
-      "<uef-section sx=\"{}\">[Example Text]</uef-section>"
+      "<uef-section tag=\"${1|section,article,div,|}\">${0:[INSERT SECTION TEXT]}</uef-section>"
     ],
     "description": "UEF 3 Section"
   },
@@ -8328,32 +8382,23 @@
   "UEF 3 Show/Hide": {
     "prefix": "uef3-show-hide",
     "body": [
-      "<uef-show-hide",
-      "  show-label=\"[Show something hidden]\"",
-      "  hide-label=\"[Hide something shown]\"",
+      "<!-- SHOW/HIDE ───────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-show-hide show-label=\"${1:[Show something hidden]}\" hide-label=\"${2:[Hide something shown]}\"",
+      "  ${3:show} ${4:target-ids=\"\"\"",
       ">",
-      "  [Example Text]",
-      "</uef-show-hide>"
+      "  ${0:[INSERT SHOW/HIDE CONTENT]}",
+      "</uef-show-hide>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Show/Hide"
   },
 
-  "UEF 3 Show/Hide (External Targets)": {
-    "prefix": "uef3-show-hide-targets",
+  "UEF 3 Skip Navigation": {
+    "prefix": "uef3-skipnav",
     "body": [
-      "<div>",
-      "  <uef-show-hide",
-      "    show-label=\"[Show something hidden]\"",
-      "    hide-label=\"[Hide something shown]\"",
-      "    target-ids=\"id-1,id-2,id-3\"",
-      "  ></uef-show-hide>",
-      "  <p>[Example Text]</p>",
-      "  <p id=\"id-1\">[Example Text 1]</p>",
-      "  <p id=\"id-2\">[Example Text 2]</p>",
-      "</div>",
-      ""
+      "<uef-skip-nav target-id=\"main\" shortcut-key=\"K\"></uef-skip-nav>"
     ],
-    "description": "UEF 3 Show/Hide (External Targets)"
+    "description": "UEF 3 Skip Navigation"
   },
 
   "UEF 3 Table": {
@@ -8422,14 +8467,6 @@
       "</uef-tab-panel>"
     ],
     "description": "UEF 3 Tabs"
-  },
-
-  "UEF 3 Skip Navigation": {
-    "prefix": "uef3-skipnav",
-    "body": [
-      "<uef-skip-nav target-id=\"main\" shortcut-key=\"K\"></uef-skip-nav>"
-    ],
-    "description": "UEF 3 Skip Navigation"
   },
 
   "UEF 3 Sub-Navigation": {
