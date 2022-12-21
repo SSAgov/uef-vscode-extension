@@ -7131,9 +7131,12 @@
   "UEF 3 SSN": {
     "prefix": "uef3-ssn",
     "body": [
-      "<uef-ssn field-name=\"${1:ssn-field-name}\" label=\"${2:[Person's] }Social Security Number (SSN)\"",
-      "  instructions=\"${3:[Instructions]}\" support-info=\"${4:[Support Info]}\" width=\"12ch\"",
-      "></uef-ssn>"
+      "<!-- SSN ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-ssn ${1:required} ${2:masked} field-name=\"${3:INSERT-FIELD-NAME}\" width=\"22ch\"",
+      "  label=\"${4:[Person's]} Social Security Number (SSN)\"",
+      "  instructions=\"${5:[[Instruction Text]]}\" support-info=\"${0:[[Support Text]]}\"",
+      "></uef-ssn>",
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 SSN"
   },
@@ -7380,30 +7383,34 @@
   "UEF 3 Tag": {
     "prefix": "uef3-tag",
     "body": [
-      "<uef-tag>[Insert Tag Text]</uef-tag>"
+      "<uef-tag color=\"${1|default,light,info,danger,warning,success|}\" ${2:dismissible} ${3:wrap}>${0:[INSERT TAG TEXT]}</uef-tag>"
     ],
     "description": "UEF 3 Tag"
   },
 
-  "UEF 3 Toggle": {
-    "prefix": "uef3-toggle",
+  "UEF 3 Toggle Group": {
+    "prefix": "uef3-toggle-group",
     "body": [
-      "<uef-toggle-group field-name=\"toggle-group\">",
-      "  <uef-toggle-button value=\"1\">Selection 1</uef-toggle-button>",
-      "  <uef-toggle-button value=\"2\">Selection 2</uef-toggle-button>",
-      "  <uef-toggle-button value=\"3\">Selection 3</uef-toggle-button>",
-      "</uef-toggle-group>"
+      "<!-- TOGGLE GROUP ──────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-toggle-group field-name=\"${1:INSERT-FIELD-NAME}\" accessibility-text=\"${2:Toggle}\">",
+      "  <uef-toggle-button value=\"${3:1}\">${4:[Selection 1]}</uef-toggle-button>",
+      "  <uef-toggle-button value=\"${5:2}\">${6:[Selection 2]}</uef-toggle-button>",
+      "  <uef-toggle-button value=\"${7:3}\">${0:[Selection 3]}</uef-toggle-button>",
+      "</uef-toggle-group>",
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
-    "description": "UEF 3 Toggle"
+    "description": "UEF 3 Toggle Group"
   },
 
   "UEF 3 Tooltip": {
     "prefix": "uef3-tooltip",
     "body": [
-      "<uef-tooltip>",
-      "  [Example Text]",
-      "  <span slot=\"content\">Sample tooltip text</span>",
-      "</uef-tooltip>"
+      "<!-- TOOLTIP ───────────────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-tooltip ${1:underline} placement=\"${2|top,left,right,bottom|}\">",
+      "  ${3:[INSERT TOOLTIP TRIGGER TEXT]}",
+      "  <span slot=\"uef-tooltip-content\">${0:INSERT TOOLTIP CONTENT}</span>",
+      "</uef-tooltip>",
+      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Tooltip"
   },
@@ -7435,7 +7442,10 @@
   "UEF 3 Typography": {
     "prefix": "uef3-typography",
     "body": [
-      "<uef-typography sx=\"{}\">Typography</uef-typography>"
+      "<uef-typography variant=\"${1|heading1,heading2,heading3,heading4,heading5,heading6,subtitle1,subtitle2,body-2xs,body-xs,body-s,body-m,body-l,label,code,button-s,button-m,button-l,overline|}\" align=\"${2|left,center,right,justify,inherit|}\">",
+      "  ${3:tag=\"\"} ${4:color=\"\"} ${5:weight=\"\"} ${6:letterspacing=\"\"} ${7:line-height=\"\"} ${8:line-length=\"\"} ${9:decoration=\"\"} ${10:size=\"\"} ${11:font-family=\"\"}",
+      "  ${0:[INSERT TEXT]}",
+      "</uef-typography>"
     ],
     "description": "UEF 3 Typography"
   },
@@ -7443,11 +7453,10 @@
   "UEF 3 Visually Hidden": {
     "prefix": "uef3-visually-hidden",
     "body": [
-      "<uef-visuallyhidden>[Insert Hidden Text]</uef-visuallyhidden>"
+      "<uef-visuallyhidden>${0:[INSERT HIDDEN TEXT}</uef-visuallyhidden>"
     ],
     "description": "UEF 3 Visually Hidden"
   },
-
 
   "UEF 3 Container": {
     "prefix": "uef3-container",
@@ -8472,53 +8481,76 @@
   "UEF 3 Sub-Navigation": {
     "prefix": "uef3-subnav",
     "body": [
-      "<uef-subnav header=\"SubNav Heading\" sx=\"{}\">",
-      "  <uef-subnav-item href=\"#0\">Item 1</uef-subnav-item>",
-      "  <uef-subnav-item href=\"#0\" selected>Item 2",
-      "  </uef-subnav-item>",
-      "  <uef-subnav-group label=\"Group A\">",
-      "    <uef-subnav-item href=\"#0\">Item A.1</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item A.2</uef-subnav-item>",
-      "  </uef-subnav-group>",
-      "  <uef-subnav-group label=\"Group B\">",
-      "    <uef-subnav-item href=\"#0\">Item B.1</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item B.2</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item B.3</uef-subnav-item>",
-      "  </uef-subnav-group>",
-      "  <uef-subnav-group label=\"Group C\">",
-      "    <uef-subnav-item href=\"#0\">Item C.1</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item C.2</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item C.3</uef-subnav-item>",
-      "  </uef-subnav-group>",
-      "</uef-subnav>"
+      "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
+      "  <uef-subnav-item href=\"${2:javascript:void(0);}\">${3:[Item 1]}</uef-subnav-item>",
+      "  <uef-subnav-item href=\"${4:javascript:void(0);}\">${5:[Item 2]}</uef-subnav-item>",
+      "  <uef-subnav-item href=\"${6:javascript:void(0);}\">${0:[[Item 3]]}</uef-subnav-item>",
+      "</uef-subnav>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Sub-Navigation"
   },
 
-  "UEF 3 Sub-Navigation (Nested)": {
-    "prefix": "uef3-subnav-nested",
+  "UEF 3 Sub-Navigation Item": {
+    "prefix": "uef3-subnav-item",
     "body": [
-      "<uef-subnav header=\"SubNav Heading\" sx=\"{}\">",
-      "  <uef-subnav-group label=\"Group A\">",
-      "    <uef-subnav-item href=\"#0\">Item 1</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item 2</uef-subnav-item>",
-      "    <uef-subnav-group label=\"Group A.1\">",
-      "      <uef-subnav-item href=\"#0\">Item 3</uef-subnav-item>",
-      "      <uef-subnav-item href=\"#0\">Item 4</uef-subnav-item>",
-      "      <uef-subnav-item href=\"#0\">Item 5</uef-subnav-item>",
+      "<uef-subnav-item href=\"${1:javascript:void(0);}\">${0:[Item X]}</uef-subnav-item>"
+    ],
+    "description": "UEF 3 Sub-Navigation Item"
+  },
+
+  "UEF 3 Sub-Navigation (Groups)": {
+    "prefix": "uef3-subnav-groups",
+    "body": [
+      "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
+      "  <uef-subnav-group label=\"[Group A]\">",
+      "    <uef-subnav-item href=\"#0\">[Item A.1]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">[Item A.2]</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "  <uef-subnav-group label=\"[Group B]\">",
+      "    <uef-subnav-item href=\"#0\">[Item B.1]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">[Item B.2]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">[Item B.3]</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "  <uef-subnav-group label=\"[Group C]\">",
+      "    <uef-subnav-item href=\"#0\">[Item C.1]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">[Item C.2]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"#0\">[Item C.3]</uef-subnav-item>",
+      "  </uef-subnav-group>",
+      "</uef-subnav>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+    ],
+    "description": "UEF 3 Sub-Navigation (Groups)"
+  },
+
+  "UEF 3 Sub-Navigation (Nested)": {
+    "prefix": "uef3-subnav-groups-nested",
+    "body": [
+      "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
+      "  <uef-subnav-group label=\"[Group A]\">",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 1]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 2]</uef-subnav-item>",
+      "    <uef-subnav-group label=\"[Group A.1]\">",
+      "      <uef-subnav-item href=\"javascript:void(0);\">[Item 3]</uef-subnav-item>",
+      "      <uef-subnav-item href=\"javascript:void(0);\">[Item 4]</uef-subnav-item>",
+      "      <uef-subnav-item href=\"javascript:void(0);\">[[Item 5]]</uef-subnav-item>",
       "    </uef-subnav-group>",
       "  </uef-subnav-group>",
-      "  <uef-subnav-group label=\"Group B\">",
-      "    <uef-subnav-item href=\"#0\">Item 6</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\" selected>Item 7</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item 8</uef-subnav-item>",
+      "  <uef-subnav-group label=\"[Group B]\">",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 6]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 7]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[[Item 8]]</uef-subnav-item>",
       "  </uef-subnav-group>",
-      "  <uef-subnav-group label=\"Group C\">",
-      "    <uef-subnav-item href=\"#0\">Item 9</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item 10</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item 11</uef-subnav-item>",
+      "  <uef-subnav-group label=\"[Group C]\">",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 9]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 10]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[[Item 11]]</uef-subnav-item>",
       "  </uef-subnav-group>",
-      "</uef-subnav>"
+      "</uef-subnav>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Sub-Navigation (Nested)"
   },
@@ -8526,33 +8558,47 @@
   "UEF 3 Sub-Navigation (Icons)": {
     "prefix": "uef3-subnav-icons",
     "body": [
-      "<uef-subnav header=\"SubNav Heading\" sx=\"{}\">",
+      "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
+      "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
       "  <uef-subnav-group>",
-      "    <uef-icon slot=\"uef-subnav-group-label\" name=\"check-circle\" type=\"solid\" color=\"--uef-color-green-primary\" accessibility-text=\"Complete\"></uef-icon>",
-      "    <span slot=\"uef-subnav-group-label\">Group A</span>",
-      "    <uef-subnav-item href=\"#0\">Item 1</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item 2</uef-subnav-item>",
-      "    <uef-subnav-group label=\"Group A.1\">",
-      "      <uef-subnav-item href=\"#0\">Item 4</uef-subnav-item>",
-      "      <uef-subnav-item href=\"#0\">Item 2</uef-subnav-item>",
-      "      <uef-subnav-item href=\"#0\">Item 5</uef-subnav-item>",
+      "    <span slot=\"uef-subnav-group-label\">",
+      "      <uef-icon name=\"check-circle\" accessibility-text=\"Complete\"",
+      "        slot=\"uef-subnav-group-label\" type=\"solid\" color=\"--uef-color-green-primary\"",
+      "      ></uef-icon>",
+      "      [Group A]",
+      "    </span>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 1]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 2]</uef-subnav-item>",
+      "    <uef-subnav-group label=\"[Group A.1]\">",
+      "      <uef-subnav-item href=\"javascript:void(0);\">[Item 3]</uef-subnav-item>",
+      "      <uef-subnav-item href=\"javascript:void(0);\">[Item 4]</uef-subnav-item>",
+      "      <uef-subnav-item href=\"javascript:void(0);\">[[Item 5]]</uef-subnav-item>",
       "    </uef-subnav-group>",
       "  </uef-subnav-group>",
       "  <uef-subnav-group>",
-      "    <uef-icon slot=\"uef-subnav-group-label\" name=\"check-circle\" type=\"solid\" color=\"--uef-color-green-primary\" accessibility-text=\"Complete\"></uef-icon>",
-      "    <span slot=\"uef-subnav-group-label\">Group B</span>",
-      "    <uef-subnav-item href=\"#0\">Item 6</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item 7</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item 8</uef-subnav-item>",
+      "    <span slot=\"uef-subnav-group-label\">",
+      "      <uef-icon name=\"check-circle\" accessibility-text=\"Complete\"",
+      "        slot=\"uef-subnav-group-label\" type=\"solid\" color=\"--uef-color-green-primary\"",
+      "      ></uef-icon>",
+      "      [Group B]",
+      "    </span>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 6]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 7]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[[Item 8]]</uef-subnav-item>",
       "  </uef-subnav-group>",
       "  <uef-subnav-group>",
-      "    <uef-icon slot=\"uef-subnav-group-label\" name=\"check-circle\" type=\"solid\" color=\"--uef-color-green-primary\" accessibility-text=\"Complete\"></uef-icon>",
-      "    <span slot=\"uef-subnav-group-label\">Group C has a really long label</span>",
-      "    <uef-subnav-item href=\"#0\">Item 9</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item 10</uef-subnav-item>",
-      "    <uef-subnav-item href=\"#0\">Item 11</uef-subnav-item>",
+      "    <span slot=\"uef-subnav-group-label\">",
+      "      <uef-icon  name=\"check-circle\" accessibility-text=\"Complete\"",
+      "        slot=\"uef-subnav-group-label\" type=\"solid\" color=\"--uef-color-green-primary\"  ",
+      "      ></uef-icon>",
+      "      [Group C]",
+      "    </span>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 9]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[Item 10]</uef-subnav-item>",
+      "    <uef-subnav-item href=\"javascript:void(0);\">[[Item 11]]</uef-subnav-item>",
       "  </uef-subnav-group>",
-      "</uef-subnav>"
+      "</uef-subnav>",
+      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Sub-Navigation (Icons)"
   },
