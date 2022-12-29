@@ -6499,8 +6499,9 @@
     "prefix": "uef3-currency",
     "body": [
       "<!-- CURRENCY ───────────────────────────────────────────────────────────────────────────────────── -->",
-      "<uef-textbox label=\"${1:[Pattern Label]}\" instructions=\"${2:[[Instruction Text]]}\" support-info=\"${3:[Support Info]}\" field-name=\"${4:uef-currency-1}\" width=\"10em\" inputmode=\"numeric\">",
-      "  <span slot=\"input-overlay\">$</span>",
+      "<uef-textbox ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\" width=\"10em\" inputmode=\"numeric\"",
+      "  instructions=\"${4:[[Instruction Text]]}\" support-info=\"${5:[[Support Text]]}\">",
+      "  <span slot=\"input-overlay\">${0|$,£,€|}</span>",
       "</uef-textbox>",
       "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
@@ -7168,10 +7169,11 @@
     "prefix": "uef3-textbox",
     "body": [
       "<!-- TEXTBOX ─────────────────────────────────────────────────────────────────────────────────── -->",
-      "<uef-textbox field-name=\"${1:INSERT-FIELD-NAME}\" label=\"${2:[Pattern label]}\"",
-      "  instructions=\"${3:[Instruction Text]}\"",
-      "  support-info=\"${4:[Support Info]}\"",
-      "></uef-textbox>",
+      "<uef-textbox required field-name=\"${1:INSERT-FIELD-NAME}\" label=\"${2:[Pattern label]}\" ${3:maxlength=\"\"}",
+      "  instructions=\"${4:[[Instruction Text]]}\" support-info=\"${5:[[Support Text]]}\"",
+      ">",
+      "  ${0:<uef-help slot=\"uef-input-help\" target=\"#INSERT-DIALOG-ID\"></uef-help>}",
+      "</uef-textbox>",
       "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
     "description": "UEF 3 Textbox"
