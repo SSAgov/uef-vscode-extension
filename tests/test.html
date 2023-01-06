@@ -5,96 +5,433 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>INSERT PAGE TITLE</title>
-    <link rel="stylesheet" href="https://www.ssa.gov/uef/uef3/beta/assets/css/variables.css" />
-    <link rel="stylesheet" href="https://www.ssa.gov/uef/uef3/beta/assets/css/uef-global.css" />
-    <script type="module" src="https://www.ssa.gov/uef/uef3/beta/uef3-web-components.esm.js"></script>
+    <link rel="stylesheet" href="https://www.ssa.gov/uef/uef3/latest/assets/css/uef-variables.css" />
+    <link rel="stylesheet" href="https://www.ssa.gov/uef/uef3/latest/assets/css/uef-global.css" />
+    <script type="module" src="https://www.ssa.gov/uef/uef3/latest/uef3-web-components.esm.js"></script>
 </head>
 <body>
-    <uef-banner tld="gov"></uef-banner>
-
-    <uef-alert color="danger" header="Insert Alert Heading">
+    <uef-banner tld="gov" variant="dark"></uef-banner>
+    <h1>UEF 3 Snippets Test Page</h1>
+    <hr>
+    <h2>Accordion</h2>
+    <!-- ACCORDION ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-accordion icon-position="left" multiple>
+      <uef-accordion-item label="[Label 1]" open>
+        <uef-typography variant="body-m" line-height="1.5">
+          [INSERT ACCORDION ITEM 1 CONTENT]
+        </uef-typography>
+      </uef-accordion-item>
+      <uef-accordion-item label="[Label 2]" open>
+        <uef-typography variant="body-m" line-height="1.5">
+          [INSERT ACCORDION ITEM 2 CONTENT]
+        </uef-typography>
+      </uef-accordion-item>
+      <uef-accordion-item label="[Label 3] open">
+        <uef-typography variant="body-m" line-height="1.5">
+          [INSERT ACCORDION ITEM 3 CONTENT]
+        </uef-typography>
+      </uef-accordion-item>
+    </uef-accordion>
+    <!-- ──────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Address (US)</h2>
+    <!-- ADDRESS ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-compound label="[Pattern Label]" instructions="[Instructions]" compound-id="">
+      <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
+        <uef-flex-item flex-grow="1" flex-basis="25ch">
+          <uef-textbox field-name="INSERT-FIELD-NAME-street-1" label="Street Address"></uef-textbox>
+        </uef-flex-item>
+        <uef-flex-item flex-grow="1" flex-basis="25ch">
+          <uef-textbox field-name="INSERT-FIELD-NAME-street-2" label="Apartment, Suite, Building, Etc."></uef-textbox>
+        </uef-flex-item>
+        <uef-flex-item flex-grow="1" flex-basis="25ch">
+          <uef-textbox field-name="INSERT-FIELD-NAME-street-3" label="Line 3"></uef-textbox>
+        </uef-flex-item>
+        <uef-flex-item flex-grow="1" flex-basis="25ch">
+          <uef-textbox field-name="INSERT-FIELD-NAME-street-4" label="Line 4"></uef-textbox>
+        </uef-flex-item>
+      </uef-flex>
+      <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
+        <uef-flex-item flex-grow="1" flex-basis="25ch">
+          <uef-textbox field-name="INSERT-FIELD-NAME-city" label="City/Town"></uef-textbox>
+        </uef-flex-item>
+        <uef-flex-item flex-grow="1" flex-basis="25ch">
+          <uef-droplist field-name="INSERT-FIELD-NAME-state" label="State" items="[{"label":Alabama","value":"AL"},{"label":"Alaska","value":"AK"},{"label":"American Samoa","value":"AS"},{"label":"Arizona","value":"AZ"},{"label":"Arkansas","value":"AR"},{"label":"Armed Forces Africa (AE Also Equals Canada Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Americas (Except Canada)","value":"AA"},{"label":"Armed Forces Canada (AE Also Equals Africa Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Europe (AE Also Equals Africa Canada and the Middle East)","value":"AE"},{"label":"Armed Forces Middle East (AE Also Equals Africa Canada and Europe)","value":"AE"},{"label":"Armed Forces Pacific","value":"AP"},{"label":"California","value":"CA"},{"label":"Colorado","value":"CO"},{"label":"Connecticut","value":"CT"},{"label":"Delaware","value":"DE"},{"label":"District of Columbia","value":"DC"},{"label":"Federated States of Micronesia","value":"FM"},{"label":"Florida","value":"FL"},{"label":"Georgia","value":"GA"},{"label":"Guam","value":"GU"},{"label":"Hawaii","value":"HI"},{"label":"Idaho","value":"ID"},{"label":"Illinois","value":"IL"},{"label":"Indiana","value":"IN"},{"label":"Iowa","value":"IA"},{"label":"Kansas","value":"KS"},{"label":"Kentucky","value":"KY"},{"label":"Louisiana","value":"LA"},{"label":"Maine","value":"ME"},{"label":"Marshall Islands","value":"MH"},{"label":"Maryland","value":"MD"},{"label":"Massachusetts","value":"MA"},{"label":"Michigan","value":"MI"},{"label":"Minnesota","value":"MN"},{"label":"Mississippi","value":"MS"},{"label":"Missouri","value":"MO"},{"label":"Montana","value":"MT"},{"label":"Nebraska","value":"NE"},{"label":"Nevada","value":"NV"},{"label":"New Hampshire","value":"NH"},{"label":"New Jersey","value":"NJ"},{"label":"New Mexico","value":"NM"},{"label":"New York","value":"NY"},{"label":"North Carolina","value":"NC"},{"label":"North Dakota","value":"ND"},{"label":"Northern Mariana Islands","value":"MP"},{"label":"Ohio","value":"OH"},{"label":"Oklahoma","value":"OK"},{"label":"Oregon","value":"OR"},{"label":"Palau","value":"PW"},{"label":"Pennsylvania","value":"PA"},{"label":"Puerto Rico","value":"PR"},{"label":"Rhode Island","value":"RI"},{"label":"South Carolina","value":"SC"},{"label":"South Dakota","value":"SD"},{"label":"Tennessee","value":"TN"},{"label":"Texas","value":"TX"},{"label":"Utah","value":"UT"},{"label":"Vermont","value":"VT"},{"label":"Virgin Islands","value":"VI"},{"label":"Virginia","value":"VA"},{"label":"Washington","value":"WA"},{"label":"West Virginia","value":"WV"},{"label":"Wisconsin","value":"WI"},{"label":"Wyoming","value":"WY">
+            <uef-droplist-item label="--"></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+        <uef-flex-item>
+          <uef-textbox field-name="INSERT-FIELD-NAME-zipcode" label="ZIP Code" maxlength="9" width="9em" format="*****-****" inputmode="numeric"></uef-textbox>
+        </uef-flex-item>
+      </uef-flex>
+    </uef-compound>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Address (International)</h2>
+    <!-- ADDRESS (INTERNATIONAL) ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-compound label="[Pattern Label]" instructions="[[Instruction Text]]">
+      <uef-toggle-input toggle-name="INSERT-FIELD-NAME-toggle" toggle-options="us,intl">
+        <uef-toggle-group field-name="INSERT-FIELD-NAME-toggle" accessibility-text="Toggle">
+          <uef-toggle-button value="us" selected>U.S.</uef-toggle-button>
+          <uef-toggle-button value="intl">Intl</uef-toggle-button>
+        </uef-toggle-group>
+        <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap" align-items="flex-end">
+          <uef-flex-item flex-grow="1" flex-basis="25ch">
+            <uef-textbox field-name="INSERT-FIELD-NAME-street1" label="Street Address"></uef-textbox>
+          </uef-flex-item>
+          <uef-flex-item flex-grow="1" flex-basis="25ch">
+            <uef-textbox field-name="INSERT-FIELD-NAME-street2" label="Apartment, Suite, Building, Etc."></uef-textbox>
+          </uef-flex-item>
+          <uef-flex-item flex-grow="1" flex-basis="25ch">
+            <uef-textbox field-name="INSERT-FIELD-NAME-street3" label="Street 3"></uef-textbox>
+          </uef-flex-item>
+          <uef-flex-item flex-grow="1" flex-basis="25ch">
+            <uef-textbox field-name="INSERT-FIELD-NAME-street4" label="Street 4"></uef-textbox>
+          </uef-flex-item>
+        </uef-flex>
+        <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap" align-items="flex-end" slot="uef-toggle-us">
+          <uef-flex-item flex-grow="1" flex-basis="25ch">
+            <uef-textbox field-name="INSERT-FIELD-NAME-city" label="City"></uef-textbox>
+          </uef-flex-item>
+          <uef-flex-item flex-grow="1" flex-basis="25ch">
+            <uef-droplist field-name="INSERT-FIELD-NAME-state" label="State"
+              items='[{"label":"Alabama","value":"AL"},{"label":"Alaska","value":"AK"},{"label":"American Samoa","value":"AS"},{"label":"Arizona","value":"AZ"},{"label":"Arkansas","value":"AR"},{"label":"Armed Forces Africa (AE Also Equals Canada Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Americas (Except Canada)","value":"AA"},{"label":"Armed Forces Canada (AE Also Equals Africa Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Europe (AE Also Equals Africa Canada and the Middle East)","value":"AE"},{"label":"Armed Forces Middle East (AE Also Equals Africa Canada and Europe)","value":"AE"},{"label":"Armed Forces Pacific","value":"AP"},{"label":"California","value":"CA"},{"label":"Colorado","value":"CO"},{"label":"Connecticut","value":"CT"},{"label":"Delaware","value":"DE"},{"label":"District of Columbia","value":"DC"},{"label":"Federated States of Micronesia","value":"FM"},{"label":"Florida","value":"FL"},{"label":"Georgia","value":"GA"},{"label":"Guam","value":"GU"},{"label":"Hawaii","value":"HI"},{"label":"Idaho","value":"ID"},{"label":"Illinois","value":"IL"},{"label":"Indiana","value":"IN"},{"label":"Iowa","value":"IA"},{"label":"Kansas","value":"KS"},{"label":"Kentucky","value":"KY"},{"label":"Louisiana","value":"LA"},{"label":"Maine","value":"ME"},{"label":"Marshall Islands","value":"MH"},{"label":"Maryland","value":"MD"},{"label":"Massachusetts","value":"MA"},{"label":"Michigan","value":"MI"},{"label":"Minnesota","value":"MN"},{"label":"Mississippi","value":"MS"},{"label":"Missouri","value":"MO"},{"label":"Montana","value":"MT"},{"label":"Nebraska","value":"NE"},{"label":"Nevada","value":"NV"},{"label":"New Hampshire","value":"NH"},{"label":"New Jersey","value":"NJ"},{"label":"New Mexico","value":"NM"},{"label":"New York","value":"NY"},{"label":"North Carolina","value":"NC"},{"label":"North Dakota","value":"ND"},{"label":"Northern Mariana Islands","value":"MP"},{"label":"Ohio","value":"OH"},{"label":"Oklahoma","value":"OK"},{"label":"Oregon","value":"OR"},{"label":"Palau","value":"PW"},{"label":"Pennsylvania","value":"PA"},{"label":"Puerto Rico","value":"PR"},{"label":"Rhode Island","value":"RI"},{"label":"South Carolina","value":"SC"},{"label":"South Dakota","value":"SD"},{"label":"Tennessee","value":"TN"},{"label":"Texas","value":"TX"},{"label":"Utah","value":"UT"},{"label":"Vermont","value":"VT"},{"label":"Virgin Islands","value":"VI"},{"label":"Virginia","value":"VA"},{"label":"Washington","value":"WA"},{"label":"West Virginia","value":"WV"},{"label":"Wisconsin","value":"WI"},{"label":"Wyoming","value":"WY"}]'
+            >
+              <uef-droplist-item label="--" value=""></uef-droplist-item>
+            </uef-droplist>
+          </uef-flex-item>
+          <uef-flex-item>
+            <uef-textbox field-name="INSERT-FIELD-NAME-zipcode" label="ZIP Code" maxlength="9" width="9em" format="*****-****" inputmode="numeric"></uef-textbox>
+          </uef-flex-item>
+        </uef-flex>
+        <uef-flex gap="10px" direction="row" wrap="wrap" align-items="flex-end" slot="uef-toggle-intl">
+          <uef-flex-item flex-grow="1" flex-basis="25ch">
+            <uef-textbox field-name="INSERT-FIELD-NAME,{"label":"Albania"},{"label":"Algeria"},{"label":"Andaman Islands"},{"label":"Andorra"},{"label":"Angola"},{"label":"Anguilla"},{"label":"Annobon Island"},{"label":"Antigua"},{"label":"Antigua and Barbuda"},{"label":"Argentina"},{"label":"Armenia"},{"label":"Aruba"},{"label":"Ascension Island"},{"label":"Australia"},{"label":"Austria"},{"label":"Azerbaijan"},{"label":"Azores"},{"label":"Bahamas"},{"label":"Bahrain"},{"label":"Balearic Islands"},{"label":"Bangladesh"},{"label":"Barbados"},{"label":"Barbuda"},{"label":"Basse Terre"},{"label":"Belarus"},{"label":"Belau"},{"label":"Belgium"},{"label":"Belize"},{"label":"Benin"},{"label":"Bermuda"},{"label":"Bhutan"},{"label":"Bolivia"},{"label":"Bonaire"},{"label":"Bosnia and Herzegovina"},{"label":"Bosnia-Herzegovina"},{"label":"Botswana"},{"label":"Brazil"},{"label":"British Virgin Islands"},{"label":"Brunei"},{"label":"Bulgaria"},{"label":"Burkina Faso"},{"label":"Burma"},{"label":"Burundi"},{"label":"Byelarus"},{"label":"Cabinda"},{"label":"Caicos Islands"},{"label":"Cambodia"},{"label":"Cameroon"},{"label":"Canada"},{"label":"Canary Islands"},{"label":"Canton Islands"},{"label":"Cape Verde"},{"label":"Carriacou"},{"label":"Castelrosse Islands"},{"label":"Cayman Islands"},{"label":"Central African Rep"},{"label":"Chad"},{"label":"Channel Islands"},{"label":"Chile"},{"label":"China"},{"label":"Christmas Island"},{"label":"Cocos Islands"},{"label":"Colombia"},{"label":"Comoros"},{"label":"Congo"},{"label":"Cook Islands"},{"label":"Corsica"},{"label":"Costa Rica"},{"label":"Crete"},{"label":"Croatia"},{"label":"Cuba"},{"label":"Curacao"},{"label":"Cyprus"},{"label":"Czech Republic"},{"label":"Dem Rep of Congo"},{"label":"Denmark"},{"label":"Diego Garcia"},{"label":"Djibouti"},{"label":"Dodecanese Islands"},{"label":"Dominica"},{"label":"Dominican Republic"},{"label":"East Timor"},{"label":"Easter Island"},{"label":"Ecuador"},{"label":"Egypt"},{"label":"Eire"},{"label":"El Salvador"},{"label":"England"},{"label":"Equatorial Guinea"},{"label":"Eritrea"},{"label":"Estonia"},{"label":"Ethiopia"},{"label":"Falkland Islands"},{"label":"Faroe Islands"},{"label":"Fernando de Noronha"},{"label":"Fiji"},{"label":"Finland"},{"label":"France"},{"label":"French Guiana"},{"label":"French Polynesia"},{"label":"French West Indies"},{"label":"Gabon"},{"label":"Gambia"},{"label":"Georgia"},{"label":"Germany"},{"label":"Ghana"},{"label":"Gibraltar"},{"label":"Grand Cayman Island"},{"label":"Grand Terre"},{"label":"Grand Turk"},{"label":"Great Britain"},{"label":"Greece"},{"label":"Greenland"},{"label":"Grenada"},{"label":"Grenadine Islands"},{"label":"Guadeloupe"},{"label":"Guatemala"},{"label":"Guinea"},{"label":"Guinea-Bissau"},{"label":"Guyana"},{"label":"Haiti"},{"label":"Honduras"},{"label":"Hong Kong"},{"label":"Hungary"},{"label":"Iceland"},{"label":"India"},{"label":"Indonesia"},{"label":"Iran"},{"label":"Iraq"},{"label":"Ireland"},{"label":"Ireland, Republic of"},{"label":"Isle of Man"},{"label":"Israel"},{"label":"Italy"},{"label":"Jamaica"},{"label":"Jan Mayen Island"},{"label":"Japan"},{"label":"Jerusalem"},{"label":"Jordan"},{"label":"Kampuchea"},{"label":"Kazakhstan"},{"label":"Kenya"},{"label":"Kiribati"},{"label":"Kuwait"},{"label":"Kyrgyzstan"},{"label":"Laos"},{"label":"Latvia"},{"label":"Lebanon"},{"label":"Lesotho"},{"label":"Liberia"},{"label":"Libya"},{"label":"Liechtenstein"},{"label":"Lithuania"},{"label":"Little Cayman Island"},{"label":"Luxembourg"},{"label":"Macao"},{"label":"Macedonia"},{"label":"Madagascar"},{"label":"Madeira Islands"},{"label":"Malawi"},{"label":"Malaysia"},{"label":"Maldives"},{"label":"Mali"},{"label":"Malta"},{"label":"Marshall Islands"},{"label":"Martinique"},{"label":"Mauritania"},{"label":"Mauritius"},{"label":"Mexico"},{"label":"Micronesia"},{"label":"Midway Island"},{"label":"Miquelon Island"},{"label":"Moldova"},{"label":"Monaco"},{"label":"Mongolia"},{"label":"Montenegro"},{"label":"Montserrat"},{"label":"Morocco"},{"label":"Mozambique"},{"label":"Myanmar"},{"label":"Namibia"},{"label":"Nauru"},{"label":"Nepal"},{"label":"Netherlands"},{"label":"Netherlands Antilles"},{"label":"Nevis"},{"label":"New Caldonia"},{"label":"New Caledonia"},{"label":"New Guinea"},{"label":"New Hebrides"},{"label":"New Zealand"},{"label":"Nicaragua"},{"label":"Nicobar Islands"},{"label":"Niger"},{"label":"Nigeria"},{"label":"North Korea"},{"label":"Northern Ireland"},{"label":"Norway"},{"label":"Okinawa"},{"label":"Oman"},{"label":"Pagalu"},{"label":"Pakistan"},{"label":"Palau"},{"label":"Panama"},{"label":"Papua New Guinea"},{"label":"Paraguay"},{"label":"Peru"},{"label":"Petit Martinique"},{"label":"Philippines"},{"label":"Pitcairn Island"},{"label":"Poland"},{"label":"Portugal"},{"label":"Qatar"},{"label":"Republic of Congo"},{"label":"Republic of Georgia"},{"label":"Republic of Macedonia"},{"label":"Reunion"},{"label":"Romania"},{"label":"Russia"},{"label":"Rwanda"},{"label":"Ryukyu Islands"},{"label":"Saba"},{"label":"Samoa"},{"label":"San Marino"},{"label":"Sao Tome and Principe"},{"label":"Sardinia"},{"label":"Saudi Arabia"},{"label":"Scotland"},{"label":"Senegal"},{"label":"Serbia"},{"label":"Serbia and Montenegro"},{"label":"Seychelles"},{"label":"Sicily"},{"label":"Sierra Leone"},{"label":"Singapore"},{"label":"Slovak Republic"},{"label":"Slovakia"},{"label":"Slovenia"},{"label":"Solomon Islands"},{"label":"Somalia"},{"label":"Somaliland"},{"label":"Sombrero"},{"label":"South Africa"},{"label":"South Korea"},{"label":"Southwest Africa"},{"label":"Spain"},{"label":"Spanish Sahara"},{"label":"Sri Lanka"},{"label":"St Christopher"},{"label":"St Eustatius"},{"label":"St Helena"},{"label":"St Kitts"},{"label":"St Lucia"},{"label":"St Maarten"},{"label":"St Martin"},{"label":"St Pierre"},{"label":"St Vincent"},{"label":"Sudan"},{"label":"Sumatra"},{"label":"Suriname"},{"label":"Swaziland"},{"label":"Sweden"},{"label":"Switzerland"},{"label":"Syria"},{"label":"Tahiti"},{"label":"Taiwan"},{"label":"Tajikistan"},{"label":"Tanzania"},{"label":"Thailand"},{"label":"Timor"},{"label":"Togo"},{"label":"Tonga"},{"label":"Tortola"},{"label":"Trinidad and Tobago"},{"label":"Tristan da Cunha"},{"label":"Tunisia"},{"label":"Turkey"},{"label":"Turkmenistan"},{"label":"Turks and Caicos Is"},{"label":"Turks Islands"},{"label":"Tuvalu"},{"label":"Uganda"},{"label":"Ukraine"},{"label":"United Arab Emirates"},{"label":"United Kingdom"},{"label":"Upper Volta"},{"label":"Uruguay"},{"label":"Uzbekistan"},{"label":"Vanuatu"},{"label":"Vatican City"},{"label":"Venezuela"},{"label":"Vietnam"},{"label":"Wake Island"},{"label":"Wales"},{"label":"Wallis and Futuna Is"},{"label":"Walvis Bay"},{"label":"Western Sahara"},{"label":"Western Samoa"},{"label":"Yemen"},{"label":"Yemen, Republic of"},{"label":"Zaire"},{"label":"Zambia"},{"label":"Zimbabwe"},{"label":"Cote D&apos;Ivoire"},{"label":"Rep of South Sudan"},{"label":"Kosovo"},{"label":"Alderney"},{"label":"Ascension"},{"label":"Brunei Darussalam"},{"label":"Guernsey"},{"label":"Ivory Coast"},{"label":"Jersey"},{"label":"Kowloon"},{"label":"Niue"},{"label":"Redonda"},{"label":"Santa Cruz Islands"},{"label":"Sark"},{"label":"St Bartholomew"},{"label":"St Christopher - Nevis"},{"label":"St Pierre and Miquelon"},{"label":"St Vincent - Grenadine"},{"label":"Syrian Arab Republic"},{"label":"Timor-Leste"},{"label":"Eswatini"}]'
+            >
+              <uef-droplist-item label="--" value=""></uef-droplist-item>
+            </uef-droplist>
+          </uef-flex-item>
+        </uef-flex>
+      </uef-toggle-input>
+    </uef-compound>
+    <!-- ──────────────────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Alert</h2>
+    <!-- ALERT ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-alert color="success" header="Insert Alert Heading" autofocus>
       Insert Alert Content
       <p slot="uef-alert-footer">Insert Optional Alert Footer Content</p>
     </uef-alert>
-
-    <uef-alert color="info" header="[Re-Entry Number]">
-      <p>[We are providing you with a Re-Entry Number that can be used to restart an incomplete application. You may need it to complete your online application if you decide to continue the application later or to check the status.]</p>
-      <p>[Re-Entry Number:] <strong>12345678</strong></p>
-      <p>[Re-Entry Website:] <strong>http://www.socialsecurity.gov</strong></p>
-      <p slot="uef-alert-footer">[Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.]<br /><br />
-        <uef-link href="javascript:window.print()">
-          <uef-icon name="print" type="solid"></uef-icon> Print this page
-        </uef-link>
-      </p>
-    </uef-alert>
-
-    <uef-alert color="success" header="[Confirmation Number]">
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Bank Info</h2>
+    <!-- BANK INFO ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-compound label="[Pattern Label]" instructions="[Instructions]" compound-id="">
+      <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
+        <uef-flex-item flex-grow="1">
+          <uef-droplist field-name="INSERT-FIELD-NAME-acct-type" label="Account Type">
+            <uef-droplist-item label="--"></uef-droplist-item>
+            <uef-droplist-item label="Checking" value="1"></uef-droplist-item>
+            <uef-droplist-item label="Savings" value="2"></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+        <uef-flex-item flex-grow="1">
+          <uef-textbox field-name="INSERT-FIELD-NAME-routing-num" label="Routing Number" maxlength="9" inputmode="numeric"></uef-textbox>
+        </uef-flex-item>
+        <uef-flex-item flex-grow="1">
+          <uef-textbox field-name="INSERT-FIELD-NAME-acct-num" label="Account Number" maxlength="17" inputmode="numeric"></uef-textbox>
+        </uef-flex-item>
+      </uef-flex>
+    </uef-compound>
+    <!-- ───────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Button</h2>
+    <uef-button name="[INSERT BUTTON NAME]" fill="solid" type="submit">Button Label</uef-button>
+    <h2>Button Group</h2>
+    <!-- BUTTON GROUP ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-button-group alignment="left" direction="ltr">
+        <uef-button name="Button-1" fill="outline" type="submit">Button 1</uef-button>
+        <uef-button name="Button-2" fill="outline" type="submit">Button 2</uef-button>
+        <uef-button name="Button-3" fill="outline" type="submit">Button 3</uef-button>
+    </uef-button-group>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Card</h2>
+    <!-- CARD ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-card width="350px" sx='{"padding":"--uef-space-inset-4x","boxShadow":"--uef-elevation-20","borderRadius":"--uef-border-radius-softest"}'>
+      <uef-typography variant="body-m" line-height="1.2">
+        [INSERT YOUR CARD CONTENT HERE]
+      </uef-typography>
+    </uef-card>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Card with Title</h2>
+    <!-- CARD ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-card width="272px" sx='{"border":"1px solid #dadada","padding":"--uef-space-inset-4x","borderRadius":"--uef-border-radius-softest"}'>
+      <uef-typography variant="heading3" slot="uef-card-header" sx='{"paddingBottom":"--uef-space-stack-2x"}'>
+        Card Title
+      </uef-typography>
+      <uef-typography slot="uef-card-body" variant="body-m" line-height="1.5" sx='{"paddingTop":"--uef-space-stack-4x","paddingBottom":"--uef-space-stack-3x"}'>
+        [INSERT YOUR CARD CONTENT HERE]
+      </uef-typography>
+    </uef-card>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Checkbox</h2>
+    <uef-checkbox required standalone critical field-name="INSERT-FIELD-NAME" value=""
+      label="[I have read and agree with the above statement.]"
+    ></uef-checkbox>
+    <h2>Checklist</h2>
+    <!-- CHECKLIST ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-checklist required variant="none" field-name=""
+      label="" instructions="[[Instruction Text]]" select-all-label="">
+      <uef-checkbox field-name="{6:INSERT-FIELD-NAME}-checkbox-1" field-id="{6:INSERT-FIELD-NAME}-checkbox-1"
+        label="[Label 1]" support-info="[[Support Text]]" value="1">
+      </uef-checkbox>
+      <uef-checkbox field-name="{6:INSERT-FIELD-NAME}-checkbox-2" field-id="{6:INSERT-FIELD-NAME}-checkbox-2"
+        label="[Label 2]" support-info="[[Support Text]]" value="2">
+      </uef-checkbox>
+      <uef-checkbox field-name="{6:INSERT-FIELD-NAME}-checkbox-3" field-id="{6:INSERT-FIELD-NAME}-checkbox-3"
+        label="[Label 3]" support-info="[[Support Text]]" value="3">
+      </uef-checkbox>
+    </uef-checklist>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Checklist with 'Other' Option</h2>
+    <!-- CHECKLIST ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-checklist required variant="none" field-name="INSERT-FIELD-NAME"
+      label="INSERT-FIELD-NAME" instructions="[[Instruction Text]]"
+      select-all-label="Select All" other-text-field-name="INSERT-FIELD-NAME-other" other-value="3">
+      <uef-checkbox field-name="{3:INSERT-FIELD-NAME}-checkbox-1" field-id="{3:INSERT-FIELD-NAME}-checkbox-1"
+        label="[Label 1]" support-info="[[Support Text]]" value="1">
+      </uef-checkbox>
+      <uef-checkbox field-name="{3:INSERT-FIELD-NAME}-checkbox-2" field-id="{3:INSERT-FIELD-NAME}-checkbox-2"
+        label="[Label 2]" support-info="[[Support Text]]" value="2">
+      </uef-checkbox>
+      <uef-checkbox field-name="{3:INSERT-FIELD-NAME}-checkbox-3" field-id="{3:INSERT-FIELD-NAME}-checkbox-3"
+        label="[Label 3]" support-info="[[Support Text]]" value="3">
+      </uef-checkbox>
+    </uef-checklist>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Compound</h2>
+    <!-- COMPOUND ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-compound label="[Pattern Label]" instructions="[Instruction Text]">
+      <uef-flex gap="10px" direction="row" wrap="wrap">
+        <uef-flex-item flex-grow="1">
+          [INSERT A FORM COMPONENT HERE]
+        </uef-flex-item>
+        <uef-flex-item flex-grow="1">
+          [INSERT A FORM COMPONENT HERE]
+        </uef-flex-item>
+      </uef-flex>
+    </uef-compound>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Confirmation Number</h2>
+    <!-- CONFIRMATION NUMBER ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-alert color="success" header="[Confirmation Number and Website]">
       <p>[You may need this number to confirm your application request.]</p>
       <p>[Confirmation Number:] <strong>12345678</strong></p>
       <p>[Website:] <strong>http://www.socialsecurity.gov</strong></p>
       <p slot="uef-alert-footer">
-        [Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.<br /><br />
+        [Print or save this page, or write down the number or website, so you will have what you need to return to your report at a later time.]<br /><br />
         <uef-link href="javascript:window.print()">
-          <uef-icon name="print" type="solid"></uef-icon> Print this page
+          <uef-icon name="print" type="solid" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon> Print this page
         </uef-link>
       </p>
     </uef-alert>
-
-    <uef-button color="default" fill="outline" >Button Label</uef-button>
-
-    <uef-button-group alignment="left" direction="ltr">
-      <uef-button fill="solid">Button 1 Label</uef-button>
-      <uef-button fill="outline">Button 2 Label</uef-button>
-      <uef-button fill="outline">Button 3 Label</uef-button>
-    </uef-button-group>
-
-    <uef-droplist label="[Pattern Label]" instructions="[Instruction Text]" field-name="field-name" value="">
-      <option>--</option>
-      <uef-droplist-item label="Test" value="Test"></uef-droplist-item>
-      <uef-droplist-item label="Item 2" value="Item 2"></uef-droplist-item>
-      <uef-droplist-item label="Item 3" value="Item 3"></uef-droplist-item>
+    <!-- ───────────────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Container</h2>
+    <!-- CONTAINER ─────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-container>
+      [INSERT CONTENT]
+    </uef-container>
+    <!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Country</h2>
+    <!-- COUNTRY ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-droplist required label="[Pattern Label]" instructions="[[Instruction Text]]"
+      field-name="INSERT-FIELD-NAME" value=""
+      items='[{"label":"Afghanistan","value":1},{"label":"Albania","value":2},{"label":"Algeria","value":3},{"label":"Andaman Islands","value":4},{"label":"Andorra","value":5},{"label":"Angola","value":6},{"label":"Anguilla","value":7},{"label":"Annobon Island","value":8},{"label":"Antigua","value":9},{"label":"Antigua and Barbuda","value":10},{"label":"Argentina","value":11},{"label":"Armenia","value":12},{"label":"Aruba","value":13},{"label":"Ascension Island","value":14},{"label":"Australia","value":15},{"label":"Austria","value":16},{"label":"Azerbaijan","value":17},{"label":"Azores","value":18},{"label":"Bahamas","value":19},{"label":"Bahrain","value":20},{"label":"Balearic Islands","value":21},{"label":"Bangladesh","value":22},{"label":"Barbados","value":23},{"label":"Barbuda","value":24},{"label":"Basse Terre","value":25},{"label":"Belarus","value":26},{"label":"Belau","value":27},{"label":"Belgium","value":28},{"label":"Belize","value":29},{"label":"Benin","value":30},{"label":"Bermuda","value":31},{"label":"Bhutan","value":32},{"label":"Bolivia","value":33},{"label":"Bonaire","value":34},{"label":"Bosnia and Herzegovina","value":35},{"label":"Bosnia-Herzegovina","value":36},{"label":"Botswana","value":37},{"label":"Brazil","value":38},{"label":"British Virgin Islands","value":39},{"label":"Brunei","value":40},{"label":"Bulgaria","value":41},{"label":"Burkina Faso","value":42},{"label":"Burma","value":43},{"label":"Burundi","value":44},{"label":"Byelarus","value":45},{"label":"Cabinda","value":46},{"label":"Caicos Islands","value":47},{"label":"Cambodia","value":48},{"label":"Cameroon","value":49},{"label":"Canada","value":50},{"label":"Canary Islands","value":51},{"label":"Canton Islands","value":52},{"label":"Cape Verde","value":53},{"label":"Carriacou","value":54},{"label":"Castelrosse Islands","value":55},{"label":"Cayman Islands","value":56},{"label":"Central African Rep","value":57},{"label":"Chad","value":58},{"label":"Channel Islands","value":59},{"label":"Chile","value":60},{"label":"China","value":61},{"label":"Christmas Island","value":62},{"label":"Cocos Islands","value":63},{"label":"Colombia","value":64},{"label":"Comoros","value":65},{"label":"Congo","value":66},{"label":"Cook Islands","value":67},{"label":"Corsica","value":68},{"label":"Costa Rica","value":69},{"label":"Crete","value":70},{"label":"Croatia","value":71},{"label":"Cuba","value":72},{"label":"Curacao","value":73},{"label":"Cyprus","value":74},{"label":"Czech Republic","value":75},{"label":"Dem Rep of Congo","value":76},{"label":"Denmark","value":77},{"label":"Diego Garcia","value":78},{"label":"Djibouti","value":79},{"label":"Dodecanese Islands","value":80},{"label":"Dominica","value":81},{"label":"Dominican Republic","value":82},{"label":"East Timor","value":83},{"label":"Easter Island","value":84},{"label":"Ecuador","value":85},{"label":"Egypt","value":86},{"label":"Eire","value":87},{"label":"El Salvador","value":88},{"label":"England","value":89},{"label":"Equatorial Guinea","value":90},{"label":"Eritrea","value":91},{"label":"Estonia","value":92},{"label":"Ethiopia","value":93},{"label":"Falkland Islands","value":94},{"label":"Faroe Islands","value":95},{"label":"Fernando de Noronha","value":96},{"label":"Fiji","value":97},{"label":"Finland","value":98},{"label":"France","value":99},{"label":"French Guiana","value":100},{"label":"French Polynesia","value":101},{"label":"French West Indies","value":102},{"label":"Gabon","value":103},{"label":"Gambia","value":104},{"label":"Georgia","value":105},{"label":"Germany","value":106},{"label":"Ghana","value":107},{"label":"Gibraltar","value":108},{"label":"Grand Cayman Island","value":109},{"label":"Grand Terre","value":110},{"label":"Grand Turk","value":111},{"label":"Great Britain","value":112},{"label":"Greece","value":113},{"label":"Greenland","value":114},{"label":"Grenada","value":115},{"label":"Grenadine Islands","value":116},{"label":"Guadeloupe","value":117},{"label":"Guatemala","value":118},{"label":"Guinea","value":119},{"label":"Guinea-Bissau","value":120},{"label":"Guyana","value":121},{"label":"Haiti","value":122},{"label":"Honduras","value":123},{"label":"Hong Kong","value":124},{"label":"Hungary","value":125},{"label":"Iceland","value":126},{"label":"India","value":127},{"label":"Indonesia","value":128},{"label":"Iran","value":129},{"label":"Iraq","value":130},{"label":"Ireland","value":131},{"label":"Ireland, Republic of","value":132},{"label":"Isle of Man","value":133},{"label":"Israel","value":134},{"label":"Italy","value":135},{"label":"Jamaica","value":136},{"label":"Jan Mayen Island","value":137},{"label":"Japan","value":138},{"label":"Jerusalem","value":139},{"label":"Jordan","value":140},{"label":"Kampuchea","value":141},{"label":"Kazakhstan","value":142},{"label":"Kenya","value":143},{"label":"Kiribati","value":144},{"label":"Kuwait","value":145},{"label":"Kyrgyzstan","value":146},{"label":"Laos","value":147},{"label":"Latvia","value":148},{"label":"Lebanon","value":149},{"label":"Lesotho","value":150},{"label":"Liberia","value":151},{"label":"Libya","value":152},{"label":"Liechtenstein","value":153},{"label":"Lithuania","value":154},{"label":"Little Cayman Island","value":155},{"label":"Luxembourg","value":156},{"label":"Macao","value":157},{"label":"Macedonia","value":158},{"label":"Madagascar","value":159},{"label":"Madeira Islands","value":160},{"label":"Malawi","value":161},{"label":"Malaysia","value":162},{"label":"Maldives","value":163},{"label":"Mali","value":164},{"label":"Malta","value":165},{"label":"Marshall Islands","value":166},{"label":"Martinique","value":167},{"label":"Mauritania","value":168},{"label":"Mauritius","value":169},{"label":"Mexico","value":170},{"label":"Micronesia","value":171},{"label":"Midway Island","value":172},{"label":"Miquelon Island","value":173},{"label":"Moldova","value":174},{"label":"Monaco","value":175},{"label":"Mongolia","value":176},{"label":"Montenegro","value":177},{"label":"Montserrat","value":178},{"label":"Morocco","value":179},{"label":"Mozambique","value":180},{"label":"Myanmar","value":181},{"label":"Namibia","value":182},{"label":"Nauru","value":183},{"label":"Nepal","value":184},{"label":"Netherlands","value":185},{"label":"Netherlands Antilles","value":186},{"label":"Nevis","value":187},{"label":"New Caldonia","value":188},{"label":"New Caledonia","value":189},{"label":"New Guinea","value":190},{"label":"New Hebrides","value":191},{"label":"New Zealand","value":192},{"label":"Nicaragua","value":193},{"label":"Nicobar Islands","value":194},{"label":"Niger","value":195},{"label":"Nigeria","value":196},{"label":"North Korea","value":197},{"label":"Northern Ireland","value":198},{"label":"Norway","value":199},{"label":"Okinawa","value":200},{"label":"Oman","value":201},{"label":"Pagalu","value":202},{"label":"Pakistan","value":203},{"label":"Palau","value":204},{"label":"Panama","value":205},{"label":"Papua New Guinea","value":206},{"label":"Paraguay","value":207},{"label":"Peru","value":208},{"label":"Petit Martinique","value":209},{"label":"Philippines","value":210},{"label":"Pitcairn Island","value":211},{"label":"Poland","value":212},{"label":"Portugal","value":213},{"label":"Qatar","value":214},{"label":"Republic of Congo","value":215},{"label":"Republic of Georgia","value":216},{"label":"Republic of Macedonia","value":217},{"label":"Reunion","value":218},{"label":"Romania","value":219},{"label":"Russia","value":220},{"label":"Rwanda","value":221},{"label":"Ryukyu Islands","value":222},{"label":"Saba","value":223},{"label":"Samoa","value":224},{"label":"San Marino","value":225},{"label":"Sao Tome and Principe","value":226},{"label":"Sardinia","value":227},{"label":"Saudi Arabia","value":228},{"label":"Scotland","value":229},{"label":"Senegal","value":230},{"label":"Serbia","value":231},{"label":"Serbia and Montenegro","value":232},{"label":"Seychelles","value":233},{"label":"Sicily","value":234},{"label":"Sierra Leone","value":235},{"label":"Singapore","value":236},{"label":"Slovak Republic","value":237},{"label":"Slovakia","value":238},{"label":"Slovenia","value":239},{"label":"Solomon Islands","value":240},{"label":"Somalia","value":241},{"label":"Somaliland","value":242},{"label":"Sombrero","value":243},{"label":"South Africa","value":244},{"label":"South Korea","value":245},{"label":"Southwest Africa","value":246},{"label":"Spain","value":247},{"label":"Spanish Sahara","value":248},{"label":"Sri Lanka","value":249},{"label":"St Christopher","value":250},{"label":"St Eustatius","value":251},{"label":"St Helena","value":252},{"label":"St Kitts","value":253},{"label":"St Lucia","value":254},{"label":"St Maarten","value":255},{"label":"St Martin","value":256},{"label":"St Pierre","value":257},{"label":"St Vincent","value":258},{"label":"Sudan","value":259},{"label":"Sumatra","value":260},{"label":"Suriname","value":261},{"label":"Swaziland","value":262},{"label":"Sweden","value":263},{"label":"Switzerland","value":264},{"label":"Syria","value":265},{"label":"Tahiti","value":266},{"label":"Taiwan","value":267},{"label":"Tajikistan","value":268},{"label":"Tanzania","value":269},{"label":"Thailand","value":270},{"label":"Timor","value":271},{"label":"Togo","value":272},{"label":"Tonga","value":273},{"label":"Tortola","value":274},{"label":"Trinidad and Tobago","value":275},{"label":"Tristan da Cunha","value":276},{"label":"Tunisia","value":277},{"label":"Turkey","value":278},{"label":"Turkmenistan","value":279},{"label":"Turks and Caicos Is","value":280},{"label":"Turks Islands","value":281},{"label":"Tuvalu","value":282},{"label":"Uganda","value":283},{"label":"Ukraine","value":284},{"label":"United Arab Emirates","value":285},{"label":"United Kingdom","value":286},{"label":"Upper Volta","value":287},{"label":"Uruguay","value":288},{"label":"Uzbekistan","value":289},{"label":"Vanuatu","value":290},{"label":"Vatican City","value":291},{"label":"Venezuela","value":292},{"label":"Vietnam","value":293},{"label":"Wake Island","value":294},{"label":"Wales","value":295},{"label":"Wallis and Futuna Is","value":296},{"label":"Walvis Bay","value":297},{"label":"Western Sahara","value":298},{"label":"Western Samoa","value":299},{"label":"Yemen","value":300},{"label":"Yemen, Republic of","value":301},{"label":"Zaire","value":302},{"label":"Zambia","value":303},{"label":"Zimbabwe","value":304},{"label":"Cote D&apos;Ivoire","value":305},{"label":"Rep of South Sudan","value":306},{"label":"Kosovo","value":307},{"label":"Alderney","value":308},{"label":"Ascension","value":309},{"label":"Brunei Darussalam","value":310},{"label":"Guernsey","value":311},{"label":"Ivory Coast","value":312},{"label":"Jersey","value":313},{"label":"Kowloon","value":314},{"label":"Niue","value":315},{"label":"Redonda","value":316},{"label":"Santa Cruz Islands","value":317},{"label":"Sark","value":318},{"label":"St Bartholomew","value":319},{"label":"St Christopher - Nevis","value":320},{"label":"St Pierre and Miquelon","value":321},{"label":"St Vincent - Grenadine","value":322},{"label":"Syrian Arab Republic","value":323},{"label":"Timor-Leste","value":324},{"label":"Eswatini","value":326}]'
+    >
+      <uef-droplist-item label="--" value=""></uef-droplist-item>
     </uef-droplist>
-
-    <uef-compound label="[Pattern Label]" instructions="[Instructions]">
-      <uef-flex gap="10px" direction="row" wrap="wrap">
-        <uef-flex-item flex-grow="1">
-          <uef-textbox field-name="street1" label="Street Address"></uef-textbox>
-        </uef-flex-item>
-        <uef-flex-item flex-grow="1">
-          <uef-textbox
-            field-name="street2"
-            label="Apartment, Suite, Building, Etc."
-          ></uef-textbox>
-        </uef-flex-item>
-        <uef-flex-item flex-grow="1">
-          <uef-textbox field-name="street3" label="Street 3"></uef-textbox>
-        </uef-flex-item>
-        <uef-flex-item flex-grow="1">
-          <uef-textbox field-name="street4" label="Street 4"></uef-textbox>
-        </uef-flex-item>
-      </uef-flex>
-      <uef-flex gap="10px" direction="row" wrap="wrap">
-        <uef-flex-item flex-grow="1">
-          <uef-textbox field-name="city" label="City"></uef-textbox>
-        </uef-flex-item>
-        <uef-flex-item flex-grow="1">
-          <uef-droplist field-name="state" label="State">
-            <uef-droplist-item label="--"></uef-droplist-item>
-            <uef-droplist-item label="Maryland" value="MD"></uef-droplist-item>
+    <!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Country (Historical)</h2>
+    <!-- COUNTRY (HISTORICAL) ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-droplist required label="[Pattern Label]" instructions="[[Instruction Text]]"
+      field-name="INSERT-FIELD-NAME" value=""
+      items='[{"label":"Afghanistan","value":"AF"},{"label":"Albania","value":"AL"},{"label":"Algeria","value":"AG"},{"label":"Andorra","value":"AN"},{"label":"Angola","value":"AO"},{"label":"Anguilla","value":"AV"},{"label":"Antarctica","value":"AY"},{"label":"Antigua","value":"AC"},{"label":"Antigua and Barbuda","value":"AC"},{"label":"Argentina","value":"AR"},{"label":"Armenia","value":"AM"},{"label":"Aruba","value":"AA"},{"label":"Ashmore and Cartier Islands","value":"AT"},{"label":"Australia","value":"AS"},{"label":"Austria","value":"AU"},{"label":"Azerbaijan","value":"AJ"},{"label":"Bahamas, the","value":"BF"},{"label":"Bahrain","value":"BA"},{"label":"Baker Island","value":"FQ"},{"label":"Bangladesh","value":"BG"},{"label":"Barbados","value":"BB"},{"label":"Bassas da India","value":"BS"},{"label":"Belarus","value":"BO"},{"label":"Belgium","value":"BE"},{"label":"Belize","value":"BH"},{"label":"Benin","value":"BN"},{"label":"Benin","value":"DM"},{"label":"Berlin, West","value":"WB"},{"label":"Bermuda","value":"BD"},{"label":"Bhutan","value":"BT"},{"label":"Bolivia","value":"BL"},{"label":"Bosnia and Hercegovina","value":"BK"},{"label":"Bosnia and Herzegovina","value":"BK"},{"label":"Botswana","value":"BC"},{"label":"Bouvet Island","value":"BV"},{"label":"Bouvetoya","value":"BV"},{"label":"Brazil","value":"BR"},{"label":"British Honduras","value":"BH"},{"label":"British Indian Ocean Territory","value":"IO"},{"label":"British Solomon Islands","value":"BP"},{"label":"British Virgin Islands","value":"VI"},{"label":"Brunei","value":"BX"},{"label":"Bulgaria","value":"BU"},{"label":"Burkina","value":"UV"},{"label":"Burkina Faso","value":"UV"},{"label":"Burma (Myanmar)","value":"BM"},{"label":"Burundi","value":"BY"},{"label":"Byelarus","value":"BO"},{"label":"Cambodia","value":"CB"},{"label":"Cambodia","value":"CB"},{"label":"Cameroon","value":"CM"},{"label":"Canada","value":"CA"},{"label":"Panama Canal Zone","value":"PQ"},{"label":"Canton and Enderbury Islands","value":"EQ"},{"label":"Cape Verde","value":"CV"},{"label":"Cape Verde","value":"CV"},{"label":"Cape Verde, Republic of","value":"CV"},{"label":"Cayman Islands","value":"CJ"},{"label":"Central African Empire","value":"CT"},{"label":"Central African Republic","value":"CT"},{"label":"Central and Southern Line Items","value":"CL"},{"label":"Ceylon","value":"CE"},{"label":"Chad","value":"CD"},{"label":"Chile","value":"CI"},{"label":"China (Taiwan)","value":"TW"},{"label":"China, Peoples Republic of","value":"CH"},{"label":"China, Republic of","value":"TW"},{"label":"Christmas Island","value":"KT"},{"label":"Clipperton Island","value":"IP"},{"label":"Cocos (Keeling) Islands","value":"CK"},{"label":"Cocos Islands","value":"CK"},{"label":"Colombia","value":"CO"},{"label":"Comoros","value":"CN"},{"label":"Comoros Islands","value":"CN"},{"label":"Congo (Brazzaville)","value":"CF"},{"label":"Congo (Kinshasa)","value":"CG"},{"label":"Congo, Democratic Republic of the","value":"CG"},{"label":"Congo, Republic of","value":"CF"},{"label":"Cook Islands","value":"CW"},{"label":"Coral Sea Islands","value":"CR"},{"label":"Costa Rica","value":"CS"},{"label":"Cote D&apos;Ivoire","value":"IV"},{"label":"Croatia","value":"HR"},{"label":"Cuba","value":"CU"},{"label":"Cyprus","value":"CY"},{"label":"Czech Republic","value":"EZ"},{"label":"Czechoslovakia","value":"CZ"},{"label":"Dahomey","value":"DM"},{"label":"Denmark","value":"DA"},{"label":"Djibouti","value":"DJ"},{"label":"Dominica","value":"DO"},{"label":"Dominican Republic","value":"DR"},{"label":"Ecuador","value":"EC"},{"label":"Egypt","value":"EG"},{"label":"El Salvador","value":"ES"},{"label":"Equatorial Guinea","value":"EK"},{"label":"Eritrea","value":"ER"},{"label":"Estonia","value":"EN"},{"label":"Ethiopia","value":"ET"},{"label":"Europa Island","value":"EU"},{"label":"Faeroe Islands","value":"FO"},{"label":"Falkland Islands","value":"FA"},{"label":"Falkland Islands (Islas Malvinas)","value":"FK"},{"label":"Falkland Islands (Islas Malvinas)","value":"FA"},{"label":"Faroe Islands","value":"FO"},{"label":"Fiji","value":"FJ"},{"label":"Finland","value":"FI"},{"label":"France","value":"FR"},{"label":"French Guiana","value":"FG"},{"label":"French Polynesia","value":"FP"},{"label":"French Southern and Antarctic Lands","value":"FS"},{"label":"French Territories of the Afars and Issas","value":"FT"},{"label":"Gabon","value":"GB"},{"label":"Gambia, The","value":"GA"},{"label":"Gaza Strip","value":"GZ"},{"label":"Georgia","value":"GG"},{"label":"Germany","value":"GM"},{"label":"Germany","value":"GM"},{"label":"Germany, Democratic Republic of (East Germany)","value":"GC"},{"label":"Germany, Federal Republic of (West Germany)","value":"GE"},{"label":"Germany, Berlin","value":"BZ"},{"label":"Germany, Berlin","value":"WB"},{"label":"Ghana","value":"GH"},{"label":"Gibraltar","value":"GI"},{"label":"Gilbert and Ellice Islands","value":"GN"},{"label":"Gilbert Islands","value":"GS"},{"label":"Glorioso Islands","value":"GO"},{"label":"Greece","value":"GR"},{"label":"Greenland","value":"GL"},{"label":"Grenada","value":"GJ"},{"label":"Guadeloupe","value":"GP"},{"label":"Guatemala","value":"GT"},{"label":"Guernsey","value":"GK"},{"label":"Guinea","value":"GV"},{"label":"Guinea-Bissau","value":"PU"},{"label":"Guyana","value":"GY"},{"label":"Haiti","value":"HA"},{"label":"Heard and McDonald Islands","value":"HM"},{"label":"Heard Island and McDonald Islands","value":"HM"},{"label":"Holy See (Vatican City)","value":"VT"},{"label":"Honduras","value":"HO"},{"label":"Hong Kong","value":"HK"},{"label":"Howland Island","value":"HQ"},{"label":"Hungary","value":"HU"},{"label":"Iceland","value":"IC"},{"label":"India","value":"IN"},{"label":"Indonesia","value":"ID"},{"label":"Iran","value":"IR"},{"label":"Iraq","value":"IZ"},{"label":"Iraq-Saudi Arabia Neutral Zone","value":"IY"},{"label":"Hibernia (Ireland)","value":"HI"},{"label":"Ireland, Republic of","value":"EI"},{"label":"Isle of Man","value":"IM"},{"label":"Israel","value":"IS"},{"label":"Israel-Jordan Demilitarized Zones","value":"IW"},{"label":"Israel-Syria Demilitarized Zones","value":"IU"},{"label":"Italy","value":"IT"},{"label":"Ivory Coast","value":"IV"},{"label":"Jamaica","value":"JM"},{"label":"Jan Mayen","value":"JN"},{"label":"Japan","value":"JA"},{"label":"Jarvis Island","value":"DQ"},{"label":"Jersey","value":"JE"},{"label":"Johnston Atoll","value":"JQ"},{"label":"Jordan","value":"JO"},{"label":"Juan de Nova Island","value":"JU"},{"label":"Kampuchea","value":"CB"},{"label":"Kazakhstan","value":"KZ"},{"label":"Kenya","value":"KE"},{"label":"Kingman Reef","value":"KQ"},{"label":"Kiribati","value":"KR"},{"label":"Korea, Democratic Peoples Republic of (North Korea)","value":"KN"},{"label":"Korea, North","value":"KN"},{"label":"Korea, Republic of (South Korea)","value":"KS"},{"label":"Kosovo","value":"KV"},{"label":"Kyrgyzstan","value":"KG"},{"label":"Kuwait","value":"KU"},{"label":"Laos","value":"LA"},{"label":"Latvia","value":"LG"},{"label":"Lebanon","value":"LB"},{"label":"Lebanon","value":"LE"},{"label":"Lesotho","value":"LT"},{"label":"Liberia","value":"LI"},{"label":"Libya","value":"LY"},{"label":"Liechtenstein","value":"LS"},{"label":"Lithuania","value":"LH"},{"label":"Luxembourg","value":"LU"},{"label":"Macau (Macao)","value":"MC"},{"label":"Macedonia","value":"MK"},{"label":"Madagascar","value":"MA"},{"label":"Malawi","value":"MI"},{"label":"Malaysia","value":"MY"},{"label":"Maldives","value":"MV"},{"label":"Mali","value":"ML"},{"label":"Malta","value":"MT"},{"label":"Marshall Islands","value":"RM"},{"label":"Martinique","value":"MB"},{"label":"Mauritania","value":"MR"},{"label":"Mauritius","value":"MP"},{"label":"Mayotte","value":"MF"},{"label":"Mexico","value":"MX"},{"label":"Micronesia, Federated States of","value":"FM"},{"label":"Midway Island","value":"MQ"},{"label":"Moldova","value":"MD"},{"label":"Monaco","value":"MN"},{"label":"Mongolia","value":"MG"},{"label":"Montenegro","value":"MJ"},{"label":"Montenegro   (Retired July 2008)","value":"MW"},{"label":"Montserrat","value":"MH"},{"label":"Morocco","value":"MO"},{"label":"Mozambique","value":"MZ"},{"label":"Muscat and Oman","value":"MU"},{"label":"Namibia","value":"WA"},{"label":"Nauru","value":"NR"},{"label":"Navassa Island","value":"BQ"},{"label":"Nepal","value":"NP"},{"label":"Netherlands","value":"NL"},{"label":"Netherlands Antilles","value":"NT"},{"label":"Netherlands Antilles","value":"NA"},{"label":"New Caledonia","value":"NC"},{"label":"New Hebrides","value":"NH"},{"label":"New Zealand","value":"NZ"},{"label":"Nicaragua","value":"NU"},{"label":"Niger","value":"NG"},{"label":"Nigeria","value":"NI"},{"label":"Niue","value":"NE"},{"label":"Norfolk Island","value":"NF"},{"label":"Norway","value":"NO"},{"label":"Oman","value":"MU"},{"label":"Pakistan","value":"PK"},{"label":"Palau","value":"PS"},{"label":"Palmyra Atoll","value":"LQ"},{"label":"Panama","value":"PM"},{"label":"Panama","value":"PN"},{"label":"Papua and New Guinea","value":"PP"},{"label":"Papua New Guinea","value":"PP"},{"label":"Paracel Islands","value":"PF"},{"label":"Paraguay","value":"PA"},{"label":"Persia","value":"IR"},{"label":"Peru","value":"PE"},{"label":"Philippines","value":"RP"},{"label":"Pitcairn","value":"PC"},{"label":"Pitcairn Islands","value":"PC"},{"label":"Pitcairn Islands","value":"PC"},{"label":"Poland","value":"PL"},{"label":"Portugal","value":"PO"},{"label":"Portuguese Guinea","value":"PU"},{"label":"Portuguese Timor","value":"PT"},{"label":"Qatar","value":"QA"},{"label":"Reunion","value":"RE"},{"label":"Romania","value":"RO"},{"label":"Russia","value":"RS"},{"label":"Rwanda","value":"RW"},{"label":"Samoa","value":"WS"},{"label":"San Marino","value":"SM"},{"label":"Sao Tome and Principe","value":"TP"},{"label":"Saudi Arabia","value":"SA"},{"label":"Senegal","value":"SG"},{"label":"Serbia","value":"RI"},{"label":"Serbia","value":"SR"},{"label":"Serbia  (Retired July 2008)","value":"SR"},{"label":"Serbia and Montenegro","value":"YI"},{"label":"Seychelles","value":"SE"},{"label":"Sierra Leone","value":"SL"},{"label":"Sikkim","value":"SK"},{"label":"Singapore","value":"SN"},{"label":"Slovakia (Slovak Republic)","value":"LO"},{"label":"Slovenia","value":"SI"},{"label":"Solomon Islands","value":"BP"},{"label":"Somalia","value":"SO"},{"label":"South Africa","value":"SF"},{"label":"South Georgia and the South Sandwich Island","value":"SX"},{"label":"Southern Rhodesia","value":"RH"},{"label":"Southern Ryukyu Islands","value":"YQ"},{"label":"Southern Yemen","value":"YS"},{"label":"South-West Africa","value":"WA"},{"label":"Soviet Union","value":"UR"},{"label":"Soviet Zone of Germany","value":"GC"},{"label":"Spain","value":"SP"},{"label":"Spanish North Africa","value":"ME"},{"label":"Spanish Sahara","value":"SS"},{"label":"Spratly Islands","value":"PG"},{"label":"Sri Lanka","value":"CE"},{"label":"St. Barthelemy","value":"TB"},{"label":"St. Christopher and Nevis","value":"SC"},{"label":"St. Christopher-Nevis","value":"SC"},{"label":"St. Christopher-Nevis-Anguilla","value":"SC"},{"label":"St. Helena","value":"SH"},{"label":"St. Kitts and Nevis","value":"SC"},{"label":"St. Lucia","value":"ST"},{"label":"St. Martin","value":"RN"},{"label":"St. Pierre and Miquelon","value":"SB"},{"label":"St. Vincent","value":"VC"},{"label":"St. Vincent and Grenadines","value":"VC"},{"label":"Sudan","value":"SU"},{"label":"Surinam","value":"NS"},{"label":"Suriname","value":"NS"},{"label":"Svalbard","value":"SV"},{"label":"Svalbard and Jan Mayen","value":"JS"},{"label":"Swan Islands","value":"SQ"},{"label":"Swaziland","value":"WZ"},{"label":"Sweden","value":"SW"},{"label":"Switzerland","value":"SZ"},{"label":"Syria","value":"SY"},{"label":"Taiwan","value":"TW"},{"label":"Tajikistan","value":"TI"},{"label":"Tanzania","value":"TZ"},{"label":"Thailand","value":"TH"},{"label":"East Timor (Timor-Leste)","value":"TT"},{"label":"Togo","value":"TO"},{"label":"Tokelau","value":"TL"},{"label":"Tokelau Islands","value":"TL"},{"label":"Tonga","value":"TN"},{"label":"Trinidad and Tobago","value":"TD"},{"label":"Tromelin Island","value":"TE"},{"label":"Trucial States","value":"TC"},{"label":"Trust Territory of the Pacific Islands","value":"NQ"},{"label":"Trust Territory of the Pacific Islands","value":"TQ"},{"label":"Trust Territory of the Pacific Islands (Palau)","value":"PS"},{"label":"Tunisia","value":"TS"},{"label":"Turkey","value":"TU"},{"label":"Turkmenistan","value":"TX"},{"label":"Turks and Caicos Islands","value":"TK"},{"label":"Tuvalu","value":"TV"},{"label":"Uganda","value":"UG"},{"label":"Ukraine","value":"UP"},{"label":"Union of Soviet Socialist Republic","value":"UR"},{"label":"United Arab Emirates","value":"AE"},{"label":"United Arab Emirates  (Retired July 2008)","value":"TC"},{"label":"United Arab Republic","value":"EG"},{"label":"United Kingdom","value":"UK"},{"label":"United States Misc. Pacific Islands","value":"IQ"},{"label":"Unknown","value":"XX"},{"label":"Upper Volta","value":"UV"},{"label":"Uruguay","value":"UY"},{"label":"Uzbekistan","value":"UZ"},{"label":"Vanuatu","value":"NH"},{"label":"Venezuela","value":"VE"},{"label":"Vietnam","value":"VM"},{"label":"Vietnam","value":"VM"},{"label":"Vietnam, Democratic Republic of","value":"VN"},{"label":"Vietnam, Republic of","value":"VS"},{"label":"Wake Island","value":"WQ"},{"label":"Wallis and Futuna","value":"WF"},{"label":"West Bank","value":"WE"},{"label":"Western Sahara","value":"WI"},{"label":"Western Samoa","value":"WS"},{"label":"Yemen","value":"YE"},{"label":"Yemen (Aden)","value":"YS"},{"label":"Yemen (Sana)","value":"YE"},{"label":"Yemen (San&apos;A)","value":"YE"},{"label":"Yemen (Sanaa)","value":"YE"},{"label":"Yemen, Republic of","value":"YM"},{"label":"Yugoslavia","value":"YO"},{"label":"Yugoslavia","value":"YI"},{"label":"Zaire","value":"CG"},{"label":"Zambia","value":"ZA"},{"label":"Zimbabwe","value":"ZI"},{"label":"Palestine","value":"XP"},{"label":"Curacao","value":"UC"},{"label":"Sint Maarten","value":"NN"},{"label":"South Sudan, Republic of","value":"OD"},{"label":"Korea","value":"XK"},{"label":"British India","value":"XB"},{"label":"Gold Coast","value":"XG"},{"label":"Egypt","value":"EG"},{"label":"Syria","value":"SY"},{"label":"Ottoman Empire","value":"XO"},{"label":"Basutoland","value":"XL"},{"label":"Cabo Verde, Republic of","value":"CV"},{"label":"Czech Republic","value":"EZ"},{"label":"Libya, State of","value":"LY"},{"label":"Palestinian Territories","value":"QP"},{"label":"Eswatini, The Kingdom of","value":"WZ"},{"label":"Tanganyika","value":"QT"},{"label":"Zanzibar","value":"QZ"},{"label":"the Co-operative Republic of Guyana","value":"GY"},{"label":"Republic of North Macedonia","value":"MK"}]'
+    >
+      <uef-droplist-item label="--" value=""></uef-droplist-item>
+    </uef-droplist>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Currency</h2>
+    <!-- CURRENCY ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-textbox required field-name="INSERT-FIELD-NAME" label="[Pattern Label]" width="10em" inputmode="numeric"
+      instructions="[[Instruction Text]]" support-info="[[Support Text]]">
+      <span slot="input-overlay">${0|$,£,€|}</span>
+    </uef-textbox>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Date</h2>
+    <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
+      field-name-month="INSERT-FIELD-NAME-month" field-name-year="INSERT-FIELD-NAME-day">
+      <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
+        <uef-flex-item>
+          <uef-droplist field-name="INSERT-FIELD-NAME-month" label="Month" width="auto">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
           </uef-droplist>
         </uef-flex-item>
         <uef-flex-item>
-          <uef-textbox
-            field-name="zip"
-            label="ZIP Code"
-            maxlength="9"
-            width="9em"
-            format="*****-****"
-            inputmode="numeric"
-          ></uef-textbox>
+          <uef-droplist field-name="INSERT-FIELD-NAME-day" label="Day" width="auto">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
+          </uef-droplist>
         </uef-flex-item>
       </uef-flex>
-    </uef-compound>
-
+    </uef-date>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
+    <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
+      field-name-day="INSERT-FIELD-NAME-date-day" field-name-month="INSERT-FIELD-NAME-date-month" field-name-year="INSERT-FIELD-NAME-date-year"
+      format="MM-DD-YYYY" begin-year="2001" end-year="2026"
+    >
+      <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
+        <uef-flex-item>
+          <uef-droplist field-name="INSERT-FIELD-NAME-date-month" label="Month" width="auto">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+        <uef-flex-item>
+          <uef-textbox field-name="INSERT-FIELD-NAME-date-day" label="Day" maxlength="4" width="4em" inputmode="numeric"></uef-textbox>
+        </uef-flex-item>
+        <uef-flex-item>
+          <uef-droplist field-name="INSERT-FIELD-NAME-date-year" label="Year" width="auto" value="2026">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+      </uef-flex>
+    </uef-date>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
+    <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
+      field-name-day="INSERT-FIELD-NAME-date-day" field-name-month="INSERT-FIELD-NAME-date-month" field-name-year="INSERT-FIELD-NAME-date-year"
+      format="MM-DD-YYYY" begin-year="2001" end-year="2026"
+    >
+      <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
+        <uef-flex-item>
+          <uef-droplist field-name="INSERT-FIELD-NAME-date-month" label="Month" width="auto" value="">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+        <uef-flex-item>
+          <uef-droplist field-name="INSERT-FIELD-NAME-date-day" label="Day" width="auto" value="4">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+        <uef-flex-item>
+          <uef-droplist field-name="INSERT-FIELD-NAME-date-year" label="Year" width="auto" value="2026">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+      </uef-flex>
+    </uef-date>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
+    <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
+      field-name-month="INSERT-FIELD-NAME-month" field-name-year="INSERT-FIELD-NAME-year">
+      <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
+        <uef-flex-item>
+          <uef-droplist field-name="INSERT-FIELD-NAME-month" label="Month" width="auto">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+        <uef-flex-item>
+          <uef-textbox field-name="INSERT-FIELD-NAME-year" label="Year" maxlength="4" width="4em" inputmode="numeric"></uef-textbox>
+        </uef-flex-item>
+      </uef-flex>
+    </uef-date>
+    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Date Picker</h2>
+    <uef-datepicker label="[Pattern Label]" field-name="INSERT-FIELD-NAME-datepicker" instructions="[Instruction Text]"></uef-datepicker>
+    <h2>Dialog</h2>
+    <!-- DIALOG ───────────────────────────────────────────────────────────────────────────────────── -->
+    <div>
+      <uef-dialog id="INSERT-DIALOG-ID" backdrop close-button action-required width="500px">
+        <uef-typography variant="heading2" slot="uef-dialog-header">[Dialog Title]</uef-typography>
+        <uef-typography variant="body-m" line-height="1.5" slot="uef-dialog-body">
+          [INSERT DIALOG CONTENT]
+        </uef-typography>
+        <uef-button-group slot="uef-dialog-footer" alignment="right" direction="rtl">
+          <uef-button fill="solid">[Accept]</uef-button>
+          <uef-button fill="outline">[Cancel]</uef-button>
+        </uef-button-group>
+      </uef-dialog>
+    </div>
+    <!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Drawer</h2>
+    <!-- DRAWER ───────────────────────────────────────────────────────────────────────────────────── -->
+    <div>
+      <uef-control target="INSERT-DRAWER-NAME">
+        <uef-button>
+          <uef-icon type="solid" name="bars" sx='{"margin-right":"var(--uef-space-1x)"}'></uef-icon>
+          [Menu]
+        </uef-button>
+      </uef-control>
+      <uef-drawer id="INSERT-DRAWER-NAME">
+        [INSERT SUB-NAV OR CONTENT]
+      </uef-drawer>
+    </div>
+    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Droplist</h2>
+    <!-- DROP LIST ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-droplist required label="[Pattern Label]" instructions="[[Instruction Text]]"
+      field-name="[[Instruction Text]]" value="" width="">
+      <uef-droplist-item label="--" value=""></uef-droplist-item>
+      <uef-droplist-item label="Item 1" value="Item 1"></uef-droplist-item>
+      <uef-droplist-item label="Item 1" value="Item 1"></uef-droplist-item>
+      <uef-droplist-item label="Item 1" value="Item 1"></uef-droplist-item>
+    </uef-droplist>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>EIN</h2>
+    <!-- EIN ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-textbox required label="[Person's] Employer Identification Number (EIN)"
+      instructions="[[Instruction Text]]"
+      support-info="[[Instruction Text]]"
+      field-name="INSERT-FIELD-NAME" width="12ch" maxlength="9" inputmode="numeric" mask="  -       " format="**-*******"
+    ></uef-textbox>
+    <!-- ───────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Email</h2>
+    <!-- EMAIL ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-textbox required label="[[Person's]] Email Address"
+      instructions="[[Instruction Text]]"
+      support-info="[[Support Text]]"
+      field-name="INSERT-FIELD-NAME" maxlength="" inputmode="email"
+    ></uef-textbox>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Email with Confirmation</h2>
+    <!-- EMAIL (WITH CONFIRMATION) ───────────────────────────────────────────────────────────────────────────────────── -->
+    <div>
+      <uef-textbox required label="[[Person′s]] Email Address"
+        instructions="[[Instruction Text]]"
+        field-name="INSERT-FIELD-NAME" inputmode="email"
+      ></uef-textbox>
+      <uef-textbox label="Confirm [[Person′s]] Email Address" field-name="INSERT-FIELD-NAME-confirmation" inputmode="email">
+        <div slot="uef-input-instructions"><span>Emails must match</span></div>
+      </uef-textbox>
+    </div>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Error Summary</h2>
+    <!-- ERROR SUMMARY ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-error-summary
+      header="Please correct the following information:"
+      errors='[
+        {
+          "id": "INSERT-DOM-ERROR-ID",
+          "summary": "INSERT CUSTOM ERROR TEXT",
+          "message": ["INSERT CUSTOM ERROR TEXT"]
+        }
+      ]'
+    ></uef-error-summary>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Figure</h2>
+    <!-- FIGURE ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-figure caption="[[INSERT OPTIONAL CAPTION]]" alignment="left">
+      <img src="https://api.lorem.space/image/face?w=500&amp;h=500" alt="INSERT ALTERNATE IMAGE TEXT" />
+      <!-- THE SLOTTED CAPTION IS OPTIONAL--DELETE THE NEXT 3 LINES IF YOU DON'T WANT IT -->
+      <div slot="uef-figure-caption">
+        INSERT OPTIONAL FIGURE CAPTION
+      </div>
+    </uef-figure>
+    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
 </body>
 </html>

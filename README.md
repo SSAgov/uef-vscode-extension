@@ -1,4 +1,4 @@
-![UEF logo](https://github.com/SSAgov/uef-vscode-extension/blob/main/UEF.png) UEF Snippets
+UEF Snippets
 ============
 
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
@@ -9,10 +9,12 @@ A set of User Experience Framework (UEF) Snippets for Visual Studio Code. UEF is
 
 [Install UEF Snippets](https://marketplace.visualstudio.com/items?itemName=CraigCecil.uef-snippets)
 
-Create a new HTML document and type `uef` to see all available snippets. Note: For these snippets to accurately render page content you need to have the appropriate UEF libraries loaded in HEAD. See the `!!uef3` or `!!uef21` snippets to see how this is done--or just start with a blank HTML page and use one of those snippets.
+Create a new HTML document and type `uef` to see all available snippets.
+
+Note: For these snippets to accurately render page content you need to have the appropriate UEF libraries loaded in HEAD. See the `!!uef3` or `!!uef21` snippets to see how this is done--or just start with a blank HTML page and use one of those snippets.
 
 UEF (Web Component Edition) Snippets
---------------------------------
+------------------------------------
 
 **STARTER PAGE TEMPLATES**
 
@@ -29,6 +31,17 @@ uef21-page-footer | Add an optional page footer
 
 UEF 3 Snippets
 ------------------
+
+**UEF 3 Page Templates**
+
+Use these (or roll your own) after setting up the basic UEF 3 page with `!!uef3`
+
+Trigger | Description
+------- | -----------
+uef-page-business-1 | Business Page Template #1
+uef-page-business-2 | Business Page Template #2
+uef-page-public-1 | Public Page Template #1
+uef-page-public-2 | Public Page Template #2 (for more than 3-5 menu items)
 
 Trigger | Description
 ------- | -----------
@@ -160,17 +173,6 @@ uef-visually-hidden | Visually hidden text
 uef3-yesno | Yes/No
 uef3-zipcode | Zip Code
 uef3-zipcode-plus-4 | Zip Code plus 4-digit extension
-
-**Page Templates**
-
-Use these after setting up the basic UEF 3 page with `!!uef3`
-
-Trigger | Description
-------- | -----------
-uef-page-business-1 | Business Page Template #1
-uef-page-business-2 | Business Page Template #2
-uef-page-public-1 | Public Page Template #1
-uef-page-public-2 | Public Page Template #2 (for more than 3-5 menu items)
 
 ---
 
