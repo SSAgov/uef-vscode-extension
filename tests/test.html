@@ -1553,6 +1553,407 @@
     </uef-droplist>
     <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
-
+    <h2>Sub-Navigation</h2>
+    <!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->
+    <uef-subnav header="[INSERT-OPTIONAL-HEADER]">
+      <uef-subnav-item href="javascript:void(0);">[Item 1]</uef-subnav-item>
+      <uef-subnav-item href="javascript:void(0);">[Item 2]</uef-subnav-item>
+      <uef-subnav-item href="javascript:void(0);">[[Item 3]]</uef-subnav-item>
+    </uef-subnav>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Sub-Navigation (Groups)</h2>
+    <!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->
+    <uef-subnav header="[INSERT-OPTIONAL-HEADER]">
+      <uef-subnav-group label="[Group A]">
+        <uef-subnav-item href="#0">[Item A.1]</uef-subnav-item>
+        <uef-subnav-item href="#0">[Item A.2]</uef-subnav-item>
+      </uef-subnav-group>
+      <uef-subnav-group label="[Group B]">
+        <uef-subnav-item href="#0">[Item B.1]</uef-subnav-item>
+        <uef-subnav-item href="#0">[Item B.2]</uef-subnav-item>
+        <uef-subnav-item href="#0">[Item B.3]</uef-subnav-item>
+      </uef-subnav-group>
+      <uef-subnav-group label="[Group C]">
+        <uef-subnav-item href="#0">[Item C.1]</uef-subnav-item>
+        <uef-subnav-item href="#0">[Item C.2]</uef-subnav-item>
+        <uef-subnav-item href="#0">[Item C.3]</uef-subnav-item>
+      </uef-subnav-group>
+    </uef-subnav>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Sub-Navigation (Nested Groups)</h2>
+    <!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->
+    <uef-subnav header="[INSERT-OPTIONAL-HEADER]">
+      <uef-subnav-group label="[Group A]">
+        <uef-subnav-item href="javascript:void(0);">[Item 1]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[Item 2]</uef-subnav-item>
+        <uef-subnav-group label="[Group A.1]">
+          <uef-subnav-item href="javascript:void(0);">[Item 3]</uef-subnav-item>
+          <uef-subnav-item href="javascript:void(0);">[Item 4]</uef-subnav-item>
+          <uef-subnav-item href="javascript:void(0);">[[Item 5]]</uef-subnav-item>
+        </uef-subnav-group>
+      </uef-subnav-group>
+      <uef-subnav-group label="[Group B]">
+        <uef-subnav-item href="javascript:void(0);">[Item 6]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[Item 7]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[[Item 8]]</uef-subnav-item>
+      </uef-subnav-group>
+      <uef-subnav-group label="[Group C]">
+        <uef-subnav-item href="javascript:void(0);">[Item 9]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[Item 10]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[[Item 11]]</uef-subnav-item>
+      </uef-subnav-group>
+    </uef-subnav>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Sub-Navigation (Icons)</h2>
+    <!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->
+    <uef-subnav header="[INSERT-OPTIONAL-HEADER]">
+      <uef-subnav-group>
+        <span slot="uef-subnav-group-label">
+          <uef-icon name="check-circle" accessibility-text="Complete"
+            slot="uef-subnav-group-label" type="solid" color="--uef-color-green-primary"
+          ></uef-icon>
+          [Group A]
+        </span>
+        <uef-subnav-item href="javascript:void(0);">[Item 1]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[Item 2]</uef-subnav-item>
+        <uef-subnav-group label="[Group A.1]">
+          <uef-subnav-item href="javascript:void(0);">[Item 3]</uef-subnav-item>
+          <uef-subnav-item href="javascript:void(0);">[Item 4]</uef-subnav-item>
+          <uef-subnav-item href="javascript:void(0);">[[Item 5]]</uef-subnav-item>
+        </uef-subnav-group>
+      </uef-subnav-group>
+      <uef-subnav-group>
+        <span slot="uef-subnav-group-label">
+          <uef-icon name="check-circle" accessibility-text="Complete"
+            slot="uef-subnav-group-label" type="solid" color="--uef-color-green-primary"
+          ></uef-icon>
+          [Group B]
+        </span>
+        <uef-subnav-item href="javascript:void(0);">[Item 6]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[Item 7]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[[Item 8]]</uef-subnav-item>
+      </uef-subnav-group>
+      <uef-subnav-group>
+        <span slot="uef-subnav-group-label">
+          <uef-icon  name="check-circle" accessibility-text="Complete"
+            slot="uef-subnav-group-label" type="solid" color="--uef-color-green-primary"
+          ></uef-icon>
+          [Group C]
+        </span>
+        <uef-subnav-item href="javascript:void(0);">[Item 9]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[Item 10]</uef-subnav-item>
+        <uef-subnav-item href="javascript:void(0);">[[Item 11]]</uef-subnav-item>
+      </uef-subnav-group>
+    </uef-subnav>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Summary (Accordion)</h2>
+    <!-- SUMMARY (ACCORDION) ───────────────────────────────────────────────────────────────────────── -->
+    <uef-section tag="section"
+      sx='{
+        "border":"solid var(--uef-border-width-xs) var(--uef-color-interactive-default-light-secondary)",
+        "border-radius":"var(--uef-border-radius-softest)",
+        "padding":"var(--uef-space-4x)",
+        "padding-bottom": "0",
+        "--uef-accordion-item-control-padding":"var(--uef-space-inset-1x,.25rem) var(--uef-space-4x)"
+     }'
+    >
+      <uef-typography variant="heading3">[Review and Submit]</uef-typography>
+      <uef-typography variant="body-m" line-height="1.5">
+        [These are all the answers you′ve provided. If you need to make any changes, please select 'Edit' to return to that part of the application.]
+      </uef-typography>
+      <uef-accordion multiple icon-position="left" sx='{"margin":"0 calc(var(--uef-space-4x) * -1)","--uef-accordion-item-border-width": "0"}'>
+        <uef-accordion-item>
+          <uef-flex slot="uef-accordion-label" gap="var(--uef-space-inline-2x)" align-items="center">
+            <uef-typography tag="h4" variant="body-m" sx='{"flex-grow":"1"}'>
+              [Section 1]
+            </uef-typography>
+            <uef-button>Edit</uef-button>
+          </uef-flex>
+          <uef-typography variant="body-m" line-height="1.5">
+            [Pattern Label]: <b>[Answer]</b>
+          </uef-typography>
+        </uef-accordion-item>
+        <uef-accordion-item>
+          <uef-flex slot="uef-accordion-label" gap="var(--uef-space-inline-2x)" align-items="center">
+            <uef-flex-item flex-grow="1">
+              <uef-flex align-items="center" gap="var(--uef-space-inline-6x)">
+                <uef-typography tag="h4" variant="body-m">
+                  [Section 2]
+                </uef-typography>
+              </uef-flex>
+            </uef-flex-item>
+            <uef-button>Edit</uef-button>
+          </uef-flex>
+          <uef-typography variant="body-m" line-height="1.5">
+            [Pattern Label]: <b>[Answer]</b>
+          </uef-typography>
+        </uef-accordion-item>
+        <uef-accordion-item>
+          <uef-flex slot="uef-accordion-label" gap="var(--uef-space-inline-2x)" align-items="center">
+            <uef-typography tag="h4" variant="body-m" sx='{"flex-grow":"1"}'>
+              [Section 3]
+            </uef-typography>
+            <uef-button>Edit</uef-button>
+          </uef-flex>
+          <uef-typography variant="body-m" line-height="1.5">
+            [Pattern Label]: <b>[Answer]</b>
+          </uef-typography>
+        </uef-accordion-item>
+      </uef-accordion>
+    </uef-section>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Summary (Receipt)</h2>
+    <!-- SUMMARY (RECEIPT) ───────────────────────────────────────────────────────────────────────── -->
+    <uef-section tag="section"
+      sx='{
+       "border":"solid var(--uef-border-width-xs) var(--uef-color-interactive-default-light-secondary)",
+       "border-radius":"var(--uef-border-radius-softest)",
+       "padding":"var(--uef-space-4x)", "padding-bottom":"0px"
+     }'
+    >
+      <h3>[Review]</h3>
+      <p>[[This is the information that you have sent to us. Please retain this information for your records.]]</p>
+      <uef-typography tag="h4" variant="body-m"
+        sx='{
+          "font-weight":"var(--uef-font-weight-semibold,600)",
+          "background":"var(--uef-color-gray-secondary)",
+          "padding":"var(--uef-space-inset-4x)",
+          "margin":"0 calc(var(--uef-space-4x) * -1)"
+        }'
+      >
+        [Section Title]
+      </uef-typography>
+      <p>[Pattern Label]: <b>[Answer]</b></p>
+      <uef-typography tag="h4" variant="body-m"
+        sx='{
+          "font-weight":"var(--uef-font-weight-semibold,600)",
+          "background":"var(--uef-color-gray-secondary)",
+          "padding":"var(--uef-space-inset-4x)",
+          "margin":"0 calc(var(--uef-space-4x) * -1)"
+        }'
+      >
+        [Section Title]
+      </uef-typography>
+      <p>[Pattern Label]: <b>[Answer]</b></p>
+    </uef-section>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Summary (Review)</h2>
+    <!-- SUMMARY (REVIEW) ───────────────────────────────────────────────────────────────────────── -->
+    <uef-section tag="section"
+      sx='{
+       "border":"solid var(--uef-border-width-xs) var(--uef-color-interactive-default-light-secondary)",
+       "border-radius":"var(--uef-border-radius-softest)",
+       "padding":"var(--uef-space-4x)",
+       "padding-bottom":"0px"
+     }'
+    >
+      <h3>[Review and Submit]</h3>
+      <p>[These are all the answers you've provided. If you need to make any changes, please select 'Edit' to return to that part of the application.]</p>
+      <uef-flex align-items="center"
+        sx='{
+          "background":"var(--uef-color-gray-secondary)",
+          "padding":"var(--uef-space-1x) var(--uef-space-inset-4x)",
+          "margin":"0 calc(var(--uef-space-4x) * -1)"
+        }'
+      >
+        <uef-typography tag="h4" variant="heading5"
+          sx='{"font-weight":"var(--uef-font-weight-semibold,600)","flex-grow":"1"}'
+        >
+          [Section Title]
+        </uef-typography>
+        <uef-button>Edit</uef-button>
+      </uef-flex>
+      <p>[Pattern Label]:<b>[Answer]</b></p>
+      <uef-flex align-items="center"
+        sx='{
+          "background":"var(--uef-color-gray-secondary)",
+          "padding":"var(--uef-space-1x) var(--uef-space-inset-4x)",
+          "margin":"0 calc(var(--uef-space-4x) * -1)"
+        }'
+      >
+        <uef-typography tag="h4" variant="heading5"
+          sx='{"font-weight":"var(--uef-font-weight-semibold,600)","flex-grow":"1"}'
+        >
+          [Section Title]
+        </uef-typography>
+        <uef-button>Edit</uef-button>
+      </uef-flex>
+      <p>[Pattern Label]:<b>[Answer]</b></p>
+    </uef-section>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Table (1 Column)</h2>
+    <!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->
+    <uef-table caption="[[INSERT OPTIONAL TABLE CAPTION]]"
+      sticky-header sticky-footer striped search
+      width="" height="" breakpoint=""
+    >
+      <uef-pagination show-text slot="uef-table-controls-top"
+        page="1" dial="3" limit="10" results="25"
+      ></uef-pagination>
+      <uef-thead>
+        <uef-tr>
+          <uef-th sortable>[Col 1]</uef-th>
+        </uef-tr>
+      </uef-thead>
+      <uef-tbody>
+        <uef-tr>
+          <uef-td data-label="COL 1">[Cell 1]</uef-td>
+        <uef-tr>
+          <uef-td data-label="COL 1">[Cell 2]</uef-td>
+        </uef-tr>
+        <uef-tr>
+          <uef-td data-label="COL 1">[Cell 3]</uef-td>
+        </uef-tr>
+      </uef-tbody>
+      <uef-pagination show-text slot="uef-table-controls-bottom"
+        page="1" dial="3" limit="10" results="25"
+      ></uef-pagination>
+    </uef-table>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Tabs</h2>
+    <!-- TABS ──────────────────────────────────────────────────────────────────────────── -->
+    <uef-tabs>
+      <uef-tab name="panel-1" selected>[Tab 1]</uef-tab>
+      <uef-tab name="panel-2">[Tab 2]</uef-tab>
+      <uef-tab name="panel-3">[Tab 3]</uef-tab>
+      <uef-tab name="panel-4">[Tab 4]</uef-tab>
+    </uef-tabs>
+    <uef-tab-panel name="panel-1" sx='{"margin-top":"var(--uef-space-stack-4x)"}'>
+      [INSERT TAB PANEL 1 CONTENT]
+    </uef-tab-panel>
+    <uef-tab-panel name="panel-2" sx='{"margin-top":"var(--uef-space-stack-4x)"}'>
+      [INSERT TAB PANEL 2 CONTENT]
+    </uef-tab-panel>
+    <uef-tab-panel name="panel-3" sx='{"margin-top":"var(--uef-space-stack-4x)"}'>
+      [INSERT TAB PANEL 3 CONTENT]
+    </uef-tab-panel>
+    <uef-tab-panel name="panel-4" sx='{"margin-top":"var(--uef-space-stack-4x)"}'>
+      [INSERT TAB PANEL 4 CONTENT]
+    </uef-tab-panel>
+    <!-- ────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Tag</h2>
+    <uef-tag color="info" dismissible wrap>[INSERT TAG TEXT]</uef-tag>
+    <h2>Textarea</h2>
+    <uef-textarea required label="[Pattern Label]" instructions="[Instruction Text] ([500] characters maximum)" maxlength="500"></uef-textarea>
+    <h2>Textbox</h2>
+    <!-- TEXTBOX ─────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-textbox required field-name="INSERT-FIELD-NAME" label="[Pattern label]" maxlength=""
+      instructions="[[Instruction Text]]" support-info="[[Support Text]]"
+    >
+      <uef-help slot="uef-input-help" target="#INSERT-DIALOG-ID"></uef-help>
+    </uef-textbox>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Textbox (Icon Overlay)</h2>
+    <!-- TEXTBOX ─────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-textbox field-name="textbox-field-name" label="[Pattern Label]"
+      instructions="[Instructions]"
+      support-info="[Support Info]"
+    >
+      <uef-icon name="address-card" slot="input-overlay"></uef-icon>
+    </uef-textbox>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Time</h2>
+    <!-- TIME ─────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-compound label="[Pattern Label]" instructions="[Instruction Text]" ${3:compound-id="">
+      <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
+        <uef-flex-item>
+          <uef-droplist field-name="INSERT-FIELD-NAME-time" label="Time">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
+            <uef-droplist-item label="1:00" value="1:00"></uef-droplist-item>
+            <uef-droplist-item label="2:00" value="2:00"></uef-droplist-item>
+            <uef-droplist-item label="3:00" value="3:00"></uef-droplist-item>
+            <uef-droplist-item label="4:00" value="4:00"></uef-droplist-item>
+            <uef-droplist-item label="5:00" value="5:00"></uef-droplist-item>
+            <uef-droplist-item label="6:00" value="6:00"></uef-droplist-item>
+            <uef-droplist-item label="7:00" value="7:00"></uef-droplist-item>
+            <uef-droplist-item label="8:00" value="8:00"></uef-droplist-item>
+            <uef-droplist-item label="9:00" value="9:00"></uef-droplist-item>
+            <uef-droplist-item label="10:00" value="10:00"></uef-droplist-item>
+            <uef-droplist-item label="11:00" value="11:00"></uef-droplist-item>
+            <uef-droplist-item label="12:00" value="12:00"></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+        <uef-flex-item>
+          <uef-droplist field-name="INSERT-FIELD-NAME-time-ampm" label="AM/PM">
+            <uef-droplist-item label="--" value=""></uef-droplist-item>
+            <uef-droplist-item label="AM" value="AM"></uef-droplist-item>
+            <uef-droplist-item label="PM" value="PM"></uef-droplist-item>
+          </uef-droplist>
+        </uef-flex-item>
+      </uef-flex>
+    </uef-compound>
+    <!-- ──────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Timezone</h2>
+    <!-- TIME ZONE ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-droplist required label="[Pattern Label]" instructions="[[Instruction Text]]"
+      field-name="[[Instruction Text]]" value=""
+      items='[{"label":"Alaska Standard Time (AKST)","value":"AKST"},{"label":"Central Standard Time (CST)","value":"CST"},{"label":"Eastern Standard Time (EST)","value":"EST"},{"label":"Hawaii-Aleutian Standard Time (HAST)","value":"HAST"},{"label":"Mountain Standard Time (MST)","value":"MST"},{"label":"Pacific Standard Time (PST)","value":"PST"}]'
+    >
+      <uef-droplist-item label="--" value=""></uef-droplist-item>
+    </uef-droplist>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Toggle Group</h2>
+    <!-- TOGGLE GROUP ──────────────────────────────────────────────────────────────────────────────── -->
+    <uef-toggle-group field-name="INSERT-FIELD-NAME" accessibility-text="Toggle">
+      <uef-toggle-button value="1">[Selection 1]</uef-toggle-button>
+      <uef-toggle-button value="2">[Selection 2]</uef-toggle-button>
+      <uef-toggle-button value="3">[Selection 3]</uef-toggle-button>
+    </uef-toggle-group>
+    <!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Tooltip</h2>
+    <!-- TOOLTIP ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-tooltip underline placement="top">
+      [INSERT TOOLTIP TRIGGER TEXT]
+      <span slot="uef-tooltip-content">INSERT TOOLTIP CONTENT</span>
+    </uef-tooltip>
+    <!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Typography</h2>
+    <uef-typography variant="heading3" align="left">
+      tag="" color="" weight="" letterspacing="" line-height="" line-length="" decoration="" size="" font-family=""
+      [INSERT TEXT]
+    </uef-typography>
+    <h2>Video</h2>
+    <!-- VIDEO ─────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-media src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" accessibility-text="INSERT ACCESSIBILITY TEXT"
+      width="500px" height="500px" fit="fill" placement="bottom"
+    >
+      <video controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm"/>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"/>
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </uef-media>
+    <!-- ───────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Visually Hidden</h2>
+    <uef-visuallyhidden>[INSERT HIDDEN TEXT</uef-visuallyhidden>
+    <h2>Yes/No</h2>
+    <!-- YES/NO ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-radiolist required variant="none" field-name="INSERT-FIELD-NAME"
+      label="[Pattern Label]" instructions="[[Instruction Text]]"
+    >
+      <uef-radio label="Yes" value="true"></uef-radio>
+      <uef-radio label="No" value="false"></uef-radio>
+      [Pattern Label]
+    </uef-radiolist>
+    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Zip Code</h2>
+    <!-- ZIP CODE ─────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-textbox required inputmode="numeric" width="5em" maxlength="5"
+      label="[[Person's]] ZIP Code"
+      instructions="[[Instruction Text]]"
+      support-info="[[Support Text]]"
+      field-name="INSERT-FIELD-NAME"
+    ></uef-textbox>
+    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Zip Code +4</h2>
+    <!-- ZIP CODE (+4) ────────────────────────────────────────────────────────────────────────────── -->
+    <uef-textbox required
+      label="[[Person's]] ZIP Code"
+      instructions="[[Instruction Text]]"
+      support-info="[[Support Text]]"
+      field-name="INSERT-FIELD-NAME"
+      width="12ch" maxlength="9" inputmode="numeric" mask="     -    " format="*****-****"
+    ></uef-textbox>
+    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
 </body>
 </html>
