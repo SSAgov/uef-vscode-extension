@@ -7141,7 +7141,7 @@
   "UEF 3 Textarea": {
     "prefix": "uef3-textarea",
     "body": [
-      "<uef-textarea ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instruction Text]} (${0:[500]} characters maximum)\" maxlength=\"${0:500}\"></uef-textarea>"
+      "<uef-textarea ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\" instructions=\"${4:[Instruction Text]} (${0:[500]} characters maximum)\" maxlength=\"${0:500}\"></uef-textarea>"
     ],
     "description": "UEF 3 Textarea"
   },
@@ -8365,6 +8365,7 @@
       "  <uef-tbody>",
       "    <uef-tr>",
       "      <uef-td data-label=\"COL 1\">[Cell 1]</uef-td>",
+      "    </uef-tr>",
       "    <uef-tr>",
       "      <uef-td data-label=\"COL 1\">[Cell 2]</uef-td>",
       "    </uef-tr>",
@@ -8402,6 +8403,7 @@
       "    <uef-tr>",
       "      <uef-td data-label=\"COL 1\">[Cell 1]</uef-td>",
       "      <uef-td data-label=\"COL 2\">[Cell 2]</uef-td>",
+      "    </uef-tr>",
       "    <uef-tr>",
       "      <uef-td data-label=\"COL 1\">[Cell 2]</uef-td>",
       "      <uef-td data-label=\"COL 2\">[Cell 3]</uef-td>",
@@ -8749,22 +8751,22 @@
     "body": [
       "<!-- TABS ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-tabs>",
-      "  <uef-tab name=\"panel-1\" selected>[Tab 1]</uef-tab>",
-      "  <uef-tab name=\"panel-2\">[Tab 2]</uef-tab>",
-      "  <uef-tab name=\"panel-3\">[Tab 3]</uef-tab>",
-      "  <uef-tab name=\"panel-4\">[Tab 4]</uef-tab>",
+      "  <uef-tab name=\"panel-1\" selected>${1:[Tab 1]}</uef-tab>",
+      "  <uef-tab name=\"panel-2\">${2:[Tab 2]}</uef-tab>",
+      "  <uef-tab name=\"panel-3\">${3:[Tab 3]}</uef-tab>",
+      "  <uef-tab name=\"panel-4\">${4:[Tab 4]}</uef-tab>",
       "</uef-tabs>",
       "<uef-tab-panel name=\"panel-1\" sx='{\"margin-top\":\"var(--uef-space-stack-4x)\"}'>",
-      "  [INSERT TAB PANEL 1 CONTENT]",
+      "  ${5:[INSERT TAB PANEL 1 CONTENT]}",
       "</uef-tab-panel>",
       "<uef-tab-panel name=\"panel-2\" sx='{\"margin-top\":\"var(--uef-space-stack-4x)\"}'>",
-      "  [INSERT TAB PANEL 2 CONTENT]",
+      "  ${6:[INSERT TAB PANEL 2 CONTENT]}",
       "</uef-tab-panel>",
       "<uef-tab-panel name=\"panel-3\" sx='{\"margin-top\":\"var(--uef-space-stack-4x)\"}'>",
-      "  [INSERT TAB PANEL 3 CONTENT]",
+      "  ${7:[INSERT TAB PANEL 3 CONTENT]}",
       "</uef-tab-panel>",
       "<uef-tab-panel name=\"panel-4\" sx='{\"margin-top\":\"var(--uef-space-stack-4x)\"}'>",
-      "  [INSERT TAB PANEL 4 CONTENT]",
+      "  ${0:[INSERT TAB PANEL 4 CONTENT]}",
       "</uef-tab-panel>",
       "<!-- ────────────────────────────────────────────────────────────────────────────────── -->"
     ],
