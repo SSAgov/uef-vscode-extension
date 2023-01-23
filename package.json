@@ -3,7 +3,7 @@
 	"icon": "UEF.png",
 	"displayName": "UEF Snippets",
 	"description": "Social Security Administration User Experience Framework Snippets -- Rapidly design and build UEF pages",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"publisher": "SSAgov",
 	"repository": "https://github.com/SSAgov/uef-vscode-extension",
 	"engines": {
@@ -15,9 +15,21 @@
 	"contributes": {
 		"snippets": [
 			{
-				"language": "html,typescript,nunjucks,jsx",
+				"language": "html",
 				"path": "uef-snippets.json"
-			}
+			},
+			{
+				"language": "nunjucks",
+				"path": "uef-snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "uef-snippets.json"
+			},
+			{
+				"language": "jsx",
+				"path": "uef-snippets.json"
+			},
 		]
 	}
 }
