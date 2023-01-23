@@ -56,7 +56,8 @@
           <uef-textbox field-name="INSERT-FIELD-NAME-city" label="City/Town"></uef-textbox>
         </uef-flex-item>
         <uef-flex-item flex-grow="1" flex-basis="25ch">
-          <uef-droplist field-name="INSERT-FIELD-NAME-state" label="State" items="[{"label":Alabama","value":"AL"},{"label":"Alaska","value":"AK"},{"label":"American Samoa","value":"AS"},{"label":"Arizona","value":"AZ"},{"label":"Arkansas","value":"AR"},{"label":"Armed Forces Africa (AE Also Equals Canada Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Americas (Except Canada)","value":"AA"},{"label":"Armed Forces Canada (AE Also Equals Africa Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Europe (AE Also Equals Africa Canada and the Middle East)","value":"AE"},{"label":"Armed Forces Middle East (AE Also Equals Africa Canada and Europe)","value":"AE"},{"label":"Armed Forces Pacific","value":"AP"},{"label":"California","value":"CA"},{"label":"Colorado","value":"CO"},{"label":"Connecticut","value":"CT"},{"label":"Delaware","value":"DE"},{"label":"District of Columbia","value":"DC"},{"label":"Federated States of Micronesia","value":"FM"},{"label":"Florida","value":"FL"},{"label":"Georgia","value":"GA"},{"label":"Guam","value":"GU"},{"label":"Hawaii","value":"HI"},{"label":"Idaho","value":"ID"},{"label":"Illinois","value":"IL"},{"label":"Indiana","value":"IN"},{"label":"Iowa","value":"IA"},{"label":"Kansas","value":"KS"},{"label":"Kentucky","value":"KY"},{"label":"Louisiana","value":"LA"},{"label":"Maine","value":"ME"},{"label":"Marshall Islands","value":"MH"},{"label":"Maryland","value":"MD"},{"label":"Massachusetts","value":"MA"},{"label":"Michigan","value":"MI"},{"label":"Minnesota","value":"MN"},{"label":"Mississippi","value":"MS"},{"label":"Missouri","value":"MO"},{"label":"Montana","value":"MT"},{"label":"Nebraska","value":"NE"},{"label":"Nevada","value":"NV"},{"label":"New Hampshire","value":"NH"},{"label":"New Jersey","value":"NJ"},{"label":"New Mexico","value":"NM"},{"label":"New York","value":"NY"},{"label":"North Carolina","value":"NC"},{"label":"North Dakota","value":"ND"},{"label":"Northern Mariana Islands","value":"MP"},{"label":"Ohio","value":"OH"},{"label":"Oklahoma","value":"OK"},{"label":"Oregon","value":"OR"},{"label":"Palau","value":"PW"},{"label":"Pennsylvania","value":"PA"},{"label":"Puerto Rico","value":"PR"},{"label":"Rhode Island","value":"RI"},{"label":"South Carolina","value":"SC"},{"label":"South Dakota","value":"SD"},{"label":"Tennessee","value":"TN"},{"label":"Texas","value":"TX"},{"label":"Utah","value":"UT"},{"label":"Vermont","value":"VT"},{"label":"Virgin Islands","value":"VI"},{"label":"Virginia","value":"VA"},{"label":"Washington","value":"WA"},{"label":"West Virginia","value":"WV"},{"label":"Wisconsin","value":"WI"},{"label":"Wyoming","value":"WY">
+          <uef-droplist field-name="INSERT-FIELD-NAME-state" label="State"
+              items='[{"label":"Alabama","value":"AL"},{"label":"Alaska","value":"AK"},{"label":"American Samoa","value":"AS"},{"label":"Arizona","value":"AZ"},{"label":"Arkansas","value":"AR"},{"label":"Armed Forces Africa (AE Also Equals Canada Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Americas (Except Canada)","value":"AA"},{"label":"Armed Forces Canada (AE Also Equals Africa Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Europe (AE Also Equals Africa Canada and the Middle East)","value":"AE"},{"label":"Armed Forces Middle East (AE Also Equals Africa Canada and Europe)","value":"AE"},{"label":"Armed Forces Pacific","value":"AP"},{"label":"California","value":"CA"},{"label":"Colorado","value":"CO"},{"label":"Connecticut","value":"CT"},{"label":"Delaware","value":"DE"},{"label":"District of Columbia","value":"DC"},{"label":"Federated States of Micronesia","value":"FM"},{"label":"Florida","value":"FL"},{"label":"Georgia","value":"GA"},{"label":"Guam","value":"GU"},{"label":"Hawaii","value":"HI"},{"label":"Idaho","value":"ID"},{"label":"Illinois","value":"IL"},{"label":"Indiana","value":"IN"},{"label":"Iowa","value":"IA"},{"label":"Kansas","value":"KS"},{"label":"Kentucky","value":"KY"},{"label":"Louisiana","value":"LA"},{"label":"Maine","value":"ME"},{"label":"Marshall Islands","value":"MH"},{"label":"Maryland","value":"MD"},{"label":"Massachusetts","value":"MA"},{"label":"Michigan","value":"MI"},{"label":"Minnesota","value":"MN"},{"label":"Mississippi","value":"MS"},{"label":"Missouri","value":"MO"},{"label":"Montana","value":"MT"},{"label":"Nebraska","value":"NE"},{"label":"Nevada","value":"NV"},{"label":"New Hampshire","value":"NH"},{"label":"New Jersey","value":"NJ"},{"label":"New Mexico","value":"NM"},{"label":"New York","value":"NY"},{"label":"North Carolina","value":"NC"},{"label":"North Dakota","value":"ND"},{"label":"Northern Mariana Islands","value":"MP"},{"label":"Ohio","value":"OH"},{"label":"Oklahoma","value":"OK"},{"label":"Oregon","value":"OR"},{"label":"Palau","value":"PW"},{"label":"Pennsylvania","value":"PA"},{"label":"Puerto Rico","value":"PR"},{"label":"Rhode Island","value":"RI"},{"label":"South Carolina","value":"SC"},{"label":"South Dakota","value":"SD"},{"label":"Tennessee","value":"TN"},{"label":"Texas","value":"TX"},{"label":"Utah","value":"UT"},{"label":"Vermont","value":"VT"},{"label":"Virgin Islands","value":"VI"},{"label":"Virginia","value":"VA"},{"label":"Washington","value":"WA"},{"label":"West Virginia","value":"WV"},{"label":"Wisconsin","value":"WI"},{"label":"Wyoming","value":"WY"}]'
             <uef-droplist-item label="--"></uef-droplist-item>
           </uef-droplist>
         </uef-flex-item>
@@ -90,7 +91,7 @@
         </uef-flex>
         <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap" align-items="flex-end" slot="uef-toggle-us">
           <uef-flex-item flex-grow="1" flex-basis="25ch">
-            <uef-textbox field-name="INSERT-FIELD-NAME-city" label="City"></uef-textbox>
+            <uef-textbox field-name="INSERT-FIELD-NAME-city" field-id="city-us" label="City/Town"></uef-textbox>
           </uef-flex-item>
           <uef-flex-item flex-grow="1" flex-basis="25ch">
             <uef-droplist field-name="INSERT-FIELD-NAME-state" label="State"
@@ -176,15 +177,15 @@
     ></uef-checkbox>
     <h2>Checklist</h2>
     <!-- CHECKLIST ───────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-checklist required variant="none" field-name=""
-      label="" instructions="[[Instruction Text]]" select-all-label="">
-      <uef-checkbox field-name="{6:INSERT-FIELD-NAME}-checkbox-1" field-id="{6:INSERT-FIELD-NAME}-checkbox-1"
+    <uef-checklist required variant="none" field-name="INSERT-FIELD-NAME"
+      label="INSERT-FIELD-NAME" instructions="[[Instruction Text]]" select-all-label="">
+      <uef-checkbox field-name="{3:INSERT-FIELD-NAME}-checkbox-1" field-id="{3:INSERT-FIELD-NAME}-checkbox-1"
         label="[Label 1]" support-info="[[Support Text]]" value="1">
       </uef-checkbox>
-      <uef-checkbox field-name="{6:INSERT-FIELD-NAME}-checkbox-2" field-id="{6:INSERT-FIELD-NAME}-checkbox-2"
+      <uef-checkbox field-name="{3:INSERT-FIELD-NAME}-checkbox-2" field-id="{3:INSERT-FIELD-NAME}-checkbox-2"
         label="[Label 2]" support-info="[[Support Text]]" value="2">
       </uef-checkbox>
-      <uef-checkbox field-name="{6:INSERT-FIELD-NAME}-checkbox-3" field-id="{6:INSERT-FIELD-NAME}-checkbox-3"
+      <uef-checkbox field-name="{3:INSERT-FIELD-NAME}-checkbox-3" field-id="{3:INSERT-FIELD-NAME}-checkbox-3"
         label="[Label 3]" support-info="[[Support Text]]" value="3">
       </uef-checkbox>
     </uef-checklist>
@@ -192,7 +193,7 @@
     <h2>Checklist with 'Other' Option</h2>
     <!-- CHECKLIST ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-checklist required variant="none" field-name="INSERT-FIELD-NAME"
-      label="INSERT-FIELD-NAME" instructions="[[Instruction Text]]"
+      label="[Pattern Label]" instructions="[[Instruction Text]]"
       select-all-label="Select All" other-text-field-name="INSERT-FIELD-NAME-other" other-value="3">
       <uef-checkbox field-name="{3:INSERT-FIELD-NAME}-checkbox-1" field-id="{3:INSERT-FIELD-NAME}-checkbox-1"
         label="[Label 1]" support-info="[[Support Text]]" value="1">
@@ -260,13 +261,13 @@
     <!-- CURRENCY ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-textbox required field-name="INSERT-FIELD-NAME" label="[Pattern Label]" width="10em" inputmode="numeric"
       instructions="[[Instruction Text]]" support-info="[[Support Text]]">
-      <span slot="input-overlay">${0|$,£,€|}</span>
+      <span slot="uef-input-overlay">$</span>
     </uef-textbox>
     <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Date</h2>
     <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
-      field-name-month="INSERT-FIELD-NAME-month" field-name-year="INSERT-FIELD-NAME-day">
+      field-name-month="INSERT-FIELD-NAME-month" field-name-day="INSERT-FIELD-NAME-day">
       <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
         <uef-flex-item>
           <uef-droplist field-name="INSERT-FIELD-NAME-month" label="Month" width="auto">
@@ -315,12 +316,12 @@
           </uef-droplist>
         </uef-flex-item>
         <uef-flex-item>
-          <uef-droplist field-name="INSERT-FIELD-NAME-date-day" label="Day" width="auto" value="4">
+          <uef-droplist field-name="INSERT-FIELD-NAME-date-day" label="Day" width="auto" value="">
             <uef-droplist-item label="--" value=""></uef-droplist-item>
           </uef-droplist>
         </uef-flex-item>
         <uef-flex-item>
-          <uef-droplist field-name="INSERT-FIELD-NAME-date-year" label="Year" width="auto" value="2026">
+          <uef-droplist field-name="INSERT-FIELD-NAME-date-year" label="Year" width="auto" value="">
             <uef-droplist-item label="--" value=""></uef-droplist-item>
           </uef-droplist>
         </uef-flex-item>
@@ -357,6 +358,9 @@
           <uef-button fill="outline">[Cancel]</uef-button>
         </uef-button-group>
       </uef-dialog>
+      <uef-control target="INSERT-DIALOG-ID">
+        <uef-button fill="outline">[Open Dialog]</uef-button>
+      </uef-control>
     </div>
     <!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Drawer</h2>
@@ -376,18 +380,18 @@
     <h2>Droplist</h2>
     <!-- DROP LIST ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-droplist required label="[Pattern Label]" instructions="[[Instruction Text]]"
-      field-name="[[Instruction Text]]" value="" width="">
+      field-name="INSERT-FIELD-NAME" value="">
       <uef-droplist-item label="--" value=""></uef-droplist-item>
       <uef-droplist-item label="Item 1" value="Item 1"></uef-droplist-item>
-      <uef-droplist-item label="Item 1" value="Item 1"></uef-droplist-item>
-      <uef-droplist-item label="Item 1" value="Item 1"></uef-droplist-item>
+      <uef-droplist-item label="Item 2" value="Item 2"></uef-droplist-item>
+      <uef-droplist-item label="Item 3" value="Item 3"></uef-droplist-item>
     </uef-droplist>
     <!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>EIN</h2>
     <!-- EIN ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-textbox required label="[Person's] Employer Identification Number (EIN)"
       instructions="[[Instruction Text]]"
-      support-info="[[Instruction Text]]"
+      support-info="[[Support Text]]"
       field-name="INSERT-FIELD-NAME" width="12ch" maxlength="9" inputmode="numeric" mask="  -       " format="**-*******"
     ></uef-textbox>
     <!-- ───────────────────────────────────────────────────────────────────────────────────────── -->
@@ -528,27 +532,27 @@
         </uef-flex>
         <uef-flex direction="column" align-items="center" justify-content="center">
           <uef-flex align-items="center" justify-content="center" align-content="center" wrap="wrap" gap="var(--uef-space-1x)">
-            <a href="#">
+            <a href="#0">
               <uef-icon name="facebook-square" type="brand" size="40" color="black"
                 accessibility-text="[Organization] Facebook"
               ></uef-icon>
             </a>
-            <a href="#">
+            <a href="#0">
               <uef-icon name="twitter-square" type="brand" size="40" color="black"
                 accessibility-text="[Organization] Twitter"
               ></uef-icon>
             </a>
-            <a href="#">
+            <a href="#0">
               <uef-icon name="youtube-square" type="brand" size="40" color="black"
                 accessibility-text="[Organization] YouTube Channel"
               ></uef-icon>
             </a>
-            <a href="#">
+            <a href="#0">
               <uef-icon name="instagram-square" type="brand" size="40" color="black"
                 accessibility-text="[Organization] Instagram"
               ></uef-icon>
             </a>
-            <a href="#">
+            <a href="#0">
               <uef-icon name="rss" type="solid" size="40" color="black"
                 accessibility-text="[Organization] RSS Feed"
               ></uef-icon>
@@ -599,9 +603,7 @@
             <uef-link href="https://www.ssa.gov/eeo/nofear/index.htm">No FEAR Act data</uef-link>
             <uef-link type="external" href="https://oig.ssa.gov/">
               Office of the Inspector General
-              <uef-icon type="solid" name="external-link-alt" sx='{"marginLeft":"--uef-link-gap"}'
-                accessibility-text="External website"
-              ></uef-icon>
+              <uef-icon type="solid" name="external-link-alt" sx='{"marginLeft":"--uef-link-gap"}' accessibility-text="External website"></uef-icon>
             </uef-link>
             <uef-link href="https://www.ssa.gov/agency/performance/">Performance reports</uef-link>
             <uef-link href="https://www.ssa.gov/privacy/">Privacy policy</uef-link>
@@ -612,9 +614,7 @@
             Looking for U.S. government information and services?
             <uef-link type="external" href="https://www.usa.gov/">
               Visit USA.gov
-              <uef-icon type="solid" name="external-link-alt" sx='{"marginLeft":"--uef-link-gap"}'
-                accessibility-text="External website"
-              ></uef-icon>
+              <uef-icon type="solid" name="external-link-alt" sx='{"marginLeft":"--uef-link-gap"}' accessibility-text="External website"></uef-icon>
             </uef-link>
           </uef-typography>
         </uef-section>
@@ -696,30 +696,20 @@
         </uef-flex>
         <uef-flex direction="column" align-items="center" justify-content="center">
           <uef-flex align-items="center" justify-content="center" align-content="center" wrap="wrap" gap="var(--uef-space-1x)">
-            <a href="#">
-              <uef-icon name="facebook-square" type="brand" size="40" color="black"
-                accessibility-text="[Organization] Facebook"
-              ></uef-icon>
+            <a href="#0">
+              <uef-icon name="facebook-square" type="brand" size="40" color="black" accessibility-text="[Organization] Facebook"></uef-icon>
             </a>
-            <a href="#">
-              <uef-icon name="twitter-square" type="brand" size="40" color="black"
-                accessibility-text="[Organization] Twitter"
-              ></uef-icon>
+            <a href="#0">
+              <uef-icon name="twitter-square" type="brand" size="40" color="black" accessibility-text="[Organization] Twitter"></uef-icon>
             </a>
-            <a href="#">
-              <uef-icon name="youtube-square" type="brand" size="40" color="black"
-                accessibility-text="[Organization] YouTube Channel"
-              ></uef-icon>
+            <a href="#0">
+              <uef-icon name="youtube-square" type="brand" size="40" color="black" accessibility-text="[Organization] YouTube Channel"></uef-icon>
             </a>
-            <a href="#">
-              <uef-icon name="instagram-square" type="brand" size="40" color="black"
-                accessibility-text="[Organization] Instagram"
-              ></uef-icon>
+            <a href="#0">
+              <uef-icon name="instagram-square" type="brand" size="40" color="black" accessibility-text="[Organization] Instagram"></uef-icon>
             </a>
-            <a href="#">
-              <uef-icon name="rss" type="solid" size="40" color="black"
-                accessibility-text="[Organization] RSS Feed"
-              ></uef-icon>
+            <a href="#0">
+              <uef-icon name="rss" type="solid" size="40" color="black" accessibility-text="[Organization] RSS Feed"></uef-icon>
             </a>
           </uef-flex>
           <uef-typography variant="heading3" weight="bold"
@@ -767,9 +757,7 @@
             <uef-link href="https://www.ssa.gov/eeo/nofear/index.htm">No FEAR Act data</uef-link>
             <uef-link type="external" href="https://oig.ssa.gov/">
               Office of the Inspector General
-              <uef-icon type="solid" name="external-link-alt" sx='{"marginLeft":"--uef-link-gap"}'
-                accessibility-text="External website"
-              ></uef-icon>
+              <uef-icon type="solid" name="external-link-alt" sx='{"marginLeft":"--uef-link-gap"}' accessibility-text="External website"></uef-icon>
             </uef-link>
             <uef-link href="https://www.ssa.gov/agency/performance/">Performance reports</uef-link>
             <uef-link href="https://www.ssa.gov/privacy/">Privacy policy</uef-link>
@@ -780,9 +768,7 @@
             Looking for U.S. government information and services?
             <uef-link type="external" href="https://www.usa.gov/">
               Visit USA.gov
-              <uef-icon type="solid" name="external-link-alt" sx='{"marginLeft":"--uef-link-gap"}'
-                accessibility-text="External website"
-              ></uef-icon>
+              <uef-icon type="solid" name="external-link-alt" sx='{"marginLeft":"--uef-link-gap"}' accessibility-text="External website"></uef-icon>
             </uef-link>
           </uef-typography>
         </uef-section>
@@ -861,7 +847,7 @@
     <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Form</h2>
     <div>
-      <uef-form action="" target="" method="{|get,post,dialog|}" role="form" enctype="multipart/form-data">
+      <uef-form action="" target="" method="get" role="form" enctype="multipart/form-data">
         INSERT FORM COMPONENTS
       </uef-form>
     </div>
@@ -887,7 +873,7 @@
       <aside>[[INSERT SIDEBAR CONTENT]]</aside>
     </uef-grid>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <h2>Grid (3-Column with Template</h2>
+    <h2>Grid (3-Column with Template)</h2>
     <!-- GRID (3 COLUMN TEMPLATE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <uef-grid display="grid"
       grid-template-areas='"header header header"
@@ -912,7 +898,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <h2>Grid (Fluid)</h2>
     <!-- GRID (FLUID) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <uef-grid grid-template-columns="repeat(auto-fit, minmax(175px,1fr)) grid-auto-rows="100px">
+    <uef-grid grid-template-columns="repeat(auto-fit, minmax(175px,1fr))">
       <div>Grid Item 1</div>
       <div>Grid Item 2</div>
       <div>Grid Item 3</div>
@@ -939,9 +925,10 @@
     <!-- ──────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Hero</h2>
     <!-- HERO ─────────────────────────────────────────────────────────────────────────────────── -->
+    <!-- HERO ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-container sx='{"height":"300px","background":"#000"}'>
       <h3>[INSERT HERO TEXT]</h3>
-      <uef-media slot="uef-container-background"
+      <uef-media slot="uef-container-background" overlay
         src="https://api.lorem.space/image/face?w=2000&amp;h=2000" accessibility-text="INSERT ACCESSIBILITY TEXT"
         fit="cover" placement="left"
       >
@@ -972,14 +959,13 @@
     <br>
     <!-- EMAIL LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="mailto:someone@example.com">
-      <uef-icon name="envelope" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>[someone@example.com]
+      <uef-icon name="envelope" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon> [someone@example.com]
     </uef-link>
     <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- EXCEL LINK ─────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-link href="">
-      <uef-icon name="file-excel" accessibility-text="Spreadsheet file" color="--uef-color-green-primary" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>
-      [Document Title]
+    <uef-link href="#0">
+      <uef-icon name="file-excel" accessibility-text="Spreadsheet file" color="--uef-color-green-primary" sx='{"marginRight":"--uef-link-gap"}'></uef-icon> [Document Title]
     </uef-link>
     <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
@@ -991,23 +977,20 @@
     <!-- ───────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- PDF LINK ─────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-link href="0#">
-      <uef-icon name="file-pdf" accessibility-text="PDF file" color="--uef-color-red-primary" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>
-      [Document Title]
+    <uef-link href="#0">
+      <uef-icon name="file-pdf" accessibility-text="PDF file" color="--uef-color-red-primary" sx='{"marginRight":"--uef-link-gap"}'></uef-icon> [Document Title]
     </uef-link>
     <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- POWERPOINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-link href="0#">
-      <uef-icon name="file-powerpoint" accessibility-text="Powerpoint file" color="--uef-color-red-primary" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>
-      [Document Title]
+    <uef-link href="#0">
+      <uef-icon name="file-powerpoint" accessibility-text="Powerpoint file" color="--uef-color-red-primary" sx='{"marginRight":"--uef-link-gap"}'></uef-icon> [Document Title]
     </uef-link>
     <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- PRINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="javascript:window.print();">
-      <uef-icon type="solid" name="print" color="--uef-color-text-link-on-light='{"marginRight":"--uef-link-gap"}'></uef-icon>
-      Print this page
+      <uef-icon type="solid" name="print" color="--uef-color-text-link-on-light='{"marginRight":"--uef-link-gap"}'></uef-icon> Print this page
     </uef-link>
     <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
@@ -1034,7 +1017,7 @@
     <h2>Media</h2>
     <!-- MEDIA ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-media src="https://api.lorem.space/image/face?w=2000&amp;h=2000" accessibility-text="INSERT ACCESSIBILITY TEXT"
-      width="100px" height="100px" overlay fit="cover" placement="${0|left,right,top,bottom,center|}"
+      width="100px" height="100px" overlay fit="cover" placement="bottom"
     >
       <picture>
         <source media="(min-width: 800px)" src-set="https://api.lorem.space/image/face?w=2000&amp;h=2000"/>
@@ -1100,7 +1083,7 @@
     <!-- MENU ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-container width="500px" height="500px" sx='{"border": "1px solid #dadada"}'>
       <uef-flex align-items="center" justify-content="center" sx='{ "height": "100%" }'>
-        <uef-menu label="Menu" placement="${0|bottom-start,bottom-end,bottom,top-start,top-end,top,left,left-start,left-end,right,right-start,right-end|}" sx='{"--uef-menu-offset":"-50px"}'>
+        <uef-menu label="Menu" placement="bottom-start" sx='{"--uef-menu-offset":"-50px"}'>
           <uef-flex direction="column" gap="var(--uef-space-4x)">
             <uef-link href="javascript:void(0)">[Link 1]</uef-link>
             <uef-link href="javascript:void(0)">[Link 2]</uef-link>
@@ -1291,9 +1274,7 @@
       <uef-nav-item href="javascript:void(0)" current>[Item 2]</uef-nav-item>
       <uef-nav-item href="javascript:void(0)">[Item 3]</uef-nav-item>
       <uef-nav-item>
-        <uef-menu label="[Item 4]" placement="bottom-end"
-          sx='{"--uef-menu-offset":"var(--uef-space-3x)"}'
-        >
+        <uef-menu label="[Item 4]" placement="bottom-end" sx='{"--uef-menu-offset":"var(--uef-space-3x)"}'>
           <uef-flex direction="column" gap="var(--uef-space-stack-4x)">
             <uef-link href="javascript:void(0)">[Link 1]</uef-link>
             <uef-link href="javascript:void(0)">[Link 2]</uef-link>
@@ -1310,6 +1291,8 @@
     <uef-typography sx="{}" variant="label" tag="span">
       All information is required, unless noted optional.
     </uef-typography>
+    <h2>Optional Info</h2>
+    <uef-typography variant="label" tag="span">All information is required, unless noted optional.</uef-typography>
     <h2>Pagination</h2>
     <uef-pagination page="1" dial="3" limit="10" results="100" showtext></uef-pagination>
     <h2>Password</h2>
@@ -1321,7 +1304,7 @@
     <h2>Percent</h2>
     <!-- PERCENT ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-textbox required label="[Pattern Label]"
-      instructions="[Pattern Label]"
+      instructions="[[Instruction Text]]"
       support-info="[[Support Text]]"
       field-name="INSERT-FIELD-NAME" width="10em" inputmode="numeric" overlay-alignment="right"
     >
@@ -1330,7 +1313,7 @@
     <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Phone</h2>
     <!-- PHONE ───────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-compound label="[[Person's Fax or Phone]] Number" instructions="[[Instruction Text]]" ${3:compound-id="">
+    <uef-compound label="[[Person's Fax or Phone]] Number" instructions="[[Instruction Text]]" compound-id="">
       <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
         <uef-flex-item flex-grow="0">
           <uef-textbox field-name="INSERT-FIELD-NAME-number" label="10-Digit Number" maxlength="10" width="15ch" mask="(   )    -    " format="(***) ***-****" inputmode="numeric"></uef-textbox>
@@ -1415,7 +1398,7 @@
     <!-- ──────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Place</h2>
     <!-- PLACE ───────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-compound label="${1[Pattern Label]}" instructions="[Instruction Text]">
+    <uef-compound required label="[Pattern Label]" instructions="[Instruction Text]">
       <uef-toggle-input toggle-name="INSERT-FIELD-NAME-place-toggle" toggle-options="us,intl">
         <uef-toggle-group field-name="INSERT-FIELD-NAME-place-toggle" accessibility-text="Toggle">
           <uef-toggle-button value="us" selected>
@@ -1523,14 +1506,14 @@
     <!-- ───────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Required Info</h2>
     <uef-typography variant="label" tag="span">
-      <uef-icon name="asterisk" type="solid" size="7.5" color="#c00" accessibility-text="asterisk" sx='{"verticalAlign":"super","marginLeft":"-0.6rem"}'></uef-icon>Indicates required information.
+      <uef-icon name="asterisk" type="solid" size="7.5" color="#c00" accessibility-text="asterisk" sx='{"verticalAlign":"super","marginLeft":"-0.6rem"}'></uef-icon> Indicates required information.
     </uef-typography>
     <h2>Section</h2>
-    <uef-section tag="${1|section,article,div,|}">[INSERT SECTION TEXT]</uef-section>
+    <uef-section tag="section">[INSERT SECTION TEXT]</uef-section>
     <h2>Show/Hide</h2>
     <!-- SHOW/HIDE ───────────────────────────────────────────────────────────────────────────────── -->
     <uef-show-hide show-label="[Show something hidden]" hide-label="[Hide something shown]"
-      show ${4:target-ids="""
+      show target-ids=""
     >
       [INSERT SHOW/HIDE CONTENT]
     </uef-show-hide>
