@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://www.ssa.gov/uef/uef3/latest/assets/css/uef-variables.css" />
     <link rel="stylesheet" href="https://www.ssa.gov/uef/uef3/latest/assets/css/uef-global.css" />
     <script type="module" src="https://www.ssa.gov/uef/uef3/latest/uef3-web-components.esm.js"></script>
+    <style>
+      body {margin: 1em;}
+    </style>
 </head>
 <body>
     <uef-banner tld="gov" variant="dark"></uef-banner>
@@ -1520,9 +1523,10 @@
     <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>SSN</h2>
     <!-- SSN ───────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-ssn required masked field-name="INSERT-FIELD-NAME" label="[Person's] Social Security Number (SSN)"
+    <uef-ssn required masked field-name="INSERT-FIELD-NAME"
+      label="[Person's] Social Security Number (SSN)"
       instructions="[[Instruction Text]]" support-info="[[Support Text]]"
-      width="22ch" maxlength="9" inputmode="numeric" format="***-**-****" mask="   -  -    "
+      width="13ch" maxlength="9" inputmode="numeric" format="***-**-****" mask="   -  -    "
     ></uef-ssn>
     <!-- ───────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>State</h2>
@@ -1738,9 +1742,7 @@
           "margin":"0 calc(var(--uef-space-4x) * -1)"
         }'
       >
-        <uef-typography tag="h4" variant="heading5"
-          sx='{"font-weight":"var(--uef-font-weight-semibold,600)","flex-grow":"1"}'
-        >
+        <uef-typography tag="h4" variant="heading5" sx='{"font-weight":"var(--uef-font-weight-semibold,600)","flex-grow":"1"}'>
           [Section Title]
         </uef-typography>
         <uef-button>Edit</uef-button>
@@ -1753,9 +1755,7 @@
           "margin":"0 calc(var(--uef-space-4x) * -1)"
         }'
       >
-        <uef-typography tag="h4" variant="heading5"
-          sx='{"font-weight":"var(--uef-font-weight-semibold,600)","flex-grow":"1"}'
-        >
+        <uef-typography tag="h4" variant="heading5" sx='{"font-weight":"var(--uef-font-weight-semibold,600)","flex-grow":"1"}'>
           [Section Title]
         </uef-typography>
         <uef-button>Edit</uef-button>
@@ -1780,11 +1780,46 @@
       <uef-tbody>
         <uef-tr>
           <uef-td data-label="COL 1">[Cell 1]</uef-td>
+        </uef-tr>
         <uef-tr>
           <uef-td data-label="COL 1">[Cell 2]</uef-td>
         </uef-tr>
         <uef-tr>
           <uef-td data-label="COL 1">[Cell 3]</uef-td>
+        </uef-tr>
+      </uef-tbody>
+      <uef-pagination show-text slot="uef-table-controls-bottom"
+        page="1" dial="3" limit="10" results="25"
+      ></uef-pagination>
+    </uef-table>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────── -->
+    <br>
+    <!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->
+    <uef-table caption="[[INSERT OPTIONAL TABLE CAPTION]]"
+      sticky-header sticky-footer striped search
+      width="" height="" breakpoint=""
+    >
+      <uef-pagination show-text slot="uef-table-controls-top"
+        page="1" dial="3" limit="10" results="25"
+      ></uef-pagination>
+      <uef-thead>
+        <uef-tr>
+          <uef-th sortable>[Col 1]</uef-th>
+          <uef-th sortable>[Col 2]</uef-th>
+        </uef-tr>
+      </uef-thead>
+      <uef-tbody>
+        <uef-tr>
+          <uef-td data-label="COL 1">[Cell 1]</uef-td>
+          <uef-td data-label="COL 2">[Cell 2]</uef-td>
+        </uef-tr>
+        <uef-tr>
+          <uef-td data-label="COL 1">[Cell 2]</uef-td>
+          <uef-td data-label="COL 2">[Cell 3]</uef-td>
+        </uef-tr>
+        <uef-tr>
+          <uef-td data-label="COL 1">[Cell 3]</uef-td>
+          <uef-td data-label="COL 2">[Cell 4]</uef-td>
         </uef-tr>
       </uef-tbody>
       <uef-pagination show-text slot="uef-table-controls-bottom"
@@ -1816,7 +1851,7 @@
     <h2>Tag</h2>
     <uef-tag color="info" dismissible wrap>[INSERT TAG TEXT]</uef-tag>
     <h2>Textarea</h2>
-    <uef-textarea required label="[Pattern Label]" instructions="[Instruction Text] ([500] characters maximum)" maxlength="500"></uef-textarea>
+    <uef-textarea required field-name="INSERT-FIELD-NAME" label="[Pattern Label]" instructions="[Instruction Text] ([500] characters maximum)" maxlength="500"></uef-textarea>
     <h2>Textbox</h2>
     <!-- TEXTBOX ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-textbox required field-name="INSERT-FIELD-NAME" label="[Pattern label]" maxlength=""
@@ -1827,16 +1862,15 @@
     <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Textbox (Icon Overlay)</h2>
     <!-- TEXTBOX ─────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-textbox field-name="textbox-field-name" label="[Pattern Label]"
-      instructions="[Instructions]"
-      support-info="[Support Info]"
+    <uef-textbox required field-name="INSERT-FIELD-NAME" label="[Pattern Label]" maxlength=""
+      instructions="[Instructions]" support-info="[Support Info]"
     >
-      <uef-icon name="address-card" slot="input-overlay"></uef-icon>
+      <uef-icon name="address-card" slot="uef-input-overlay"></uef-icon>
     </uef-textbox>
     <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Time</h2>
     <!-- TIME ─────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-compound label="[Pattern Label]" instructions="[Instruction Text]" ${3:compound-id="">
+    <uef-compound required label="[Pattern Label]" instructions="[Instruction Text]" compound-id="">
       <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
         <uef-flex-item>
           <uef-droplist field-name="INSERT-FIELD-NAME-time" label="Time">
@@ -1868,7 +1902,7 @@
     <h2>Timezone</h2>
     <!-- TIME ZONE ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-droplist required label="[Pattern Label]" instructions="[[Instruction Text]]"
-      field-name="[[Instruction Text]]" value=""
+      field-name="INSERT-FIELD-NAME" value=""
       items='[{"label":"Alaska Standard Time (AKST)","value":"AKST"},{"label":"Central Standard Time (CST)","value":"CST"},{"label":"Eastern Standard Time (EST)","value":"EST"},{"label":"Hawaii-Aleutian Standard Time (HAST)","value":"HAST"},{"label":"Mountain Standard Time (MST)","value":"MST"},{"label":"Pacific Standard Time (PST)","value":"PST"}]'
     >
       <uef-droplist-item label="--" value=""></uef-droplist-item>
@@ -1915,7 +1949,7 @@
     >
       <uef-radio label="Yes" value="true"></uef-radio>
       <uef-radio label="No" value="false"></uef-radio>
-      [Pattern Label]
+      <uef-radio label="Not Yet Answered" value="nya"></uef-radio>
     </uef-radiolist>
     <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Zip Code</h2>
