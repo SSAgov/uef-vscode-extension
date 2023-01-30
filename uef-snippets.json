@@ -7151,10 +7151,11 @@
     "prefix": "uef3-textbox",
     "body": [
       "<!-- TEXTBOX ─────────────────────────────────────────────────────────────────────────────────── -->",
-      "<uef-textbox ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern label]}\" ${4:maxlength=\"\"}",
-      "  instructions=\"${5:[[Instruction Text]]}\" support-info=\"${6:[[Support Text]]}\"",
+      "<uef-textbox ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern label]}\"",
+      "  instructions=\"${4:[[Instruction Text]]}\" support-info=\"${5:[[Support Text]]}\"",
+      "  maxlength=\"${6:}\" width=\"${7:}\" inputmode=${8|text,tel,url,email,numeric,decimal,search,none|}",
       ">",
-      "  ${7:<uef-help slot=\"uef-input-help\" target=\"${0:#INSERT-DIALOG-ID}\"></uef-help>}",
+      "  ${9:<uef-help slot=\"uef-input-help\" target=\"${0:#INSERT-DIALOG-ID}\"></uef-help>}",
       "</uef-textbox>",
       "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
@@ -7165,8 +7166,9 @@
     "prefix": "uef3-textbox-icon",
     "body": [
       "<!-- TEXTBOX ─────────────────────────────────────────────────────────────────────────────────── -->",
-      "<uef-textbox ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\" ${4:maxlength=\"\"}",
-      "  instructions=\"${5:[Instructions]}\" support-info=\"${6:[Support Info]}\"",
+      "<uef-textbox ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\"",
+      "  instructions=\"${4:[Instructions]}\" support-info=\"${5:[Support Info]}\"",
+      "  maxlength=\"${6:}\" width=\"${7:}\" inputmode=${8|text,tel,url,email,numeric,decimal,search,none|} overlay-alignment=\"${9|left,right|}\"",
       ">",
       "  <uef-icon name=\"${0:address-card}\" slot=\"uef-input-overlay\"></uef-icon>",
       "</uef-textbox>",
