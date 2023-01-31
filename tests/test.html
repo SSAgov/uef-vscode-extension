@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://www.ssa.gov/uef/uef3/latest/assets/css/uef-global.css" />
     <script type="module" src="https://www.ssa.gov/uef/uef3/latest/uef3-web-components.esm.js"></script>
     <style>
-      body {margin: 1em;}
+      body {
+        margin: 1em;
+        margin-top: 0;
+      }
     </style>
 </head>
 <body>
@@ -17,6 +20,19 @@
     <uef-skip-nav target-id="main" shortcut-key="K"></uef-skip-nav>
     <h1>UEF 3 Snippets Test Page</h1>
     <hr>
+    <h2>Error Summary</h2>
+    <!-- ERROR SUMMARY ───────────────────────────────────────────────────────────────────────────────────── -->
+    <uef-error-summary
+      header="Please correct the following information:"
+      errors='[
+        {
+          "id": "INSERT-DOM-ERROR-ID",
+          "summary": "INSERT CUSTOM ERROR TEXT",
+          "message": ["INSERT CUSTOM ERROR TEXT"]
+        }
+      ]'
+    ></uef-error-summary>
+    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Accordion</h2>
     <!-- ACCORDION ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-accordion icon-position="left" multiple>
@@ -42,30 +58,30 @@
     <uef-compound label="[Pattern Label]" instructions="[Instructions]" compound-id="">
       <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
         <uef-flex-item flex-grow="1" flex-basis="25ch">
-          <uef-textbox field-name="INSERT-FIELD-NAME-street-1" label="Street Address"></uef-textbox>
+          <uef-textbox field-name="addrress-test-street-1" label="Street Address"></uef-textbox>
         </uef-flex-item>
         <uef-flex-item flex-grow="1" flex-basis="25ch">
-          <uef-textbox field-name="INSERT-FIELD-NAME-street-2" label="Apartment, Suite, Building, Etc."></uef-textbox>
+          <uef-textbox field-name="addrress-test-street-2" label="Apartment, Suite, Building, Etc."></uef-textbox>
         </uef-flex-item>
         <uef-flex-item flex-grow="1" flex-basis="25ch">
-          <uef-textbox field-name="INSERT-FIELD-NAME-street-3" label="Line 3"></uef-textbox>
+          <uef-textbox field-name="addrress-test-street-3" label="Line 3"></uef-textbox>
         </uef-flex-item>
         <uef-flex-item flex-grow="1" flex-basis="25ch">
-          <uef-textbox field-name="INSERT-FIELD-NAME-street-4" label="Line 4"></uef-textbox>
+          <uef-textbox field-name="addrress-test-street-4" label="Line 4"></uef-textbox>
         </uef-flex-item>
       </uef-flex>
       <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
         <uef-flex-item flex-grow="1" flex-basis="25ch">
-          <uef-textbox field-name="INSERT-FIELD-NAME-city" label="City/Town"></uef-textbox>
+          <uef-textbox field-name="addrress-test-city" label="City/Town"></uef-textbox>
         </uef-flex-item>
         <uef-flex-item flex-grow="1" flex-basis="25ch">
-          <uef-droplist field-name="INSERT-FIELD-NAME-state" label="State"
-              items='[{"label":"Alabama","value":"AL"},{"label":"Alaska","value":"AK"},{"label":"American Samoa","value":"AS"},{"label":"Arizona","value":"AZ"},{"label":"Arkansas","value":"AR"},{"label":"Armed Forces Africa (AE Also Equals Canada Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Americas (Except Canada)","value":"AA"},{"label":"Armed Forces Canada (AE Also Equals Africa Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Europe (AE Also Equals Africa Canada and the Middle East)","value":"AE"},{"label":"Armed Forces Middle East (AE Also Equals Africa Canada and Europe)","value":"AE"},{"label":"Armed Forces Pacific","value":"AP"},{"label":"California","value":"CA"},{"label":"Colorado","value":"CO"},{"label":"Connecticut","value":"CT"},{"label":"Delaware","value":"DE"},{"label":"District of Columbia","value":"DC"},{"label":"Federated States of Micronesia","value":"FM"},{"label":"Florida","value":"FL"},{"label":"Georgia","value":"GA"},{"label":"Guam","value":"GU"},{"label":"Hawaii","value":"HI"},{"label":"Idaho","value":"ID"},{"label":"Illinois","value":"IL"},{"label":"Indiana","value":"IN"},{"label":"Iowa","value":"IA"},{"label":"Kansas","value":"KS"},{"label":"Kentucky","value":"KY"},{"label":"Louisiana","value":"LA"},{"label":"Maine","value":"ME"},{"label":"Marshall Islands","value":"MH"},{"label":"Maryland","value":"MD"},{"label":"Massachusetts","value":"MA"},{"label":"Michigan","value":"MI"},{"label":"Minnesota","value":"MN"},{"label":"Mississippi","value":"MS"},{"label":"Missouri","value":"MO"},{"label":"Montana","value":"MT"},{"label":"Nebraska","value":"NE"},{"label":"Nevada","value":"NV"},{"label":"New Hampshire","value":"NH"},{"label":"New Jersey","value":"NJ"},{"label":"New Mexico","value":"NM"},{"label":"New York","value":"NY"},{"label":"North Carolina","value":"NC"},{"label":"North Dakota","value":"ND"},{"label":"Northern Mariana Islands","value":"MP"},{"label":"Ohio","value":"OH"},{"label":"Oklahoma","value":"OK"},{"label":"Oregon","value":"OR"},{"label":"Palau","value":"PW"},{"label":"Pennsylvania","value":"PA"},{"label":"Puerto Rico","value":"PR"},{"label":"Rhode Island","value":"RI"},{"label":"South Carolina","value":"SC"},{"label":"South Dakota","value":"SD"},{"label":"Tennessee","value":"TN"},{"label":"Texas","value":"TX"},{"label":"Utah","value":"UT"},{"label":"Vermont","value":"VT"},{"label":"Virgin Islands","value":"VI"},{"label":"Virginia","value":"VA"},{"label":"Washington","value":"WA"},{"label":"West Virginia","value":"WV"},{"label":"Wisconsin","value":"WI"},{"label":"Wyoming","value":"WY"}]'
+          <uef-droplist field-name="addrress-test-state" label="State"
+              items='[{"label":"Alabama","value":"AL"},{"label":"Alaska","value":"AK"},{"label":"American Samoa","value":"AS"},{"label":"Arizona","value":"AZ"},{"label":"Arkansas","value":"AR"},{"label":"Armed Forces Africa (AE Also Equals Canada Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Americas (Except Canada)","value":"AA"},{"label":"Armed Forces Canada (AE Also Equals Africa Europe and the Middle East)","value":"AE"},{"label":"Armed Forces Europe (AE Also Equals Africa Canada and the Middle East)","value":"AE"},{"label":"Armed Forces Middle East (AE Also Equals Africa Canada and Europe)","value":"AE"},{"label":"Armed Forces Pacific","value":"AP"},{"label":"California","value":"CA"},{"label":"Colorado","value":"CO"},{"label":"Connecticut","value":"CT"},{"label":"Delaware","value":"DE"},{"label":"District of Columbia","value":"DC"},{"label":"Federated States of Micronesia","value":"FM"},{"label":"Florida","value":"FL"},{"label":"Georgia","value":"GA"},{"label":"Guam","value":"GU"},{"label":"Hawaii","value":"HI"},{"label":"Idaho","value":"ID"},{"label":"Illinois","value":"IL"},{"label":"Indiana","value":"IN"},{"label":"Iowa","value":"IA"},{"label":"Kansas","value":"KS"},{"label":"Kentucky","value":"KY"},{"label":"Louisiana","value":"LA"},{"label":"Maine","value":"ME"},{"label":"Marshall Islands","value":"MH"},{"label":"Maryland","value":"MD"},{"label":"Massachusetts","value":"MA"},{"label":"Michigan","value":"MI"},{"label":"Minnesota","value":"MN"},{"label":"Mississippi","value":"MS"},{"label":"Missouri","value":"MO"},{"label":"Montana","value":"MT"},{"label":"Nebraska","value":"NE"},{"label":"Nevada","value":"NV"},{"label":"New Hampshire","value":"NH"},{"label":"New Jersey","value":"NJ"},{"label":"New Mexico","value":"NM"},{"label":"New York","value":"NY"},{"label":"North Carolina","value":"NC"},{"label":"North Dakota","value":"ND"},{"label":"Northern Mariana Islands","value":"MP"},{"label":"Ohio","value":"OH"},{"label":"Oklahoma","value":"OK"},{"label":"Oregon","value":"OR"},{"label":"Palau","value":"PW"},{"label":"Pennsylvania","value":"PA"},{"label":"Puerto Rico","value":"PR"},{"label":"Rhode Island","value":"RI"},{"label":"South Carolina","value":"SC"},{"label":"South Dakota","value":"SD"},{"label":"Tennessee","value":"TN"},{"label":"Texas","value":"TX"},{"label":"Utah","value":"UT"},{"label":"Vermont","value":"VT"},{"label":"Virgin Islands","value":"VI"},{"label":"Virginia","value":"VA"},{"label":"Washington","value":"WA"},{"label":"West Virginia","value":"WV"},{"label":"Wisconsin","value":"WI"},{"label":"Wyoming","value":"WY"}]'>
             <uef-droplist-item label="--"></uef-droplist-item>
           </uef-droplist>
         </uef-flex-item>
         <uef-flex-item>
-          <uef-textbox field-name="INSERT-FIELD-NAME-zipcode" label="ZIP Code" maxlength="9" width="9em" format="*****-****" inputmode="numeric"></uef-textbox>
+          <uef-textbox field-name="addrress-test-zipcode" label="ZIP Code" maxlength="9" width="9em" format="*****-****" inputmode="numeric"></uef-textbox>
         </uef-flex-item>
       </uef-flex>
     </uef-compound>
@@ -120,7 +136,7 @@
     <!-- ──────────────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Alert</h2>
     <!-- ALERT ───────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-alert color="success" header="Insert Alert Heading" autofocus>
+    <uef-alert color="success" header="Insert Alert Heading">
       Insert Alert Content
       <p slot="uef-alert-footer">Insert Optional Alert Footer Content</p>
     </uef-alert>
@@ -418,19 +434,6 @@
       </uef-textbox>
     </div>
     <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── -->
-    <h2>Error Summary</h2>
-    <!-- ERROR SUMMARY ───────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-error-summary
-      header="Please correct the following information:"
-      errors='[
-        {
-          "id": "INSERT-DOM-ERROR-ID",
-          "summary": "INSERT CUSTOM ERROR TEXT",
-          "message": ["INSERT CUSTOM ERROR TEXT"]
-        }
-      ]'
-    ></uef-error-summary>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Figure</h2>
     <!-- FIGURE ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-figure caption="[[INSERT OPTIONAL CAPTION]]" alignment="left">
@@ -928,7 +931,6 @@
     <!-- ──────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Hero</h2>
     <!-- HERO ─────────────────────────────────────────────────────────────────────────────────── -->
-    <!-- HERO ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-container sx='{"height":"300px","background":"#000"}'>
       <h3>[INSERT HERO TEXT]</h3>
       <uef-media slot="uef-container-background" overlay
@@ -1019,6 +1021,7 @@
     <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Media</h2>
     <!-- MEDIA ─────────────────────────────────────────────────────────────────────────────────── -->
+    <!--
     <uef-media src="https://api.lorem.space/image/face?w=2000&amp;h=2000" accessibility-text="INSERT ACCESSIBILITY TEXT"
       width="100px" height="100px" overlay fit="cover" placement="bottom"
     >
@@ -1027,6 +1030,7 @@
         <img src="https://api.lorem.space/image/face?w=2000&amp;h=2000" alt="INSERT ACCESSIBILITY TEXT"/>
       </picture>
     </uef-media>
+  -->
     <!-- ───────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Mega Menu</h2>
     <!-- MEGA MENU ─────────────────────────────────────────────────────────────────────────────────── -->
@@ -1930,6 +1934,7 @@
     </uef-typography>
     <h2>Video</h2>
     <!-- VIDEO ─────────────────────────────────────────────────────────────────────────────────── -->
+    <!--
     <uef-media src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" accessibility-text="INSERT ACCESSIBILITY TEXT"
       width="500px" height="500px" fit="fill" placement="bottom"
     >
@@ -1939,6 +1944,7 @@
         Sorry, your browser doesn't support embedded videos.
       </video>
     </uef-media>
+  -->
     <!-- ───────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Visually Hidden</h2>
     <uef-visuallyhidden>[INSERT HIDDEN TEXT</uef-visuallyhidden>
