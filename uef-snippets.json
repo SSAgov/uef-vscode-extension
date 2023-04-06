@@ -7411,8 +7411,8 @@
   "UEF 3 Typography": {
     "prefix": "uef3-typography",
     "body": [
-      "<uef-typography variant=\"${1|heading1,heading2,heading3,heading4,heading5,heading6,subtitle1,subtitle2,body-2xs,body-xs,body-s,body-m,body-l,label,code,button-s,button-m,button-l,overline|}\" align=\"${2|left,center,right,justify,inherit|}\">",
-      "  ${3:tag=\"\"} ${4:color=\"\"} ${5:weight=\"\"} ${6:letterspacing=\"\"} ${7:line-height=\"\"} ${8:line-length=\"\"} ${9:decoration=\"\"} ${10:size=\"\"} ${11:font-family=\"\"}",
+      "<uef-typography variant=\"${1|heading1,heading2,heading3,heading4,heading5,heading6,subtitle1,subtitle2,body-2xs,body-xs,body-s,body-m,body-l,label,code,button-s,button-m,button-l,overline|}\" align=\"${2|left,center,right,justify,inherit|}\"",
+      "  ${3:tag=\"\"} ${4:color=\"\"} ${5:weight=\"\"} ${6:letterspacing=\"\"} ${7:line-height=\"\"} ${8:line-length=\"\"} ${9:decoration=\"\"} ${10:size=\"\"} ${11:font-family=\"\"}>",
       "  ${0:[INSERT TEXT]}",
       "</uef-typography>"
     ],
