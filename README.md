@@ -1,5 +1,5 @@
-UEF Snippets
-============
+UEF Snippets for VSCode
+=======================
 
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 ![](https://vsmarketplacebadge.apphb.com/version/CraigCecil.uef-snippets.svg)
