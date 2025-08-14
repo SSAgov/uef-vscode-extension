@@ -7400,9 +7400,8 @@
   "UEF 3 Required Info": {
     "prefix": "uef3-required-info",
     "body": [
-      "<uef-typography variant=\"label\" tag=\"span\" weight=\"var(--uef-font-weight-semibold,600)\">",
-      "  <uef-icon name=\"asterisk\" type=\"solid\" size=\"7.5\" color=\"#c00\" accessibility-text=\"asterisk\" sx='{\"verticalAlign\":\"super\",\"marginLeft\":\"-0.6rem\"}'></uef-icon>",
-      "  Indicates required information.",
+      "<uef-typography variant=\"label\" tag=\"span\">",
+      "  A red asterisk (<uef-icon name=\"asterisk\" type=\"solid\" size=\"7.5\" color=\"#c00\" accessibility-text=\"asterisk\" sx='{\"verticalAlign\":\"middle\"}'></uef-icon>) indicates a required field.",
       "</uef-typography>"
     ],
     "description": "UEF 3 Required Info"
