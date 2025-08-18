@@ -888,14 +888,6 @@
         INSERT FORM COMPONENTS
       </uef-form>
     </div>
-    <h2>Gender</h2>
-    <!-- GENDER ───────────────────────────────────────────────────────────────────────────────────── -->
-    <uef-radiolist required field-name="INSERT-FIELD-NAME" label="[Pattern Label]" instructions="[[Instruction text]]" variant="inline">
-      <uef-radio label="Male" value="male"></uef-radio>
-      <uef-radio label="Female" value="female"></uef-radio>
-      <uef-radio label="Non-Binary" value="non-binary"></uef-radio>
-    </uef-radiolist>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Grid</h2>
     <!-- GRID - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <uef-grid Add your Grid attribute settings>
@@ -1546,6 +1538,11 @@
     </uef-typography>
     <h2>Section</h2>
     <uef-section tag="section">[INSERT SECTION TEXT]</uef-section>
+    <h2>Sex</h2>
+    <uef-radiolist required field-name="INSERT-FIELD-NAME" label="[Pattern Label]" instructions="[[Instruction text]]" variant="inline">
+      <uef-radio label="Male" value="male"></uef-radio>
+      <uef-radio label="Female" value="female"></uef-radio>
+    </uef-radiolist>
     <h2>Show/Hide</h2>
     <!-- SHOW/HIDE ───────────────────────────────────────────────────────────────────────────────── -->
     <uef-show-hide show-label="[Show something hidden]" hide-label="[Hide something shown]"
