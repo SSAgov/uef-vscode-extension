@@ -6720,18 +6720,17 @@
     "description": "UEF 3 Form"
   },
 
-  "UEF 3 Gender": {
-    "prefix": "uef3-gender",
+  "UEF 3 Sex": {
+    "prefix": "uef3-sex",
     "body": [
       "<!-- GENDER ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-radiolist ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\" instructions=\"${4:[[Instruction text]]}\" variant=\"inline\">",
       "  <uef-radio label=\"Male\" value=\"male\"></uef-radio>",
       "  <uef-radio label=\"Female\" value=\"female\"></uef-radio>",
-      "  <uef-radio label=\"Non-Binary\" value=\"non-binary\"></uef-radio>",
       "</uef-radiolist>",
       "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
     ],
-    "description": "UEF 3 Gender"
+    "description": "UEF 3 Sex"
   },
 
   "UEF 3 Password": {
