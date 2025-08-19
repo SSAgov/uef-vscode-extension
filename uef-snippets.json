@@ -6034,6 +6034,14 @@
     "description": "UEF 3 Alert"
   },
 
+  "UEF 3 Back to Top": {
+    "prefix": "uef3-back-to-top",
+    "body": [
+      "<uef-back-to-top width=\"60px\" height=\"60px\" accessibility-text=\"\" focus-selector=\"\" name=\"\">TOP</uef-back-to-top>"
+    ],
+    "description": "UEF 3 Back to Top"
+  },
+
   "UEF 3 Reentry Number": {
     "prefix": "uef3-reentry-number",
     "body": [
