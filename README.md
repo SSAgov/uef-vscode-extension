@@ -153,6 +153,7 @@ uef3-subnav-item | Add a Sub-Navigation item
 uef3-summary-accordion | Summary (Accordion)
 uef3-summary-receipt | Summary (Receipt)
 uef3-summary-review | Summary (Review)
+uef3-switch | Switch (toggle)
 uef3-table | Table
 uef3-table-1col | 1-Column Table
 uef3-table-2col | 2-Column Table

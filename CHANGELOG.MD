@@ -8,6 +8,7 @@
 - Added `Back to Top` snippet
 - Added `Pill` snippet
 - Added `Site Alert` snippet
+- Added `Switch` snippet
 
 ### Updates
 

@@ -7162,6 +7162,16 @@
     "description": "UEF 3 State"
   },
 
+  "UEF 3 Switch": {
+    "prefix": "uef3-switch",
+    "body": [
+      "<uef-switch label=\"${1:Insert Pattern Label}\" label-off=\"${2:OFF}\" label-on=\"${3:ON}\"",
+      "  field-id=\"${4:insert-field-id}\" column=\"${5|false,true|}\" width=\"\"",
+      "></uef-switch>"
+    ],
+    "description": "UEF 3 Switch"
+  },
+
   "UEF 3 Textarea": {
     "prefix": "uef3-textarea",
     "body": [
