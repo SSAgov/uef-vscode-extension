@@ -7115,6 +7115,16 @@
     "description": "UEF 3 Radio List (Series)"
   },
 
+  "UEF 3 Site Alert": {
+    "prefix": "uef3-site-alert",
+    "body": [
+      "<uef-alert color=\"${1|warning,danger,info|}\" dismissible=\"${2|true,false|}\" compact=\"${3|false,true|}\" header=\"\" sx='{\"width\":\"100%\",\"--uef-alert-border-radius\":\"var(--uef-border-radius-sharp)\"}'>",
+      "  ${0:Your site alert message goes here}",
+      "</uef-alert>"
+    ],
+    "description": "UEF 3 Site Alert"
+  },
+
   "UEF 3 SSN": {
     "prefix": "uef3-ssn",
     "body": [

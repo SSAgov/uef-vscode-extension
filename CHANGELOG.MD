@@ -4,8 +4,9 @@
 
 ### Additions
 
-- Added `Avatar` component
-- Added `Back to Top` component
+- Added `Avatar` snippet
+- Added `Back to Top` snippet
+- Added `Site Alert` snippet
 
 ### Updates
 
