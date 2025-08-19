@@ -5,6 +5,7 @@
 ### Additions
 
 - Added `Avatar` component
+- Added `Back to Top` component
 
 ### Updates
 
