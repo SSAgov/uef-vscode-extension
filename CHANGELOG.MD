@@ -6,6 +6,7 @@
 
 - Added `Avatar` snippet
 - Added `Back to Top` snippet
+- Added `Pill` snippet
 - Added `Site Alert` snippet
 
 ### Updates

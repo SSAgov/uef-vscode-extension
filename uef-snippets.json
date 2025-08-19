@@ -7051,6 +7051,14 @@
     "description": "UEF 3 Name (First|Last textboxes)"
   },
 
+  "UEF 3 Pill": {
+    "prefix": "uef3-pill",
+    "body": [
+      "<uef-pill color=\"${1|info,danger,warning,success,light,default|}\" width=\"${2:}\" height=\"${3:}\" border=\"\" padding=\"\" font-size=\"\" accessibility-text=\"${0:}\"></uef-pill>"
+    ],
+    "description": "UEF 3 Pill"
+  },
+
   "UEF 3 Radio List": {
     "prefix": "uef3-radiolist",
     "body": [

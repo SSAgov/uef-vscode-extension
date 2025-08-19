@@ -50,6 +50,8 @@ uef3-accordion-item | Add an accordion item
 uef3-address | Address (US)
 uef3-address-intl | Address (International)
 uef3-alert | Alert (Info, Warning, Danger, Success)
+uef3-avatar | Avatar
+uef3-back-to-top | Back to Top
 uef3-bank-info | Bank Information
 uef3-banner | Federal government website banner
 uef3-button | Insert a Button
@@ -128,6 +130,7 @@ uef3-percent | Percent textbox
 uef3-phone | U.S. Phone Number (10-digit number, extension, type dropdown)
 uef3-phone-intl | International Phone Number (country code and number, extension, type dropdown)
 uef3-phone-simple | Simple U.S. Phone Number (Area Code + Number)
+uef3-pill | Pill (Badge)
 uef3-place | Place of an event
 uef3-popover | Popover
 uef3-progress | Progress
@@ -138,6 +141,7 @@ uef3-reentry-number | Reentry Number
 uef3-required-info | Required Info
 uef3-section | Section
 uef3-show-hide | Show/Hide
+uef3-site-alert | Site Alert (Info, Warning, Danger, Success)
 uef3-skipnav | Skip Navigation control
 uef3-ssn | Social Security Number (SSN)
 uef3-state | State
