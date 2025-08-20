@@ -7064,11 +7064,28 @@
       "  </uef-typography>",
       "  <uef-button-group slot=\"uef-dialog-footer\" alignment=\"right\" direction=\"rtl\">",
       "    <uef-button fill=\"solid\">${8:Yes}</uef-button>",
-      "    <uef-button fill=\"outline\">${9:No}</uef-button>",
+      "    <uef-button fill=\"outline\">${0:No}</uef-button>",
       "  </uef-button-group>",
       "</uef-dialog>"
     ],
     "description": "UEF 3 Page Timeout Warning"
+  },
+
+  "UEF 3 Page Timed Out": {
+    "prefix": "uef3-page-timed-out",
+    "body": [
+      "<uef-dialog id=\"${1:insert-id}\" open=\"${2|true,false|}\" backdrop=\"${3|true,false|}\" close-button=\"${4|true,false|}\"",
+      "  width=\"${5:500px}\" height=\"\" breakpoint=\"\"",
+      "  accessibility-text=\"\"",
+      ">",
+      "  <uef-typography slot=\"uef-dialog-header\" variant=\"heading3\">${6:Timed Out}</uef-typography>",
+      "  <uef-typography line-height=\"1.5\" slot=\"uef-dialog-body\">Your session has timed out.</uef-typography>",
+      "  <uef-button-group slot=\"uef-dialog-footer\" alignment=\"right\" direction=\"rtl\">",
+      "    <uef-button fill=\"solid\">${0:OK}</uef-button>",
+      "  </uef-button-group>",
+      "</uef-dialog>"
+    ],
+    "description": "UEF 3 Page Timed Out"
   },
 
   "UEF 3 Pill": {

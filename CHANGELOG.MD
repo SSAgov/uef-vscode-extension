@@ -7,6 +7,7 @@
 - Added `Avatar` snippet
 - Added `Back to Top` snippet
 - Added `Page Timeout Warning` snippet
+- Added `Page Timed Out` snippet
 - Added `Pill` snippet
 - Added `Site Alert` snippet
 - Added `Switch` snippet
