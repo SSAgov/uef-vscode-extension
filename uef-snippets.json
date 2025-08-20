@@ -6209,6 +6209,14 @@
     "description": "UEF 3 Combobox"
   },
 
+  "UEF 3 Combobox Item": {
+    "prefix": "uef3-combobox-item",
+    "body": [
+      "<uef-combobox-item field-id=\"${1:item-2}\" value=\"${2:2}\" label=\"${0:Item 2}\"></uef-combobox-item>"
+    ],
+    "description": "UEF 3 Combobox Item"
+  },
+
   "UEF 3 Compound": {
     "prefix": "uef3-compound",
     "body": [

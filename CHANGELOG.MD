@@ -7,6 +7,7 @@
 - Added `Avatar` snippet
 - Added `Back to Top` snippet
 - Added `Combobox` snippet
+- Added `Combobox Item` snippet
 - Added `Page Timeout Warning` snippet
 - Added `Page Timed Out` snippet
 - Added `Pill` snippet

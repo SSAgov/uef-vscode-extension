@@ -62,6 +62,7 @@ uef3-checkbox | Checkbox
 uef3-checklist | Checklist
 uef3-checklist-other | Checklist with 'Other' option
 uef3-combobox | Combobox (dropdown with filter)
+uef3-combobox-item | Combobox Item
 uef3-compound | Compound
 uef3-confirmation-number | Confirmation Number
 uef3-container | Generic Container
