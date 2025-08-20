@@ -6195,6 +6195,20 @@
     "description": "UEF 3 Checklist with Other"
   },
 
+  "UEF 3 Combobox": {
+    "prefix": "uef3-combobox",
+    "body": [
+      "<uef-combobox field-name=\"${1:insert-field-name}\" required=\"${2|true,false|}\" show-filter=\"${3|true,false|}\"",
+      "  label=\"${4:Pattern Label}\"",
+      "  instructions=\"${5:Instruction Text}\"",
+      ">",
+      "  <uef-combobox-item field-id=\"${6:item-1}\" value=\"${7:1}\" label=\"${8:Item 1}\"></uef-combobox-item>",
+      "  ${0:<!-- `uef3-combobox-item` to insert another item -->}",
+      "</uef-combobox>"
+    ],
+    "description": "UEF 3 Combobox"
+  },
+
   "UEF 3 Compound": {
     "prefix": "uef3-compound",
     "body": [
