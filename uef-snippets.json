@@ -7051,6 +7051,26 @@
     "description": "UEF 3 Name (First|Last textboxes)"
   },
 
+  "UEF 3 Page Timeout Warning": {
+    "prefix": "uef3-page-timeout-warning",
+    "body": [
+      "<uef-dialog id=\"${1:insert-id}\" open=\"${2|true,false|}\" backdrop=\"${3|true,false|}\" close-button=\"${4|true,false|}\"",
+      "  width=\"${5:500px}\" height=\"\" breakpoint=\"\"",
+      "  accessibility-text=\"\"",
+      ">",
+      "  <uef-typography slot=\"uef-dialog-header\" variant=\"heading3\">${6:Warning}</uef-typography>",
+      "  <uef-typography line-height=\"1.5\" slot=\"uef-dialog-body\">",
+      "    Your session will expire in ${7:5} minutes. Do you want to extend it?",
+      "  </uef-typography>",
+      "  <uef-button-group slot=\"uef-dialog-footer\" alignment=\"right\" direction=\"rtl\">",
+      "    <uef-button fill=\"solid\">${8:Yes}</uef-button>",
+      "    <uef-button fill=\"outline\">${9:No}</uef-button>",
+      "  </uef-button-group>",
+      "</uef-dialog>"
+    ],
+    "description": "UEF 3 Page Timeout Warning"
+  },
+
   "UEF 3 Pill": {
     "prefix": "uef3-pill",
     "body": [

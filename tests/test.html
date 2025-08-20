@@ -1334,6 +1334,20 @@
       <uef-link href="INSERT-FORGOT-PASSWORD-URL" slot="uef-input-support-info">[Forgot Password?]</uef-link>
     </uef-password>
     <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
+    <h2>Page Timeout Warning</h2>
+    <uef-dialog id="insert-id" open="true" backdrop="true" close-button="true"
+      width="500px" height="" breakpoint=""
+      accessibility-text=""
+    >
+      <uef-typography slot="uef-dialog-header" variant="heading3">Warning</uef-typography>
+      <uef-typography line-height="1.5" slot="uef-dialog-body">
+        Your session will expire in 5 minutes. Do you want to extend it?
+      </uef-typography>
+      <uef-button-group slot="uef-dialog-footer" alignment="right" direction="rtl">
+        <uef-button fill="solid">Yes</uef-button>
+        <uef-button fill="outline">No</uef-button>
+      </uef-button-group>
+    </uef-dialog>
     <h2>Percent</h2>
     <!-- PERCENT ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-textbox required label="[Pattern Label]"
