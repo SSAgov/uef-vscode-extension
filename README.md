@@ -1,10 +1,6 @@
 UEF Snippets for VSCode
 =======================
 
-[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-![](https://vsmarketplacebadge.apphb.com/version/CraigCecil.uef-snippets.svg)
-![Last Commit](https://img.shields.io/github/last-commit/SSAgov/uef-vscode-extension)
-
 A set of User Experience Framework (UEF) Snippets for Visual Studio Code. UEF is the official web application design system of the Social Security Administration.
 
 [Install UEF Snippets](https://marketplace.visualstudio.com/items?itemName=CraigCecil.uef-snippets)
