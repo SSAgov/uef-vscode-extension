@@ -115,6 +115,7 @@ uef3-link-zip | Link to compressed Zip file
 uef3-media | Media element (image)
 uef3-mega-menu | Mega Menu
 uef3-menu | Menu
+uef3-multi-select | Multi-Select
 uef3-name-default | Name (Title dropdown, First/Middle/Last text boxes, Suffix dropdown)
 uef3-name-f-l | Name (First/Last text boxes)
 uef3-name-f-m-l-s | Name (First/Middle/Last/Suffix text boxes)

@@ -6750,6 +6750,21 @@
     "description": "UEF 3 Form"
   },
 
+  "UEF 3 Multi-Select": {
+    "prefix": "uef3-multi-select",
+    "body": [
+      "<!-- MULTI-SELECT ───────────────────────────────── -->",
+      "<uef-multi-select field-name=\"${1:field-name-multi-select}\" ${2:required} label=\"${3:[Pattern Label]}\"",
+      "  instructions=\"${4:[[Instruction Text]]}\"",
+      "  dialog-title=\"${5:[Dialog Title]}\"",
+      "  dialog-instructions=\"${6:[[Instruction Text]]}\"",
+      "  dialog-width=\"500px\"",
+      "  items='[{\"id\":\"id-one\",\"value\":\"item1\",\"label\":\"Item 1\"},{\"id\":\"id-two\",\"value\":\"item2\",\"label\":\"Item 2\"},{\"id\":\"id-three\",\"value\":\"item3\",\"label\":\"Item 3\"},{\"id\":\"id-four\",\"value\":\"item4\",\"label\":\"Item 4\"},{\"id\":\"id-five\",\"value\":\"item5\",\"label\":\"Item 5\"},{\"id\":\"id-six\",\"value\":\"item6\",\"label\":\"Item 6\"},{\"id\":\"id-seven\",\"value\":\"item7\",\"label\":\"Item 7\"},{\"id\":\"id-eight\",\"value\":\"item8\",\"label\":\"Item 8\"},{\"id\":\"id-nine\",\"value\":\"item9\",\"label\":\"Item 9\"},{\"id\":\"id-ten\",\"value\":\"item10\",\"label\":\"Item 10\"},{\"id\":\"id-eleven\",\"value\":\"item11\",\"label\":\"Item 11\"},{\"id\":\"id-twelve\",\"value\":\"item12\",\"label\":\"Item 12\"},{\"id\":\"id-thirteen\",\"value\":\"item13\",\"label\":\"Item 13\"},{\"id\":\"id-fourteen\",\"value\":\"item14\",\"label\":\"Item 14\"},{\"id\":\"id-fifteen\",\"value\":\"item15\",\"label\":\"Item 15\"},{\"id\":\"id-sixteen\",\"value\":\"item16\",\"label\":\"Item 16\"},{\"id\":\"id-seventeen\",\"value\":\"item17\",\"label\":\"Item 17\"},{\"id\":\"id-eighteen\",\"value\":\"item18\",\"label\":\"Item 18\"},{\"id\":\"id-nineteen\",\"value\":\"item19\",\"label\":\"Item 19\"},{\"id\":\"id-twenty\",\"value\":\"item20\",\"label\":\"Item 20\"}]'",
+      "></uef-multi-select>"
+    ],
+    "description": "UEF 3 Multi-Select"
+  },
+
   "UEF 3 Sex": {
     "prefix": "uef3-sex",
     "body": [

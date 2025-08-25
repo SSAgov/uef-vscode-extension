@@ -391,7 +391,6 @@
         </uef-flex-item>
       </uef-flex>
     </uef-date>
-    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
     <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
       field-name-month="INSERT-FIELD-NAME-month" field-name-year="INSERT-FIELD-NAME-year">
@@ -406,9 +405,10 @@
         </uef-flex-item>
       </uef-flex>
     </uef-date>
-    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Date Picker</h2>
     <uef-datepicker label="[Pattern Label]" field-name="INSERT-FIELD-NAME-datepicker" instructions="[Instruction Text]"></uef-datepicker>
+
     <h2>Dialog</h2>
     <!-- DIALOG ───────────────────────────────────────────────────────────────────────────────────── -->
     <div>
@@ -426,7 +426,7 @@
         <uef-button fill="outline">[Open Dialog]</uef-button>
       </uef-control>
     </div>
-    <!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Drawer</h2>
     <!-- DRAWER ───────────────────────────────────────────────────────────────────────────────────── -->
     <div>
@@ -440,7 +440,7 @@
         [INSERT SUB-NAV OR CONTENT]
       </uef-drawer>
     </div>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Droplist</h2>
     <!-- DROP LIST ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-droplist required label="[Pattern Label]" instructions="[[Instruction Text]]"
@@ -450,7 +450,7 @@
       <uef-droplist-item label="Item 2" value="Item 2"></uef-droplist-item>
       <uef-droplist-item label="Item 3" value="Item 3"></uef-droplist-item>
     </uef-droplist>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>EIN</h2>
     <!-- EIN ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-textbox required label="[Person's] Employer Identification Number (EIN)"
@@ -466,7 +466,7 @@
       support-info="[[Support Text]]"
       field-name="INSERT-FIELD-NAME" maxlength="" inputmode="email"
     ></uef-textbox>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Email with Confirmation</h2>
     <!-- EMAIL (WITH CONFIRMATION) ───────────────────────────────────────────────────────────────────────────────────── -->
     <div>
@@ -478,7 +478,7 @@
         <div slot="uef-input-instructions"><span>Emails must match</span></div>
       </uef-textbox>
     </div>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Figure</h2>
     <!-- FIGURE ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-figure caption="[[INSERT OPTIONAL CAPTION]]" alignment="left">
@@ -488,7 +488,7 @@
         INSERT OPTIONAL FIGURE CAPTION
       </div>
     </uef-figure>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>File Input</h2>
     <!-- FILE INPUT ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-form>
@@ -498,7 +498,7 @@
       >
         <uef-visuallyhidden slot="uef-input-support-info">Drag files here or choose files</uef-visuallyhidden></uef-file-input>
     </uef-form>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Flex & Flex Item</h2>
     <!-- FLEX LAYOUT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <uef-flex display="flex" direction="row" align-items="flex-start"
@@ -671,7 +671,7 @@
         </uef-section>
       </div>
     </uef-footer>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Footer (Identifier)</h2>
     <!-- FOOTER (IDENTIFIER) ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-footer sx='{"--uef-identifier-background-color":"var(--uef-color-uswds-blue-70v)","margin-top":"2em"}'>
@@ -718,7 +718,7 @@
         </uef-section>
       </div>
     </uef-footer>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Footer (Medium)</h2>
     <!-- FOOTER (MEDIUM) ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-footer sx='{"--uef-identifier-background-color":"var(--uef-color-uswds-blue-70v)"}'>
@@ -825,7 +825,7 @@
         </uef-section>
       </div>
     </uef-footer>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Footer (Slim)</h2>
     <!-- FOOTER (SLIM) ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-footer sx='{"--uef-identifier-background-color":"var(--uef-color-uswds-blue-70v)"}'>
@@ -895,19 +895,21 @@
         </uef-section>
       </div>
     </uef-footer>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Form</h2>
     <div>
       <uef-form action="" target="" method="get" role="form" enctype="multipart/form-data">
         INSERT FORM COMPONENTS
       </uef-form>
     </div>
+
     <h2>Grid</h2>
     <!-- GRID - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <uef-grid Add your Grid attribute settings>
       INSERT GRID ITEMS: uef-grid-item
     </uef-grid>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <h2>Grid (3-Column)</h2>
     <!-- GRID (3 COLUMN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <uef-grid grid-template-columns="minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr)" display="grid" grid-auto-flow="column">
@@ -916,6 +918,7 @@
       <aside>[[INSERT SIDEBAR CONTENT]]</aside>
     </uef-grid>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <h2>Grid (3-Column with Template)</h2>
     <!-- GRID (3 COLUMN TEMPLATE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <uef-grid display="grid"
@@ -939,6 +942,7 @@
       </uef-grid-item>
     </uef-grid>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <h2>Grid (Fluid)</h2>
     <!-- GRID (FLUID) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <uef-grid grid-template-columns="repeat(auto-fit, minmax(175px,1fr))">
@@ -949,6 +953,7 @@
       <div>Grid Item 5</div>
     </uef-grid>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <h2>Help</h2>
     <!-- HELP ─────────────────────────────────────────────────────────────────────────────────── -->
     <div>
@@ -965,7 +970,7 @@
         </uef-button-group>
       </uef-dialog>
     </div>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Hero</h2>
     <!-- HERO ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-container sx='{"height":"300px","background":"#000"}'>
@@ -980,16 +985,17 @@
         </picture>
       </uef-media>
     </uef-container>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Icon</h2>
     <uef-icon name="print" type="solid" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>
+
     <h2>Indicator</h2>
     <!-- INDICATOR ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-indicator open type="continuous" variant="circle"
       placement="inline" accessibility-text="INSERT ACCESSIBILITY TEXT"
       size="75px" color="" value="" aria-live="assertive">
     </uef-indicator>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Links</h2>
     <uef-link href="#0">INSERT LINK TEXT</uef-link>
     <br>
@@ -997,61 +1003,51 @@
     <uef-link href="#0" download>
       <uef-icon type="solid" name="download" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>[[Download this file]]
     </uef-link>
-    <!-- ───────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- EMAIL LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="mailto:someone@example.com">
       <uef-icon name="envelope" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>[someone@example.com]
     </uef-link>
-    <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- EXCEL LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="#0">
       <uef-icon name="file-excel" accessibility-text="Spreadsheet file" color="--uef-color-green-primary" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>[Document Title]
     </uef-link>
-    <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- EXTERNAL LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="#0" type="external">
       [External site name]<uef-icon type="solid" name="external-link-alt" accessibility-text="External website" color="--uef-color-text-link-on-light" sx='{"marginLeft":"--uef-link-gap"}'></uef-icon>
     </uef-link>
-    <!-- ───────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- PDF LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="#0">
       <uef-icon name="file-pdf" accessibility-text="PDF file" color="--uef-color-red-primary" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>[Document Title]
     </uef-link>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- POWERPOINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="#0">
       <uef-icon name="file-powerpoint" accessibility-text="Powerpoint file" color="--uef-color-red-primary" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>[Document Title]
     </uef-link>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- PRINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="javascript:window.print();">
       <uef-icon type="solid" name="print" color="--uef-color-text-link-on-light='{"marginRight":"--uef-link-gap"}'></uef-icon>Print this page
     </uef-link>
-    <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- VIDEO LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="#0">
       <uef-icon name="video" type="solid" accessibility-text="Video" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>[Video Title] ([mm]:[ss])
     </uef-link>
-    <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- WORD LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="#0">
       <uef-icon name="file-word" accessibility-text="Word processing file" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>[Document Title]
     </uef-link>
-    <!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->
     <br>
     <!-- ZIP LINK ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-link href="#0">
       <uef-icon name="file-archive" accessibility-text="Archive file" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>[Archive Title]
     </uef-link>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->
     <h2>Media</h2>
     <!-- MEDIA ─────────────────────────────────────────────────────────────────────────────────── -->
     <!--
@@ -1064,7 +1060,7 @@
       </picture>
     </uef-media>
   -->
-    <!-- ───────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Mega Menu</h2>
     <!-- MEGA MENU ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-nav sx='{"position": "relative"}'>
@@ -1118,7 +1114,7 @@
         </uef-menu>
       </uef-nav-item>
     </uef-nav>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Menu</h2>
     <!-- MENU ─────────────────────────────────────────────────────────────────────────────────── -->
     <uef-container width="500px" height="500px" sx='{"border": "1px solid #dadada"}'>
@@ -1135,7 +1131,17 @@
         </uef-menu>
       </uef-flex>
     </uef-container>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────── -->
+
+    <h2>Multi-Select</h2>
+    <!-- MULTI-SELECT ───────────────────────────────── -->
+    <uef-multi-select field-name="field-name-multi-select" label="[Pattern Label]"
+      instructions="[[Instruction Text]]"
+      dialog-title="[Dialog Title]"
+      dialog-instructions="[[Instruction Text]]"
+      dialog-width="500px"
+      items='[{"id":"id-one","value":"item1","label":"Item 1"},{"id":"id-two","value":"item2","label":"Item 2"},{"id":"id-three","value":"item3","label":"Item 3"},{"id":"id-four","value":"item4","label":"Item 4"},{"id":"id-five","value":"item5","label":"Item 5"},{"id":"id-six","value":"item6","label":"Item 6"},{"id":"id-seven","value":"item7","label":"Item 7"},{"id":"id-eight","value":"item8","label":"Item 8"},{"id":"id-nine","value":"item9","label":"Item 9"},{"id":"id-ten","value":"item10","label":"Item 10"},{"id":"id-eleven","value":"item11","label":"Item 11"},{"id":"id-twelve","value":"item12","label":"Item 12"},{"id":"id-thirteen","value":"item13","label":"Item 13"},{"id":"id-fourteen","value":"item14","label":"Item 14"},{"id":"id-fifteen","value":"item15","label":"Item 15"},{"id":"id-sixteen","value":"item16","label":"Item 16"},{"id":"id-seventeen","value":"item17","label":"Item 17"},{"id":"id-eighteen","value":"item18","label":"Item 18"},{"id":"id-nineteen","value":"item19","label":"Item 19"},{"id":"id-twenty","value":"item20","label":"Item 20"}]'
+    ></uef-multi-select>
+
     <h2>Name</h2>
     <!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->
     <uef-compound label="[Person's] Name" instructions="[[Instruction Text]]">
