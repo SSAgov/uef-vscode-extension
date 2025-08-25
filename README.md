@@ -97,6 +97,8 @@ uef3-grid-3col | 3-column layout grid
 uef3-grid-3col-template | 3-column layout grid using a template
 uef3-grid-fluid | Fluid layout grid
 uef3-grid-item | Grid layout item
+uef3-header-business | Header (Business)
+uef3-header-public | Header (Public)
 uef3-help | Help dialog
 uef3-hero | Hero (call to arms)
 uef3-icon | Icon
