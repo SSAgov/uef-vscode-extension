@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 4.0.0
+
+### Deprecations
+
+- Removed all `uef` and `uef21` snippets
+
 ## Version 3.1.0
 
 ### Additions
