@@ -6034,6 +6034,25 @@
     "description": "UEF 3 Alert"
   },
 
+  "UEF 3 Avatar": {
+    "prefix": "uef3-avatar",
+    "body": [
+      "<uef-avatar",
+      "  variant=\"${1|round,square|}\"",
+      "  size=\"${2|medium,x-small,small,large|}\"",
+      "  img-src=\"${3:}\"",
+      "  initials=\"${4:WW}\"",
+      "  color=\"${5:var(--uef-color-default-tertiary)}\"",
+      "  background-color=\"${6:var(--uef-color-blue-primary)}\"",
+      "  alt=\"${7:}\"",
+      "  accessibility-text=\"${0:}\"",
+      ">",
+      "  <span></span>",
+      "</uef-avatar>"
+    ],
+    "description": "UEF 3 Avatar"
+  },
+
   "UEF 3 Back to Top": {
     "prefix": "uef3-back-to-top",
     "body": [
