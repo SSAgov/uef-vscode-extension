@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 4.0.0
+
+### Deprecations
+
+- Removed snippet support for UEF 2.0 and 2.1
+
 ## Version 3.1.0
 
 ### Additions
