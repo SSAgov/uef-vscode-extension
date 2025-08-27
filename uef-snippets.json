@@ -11,7 +11,7 @@
       "    <title>${1:INSERT PAGE TITLE}</title>",
       "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/latest/assets/css/uef-variables.css\" />",
       "    <link rel=\"stylesheet\" href=\"https://www.ssa.gov/uef/uef3/latest/assets/css/uef-global.css\" />",
-      "    <script type=\"module\" src=\"https://www.ssa.gov/uef/uef3/latest/uef3-web-components.esm.js\"></script>",
+      "    <script type=\"module\" src=\"https://www.ssa.gov/uef/uef3/latest/uef-web-components.esm.js\"></script>",
       "</head>",
       "<body>",
       "    ${0:INSERT YOUR PAGE TEMPLATE OR CONTENT HERE}",
@@ -22,9 +22,8 @@
   },
 
   "UEF 3 Accordion": {
-    "prefix": "uef3-accordion",
+    "prefix": "uef-accordion",
     "body": [
-      "<!-- ACCORDION ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-accordion icon-position=\"${1|left,right|}\" ${2:multiple}>",
       "  <uef-accordion-item label=\"${3:[Label 1]}\" ${4:open}>",
       "    <uef-typography variant=\"body-m\" line-height=\"1.5\">",
@@ -41,14 +40,13 @@
       "      ${0:[INSERT ACCORDION ITEM 3 CONTENT]}",
       "    </uef-typography>",
       "  </uef-accordion-item>",
-      "</uef-accordion>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-accordion>"
     ],
     "description": "UEF 3 Accordion"
   },
 
   "UEF 3 Accordion Item": {
-    "prefix": "uef3-accordion-item",
+    "prefix": "uef-accordion-item",
     "body": [
       "<uef-accordion-item label=\"${1:[Label]}\" ${2:open}>",
       "  <uef-typography variant=\"body-m\" line-height=\"1.5\">",
@@ -60,20 +58,18 @@
   },
 
   "UEF 3 Alert": {
-    "prefix": "uef3-alert",
+    "prefix": "uef-alert",
     "body": [
-      "<!-- ALERT ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-alert color=\"${1|info,warning,danger,success|}\" header=\"${2:Insert Alert Heading}\" ${3:compact} ${4:dismissible} ${5:autofocus}>",
       "  ${6:Insert Alert Content}",
       "  ${7:<p slot=\"uef-alert-footer\">${0:Insert Optional Alert Footer Content}</p>}",
-      "</uef-alert>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-alert>"
     ],
     "description": "UEF 3 Alert"
   },
 
   "UEF 3 Avatar": {
-    "prefix": "uef3-avatar",
+    "prefix": "uef-avatar",
     "body": [
       "<uef-avatar",
       "  variant=\"${1|round,square|}\"",
@@ -92,7 +88,7 @@
   },
 
   "UEF 3 Back to Top": {
-    "prefix": "uef3-back-to-top",
+    "prefix": "uef-back-to-top",
     "body": [
       "<uef-back-to-top width=\"60px\" height=\"60px\" accessibility-text=\"\" focus-selector=\"\" name=\"\">TOP</uef-back-to-top>"
     ],
@@ -100,9 +96,8 @@
   },
 
   "UEF 3 Reentry Number": {
-    "prefix": "uef3-reentry-number",
+    "prefix": "uef-reentry-number",
     "body": [
-      "<!-- RE-ENTRY NUMBER ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-alert color=\"info\" header=\"${1:[Re-Entry Number]}\">",
       "  <p>[We are providing you with a Re-Entry Number that can be used to restart an incomplete application. You may need it to complete your online application if you decide to continue the application later or to check the status.]</p>",
       "  <p>${2:[Re-Entry Number:]} <strong>${3:12345678}</strong></p>",
@@ -112,14 +107,13 @@
       "      <uef-icon name=\"print\" type=\"solid\" color=\"var(--uef-color-text-link-on-light)\" sx='{\"marginRight\":\"var(--uef-link-gap)\"}'></uef-icon> Print this page",
       "    </uef-link>",
       "  </p>",
-      "</uef-alert>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-alert>"
     ],
     "description": "UEF 3 Reentry Number"
   },
 
   "UEF 3 Confirmation Number": {
-    "prefix": "uef3-confirmation-number",
+    "prefix": "uef-confirmation-number",
     "body": [
       "<!-- CONFIRMATION NUMBER ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-alert color=\"success\" header=\"${1:[Confirmation Number and Website]}\">",
@@ -139,7 +133,7 @@
   },
 
   "UEF 3 Banner": {
-    "prefix": "uef3-banner",
+    "prefix": "uef-banner",
     "body": [
       "<uef-banner tld=\"${1|gov,mil|}\" variant=\"${2|light,dark|}\"></uef-banner>"
     ],
@@ -147,7 +141,7 @@
   },
 
   "UEF 3 Button": {
-    "prefix": "uef3-button",
+    "prefix": "uef-button",
     "body": [
       "<uef-button name=\"${1:[INSERT BUTTON NAME]}\" fill=\"${2|outline,solid,none|}\" type=\"${3|submit,button,reset|}\" ${4:rounded} ${5:width=\"\"} ${6:height=\"\"}>${0:Button Label}</uef-button>"
     ],
@@ -155,7 +149,7 @@
   },
 
   "UEF 3 Button Group": {
-    "prefix": "uef3-button-group",
+    "prefix": "uef-button-group",
     "body": [
       "<!-- BUTTON GROUP ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-button-group alignment=\"${1|left,right|}\" direction=\"${2|ltr,rtl|}\">",
@@ -169,7 +163,7 @@
   },
 
   "UEF 3 Card": {
-    "prefix": "uef3-card",
+    "prefix": "uef-card",
     "body": [
       "<!-- CARD ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-card width=\"${1:350px}\" sx='{\"padding\":\"var(--uef-space-inset-4x)\",\"boxShadow\":\"var(--uef-elevation-20)\",\"borderRadius\":\"var(--uef-border-radius-softest)\"}'>",
@@ -183,7 +177,7 @@
   },
 
   "UEF 3 Card with Title": {
-    "prefix": "uef3-card-with-title",
+    "prefix": "uef-card-with-title",
     "body": [
       "<!-- CARD ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-card width=\"${1:272px}\" sx='{\"border\":\"1px solid #dadada\",\"padding\":\"--uef-space-inset-4x\",\"borderRadius\":\"--uef-border-radius-softest\"}'>",
@@ -200,7 +194,7 @@
   },
 
   "UEF 3 Checkbox": {
-    "prefix": "uef3-checkbox",
+    "prefix": "uef-checkbox",
     "body": [
       "<uef-checkbox ${1:required} ${2:standalone} ${3:critical} field-name=\"${4:INSERT-FIELD-NAME}\" value=\"${5:}\"",
       "  label=\"${0:[I have read and agree with the above statement.]}\"",
@@ -210,7 +204,7 @@
   },
 
   "UEF 3 Checklist": {
-    "prefix": "uef3-checklist",
+    "prefix": "uef-checklist",
     "body": [
       "<!-- CHECKLIST ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-checklist ${1:required} variant=\"${2|none,inline,series|}\" field-name=\"${3:INSERT-FIELD-NAME}\"",
@@ -231,7 +225,7 @@
   },
 
   "UEF 3 Checklist with Other": {
-    "prefix": "uef3-checklist-other",
+    "prefix": "uef-checklist-other",
     "body": [
       "<!-- CHECKLIST ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-checklist ${1:required} variant=\"${2|none,inline,series|}\" field-name=\"${3:INSERT-FIELD-NAME}\"",
@@ -253,21 +247,21 @@
   },
 
   "UEF 3 Combobox": {
-    "prefix": "uef3-combobox",
+    "prefix": "uef-combobox",
     "body": [
       "<uef-combobox field-name=\"${1:insert-field-name}\" required=\"${2|true,false|}\" show-filter=\"${3|true,false|}\"",
       "  label=\"${4:Pattern Label}\"",
       "  instructions=\"${5:Instruction Text}\"",
       ">",
       "  <uef-combobox-item field-id=\"${6:item-1}\" value=\"${7:1}\" label=\"${8:Item 1}\"></uef-combobox-item>",
-      "  ${0:<!-- `uef3-combobox-item` to insert another item -->}",
+      "  ${0:<!-- `uef-combobox-item` to insert another item -->}",
       "</uef-combobox>"
     ],
     "description": "UEF 3 Combobox"
   },
 
   "UEF 3 Combobox Item": {
-    "prefix": "uef3-combobox-item",
+    "prefix": "uef-combobox-item",
     "body": [
       "<uef-combobox-item field-id=\"${1:item-2}\" value=\"${2:2}\" label=\"${0:Item 2}\"></uef-combobox-item>"
     ],
@@ -275,7 +269,7 @@
   },
 
   "UEF 3 Compound": {
-    "prefix": "uef3-compound",
+    "prefix": "uef-compound",
     "body": [
       "<!-- COMPOUND ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instruction Text]}\">",
@@ -294,7 +288,7 @@
   },
 
   "UEF 3 Address": {
-    "prefix": "uef3-address",
+    "prefix": "uef-address",
     "body": [
       "<!-- ADDRESS ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\" compound-id=\"${3:}\">",
@@ -332,7 +326,7 @@
   },
 
   "UEF 3 Address (International)": {
-    "prefix": "uef3-address-intl",
+    "prefix": "uef-address-intl",
     "body": [
       "<!-- ADDRESS (INTERNATIONAL) ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[[Instruction Text]]}\">",
@@ -404,7 +398,7 @@
   },
 
   "UEF 3 Bank Information": {
-    "prefix": "uef3-bank-info",
+    "prefix": "uef-bank-info",
     "body": [
       "<!-- BANK INFO ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\" ${3:compound-id=\"\"}>",
@@ -430,7 +424,7 @@
   },
 
   "UEF 3 Phone (Simple)": {
-    "prefix": "uef3-phone-simple",
+    "prefix": "uef-phone-simple",
     "body": [
       "<!-- PHONE (SIMPLE) ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[[Person's Fax or Phone]] Number}\"",
@@ -444,7 +438,7 @@
   },
 
   "UEF 3 Phone": {
-    "prefix": "uef3-phone",
+    "prefix": "uef-phone",
     "body": [
       "<!-- PHONE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[[Person's Fax or Phone]] Number}\" instructions=\"${2:[[Instruction Text]]}\" compound-id=\"${3:}\">",
@@ -473,7 +467,7 @@
   },
 
   "UEF 3 Phone (International)": {
-    "prefix": "uef3-phone-intl",
+    "prefix": "uef-phone-intl",
     "body": [
       "<!-- PHONE (INTERNATIONAL) ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Pattern Label]}\" instructions=\"${2:[Instructions]}\">",
@@ -533,7 +527,7 @@
   },
 
   "UEF 3 Country": {
-    "prefix": "uef3-country",
+    "prefix": "uef-country",
     "body": [
       "<!-- COUNTRY ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
@@ -548,7 +542,7 @@
   },
 
   "UEF 3 Country (Historical/Birth)": {
-    "prefix": "uef3-country-historical",
+    "prefix": "uef-country-historical",
     "body": [
       "<!-- COUNTRY (HISTORICAL) ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
@@ -563,7 +557,7 @@
   },
 
   "UEF 3 Currency": {
-    "prefix": "uef3-currency",
+    "prefix": "uef-currency",
     "body": [
       "<!-- CURRENCY ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\" width=\"10em\" inputmode=\"numeric\"",
@@ -576,7 +570,7 @@
   },
 
   "UEF 3 Date (MDY Dropdowns)": {
-    "prefix": "uef3-date-mdy-dropdowns",
+    "prefix": "uef-date-mdy-dropdowns",
     "body": [
       "<!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-date label=\"${1:[Pattern Label]}\" instructions=\"${2:[[Instruction Text]]}\"",
@@ -607,7 +601,7 @@
   },
 
   "UEF 3 Date (MDY, Day Textbox)": {
-    "prefix": "uef3-date-mdy",
+    "prefix": "uef-date-mdy",
     "body": [
       "<!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-date label=\"${1:[Pattern Label]}\" instructions=\"${2:[[Instruction Text]]}\"",
@@ -636,7 +630,7 @@
   },
 
   "UEF 3 Date (Month, Day)": {
-    "prefix": "uef3-date-md",
+    "prefix": "uef-date-md",
     "body": [
       "<!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-date label=\"${1:[Pattern Label]}\" instructions=\"${2:[[Instruction Text]]}\"",
@@ -660,7 +654,7 @@
   },
 
   "UEF 3 Date (Month, Year)": {
-    "prefix": "uef3-date-my",
+    "prefix": "uef-date-my",
     "body": [
       "<!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-date label=\"${1:[Pattern Label]}\" instructions=\"${2:[[Instruction Text]]}\"",
@@ -682,7 +676,7 @@
   },
 
   "UEF 3 Date Picker": {
-    "prefix": "uef3-date-picker",
+    "prefix": "uef-date-picker",
     "body": [
       "<uef-datepicker label=\"${1:[Pattern Label]}\" field-name=\"${2:INSERT-FIELD-NAME}-datepicker\" instructions=\"${0:[Instruction Text]}\"></uef-datepicker>",
     ],
@@ -690,7 +684,7 @@
   },
 
   "UEF 3 Drop List": {
-    "prefix": "uef3-droplist",
+    "prefix": "uef-droplist",
     "body": [
       "<!-- DROP LIST ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
@@ -706,7 +700,7 @@
   },
 
   "UEF 3 Drop List Item": {
-    "prefix": "uef3-droplist-item",
+    "prefix": "uef-droplist-item",
     "body": [
       "<uef-droplist-item label=\"${0:Item X}\" value=\"${0:Item X}\"></uef-droplist-item>"
     ],
@@ -714,7 +708,7 @@
   },
 
   "UEF 3 EIN": {
-    "prefix": "uef3-ein",
+    "prefix": "uef-ein",
     "body": [
       "<!-- EIN ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required} label=\"${2:[Person's] }Employer Identification Number (EIN)\"",
@@ -728,7 +722,7 @@
   },
 
   "UEF 3 Email": {
-    "prefix": "uef3-email",
+    "prefix": "uef-email",
     "body": [
       "<!-- EMAIL ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required} label=\"${2:[[Person's]] }Email Address\"",
@@ -742,7 +736,7 @@
   },
 
   "UEF 3 Email with Confirmation": {
-    "prefix": "uef3-email-confirmation",
+    "prefix": "uef-email-confirmation",
     "body": [
       "<!-- EMAIL (WITH CONFIRMATION) ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<div>",
@@ -760,7 +754,7 @@
   },
 
   "UEF 3 Error Summary": {
-    "prefix": "uef3-error-summary",
+    "prefix": "uef-error-summary",
     "body": [
       "<!-- ERROR SUMMARY ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-error-summary",
@@ -780,7 +774,7 @@
   },
 
   "UEF 3 File Input": {
-    "prefix": "uef3-file-input",
+    "prefix": "uef-file-input",
     "body": [
       "<!-- FILE INPUT ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-form>",
@@ -796,7 +790,7 @@
   },
 
   "UEF 3 Form": {
-    "prefix": "uef3-form",
+    "prefix": "uef-form",
     "body": [
       "<div>",
       "  <uef-form action=\"\" target=\"\" method=\"${1|get,post,dialog|}\" role=\"${2|form,search,presentation|}\" enctype=\"${3|multipart/form-data,application/x-www-form-urlencoded,text/plain|}\">",
@@ -808,7 +802,7 @@
   },
 
   "UEF 3 Header (Public)": {
-  "prefix": "uef3-header-public",
+  "prefix": "uef-header-public",
   "body": [
     "<uef-container>",
     "  <uef-header variant=\"public\">",
@@ -1194,7 +1188,7 @@
 },
 
 "UEF 3 Header (Business)": {
-  "prefix": "uef3-header-business",
+  "prefix": "uef-header-business",
   "body": [
     "<uef-header variant=\"business\">",
     "  <uef-flex",
@@ -1370,7 +1364,7 @@
 },
 
   "UEF 3 Multi-Select": {
-    "prefix": "uef3-multi-select",
+    "prefix": "uef-multi-select",
     "body": [
       "<!-- MULTI-SELECT ───────────────────────────────── -->",
       "<uef-multi-select field-name=\"${1:field-name-multi-select}\" ${2:required} label=\"${3:[Pattern Label]}\"",
@@ -1385,7 +1379,7 @@
   },
 
   "UEF 3 Sex": {
-    "prefix": "uef3-sex",
+    "prefix": "uef-sex",
     "body": [
       "<!-- GENDER ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-radiolist ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\" instructions=\"${4:[[Instruction text]]}\" variant=\"inline\">",
@@ -1398,7 +1392,7 @@
   },
 
   "UEF 3 Password": {
-    "prefix": "uef3-password",
+    "prefix": "uef-password",
     "body": [
       "<!-- PASSWORD ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-password ${1:required} label=\"${2:[[Current]]} Password\" instructions=\"${3:[[Instruction Text]]}\" field-name=\"${4:INSERT-FIELD-NAME}\">",
@@ -1410,7 +1404,7 @@
   },
 
   "UEF 3 Percent": {
-    "prefix": "uef3-percent",
+    "prefix": "uef-percent",
     "body": [
       "<!-- PERCENT ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required} label=\"${2:[Pattern Label]}\"",
@@ -1426,7 +1420,7 @@
   },
 
   "UEF 3 Place": {
-    "prefix": "uef3-place",
+    "prefix": "uef-place",
     "body": [
       "<!-- PLACE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instruction Text]}\">",
@@ -1468,7 +1462,7 @@
   },
 
   "UEF 3 Name (default)": {
-    "prefix": "uef3-name-default",
+    "prefix": "uef-name-default",
     "body": [
       "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
@@ -1504,7 +1498,7 @@
   },
 
   "UEF 3 Name (Suffix Textbox)": {
-    "prefix": "uef3-name-f-m-l-s",
+    "prefix": "uef-name-f-m-l-s",
     "body": [
       "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
@@ -1529,7 +1523,7 @@
   },
 
   "UEF 3 Name (MI, Suffix--Textbox)": {
-    "prefix": "uef3-name-f-mi-l-s",
+    "prefix": "uef-name-f-mi-l-s",
     "body": [
       "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
@@ -1556,7 +1550,7 @@
   },
 
   "UEF 3 Name (Suffix-- Dropdown)": {
-    "prefix": "uef3-name-f-m-l-s",
+    "prefix": "uef-name-f-m-l-s",
     "body": [
       "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
@@ -1585,7 +1579,7 @@
   },
 
   "UEF 3 Name (Title--Dropdown, Suffix--Textbox)": {
-    "prefix": "uef3-name-t-f-m-l-s",
+    "prefix": "uef-name-t-f-m-l-s",
     "body": [
       "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
@@ -1617,7 +1611,7 @@
   },
 
   "UEF 3 Name (Title--Dropdown, MI, Suffix--Textbox)": {
-    "prefix": "uef3-name-t-f-mi-l-s-textbox",
+    "prefix": "uef-name-t-f-mi-l-s-textbox",
     "body": [
       "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
@@ -1651,7 +1645,7 @@
   },
 
   "UEF 3 Name (Title, MI, Suffix--Dropdown)": {
-    "prefix": "uef3-name-t-f-mi-l-s",
+    "prefix": "uef-name-t-f-mi-l-s",
     "body": [
       "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
@@ -1689,7 +1683,7 @@
   },
 
   "UEF 3 Name (First, Last)": {
-    "prefix": "uef3-name-f-l",
+    "prefix": "uef-name-f-l",
     "body": [
       "<!-- NAME ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound label=\"${1:[Person's]} Name\" instructions=\"${2:[[Instruction Text]]}\">",
@@ -1708,7 +1702,7 @@
   },
 
   "UEF 3 Page Timeout Warning": {
-    "prefix": "uef3-page-timeout-warning",
+    "prefix": "uef-page-timeout-warning",
     "body": [
       "<uef-dialog id=\"${1:insert-id}\" open=\"${2|true,false|}\" backdrop=\"${3|true,false|}\" close-button=\"${4|true,false|}\"",
       "  width=\"${5:500px}\" height=\"\" breakpoint=\"\"",
@@ -1728,7 +1722,7 @@
   },
 
   "UEF 3 Page Timed Out": {
-    "prefix": "uef3-page-timed-out",
+    "prefix": "uef-page-timed-out",
     "body": [
       "<uef-dialog id=\"${1:insert-id}\" open=\"${2|true,false|}\" backdrop=\"${3|true,false|}\" close-button=\"${4|true,false|}\"",
       "  width=\"${5:500px}\" height=\"\" breakpoint=\"\"",
@@ -1745,7 +1739,7 @@
   },
 
   "UEF 3 Pill": {
-    "prefix": "uef3-pill",
+    "prefix": "uef-pill",
     "body": [
       "<uef-pill color=\"${1|info,danger,warning,success,light,default|}\" width=\"${2:}\" height=\"${3:}\" border=\"\" padding=\"\" font-size=\"\" accessibility-text=\"${0:}\"></uef-pill>"
     ],
@@ -1753,7 +1747,7 @@
   },
 
   "UEF 3 Radio List": {
-    "prefix": "uef3-radiolist",
+    "prefix": "uef-radiolist",
     "body": [
       "<!-- RADIO LIST ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-radiolist ${1|none,series,inline|} ${2:required} field-name=\"${3:INSERT-FIELD-NAME}\"",
@@ -1770,7 +1764,7 @@
   },
 
   "UEF 3 Radio List (with Other)": {
-    "prefix": "uef3-radiolist-other",
+    "prefix": "uef-radiolist-other",
     "body": [
       "<!-- RADIO LIST ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-radiolist ${1|none,series,inline|} ${2:required} field-name=\"${3:INSERT-FIELD-NAME}\"",
@@ -1793,7 +1787,7 @@
   },
 
   "UEF 3 Radio List (Series)": {
-    "prefix": "uef3-radiolist-series",
+    "prefix": "uef-radiolist-series",
     "body": [
       "<!-- RADIO LIST ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-radiolist ${1:required} label=\"${2:[Pattern Label]}\" field-name=\"${3:INSERT-FIELD-NAME}-radiolist1\" variant=\"series\">",
@@ -1817,7 +1811,7 @@
   },
 
   "UEF 3 Site Alert": {
-    "prefix": "uef3-site-alert",
+    "prefix": "uef-site-alert",
     "body": [
       "<uef-alert color=\"${1|warning,danger,info|}\" dismissible=\"${2|true,false|}\" compact=\"${3|false,true|}\" header=\"\" sx='{\"width\":\"100%\",\"--uef-alert-border-radius\":\"var(--uef-border-radius-sharp)\"}'>",
       "  ${0:Your site alert message goes here}",
@@ -1827,7 +1821,7 @@
   },
 
   "UEF 3 SSN": {
-    "prefix": "uef3-ssn",
+    "prefix": "uef-ssn",
     "body": [
       "<!-- SSN ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-ssn ${1:required} ${2:masked} field-name=\"${3:INSERT-FIELD-NAME}\"",
@@ -1841,7 +1835,7 @@
   },
 
   "UEF 3 State": {
-    "prefix": "uef3-state",
+    "prefix": "uef-state",
     "body": [
       "<!-- STATE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
@@ -1856,7 +1850,7 @@
   },
 
   "UEF 3 Switch": {
-    "prefix": "uef3-switch",
+    "prefix": "uef-switch",
     "body": [
       "<uef-switch label=\"${1:Insert Pattern Label}\" label-off=\"${2:OFF}\" label-on=\"${3:ON}\"",
       "  field-id=\"${4:insert-field-id}\" column=\"${5|false,true|}\" width=\"\"",
@@ -1866,7 +1860,7 @@
   },
 
   "UEF 3 Textarea": {
-    "prefix": "uef3-textarea",
+    "prefix": "uef-textarea",
     "body": [
       "<uef-textarea ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\" instructions=\"${4:[Instruction Text]} (${0:[500]} characters maximum)\" maxlength=\"${0:500}\"></uef-textarea>"
     ],
@@ -1874,7 +1868,7 @@
   },
 
   "UEF 3 Textbox": {
-    "prefix": "uef3-textbox",
+    "prefix": "uef-textbox",
     "body": [
       "<!-- TEXTBOX ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern label]}\"",
@@ -1889,7 +1883,7 @@
   },
 
   "UEF 3 Textbox with Custom Icon": {
-    "prefix": "uef3-textbox-icon",
+    "prefix": "uef-textbox-icon",
     "body": [
       "<!-- TEXTBOX ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required} field-name=\"${2:INSERT-FIELD-NAME}\" label=\"${3:[Pattern Label]}\"",
@@ -1904,7 +1898,7 @@
   },
 
   "UEF 3 Time": {
-    "prefix": "uef3-time",
+    "prefix": "uef-time",
     "body": [
       "<!-- TIME ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-compound ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[Instruction Text]}\" compound-id=\"${4:}\">",
@@ -1941,7 +1935,7 @@
   },
 
   "UEF 3 Time Zone": {
-    "prefix": "uef3-timezone",
+    "prefix": "uef-timezone",
     "body": [
       "<!-- TIME ZONE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
@@ -1956,7 +1950,7 @@
   },
 
   "UEF 3 Yes/No": {
-    "prefix": "uef3-yesno",
+    "prefix": "uef-yesno",
     "body": [
       "<!-- YES/NO ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-radiolist ${1:required} variant=\"${2|none,inline,series|}\" field-name=\"${3:INSERT-FIELD-NAME}\"",
@@ -1972,7 +1966,7 @@
   },
 
   "UEF 3 Zip Code": {
-    "prefix": "uef3-zipcode",
+    "prefix": "uef-zipcode",
     "body": [
       "<!-- ZIP CODE ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required} inputmode=\"numeric\" width=\"5em\" maxlength=\"5\"",
@@ -1987,7 +1981,7 @@
   },
 
   "UEF 3 ZIP Code (+4)": {
-    "prefix": "uef3-zipcode-plus-4",
+    "prefix": "uef-zipcode-plus-4",
     "body": [
       "<!-- ZIP CODE (+4) ────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required}",
@@ -2003,7 +1997,7 @@
   },
 
   "UEF 3 Dialog": {
-    "prefix": "uef3-dialog",
+    "prefix": "uef-dialog",
     "body": [
       "<!-- DIALOG ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<div>",
@@ -2027,7 +2021,7 @@
   },
 
   "UEF 3 Drawer": {
-    "prefix": "uef3-drawer",
+    "prefix": "uef-drawer",
     "body": [
       "<!-- DRAWER ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<div>",
@@ -2047,7 +2041,7 @@
   },
 
   "UEF 3 Figure": {
-    "prefix": "uef3-figure",
+    "prefix": "uef-figure",
     "body": [
       "<!-- FIGURE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-figure caption=\"${1:[[INSERT OPTIONAL CAPTION]]}\" alignment=\"${2|left,right|}\">",
@@ -2063,7 +2057,7 @@
   },
 
   "UEF 3 Icon": {
-    "prefix": "uef3-icon",
+    "prefix": "uef-icon",
     "body": [
       "<uef-icon name=\"${1:INSERT-ICON-NAME}\" type=\"${2|solid,regular,brand|}\" ${3:color=\"\"} ${0:size=\"\"}></uef-icon>"
     ],
@@ -2071,7 +2065,7 @@
   },
 
   "UEF 3 Indicator": {
-    "prefix": "uef3-indicator",
+    "prefix": "uef-indicator",
     "body": [
       "<!-- INDICATOR ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-indicator open type=\"${1|continuous,determinant,buffer|}\" variant=\"${2|circle,linear|}\"",
@@ -2084,7 +2078,7 @@
   },
 
   "UEF 3 Tag": {
-    "prefix": "uef3-tag",
+    "prefix": "uef-tag",
     "body": [
       "<uef-tag color=\"${1|default,light,info,danger,warning,success|}\" ${2:dismissible} ${3:wrap}>${0:[INSERT TAG TEXT]}</uef-tag>"
     ],
@@ -2092,7 +2086,7 @@
   },
 
   "UEF 3 Toggle Group": {
-    "prefix": "uef3-toggle-group",
+    "prefix": "uef-toggle-group",
     "body": [
       "<!-- TOGGLE GROUP ──────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-toggle-group field-name=\"${1:INSERT-FIELD-NAME}\" accessibility-text=\"${2:Toggle}\">",
@@ -2106,7 +2100,7 @@
   },
 
   "UEF 3 Tooltip": {
-    "prefix": "uef3-tooltip",
+    "prefix": "uef-tooltip",
     "body": [
       "<!-- TOOLTIP ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-tooltip ${1:underline} placement=\"${2|top,left,right,bottom|}\">",
@@ -2119,7 +2113,7 @@
   },
 
   "UEF 3 Optional Info": {
-    "prefix": "uef3-optional-info",
+    "prefix": "uef-optional-info",
     "body": [
       "<uef-typography variant=\"label\" tag=\"span\">All information is required, unless noted optional.</uef-typography>"
     ],
@@ -2127,7 +2121,7 @@
   },
 
   "UEF 3 Required Info": {
-    "prefix": "uef3-required-info",
+    "prefix": "uef-required-info",
     "body": [
       "<uef-typography variant=\"label\" tag=\"span\">",
       "  A red asterisk (<uef-icon name=\"asterisk\" type=\"solid\" size=\"7.5\" color=\"#c00\" accessibility-text=\"asterisk\" sx='{\"verticalAlign\":\"middle\"}'></uef-icon>) indicates a required field.",
@@ -2137,7 +2131,7 @@
   },
 
   "UEF 3 Typography": {
-    "prefix": "uef3-typography",
+    "prefix": "uef-typography",
     "body": [
       "<uef-typography variant=\"${1|heading1,heading2,heading3,heading4,heading5,heading6,subtitle1,subtitle2,body-2xs,body-xs,body-s,body-m,body-l,label,code,button-s,button-m,button-l,overline|}\" align=\"${2|left,center,right,justify,inherit|}\"",
       "  ${3:tag=\"\"} ${4:color=\"\"} ${5:weight=\"\"} ${6:letterspacing=\"\"} ${7:line-height=\"\"} ${8:line-length=\"\"} ${9:decoration=\"\"} ${10:size=\"\"} ${11:font-family=\"\"}>",
@@ -2148,7 +2142,7 @@
   },
 
   "UEF 3 Visually Hidden": {
-    "prefix": "uef3-visually-hidden",
+    "prefix": "uef-visually-hidden",
     "body": [
       "<uef-visuallyhidden>${0:[INSERT HIDDEN TEXT}</uef-visuallyhidden>"
     ],
@@ -2156,7 +2150,7 @@
   },
 
   "UEF 3 Container": {
-    "prefix": "uef3-container",
+    "prefix": "uef-container",
     "body": [
       "<!-- CONTAINER ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-container>",
@@ -2168,7 +2162,7 @@
   },
 
   "UEF 3 Flex Layout": {
-    "prefix": "uef3-flex",
+    "prefix": "uef-flex",
     "body": [
       "<!-- FLEX LAYOUT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-flex display=\"${1|flex,inline-flex|}\" direction=\"${2|row,row-reverse,column,column-reverse|}\" align-items=\"${3|flex-start,flex-end,center,space-between,space-around,stretch|}\" align-content=\"${4|flex-start,flex-end,center,space-between,space-around,stretch|}\" justify-content=\"${5|flex-start,flex-end,center,space-between,space-around,space-evenly|}\" wrap=\"${6|nowrap,wrap,wrap-reverse|}\" gap=\"${7:2em}\">",
@@ -2180,7 +2174,7 @@
   },
 
   "UEF 3 Flex Item": {
-    "prefix": "uef3-flex-item",
+    "prefix": "uef-flex-item",
     "body": [
       "<!-- FLEX ITEM - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "  <uef-flex-item align-self=\"${1|auto,baseline,center,flex-start,flex-end,stretch|}\" flex-basis=\"${2|auto,content,insert-custom-css-size|}\" flex-grow=\"${3:0}\" flex-shrink=\"${4:1}\" ${5:order=\"\"} >",
@@ -2192,7 +2186,7 @@
   },
 
   "UEF 3 Footer (Identifier)": {
-    "prefix": "uef3-footer-identifier",
+    "prefix": "uef-footer-identifier",
     "body": [
       "<!-- FOOTER (IDENTIFIER) ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-footer sx='{\"--uef-identifier-background-color\":\"var(--uef-color-uswds-blue-70v)\",\"margin-top\":\"2em\"}'>",
@@ -2245,7 +2239,7 @@
   },
 
   "UEF 3 Footer (Slim)": {
-    "prefix": "uef3-footer-slim",
+    "prefix": "uef-footer-slim",
     "body": [
       "<!-- FOOTER (SLIM) ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-footer sx='{\"--uef-identifier-background-color\":\"var(--uef-color-uswds-blue-70v)\"}'>",
@@ -2321,7 +2315,7 @@
   },
 
   "UEF 3 Footer (Medium)": {
-    "prefix": "uef3-footer-medium",
+    "prefix": "uef-footer-medium",
     "body": [
       "<!-- FOOTER (MEDIUM) ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-footer sx='{\"--uef-identifier-background-color\":\"var(--uef-color-uswds-blue-70v)\"}'>",
@@ -2434,7 +2428,7 @@
   },
 
   "UEF 3 Footer (Big)": {
-    "prefix": "uef3-footer-big",
+    "prefix": "uef-footer-big",
     "body": [
       "<!-- FOOTER (BIG) ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-footer sx='{\"--uef-identifier-background-color\":\"var(--uef-color-uswds-blue-70v)\"}'>",
@@ -2595,7 +2589,7 @@
   },
 
   "UEF 3 Grid": {
-    "prefix": "uef3-grid",
+    "prefix": "uef-grid",
     "body": [
       "<!-- GRID - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-grid ${1:Add your Grid attribute settings}>",
@@ -2607,7 +2601,7 @@
   },
 
   "UEF 3 Grid (Fluid)": {
-    "prefix": "uef3-grid-fluid",
+    "prefix": "uef-grid-fluid",
     "body": [
       "<!-- GRID (FLUID) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-grid grid-template-columns=\"repeat(auto-fit, minmax(${0:175}px,1fr))\">",
@@ -2623,7 +2617,7 @@
   },
 
   "UEF 3 Grid (3 Column)": {
-    "prefix": "uef3-grid-3col",
+    "prefix": "uef-grid-3col",
     "body": [
       "<!-- GRID (3 COLUMN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-grid grid-template-columns=\"minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr)\" display=\"grid\" grid-auto-flow=\"column\">",
@@ -2637,7 +2631,7 @@
   },
 
   "UEF 3 Grid (3 Column Template)": {
-    "prefix": "uef3-grid-3col-template",
+    "prefix": "uef-grid-3col-template",
     "body": [
       "<!-- GRID (3 COLUMN TEMPLATE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-grid display=\"grid\"",
@@ -2666,7 +2660,7 @@
   },
 
   "UEF 3 Grid Item": {
-    "prefix": "uef3-grid-item",
+    "prefix": "uef-grid-item",
     "body": [
       "<uef-grid-item>${0:[[INSERT GRID ITEM CONTENT]]}</uef-grid-item>"
     ],
@@ -2674,7 +2668,7 @@
   },
 
   "UEF 3 Help": {
-    "prefix": "uef3-help",
+    "prefix": "uef-help",
     "body": [
       "<!-- HELP ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<div>",
@@ -2697,7 +2691,7 @@
   },
 
   "UEF 3 Link": {
-    "prefix": "uef3-link",
+    "prefix": "uef-link",
     "body": [
       "<uef-link href=\"${1:#0}\">${0:INSERT LINK TEXT}</uef-link>"
     ],
@@ -2705,7 +2699,7 @@
   },
 
   "UEF 3 Download Link": {
-    "prefix": "uef3-link-download",
+    "prefix": "uef-link-download",
     "body": [
       "<!-- DOWNLOAD LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\" download>",
@@ -2717,7 +2711,7 @@
   },
 
   "UEF 3 Email Link": {
-    "prefix": "uef3-link-email",
+    "prefix": "uef-link-email",
     "body": [
       "<!-- EMAIL LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"mailto:${0:someone@example.com}\">",
@@ -2729,7 +2723,7 @@
   },
 
   "UEF 3 Excel Link": {
-    "prefix": "uef3-link-excel",
+    "prefix": "uef-link-excel",
     "body": [
       "<!-- EXCEL LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
@@ -2741,7 +2735,7 @@
   },
 
   "UEF 3 External Link": {
-    "prefix": "uef3-link-external",
+    "prefix": "uef-link-external",
     "body": [
       "<!-- EXTERNAL LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\" type=\"external\">",
@@ -2753,7 +2747,7 @@
   },
 
   "UEF 3 Print Link": {
-    "prefix": "uef3-link-print",
+    "prefix": "uef-link-print",
     "body": [
       "<!-- PRINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"javascript:window.print();\">",
@@ -2765,7 +2759,7 @@
   },
 
   "UEF 3 PDF Link": {
-    "prefix": "uef3-link-pdf",
+    "prefix": "uef-link-pdf",
     "body": [
       "<!-- PDF LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
@@ -2777,7 +2771,7 @@
   },
 
   "UEF 3 PowerPoint Link": {
-    "prefix": "uef3-link-powerpoint",
+    "prefix": "uef-link-powerpoint",
     "body": [
       "<!-- POWERPOINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
@@ -2789,7 +2783,7 @@
   },
 
   "UEF 3 Video Link": {
-    "prefix": "uef3-link-video",
+    "prefix": "uef-link-video",
     "body": [
       "<!-- VIDEO LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
@@ -2801,7 +2795,7 @@
   },
 
   "UEF 3 Word Link": {
-    "prefix": "uef3-link-word",
+    "prefix": "uef-link-word",
     "body": [
       "<!-- WORD LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
@@ -2813,7 +2807,7 @@
   },
 
   "UEF 3 Zip Link": {
-    "prefix": "uef3-link-zip",
+    "prefix": "uef-link-zip",
     "body": [
       "<!-- ZIP LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
@@ -2825,7 +2819,7 @@
   },
 
   "UEF 3 Media": {
-    "prefix": "uef3-media",
+    "prefix": "uef-media",
     "body": [
       "<!-- MEDIA ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-media src=\"${1:https://api.lorem.space/image/face?w=2000&amp;h=2000}\" accessibility-text=\"${2:INSERT ACCESSIBILITY TEXT}\"",
@@ -2842,7 +2836,7 @@
   },
 
   "UEF 3 Video": {
-    "prefix": "uef3-video",
+    "prefix": "uef-video",
     "body": [
       "<!-- VIDEO ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-media src=\"${1:https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm}\" accessibility-text=\"${2:INSERT ACCESSIBILITY TEXT}\"",
@@ -2860,7 +2854,7 @@
   },
 
   "UEF 3 Hero": {
-    "prefix": "uef3-hero",
+    "prefix": "uef-hero",
     "body": [
       "<!-- HERO ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-container sx='{\"height\":\"${1:300px}\",\"background\":\"${2:#000}\"}'>",
@@ -2881,7 +2875,7 @@
   },
 
   "UEF 3 Menu": {
-    "prefix": "uef3-menu",
+    "prefix": "uef-menu",
     "body": [
       "<!-- MENU ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-menu label=\"Menu\" placement=\"${3|bottom-start,bottom-end,bottom,top-start,top-end,top,left,left-start,left-end,right,right-start,right-end|}\" sx='{\"--uef-menu-offset\":\"-50px\"}'>",
@@ -2900,7 +2894,7 @@
   },
 
   "UEF 3 Navigation": {
-    "prefix": "uef3-nav-menu",
+    "prefix": "uef-nav-menu",
     "body": [
       "<!-- NAVIGATION ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-nav>",
@@ -2926,7 +2920,7 @@
   },
 
   "UEF 3 Mega Menu": {
-    "prefix": "uef3-mega-menu",
+    "prefix": "uef-mega-menu",
     "body": [
       "<!-- MEGA MENU ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-nav sx='{\"position\": \"relative\"}'>",
@@ -2986,7 +2980,7 @@
   },
 
   "UEF 3 Pagination": {
-    "prefix": "uef3-pagination",
+    "prefix": "uef-pagination",
     "body": [
       "<uef-pagination page=\"${1:1}\" dial=\"${2:3}\" limit=\"${3:10}\" results=\"${4:100}\" ${0:showtext}></uef-pagination>"
     ],
@@ -2994,7 +2988,7 @@
   },
 
   "UEF 3 Popover": {
-    "prefix": "uef3-popover",
+    "prefix": "uef-popover",
     "body": [
       "<!-- POPOVER ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-popover placement=\"${1|top,bottom,left,right,top-start,top-end,bottom-start,bottom-end|}\" ${2:close-button}>",
@@ -3012,7 +3006,7 @@
   },
 
   "UEF 3 Progress": {
-    "prefix": "uef3-progress",
+    "prefix": "uef-progress",
     "body": [
       "<!-- PROGRESS ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-progress label=\"${1:[Step X of Y]}\" support-info=\"${2:[Current Step Title]}\"",
@@ -3041,7 +3035,7 @@
   },
 
   "UEF 3 Section": {
-    "prefix": "uef3-section",
+    "prefix": "uef-section",
     "body": [
       "<uef-section tag=\"${1|section,article,div|}\">${0:[INSERT SECTION TEXT]}</uef-section>"
     ],
@@ -3049,7 +3043,7 @@
   },
 
   "UEF 3 Show/Hide": {
-    "prefix": "uef3-show-hide",
+    "prefix": "uef-show-hide",
     "body": [
       "<!-- SHOW/HIDE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-show-hide show-label=\"${1:[Show something hidden]}\" hide-label=\"${2:[Hide something shown]}\"",
@@ -3063,7 +3057,7 @@
   },
 
   "UEF 3 Skip Navigation": {
-    "prefix": "uef3-skipnav",
+    "prefix": "uef-skipnav",
     "body": [
       "<uef-skip-nav target-id=\"main\" shortcut-key=\"K\"></uef-skip-nav>"
     ],
@@ -3071,7 +3065,7 @@
   },
 
   "UEF 3 Table (1 Column)": {
-    "prefix": "uef3-table-1col",
+    "prefix": "uef-table-1col",
     "body": [
       "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
@@ -3107,7 +3101,7 @@
   },
 
   "UEF 3 Table (2 Columns)": {
-    "prefix": "uef3-table-2col",
+    "prefix": "uef-table-2col",
     "body": [
       "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
@@ -3147,7 +3141,7 @@
   },
 
   "UEF 3 Table (3 Columns)": {
-    "prefix": "uef3-table-3col",
+    "prefix": "uef-table-3col",
     "body": [
       "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
@@ -3191,7 +3185,7 @@
   },
 
   "UEF 3 Table (4 Columns)": {
-    "prefix": "uef3-table-4col",
+    "prefix": "uef-table-4col",
     "body": [
       "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
@@ -3239,7 +3233,7 @@
   },
 
   "UEF 3 Table (5 Columns)": {
-    "prefix": "uef3-table-5col",
+    "prefix": "uef-table-5col",
     "body": [
       "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
@@ -3291,7 +3285,7 @@
   },
 
   "UEF 3 Table (6 Columns)": {
-    "prefix": "uef3-table-6col",
+    "prefix": "uef-table-6col",
     "body": [
       "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
@@ -3347,7 +3341,7 @@
   },
 
   "UEF 3 Table (7 Columns)": {
-    "prefix": "uef3-table-7col",
+    "prefix": "uef-table-7col",
     "body": [
       "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
@@ -3407,7 +3401,7 @@
   },
 
   "UEF 3 Table (8 Columns)": {
-    "prefix": "uef3-table-8col",
+    "prefix": "uef-table-8col",
     "body": [
       "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
@@ -3471,7 +3465,7 @@
   },
 
   "UEF 3 Tabs": {
-    "prefix": "uef3-tabs",
+    "prefix": "uef-tabs",
     "body": [
       "<!-- TABS ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-tabs>",
@@ -3498,7 +3492,7 @@
   },
 
   "UEF 3 Sub-Navigation": {
-    "prefix": "uef3-subnav",
+    "prefix": "uef-subnav",
     "body": [
       "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
@@ -3512,7 +3506,7 @@
   },
 
   "UEF 3 Sub-Navigation Item": {
-    "prefix": "uef3-subnav-item",
+    "prefix": "uef-subnav-item",
     "body": [
       "<uef-subnav-item href=\"${1:javascript:void(0);}\">${0:[Item X]}</uef-subnav-item>"
     ],
@@ -3520,7 +3514,7 @@
   },
 
   "UEF 3 Sub-Navigation (Groups)": {
-    "prefix": "uef3-subnav-groups",
+    "prefix": "uef-subnav-groups",
     "body": [
       "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
@@ -3545,7 +3539,7 @@
   },
 
   "UEF 3 Sub-Navigation (Nested)": {
-    "prefix": "uef3-subnav-groups-nested",
+    "prefix": "uef-subnav-groups-nested",
     "body": [
       "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
@@ -3575,7 +3569,7 @@
   },
 
   "UEF 3 Sub-Navigation (Icons)": {
-    "prefix": "uef3-subnav-icons",
+    "prefix": "uef-subnav-icons",
     "body": [
       "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
@@ -3623,7 +3617,7 @@
   },
 
   "UEF 3 Summary": {
-    "prefix": "uef3-summary-receipt",
+    "prefix": "uef-summary-receipt",
     "body": [
       "<!-- SUMMARY (RECEIPT) ───────────────────────────────────────────────────────────────────────── -->",
       "<uef-section tag=\"section\"",
@@ -3664,7 +3658,7 @@
   },
 
   "UEF 3 Summary (Review)": {
-    "prefix": "uef3-summary-review",
+    "prefix": "uef-summary-review",
     "body": [
       "<!-- SUMMARY (REVIEW) ───────────────────────────────────────────────────────────────────────── -->",
       "<uef-section tag=\"section\"",
@@ -3710,7 +3704,7 @@
   },
 
   "UEF 3 Summary (Accordion)": {
-    "prefix": "uef3-summary-accordion",
+    "prefix": "uef-summary-accordion",
     "body": [
       "<!-- SUMMARY (ACCORDION) ───────────────────────────────────────────────────────────────────────── -->",
       "<uef-section tag=\"section\"",
@@ -3772,7 +3766,7 @@
   },
 
   "UEF 3 Page Template (Business 1)": {
-    "prefix": "uef3-page-business-1",
+    "prefix": "uef-page-business-1",
     "body": [
       "<uef-skip-nav target-id=\"main\" shortcut-key=\"K\"></uef-skip-nav>",
       "<uef-container background=\"var(--uef-color-blue-primary)\"",
@@ -3866,7 +3860,7 @@
   },
 
   "UEF 3 Page Template (Business 2)": {
-    "prefix": "uef3-page-business-2",
+    "prefix": "uef-page-business-2",
     "body": [
       "<uef-skip-nav target-id=\"main\" shortcut-key=\"K\"></uef-skip-nav>",
       "<uef-container background=\"--uef-color-blue-primary\"",
@@ -3956,7 +3950,7 @@
   },
 
   "UEF 3 Page Template (Public 1)": {
-    "prefix": "uef3-page-public-1",
+    "prefix": "uef-page-public-1",
     "body": [
       "<uef-skip-nav target-id=\"main\" shortcut-key=\"K\"></uef-skip-nav>",
       "<uef-container width=\"80rem\" breakpoint=\"80em\" sx='{\"background\":\"#F0F0F0\",\"padding\": \"0 var(--uef-space-inline-4x)\"}'>",
@@ -4169,7 +4163,7 @@
   },
 
   "UEF 3 Page Template (Public 2)": {
-    "prefix": "uef3-page-public-2",
+    "prefix": "uef-page-public-2",
     "body": [
       "<uef-skip-nav target-id=\"main\" shortcut-key=\"K\"></uef-skip-nav>",
       "<uef-container width=\"80rem\" breakpoint=\"80em\" sx='{\"background\":\"#F0F0F0\",\"padding\": \"0 var(--uef-space-4x)\"}'>",
