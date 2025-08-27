@@ -4,7 +4,7 @@
 
 ### Deprecations
 
-- Removed all `uef` and `uef21` snippets
+- Removed snippet support for UEF 2.0 and 2.1
 
 ## Version 3.1.0
 
