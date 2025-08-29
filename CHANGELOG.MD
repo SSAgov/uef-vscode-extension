@@ -5,6 +5,11 @@
 ### Deprecations
 
 - Removed snippet support for UEF 2.0 and 2.1
+- Removed snippet comment generation
+
+### Changes
+
+- All snippets now use the `uef-` prefix
 
 ## Version 3.1.0
 

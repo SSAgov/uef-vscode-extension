@@ -1871,14 +1871,12 @@
   "UEF 3 Zip Code": {
     "prefix": "uef-zipcode",
     "body": [
-      "<!-- ZIP CODE ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required} inputmode=\"numeric\" width=\"5em\" maxlength=\"5\"",
       "  label=\"${2:[[Person's]]} ZIP Code\"",
       "  instructions=\"${3:[[Instruction Text]]}\"",
       "  support-info=\"${4:[[Support Text]]}\"",
       "  field-name=\"${0:INSERT-FIELD-NAME}\"",
-      "></uef-textbox>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "></uef-textbox>"
     ],
     "description": "UEF 3 Zip Code"
   },
@@ -1886,15 +1884,13 @@
   "UEF 3 ZIP Code (+4)": {
     "prefix": "uef-zipcode-plus-4",
     "body": [
-      "<!-- ZIP CODE (+4) ────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-textbox ${1:required}",
       "  label=\"${2:[[Person's]]} ZIP Code\"",
       "  instructions=\"${3:[[Instruction Text]]}\"",
       "  support-info=\"${4:[[Support Text]]}\"",
       "  field-name=\"${0:INSERT-FIELD-NAME}\"",
       "  width=\"12ch\" maxlength=\"9\" inputmode=\"numeric\" mask=\"     -    \" format=\"*****-****\"",
-      "></uef-textbox>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "></uef-textbox>"
     ],
     "description": "UEF 3 ZIP Code (+4)"
   },
@@ -1902,7 +1898,6 @@
   "UEF 3 Dialog": {
     "prefix": "uef-dialog",
     "body": [
-      "<!-- DIALOG ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<div>",
       "  <uef-dialog id=\"${1:INSERT-DIALOG-ID}\" ${2:backdrop} ${3:close-button} ${4:action-required} width=\"${5:500px}\">",
       "    <uef-typography variant=\"heading2\" slot=\"uef-dialog-header\">${6:[Dialog Title]}</uef-typography>",
@@ -1917,8 +1912,7 @@
       "  <uef-control target=\"${1:INSERT-DIALOG-ID}\">",
       "    <uef-button fill=\"outline\">${0:[Open Dialog]}</uef-button>",
       "  </uef-control>",
-      "</div>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</div>"
     ],
     "description": "UEF 3 Dialog"
   },
@@ -1926,7 +1920,6 @@
   "UEF 3 Drawer": {
     "prefix": "uef-drawer",
     "body": [
-      "<!-- DRAWER ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<div>",
       "  <uef-control target=\"${1:INSERT-DRAWER-NAME}\">",
       "    <uef-button>",
@@ -1937,8 +1930,7 @@
       "  <uef-drawer id=\"${1:INSERT-DRAWER-NAME}\">",
       "    ${0:[INSERT SUB-NAV OR CONTENT]}",
       "  </uef-drawer>",
-      "</div>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</div>"
     ],
     "description": "UEF 3 Drawer"
   },
@@ -1946,15 +1938,13 @@
   "UEF 3 Figure": {
     "prefix": "uef-figure",
     "body": [
-      "<!-- FIGURE ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-figure caption=\"${1:[[INSERT OPTIONAL CAPTION]]}\" alignment=\"${2|left,right|}\">",
       "  <img src=\"${3:https://api.lorem.space/image/face?w=500&amp;h=500}\" alt=\"${4:INSERT ALTERNATE IMAGE TEXT}\" />",
       "  <!-- THE SLOTTED CAPTION IS OPTIONAL--DELETE THE NEXT 3 LINES IF YOU DON'T WANT IT -->",
       "  <div slot=\"uef-figure-caption\">",
       "    ${0:INSERT OPTIONAL FIGURE CAPTION}",
       "  </div>",
-      "</uef-figure>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-figure>"
     ],
     "description": "UEF 3 Figure"
   },
@@ -1970,12 +1960,10 @@
   "UEF 3 Indicator": {
     "prefix": "uef-indicator",
     "body": [
-      "<!-- INDICATOR ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-indicator open type=\"${1|continuous,determinant,buffer|}\" variant=\"${2|circle,linear|}\"",
       "  placement=\"${3|inline,block,overlay|}\" accessibility-text=\"${4:INSERT ACCESSIBILITY TEXT}\"",
       "  size=\"${5:75px}\" ${6:color=\"\"} ${0:value=\"\"} aria-live=\"assertive\">",
-      "</uef-indicator>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-indicator>"
     ],
     "description": "UEF 3 Indicator"
   },
@@ -1991,13 +1979,11 @@
   "UEF 3 Toggle Group": {
     "prefix": "uef-toggle-group",
     "body": [
-      "<!-- TOGGLE GROUP ──────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-toggle-group field-name=\"${1:INSERT-FIELD-NAME}\" accessibility-text=\"${2:Toggle}\">",
       "  <uef-toggle-button value=\"${3:1}\">${4:[Selection 1]}</uef-toggle-button>",
       "  <uef-toggle-button value=\"${5:2}\">${6:[Selection 2]}</uef-toggle-button>",
       "  <uef-toggle-button value=\"${7:3}\">${0:[Selection 3]}</uef-toggle-button>",
-      "</uef-toggle-group>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-toggle-group>"
     ],
     "description": "UEF 3 Toggle Group"
   },
@@ -2005,12 +1991,10 @@
   "UEF 3 Tooltip": {
     "prefix": "uef-tooltip",
     "body": [
-      "<!-- TOOLTIP ───────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-tooltip ${1:underline} placement=\"${2|top,left,right,bottom|}\">",
       "  ${3:[INSERT TOOLTIP TRIGGER TEXT]}",
       "  <span slot=\"uef-tooltip-content\">${0:INSERT TOOLTIP CONTENT}</span>",
-      "</uef-tooltip>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-tooltip>"
     ],
     "description": "UEF 3 Tooltip"
   },
@@ -2055,11 +2039,9 @@
   "UEF 3 Container": {
     "prefix": "uef-container",
     "body": [
-      "<!-- CONTAINER ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-container>",
       "  ${0:[INSERT CONTENT]}",
-      "</uef-container>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-container>"
     ],
     "description": "UEF 3 Container"
   },
@@ -2067,11 +2049,9 @@
   "UEF 3 Flex Layout": {
     "prefix": "uef-flex",
     "body": [
-      "<!-- FLEX LAYOUT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-flex display=\"${1|flex,inline-flex|}\" direction=\"${2|row,row-reverse,column,column-reverse|}\" align-items=\"${3|flex-start,flex-end,center,space-between,space-around,stretch|}\" align-content=\"${4|flex-start,flex-end,center,space-between,space-around,stretch|}\" justify-content=\"${5|flex-start,flex-end,center,space-between,space-around,space-evenly|}\" wrap=\"${6|nowrap,wrap,wrap-reverse|}\" gap=\"${7:2em}\">",
       "  ${0:INSERT FLEX ITEMS}",
-      "</uef-flex>",
-      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
+      "</uef-flex>"
     ],
     "description": "UEF 3 Flex Layout"
   },
@@ -2079,11 +2059,9 @@
   "UEF 3 Flex Item": {
     "prefix": "uef-flex-item",
     "body": [
-      "<!-- FLEX ITEM - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "  <uef-flex-item align-self=\"${1|auto,baseline,center,flex-start,flex-end,stretch|}\" flex-basis=\"${2|auto,content,insert-custom-css-size|}\" flex-grow=\"${3:0}\" flex-shrink=\"${4:1}\" ${5:order=\"\"} >",
       "    ${0:INSERT CONTENT HERE}",
-      "  </uef-flex-item>",
-      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
+      "  </uef-flex-item>"
     ],
     "description": "UEF 3 Flex Item"
   },
@@ -2091,7 +2069,6 @@
   "UEF 3 Footer (Identifier)": {
     "prefix": "uef-footer-identifier",
     "body": [
-      "<!-- FOOTER (IDENTIFIER) ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-footer sx='{\"--uef-identifier-background-color\":\"var(--uef-color-uswds-blue-70v)\",\"margin-top\":\"2em\"}'>",
       "  <div slot=\"uef-identifier\">",
       "    <uef-flex align-items=\"center\" wrap=\"wrap\" gap=\"var(--uef-space-4x) var(--uef-space-8x)\">",
@@ -2135,8 +2112,7 @@
       "      </uef-typography>",
       "    </uef-section>",
       "  </div>",
-      "</uef-footer>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-footer>"
     ],
     "description": "UEF 3 Footer (Identifier)"
   },
@@ -2144,7 +2120,6 @@
   "UEF 3 Footer (Slim)": {
     "prefix": "uef-footer-slim",
     "body": [
-      "<!-- FOOTER (SLIM) ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-footer sx='{\"--uef-identifier-background-color\":\"var(--uef-color-uswds-blue-70v)\"}'>",
       "  <nav slot=\"uef-footer-nav\">",
       "    <uef-grid",
@@ -2211,8 +2186,7 @@
       "      </uef-typography>",
       "    </uef-section>",
       "  </div>",
-      "</uef-footer>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-footer>"
     ],
     "description": "UEF 3 Footer (Slim)"
   },
@@ -2220,7 +2194,6 @@
   "UEF 3 Footer (Medium)": {
     "prefix": "uef-footer-medium",
     "body": [
-      "<!-- FOOTER (MEDIUM) ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-footer sx='{\"--uef-identifier-background-color\":\"var(--uef-color-uswds-blue-70v)\"}'>",
       "  <nav slot=\"uef-footer-nav\">",
       "    <uef-grid",
@@ -2324,8 +2297,7 @@
       "      </uef-typography>",
       "    </uef-section>",
       "  </div>",
-      "</uef-footer>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-footer>"
     ],
     "description": "UEF 3 Footer (Medium)"
   },
@@ -2333,7 +2305,6 @@
   "UEF 3 Footer (Big)": {
     "prefix": "uef-footer-big",
     "body": [
-      "<!-- FOOTER (BIG) ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-footer sx='{\"--uef-identifier-background-color\":\"var(--uef-color-uswds-blue-70v)\"}'>",
       "  <nav slot=\"uef-footer-nav\">",
       "    <uef-grid",
@@ -2485,8 +2456,7 @@
       "      </uef-typography>",
       "    </uef-section>",
       "  </div>",
-      "</uef-footer>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-footer>"
     ],
     "description": "UEF 3 Footer (Big)"
   },
@@ -2494,11 +2464,9 @@
   "UEF 3 Grid": {
     "prefix": "uef-grid",
     "body": [
-      "<!-- GRID - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-grid ${1:Add your Grid attribute settings}>",
       "  ${0:INSERT GRID ITEMS: uef-grid-item}",
-      "</uef-grid>",
-      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
+      "</uef-grid>"
     ],
     "description": "UEF 3 Grid"
   },
@@ -2506,15 +2474,13 @@
   "UEF 3 Grid (Fluid)": {
     "prefix": "uef-grid-fluid",
     "body": [
-      "<!-- GRID (FLUID) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-grid grid-template-columns=\"repeat(auto-fit, minmax(${0:175}px,1fr))\">",
       "  <div>Grid Item 1</div>",
       "  <div>Grid Item 2</div>",
       "  <div>Grid Item 3</div>",
       "  <div>Grid Item 4</div>",
       "  <div>Grid Item 5</div>",
-      "</uef-grid>",
-      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
+      "</uef-grid>"
     ],
     "description": "UEF 3 Grid (Fluid)"
   },
@@ -2522,13 +2488,11 @@
   "UEF 3 Grid (3 Column)": {
     "prefix": "uef-grid-3col",
     "body": [
-      "<!-- GRID (3 COLUMN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-grid grid-template-columns=\"minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr)\" display=\"grid\" grid-auto-flow=\"column\">",
       "  <nav>${1:[[INSERT SUB-NAVIGATION]]}</nav>",
       "  <main>${2:[[INSERT MAIN CONTENT]]}</main>",
       "  <aside>${0:[[INSERT SIDEBAR CONTENT]]}</aside>",
-      "</uef-grid>",
-      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
+      "</uef-grid>"
     ],
     "description": "UEF 3 Grid (3 Column)"
   },
@@ -2536,7 +2500,6 @@
   "UEF 3 Grid (3 Column Template)": {
     "prefix": "uef-grid-3col-template",
     "body": [
-      "<!-- GRID (3 COLUMN TEMPLATE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->",
       "<uef-grid display=\"grid\"",
       "  grid-template-areas='\"header header header\"",
       "                       \"subnav main sidebar\"",
@@ -2556,8 +2519,7 @@
       "  <uef-grid-item grid-area=\"footer\">",
       "    <footer>${0:[[INSERT FOOTER CONTENT]]}</footer>",
       "  </uef-grid-item>",
-      "</uef-grid>",
-      "<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->"
+      "</uef-grid>"
     ],
     "description": "UEF 3 Grid (3 Column Template)"
   },
@@ -2573,7 +2535,6 @@
   "UEF 3 Help": {
     "prefix": "uef-help",
     "body": [
-      "<!-- HELP ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<div>",
       "  <uef-help target=\"#${1:INSERT-HELP-TARGET}\" label=\"${2:Help}\"></uef-help>",
       "  <uef-dialog id=\"${1:INSERT-HELP-TARGET}\" backdrop close-button width=\"30em\">",
@@ -2587,8 +2548,7 @@
       "      <uef-button fill=\"outline\">Close</uef-button>",
       "    </uef-button-group>",
       "  </uef-dialog>",
-      "</div>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</div>"
     ],
     "description": "UEF 3 Help"
   },
@@ -2604,11 +2564,9 @@
   "UEF 3 Download Link": {
     "prefix": "uef-link-download",
     "body": [
-      "<!-- DOWNLOAD LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\" download>",
       "  <uef-icon type=\"solid\" name=\"download\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>${0:[[Download this file]]}",
-      "</uef-link>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 Download Link"
   },
@@ -2616,11 +2574,9 @@
   "UEF 3 Email Link": {
     "prefix": "uef-link-email",
     "body": [
-      "<!-- EMAIL LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"mailto:${0:someone@example.com}\">",
       "  <uef-icon name=\"envelope\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>${0:[someone@example.com]}",
-      "</uef-link>",
-      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 Email Link"
   },
@@ -2628,11 +2584,9 @@
   "UEF 3 Excel Link": {
     "prefix": "uef-link-excel",
     "body": [
-      "<!-- EXCEL LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
       "  <uef-icon name=\"file-excel\" accessibility-text=\"Spreadsheet file\" color=\"--uef-color-green-primary\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>${0:[Document Title]}",
-      "</uef-link>",
-      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 Excel Link"
   },
@@ -2640,11 +2594,9 @@
   "UEF 3 External Link": {
     "prefix": "uef-link-external",
     "body": [
-      "<!-- EXTERNAL LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\" type=\"external\">",
       "  ${0:[External site name]}<uef-icon type=\"solid\" name=\"external-link-alt\" accessibility-text=\"External website\" color=\"--uef-color-text-link-on-light\" sx='{\"marginLeft\":\"--uef-link-gap\"}'></uef-icon>",
-      "</uef-link>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 External Link"
   },
@@ -2652,11 +2604,9 @@
   "UEF 3 Print Link": {
     "prefix": "uef-link-print",
     "body": [
-      "<!-- PRINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"javascript:window.print();\">",
       "  <uef-icon type=\"solid\" name=\"print\" color=\"--uef-color-text-link-on-light='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>${0:Print this page}",
-      "</uef-link>",
-      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 Print Link"
   },
@@ -2664,11 +2614,9 @@
   "UEF 3 PDF Link": {
     "prefix": "uef-link-pdf",
     "body": [
-      "<!-- PDF LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
       "  <uef-icon name=\"file-pdf\" accessibility-text=\"PDF file\" color=\"--uef-color-red-primary\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>${0:[Document Title]}",
-      "</uef-link>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 PDF Link"
   },
@@ -2676,11 +2624,9 @@
   "UEF 3 PowerPoint Link": {
     "prefix": "uef-link-powerpoint",
     "body": [
-      "<!-- POWERPOINT LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
       "  <uef-icon name=\"file-powerpoint\" accessibility-text=\"Powerpoint file\" color=\"--uef-color-red-primary\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>${0:[Document Title]}",
-      "</uef-link>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 PowerPoint Link"
   },
@@ -2688,11 +2634,9 @@
   "UEF 3 Video Link": {
     "prefix": "uef-link-video",
     "body": [
-      "<!-- VIDEO LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
       "  <uef-icon name=\"video\" type=\"solid\" accessibility-text=\"Video\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>${2:[Video Title]} (${3:[mm]}:${0:[ss]})",
-      "</uef-link>",
-      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 Video Link"
   },
@@ -2700,11 +2644,9 @@
   "UEF 3 Word Link": {
     "prefix": "uef-link-word",
     "body": [
-      "<!-- WORD LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
       "  <uef-icon name=\"file-word\" accessibility-text=\"Word processing file\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>${0:[Document Title]}",
-      "</uef-link>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 Word Link"
   },
@@ -2712,11 +2654,9 @@
   "UEF 3 Zip Link": {
     "prefix": "uef-link-zip",
     "body": [
-      "<!-- ZIP LINK ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-link href=\"${1:#0}\">",
       "  <uef-icon name=\"file-archive\" accessibility-text=\"Archive file\" color=\"--uef-color-text-link-on-light\" sx='{\"marginRight\":\"--uef-link-gap\"}'></uef-icon>${0:[Archive Title]}",
-      "</uef-link>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-link>"
     ],
     "description": "UEF 3 Zip Link"
   },
@@ -2724,7 +2664,6 @@
   "UEF 3 Media": {
     "prefix": "uef-media",
     "body": [
-      "<!-- MEDIA ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-media src=\"${1:https://api.lorem.space/image/face?w=2000&amp;h=2000}\" accessibility-text=\"${2:INSERT ACCESSIBILITY TEXT}\"",
       "  width=\"${3:100px}\" height=\"${4:100px}\" ${5:overlay} fit=\"${6|cover,contain,fill,none|}\" placement=\"${7|left,right,top,bottom,center|}\"",
       ">",
@@ -2732,8 +2671,7 @@
       "    <source media=\"(min-width: 800px)\" src-set=\"${1:https://api.lorem.space/image/face?w=2000&amp;h=2000}\"/>",
       "    <img src=\"${1:https://api.lorem.space/image/face?w=2000&amp;h=2000}\" alt=\"${2:INSERT ACCESSIBILITY TEXT}\"/>",
       "  </picture>",
-      "</uef-media>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-media>"
     ],
     "description": "UEF 3 Media"
   },
@@ -2741,7 +2679,6 @@
   "UEF 3 Video": {
     "prefix": "uef-video",
     "body": [
-      "<!-- VIDEO ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-media src=\"${1:https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm}\" accessibility-text=\"${2:INSERT ACCESSIBILITY TEXT}\"",
       "  width=\"${3:100px}\" height=\"${4:100px}\" ${5:overlay} fit=\"${6|cover,contain,fill,none|}\" placement=\"${7|left,right,top,bottom,center|}\"",
       ">",
@@ -2750,8 +2687,7 @@
       "    <source src=\"${0:https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4}\" type=\"video/mp4\"/>",
       "    Sorry, your browser doesn't support embedded videos.",
       "  </video>",
-      "</uef-media>",
-      "<!-- ───────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-media>"
     ],
     "description": "UEF 3 Video"
   },
@@ -2759,7 +2695,6 @@
   "UEF 3 Hero": {
     "prefix": "uef-hero",
     "body": [
-      "<!-- HERO ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-container sx='{\"height\":\"${1:300px}\",\"background\":\"${2:#000}\"}'>",
       "  <h3>${3:[INSERT HERO TEXT]}</h3>",
       "  <uef-media slot=\"uef-container-background\" ${4:overlay}",
@@ -2771,8 +2706,7 @@
       "      <img src=\"${0:https://api.lorem.space/image/face?w=2000&amp;h=2000}\" alt=\"${6:INSERT ACCESSIBILITY TEXT}\"/>",
       "    </picture>",
       "  </uef-media>",
-      "</uef-container>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-container>"
     ],
     "description": "UEF 3 Hero"
   },
@@ -2780,7 +2714,6 @@
   "UEF 3 Menu": {
     "prefix": "uef-menu",
     "body": [
-      "<!-- MENU ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-menu label=\"Menu\" placement=\"${3|bottom-start,bottom-end,bottom,top-start,top-end,top,left,left-start,left-end,right,right-start,right-end|}\" sx='{\"--uef-menu-offset\":\"-50px\"}'>",
       "  <uef-flex direction=\"column\" gap=\"var(--uef-space-4x)\">",
       "    <uef-link href=\"javascript:void(0)\">[Link 1]</uef-link>",
@@ -2790,8 +2723,7 @@
       "    <uef-link href=\"javascript:void(0)\">[Link 5]</uef-link>",
       "    <uef-link href=\"javascript:void(0)\">[Link 6]</uef-link>",
       "  </uef-flex>",
-      "</uef-menu>",
-      "<!-- ──────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-menu>"
     ],
     "description": "UEF 3 Menu"
   },
@@ -2799,7 +2731,6 @@
   "UEF 3 Navigation": {
     "prefix": "uef-nav-menu",
     "body": [
-      "<!-- NAVIGATION ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-nav>",
       "  <uef-nav-item href=\"javascript:void(0)\">[Item 1]</uef-nav-item>",
       "  <uef-nav-item href=\"javascript:void(0)\" current>[Item 2]</uef-nav-item>",
@@ -2816,8 +2747,7 @@
       "      </uef-flex>",
       "    </uef-menu>",
       "  </uef-nav-item>",
-      "</uef-nav>",
-      "<!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-nav>"
     ],
     "description": "UEF 3 Navigation Menu"
   },
@@ -2825,7 +2755,6 @@
   "UEF 3 Mega Menu": {
     "prefix": "uef-mega-menu",
     "body": [
-      "<!-- MEGA MENU ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-nav sx='{\"position\": \"relative\"}'>",
       "  <uef-nav-item href=\"javascript:void(0)\" current=\"\">[Home]</uef-nav-item>",
       "  <uef-nav-item href=\"javascript:void(0)\">[Item 1]</uef-nav-item>",
@@ -2876,8 +2805,7 @@
       "      </uef-typography>",
       "    </uef-menu>",
       "  </uef-nav-item>",
-      "</uef-nav>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-nav>"
     ],
     "description": "UEF 3 Mega Menu"
   },
@@ -2893,7 +2821,6 @@
   "UEF 3 Popover": {
     "prefix": "uef-popover",
     "body": [
-      "<!-- POPOVER ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-popover placement=\"${1|top,bottom,left,right,top-start,top-end,bottom-start,bottom-end|}\" ${2:close-button}>",
       "  <uef-typography slot=\"uef-popover-title\" variant=\"heading3\">",
       "    ${3:[[Popover Title]]}",
@@ -2902,8 +2829,7 @@
       "    ${4:[INSERT POPOVER CONTENT]}",
       "  </uef-typography>",
       "  <uef-button color=\"info\" fill=\"outline\">[${0:INSERT BUTTON LABEL]}</uef-button>",
-      "</uef-popover>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-popover>"
     ],
     "description": "UEF 3 Popover"
   },
@@ -2911,7 +2837,6 @@
   "UEF 3 Progress": {
     "prefix": "uef-progress",
     "body": [
-      "<!-- PROGRESS ─────────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-progress label=\"${1:[Step X of Y]}\" support-info=\"${2:[Current Step Title]}\"",
       "  field-name=\"${3:INSERT-FIELD-NAME}\" max=\"${4:100}\" value=\"${5:10}\"",
       ">",
@@ -2931,8 +2856,7 @@
       "      ${0:[View More Steps]}",
       "    </uef-link>",
       "  </uef-popover>",
-      "</uef-progress>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-progress>"
     ],
     "description": "UEF 3 Progress"
   },
@@ -2948,13 +2872,11 @@
   "UEF 3 Show/Hide": {
     "prefix": "uef-show-hide",
     "body": [
-      "<!-- SHOW/HIDE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-show-hide show-label=\"${1:[Show something hidden]}\" hide-label=\"${2:[Hide something shown]}\"",
       "  ${3:show} target-ids=\"${4:}\"",
       ">",
       "  ${0:[INSERT SHOW/HIDE CONTENT]}",
-      "</uef-show-hide>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-show-hide>"
     ],
     "description": "UEF 3 Show/Hide"
   },
@@ -2970,7 +2892,6 @@
   "UEF 3 Table (1 Column)": {
     "prefix": "uef-table-1col",
     "body": [
-      "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
       "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
       "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
@@ -2997,8 +2918,7 @@
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-bottom\"",
       "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${0:25}\"",
       "  ></uef-pagination>",
-      "</uef-table>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-table>"
     ],
     "description": "UEF 3 Table (1 Column)"
   },
@@ -3006,7 +2926,6 @@
   "UEF 3 Table (2 Columns)": {
     "prefix": "uef-table-2col",
     "body": [
-      "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
       "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
       "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
@@ -3037,8 +2956,7 @@
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-bottom\"",
       "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${0:25}\"",
       "  ></uef-pagination>",
-      "</uef-table>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-table>"
     ],
     "description": "UEF 3 Table (2 Columns)"
   },
@@ -3046,7 +2964,6 @@
   "UEF 3 Table (3 Columns)": {
     "prefix": "uef-table-3col",
     "body": [
-      "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
       "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
       "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
@@ -3081,8 +2998,7 @@
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-bottom\"",
       "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${0:25}\"",
       "  ></uef-pagination>",
-      "</uef-table>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-table>"
     ],
     "description": "UEF 3 Table (3 Columns)"
   },
@@ -3090,7 +3006,6 @@
   "UEF 3 Table (4 Columns)": {
     "prefix": "uef-table-4col",
     "body": [
-      "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
       "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
       "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
@@ -3129,8 +3044,7 @@
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-bottom\"",
       "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${0:25}\"",
       "  ></uef-pagination>",
-      "</uef-table>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-table>"
     ],
     "description": "UEF 3 Table (4 Columns)"
   },
@@ -3138,7 +3052,6 @@
   "UEF 3 Table (5 Columns)": {
     "prefix": "uef-table-5col",
     "body": [
-      "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
       "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
       "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
@@ -3181,8 +3094,7 @@
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-bottom\"",
       "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${0:25}\"",
       "  ></uef-pagination>",
-      "</uef-table>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-table>"
     ],
     "description": "UEF 3 Table (5 Columns)"
   },
@@ -3190,7 +3102,6 @@
   "UEF 3 Table (6 Columns)": {
     "prefix": "uef-table-6col",
     "body": [
-      "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
       "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
       "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
@@ -3237,8 +3148,7 @@
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-bottom\"",
       "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${0:25}\"",
       "  ></uef-pagination>",
-      "</uef-table>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-table>"
     ],
     "description": "UEF 3 Table (6 Columns)"
   },
@@ -3246,7 +3156,6 @@
   "UEF 3 Table (7 Columns)": {
     "prefix": "uef-table-7col",
     "body": [
-      "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
       "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
       "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
@@ -3297,8 +3206,7 @@
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-bottom\"",
       "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${0:25}\"",
       "  ></uef-pagination>",
-      "</uef-table>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-table>"
     ],
     "description": "UEF 3 Table (7 Columns)"
   },
@@ -3306,7 +3214,6 @@
   "UEF 3 Table (8 Columns)": {
     "prefix": "uef-table-8col",
     "body": [
-      "<!-- TABLE ───────────────────────────────────────────────────────────────────────────────── -->",
       "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
       "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
       "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
@@ -3361,8 +3268,7 @@
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-bottom\"",
       "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${0:25}\"",
       "  ></uef-pagination>",
-      "</uef-table>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-table>"
     ],
     "description": "UEF 3 Table (8 Columns)"
   },
@@ -3370,7 +3276,6 @@
   "UEF 3 Tabs": {
     "prefix": "uef-tabs",
     "body": [
-      "<!-- TABS ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-tabs>",
       "  <uef-tab name=\"panel-1\" selected>${1:[Tab 1]}</uef-tab>",
       "  <uef-tab name=\"panel-2\">${2:[Tab 2]}</uef-tab>",
@@ -3388,8 +3293,7 @@
       "</uef-tab-panel>",
       "<uef-tab-panel name=\"panel-4\" sx='{\"margin-top\":\"var(--uef-space-stack-4x)\"}'>",
       "  ${0:[INSERT TAB PANEL 4 CONTENT]}",
-      "</uef-tab-panel>",
-      "<!-- ────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-tab-panel>"
     ],
     "description": "UEF 3 Tabs"
   },
@@ -3397,13 +3301,11 @@
   "UEF 3 Sub-Navigation": {
     "prefix": "uef-subnav",
     "body": [
-      "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
       "  <uef-subnav-item href=\"${2:javascript:void(0);}\">${3:[Item 1]}</uef-subnav-item>",
       "  <uef-subnav-item href=\"${4:javascript:void(0);}\">${5:[Item 2]}</uef-subnav-item>",
       "  <uef-subnav-item href=\"${6:javascript:void(0);}\">${0:[[Item 3]]}</uef-subnav-item>",
-      "</uef-subnav>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-subnav>"
     ],
     "description": "UEF 3 Sub-Navigation"
   },
@@ -3419,7 +3321,6 @@
   "UEF 3 Sub-Navigation (Groups)": {
     "prefix": "uef-subnav-groups",
     "body": [
-      "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
       "  <uef-subnav-group label=\"[Group A]\">",
       "    <uef-subnav-item href=\"#0\">[Item A.1]</uef-subnav-item>",
@@ -3435,8 +3336,7 @@
       "    <uef-subnav-item href=\"#0\">[Item C.2]</uef-subnav-item>",
       "    <uef-subnav-item href=\"#0\">[Item C.3]</uef-subnav-item>",
       "  </uef-subnav-group>",
-      "</uef-subnav>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-subnav>"
     ],
     "description": "UEF 3 Sub-Navigation (Groups)"
   },
@@ -3444,7 +3344,6 @@
   "UEF 3 Sub-Navigation (Nested)": {
     "prefix": "uef-subnav-groups-nested",
     "body": [
-      "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
       "  <uef-subnav-group label=\"[Group A]\">",
       "    <uef-subnav-item href=\"javascript:void(0);\">[Item 1]</uef-subnav-item>",
@@ -3465,8 +3364,7 @@
       "    <uef-subnav-item href=\"javascript:void(0);\">[Item 10]</uef-subnav-item>",
       "    <uef-subnav-item href=\"javascript:void(0);\">[[Item 11]]</uef-subnav-item>",
       "  </uef-subnav-group>",
-      "</uef-subnav>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-subnav>"
     ],
     "description": "UEF 3 Sub-Navigation (Nested)"
   },
@@ -3474,7 +3372,6 @@
   "UEF 3 Sub-Navigation (Icons)": {
     "prefix": "uef-subnav-icons",
     "body": [
-      "<!-- SUB-NAVIGATION ──────────────────────────────────────────────────────────────────────────── -->",
       "<uef-subnav header=\"${1:[INSERT-OPTIONAL-HEADER]}\">",
       "  <uef-subnav-group>",
       "    <span slot=\"uef-subnav-group-label\">",
@@ -3513,8 +3410,7 @@
       "    <uef-subnav-item href=\"javascript:void(0);\">[Item 10]</uef-subnav-item>",
       "    <uef-subnav-item href=\"javascript:void(0);\">[[Item 11]]</uef-subnav-item>",
       "  </uef-subnav-group>",
-      "</uef-subnav>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-subnav>"
     ],
     "description": "UEF 3 Sub-Navigation (Icons)"
   },
@@ -3522,7 +3418,6 @@
   "UEF 3 Summary": {
     "prefix": "uef-summary-receipt",
     "body": [
-      "<!-- SUMMARY (RECEIPT) ───────────────────────────────────────────────────────────────────────── -->",
       "<uef-section tag=\"section\"",
       "  sx='{",
       "   \"border\":\"solid var(--uef-border-width-xs) var(--uef-color-interactive-default-light-secondary)\",",
@@ -3554,8 +3449,7 @@
       "    [Section Title]",
       "  </uef-typography>",
       "  <p>[Pattern Label]: <b>[Answer]</b></p>",
-      "</uef-section>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-section>"
     ],
     "description": "UEF 3 Summary (Receipt)"
   },
@@ -3563,7 +3457,6 @@
   "UEF 3 Summary (Review)": {
     "prefix": "uef-summary-review",
     "body": [
-      "<!-- SUMMARY (REVIEW) ───────────────────────────────────────────────────────────────────────── -->",
       "<uef-section tag=\"section\"",
       "  sx='{",
       "   \"border\":\"solid var(--uef-border-width-xs) var(--uef-color-interactive-default-light-secondary)\",",
@@ -3600,8 +3493,7 @@
       "    <uef-button>Edit</uef-button>",
       "  </uef-flex>",
       "  <p>[Pattern Label]: <b>[Answer]</b></p>",
-      "</uef-section>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-section>"
     ],
     "description": "UEF 3 Summary (Review)"
   },
@@ -3609,7 +3501,6 @@
   "UEF 3 Summary (Accordion)": {
     "prefix": "uef-summary-accordion",
     "body": [
-      "<!-- SUMMARY (ACCORDION) ───────────────────────────────────────────────────────────────────────── -->",
       "<uef-section tag=\"section\"",
       "  sx='{",
       "    \"border\":\"solid var(--uef-border-width-xs) var(--uef-color-interactive-default-light-secondary)\",",
@@ -3662,8 +3553,7 @@
       "      </uef-typography>",
       "    </uef-accordion-item>",
       "  </uef-accordion>",
-      "</uef-section>",
-      "<!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->"
+      "</uef-section>"
     ],
     "description": "UEF 3 Summary (Accordion)"
   },
@@ -3745,16 +3635,12 @@
       "  gap=\"var(--uef-space-8x)\" breakpoint=\"48rem\"",
       ">",
       "  <uef-grid-item>",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    ${2:[INSERT SUB-NAV]}",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "  </uef-grid-item>",
       "  <uef-grid-item sx='{\"padding-top\":\"var(--uef-space-stack-4x)\",\"max-width\":\"50rem\"}'>",
       "    <main id=\"main\" tabindex=\"-1\">",
-      "      <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "      <h2>${3:[Page Title]}</h2>",
       "      <p>${0:[INSERT PAGE CONTENT]}</p>",
-      "      <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    </main>",
       "  </uef-grid-item>",
       "</uef-grid>"
@@ -3833,18 +3719,14 @@
       "    </uef-nav>",
       "  </uef-grid-item>",
       "  <uef-grid-item>",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    ${2:[INSERT SUB-NAV]}",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "  </uef-grid-item>",
       "  <uef-grid-item justify-self=\"center\"",
       "    sx='{\"background-color\":\"--uef-color-gray-lightest\",\"padding\":\"--uef-space-4x\"}'",
       "  >",
       "    <main id=\"main\" tabindex=\"-1\">",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "      <h2>${3:[Page Title]}</h2>",
       "      <p>${0:[INSERT PAGE CONTENT]}</p>",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    </main>",
       "  </uef-grid-item>",
       "</uef-grid>"
@@ -3987,13 +3869,9 @@
       "  <uef-grid grid-template-columns=\"minmax(12rem, 1fr) 4fr\" breakpoint=\"48em\"",
       "    gap=\"var(--uef-space-8x)\"",
       "  >",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    ${1:[INSERT SUB-NAV]}",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    <main id=\"main\" tabindex=\"-1\">",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "      ${0:[INSERT PAGE CONTENT]}",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    </main>",
       "  </uef-grid>",
       "</uef-container>",
@@ -4174,13 +4052,9 @@
       "</uef-container>",
       "<uef-container width=\"80rem\" breakpoint=\"80em\" sx='{\"padding\": \"var(--uef-space-4x) var(--uef-space-8x)\"}'>",
       "  <uef-grid grid-template-columns=\"minmax(12rem, 1fr) 4fr\" breakpoint=\"48em\" gap=\"var(--uef-space-8x)\">",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    ${1:[INSERT SUB-NAV]}",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    <main id=\"main\" tabindex=\"-1\">",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "      ${0:[INSERT PAGE CONTENT]}",
-      "    <!-- ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ -->",
       "    </main>",
       "  </uef-grid>",
       "</uef-container>",
