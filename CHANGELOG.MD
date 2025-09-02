@@ -2,14 +2,26 @@
 
 ## Version 4.0.0
 
+### Additions
+
+- Added `1 Column Full Width` snippet
+- Added `1 Column Centered` snippet
+- Added `1 Column Stacked` snippet
+- Added `1 Row Separated` snippet
+- Added `2 Column Even Split` snippet
+- Added `2 Column Left Sidebar` snippet
+- Added `2 Column Right Sidebar` snippet
+- Added `3 Column` snippet
+- Added `3 Column Dual Sidebar` snippet
+
+### Updates
+
+- All snippets now use the `uef-` prefix
+
 ### Deprecations
 
 - Removed snippet support for UEF 2.0 and 2.1
 - Removed snippet comment generation
-
-### Changes
-
-- All snippets now use the `uef-` prefix
 
 ## Version 3.1.0
 

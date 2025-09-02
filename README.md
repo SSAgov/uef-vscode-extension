@@ -18,6 +18,20 @@ uef-page-business-2 | Business Page Template #2
 uef-page-public-1 | Public Page Template #1
 uef-page-public-2 | Public Page Template #2 (for more than 3-5 menu items)
 
+## Layouts
+
+Trigger | Description
+------- | -----------
+uef-layout-1-col-fullwidth | 1 Column Layout
+uef-layout-1-col-centered | 1 Column Centered Layout
+uef-layout-1-col-stacked | 1 Column Stacked Layout
+uef-layout-1-row-separated | 1 Row Separated Layout
+uef-layout-2-col-even-split | 2 Column Even Split Layout
+uef-layout-2-col-left-sidebar | 2 Column Left Sidebar Layout
+uef-layout-2-col-right-sidebar | 2 Column Right Sidebar Layout
+uef-layout-3-col | 3 Column Layout
+uef-layout-3-col-dual-sidebar | 3 Column Dual Sidebar Layout
+
 ## Components
 
 Trigger | Description

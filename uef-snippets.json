@@ -21,6 +21,107 @@
     "description": "UEF 3 Basic Page Template"
   },
 
+  "UEF 3 Layout: 1 Column Full-Width": {
+    "prefix": "uef-layout-1-col-fullwidth",
+    "body": [
+      "<uef-flex direction=\"column\">",
+      "  <uef-flex-item>${0:[Flex Item: Insert anything here]}</uef-flex-item>",
+      "</uef-flex>"
+    ],
+    "description": "UEF 3 Layout: 1-Column Full-Width"
+  },
+
+  "UEF 3 Layout: 1 Column Centered": {
+    "prefix": "uef-layout-1-col-centered",
+    "body": [
+      "<uef-flex direction=\"column\" align-items=\"center\" align-content=\"center\" justify-content=\"center\">",
+      "  <uef-flex-item align-self=\"center\">",
+      "    <p>${0:[Flex Item: Insert anything here]}</p>",
+      "  </uef-flex-item>",
+      "</uef-flex>"
+    ],
+    "description": "UEF 3 Layout: 1-Column Centered"
+  },
+
+  "UEF 3 Layout: 1 Column Stacked": {
+    "prefix": "uef-layout-1-col-stacked",
+    "body": [
+      "<uef-flex gap=\"var(--uef-space-4x)\" direction=\"column\">",
+      "  <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>",
+      "  <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>",
+      "  <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>",
+      "  <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>",
+      "  <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>",
+      "</uef-flex>"
+    ],
+    "description": "UEF 3 Layout: 1-Column Stacked"
+  },
+
+  "UEF 3 Layout: 2-Column Even Split": {
+    "prefix": "uef-layout-2-col-even-split",
+    "body": [
+      "<uef-grid grid-template-columns=\"minmax(300px, 50%) minmax(300px, 50%)\" gap=\"1rem\" breakpoint=\"48rem\">",
+      "  <uef-grid-item>Left Content</uef-grid-item>",
+      "  <uef-grid-item>Right Content</uef-grid-item>",
+      "</uef-grid>"
+    ],
+    "description": "UEF 3 Layout: 2-Column Even Split"
+  },
+
+  "UEF 3 Layout: 2-Column Left Sidebar": {
+    "prefix": "uef-layout-2-col-left-sidebar",
+    "body": [
+      "<uef-grid grid-template-columns=\"minmax(300px, 25%) minmax(300px, 1fr)\" gap=\"1rem\" breakpoint=\"48rem\">",
+      "  <nav>",
+      "    Sidebar Content, such as Sub-Navigation.",
+      "  </nav>",
+      "  <main>",
+      "    Main Content",
+      "  </main>",
+      "</uef-grid>"
+    ],
+    "description": "UEF 3 Layout: 2-Column Left Sidebar"
+  },
+
+  "UEF 3 Layout: 2-Column Right Sidebar": {
+    "prefix": "uef-layout-2-col-right-sidebar",
+    "body": [
+      "<uef-grid grid-template-columns=\"minmax(300px, 1fr) minmax(300px, 25%)\" gap=\"1rem\" breakpoint=\"48rem\">",
+      "  <main>",
+      "    Main Content",
+      "  </main>",
+      "  <nav>",
+      "    Sidebar Content, such as Sub-Navigation.",
+      "  </nav>",
+      "</uef-grid>"
+    ],
+    "description": "UEF 3 Layout: 2-Column Right Sidebar"
+  },
+
+  "UEF 3 Layout: 3-Column": {
+    "prefix": "uef-layout-3-col",
+    "body": [
+      "<uef-grid grid-template-columns=\"repeat(3, minmax(250px, 1fr)\" gap=\"1rem\" breakpoint=\"48rem\">",
+      "  <uef-grid-item>Content A</uef-grid-item>",
+      "  <uef-grid-item>Content B</uef-grid-item>",
+      "  <uef-grid-item>Content C</uef-grid-item>",
+      "</uef-grid>"
+    ],
+    "description": "UEF 3 Layout: 3-Column"
+  },
+
+  "UEF 3 Layout: 3-Column Dual Sidebars": {
+    "prefix": "uef-layout-3-col-dual-sidebars",
+    "body": [
+      "<uef-grid grid-template-columns=\"minmax(25%, 200px) 1fr minmax(25%, 200px)\" gap=\"1rem\" breakpoint=\"48rem\">",
+      "  <nav>Sidebar Content, such as Sub-Navigation.</nav>",
+      "  <main>Main Content</main>",
+      "  <aside>Related Content</aside>",
+      "</uef-grid>"
+    ],
+    "description": "UEF 3 Layout: 3-Column Dual Sidebars"
+  },
+
   "UEF 3 Accordion": {
     "prefix": "uef-accordion",
     "body": [

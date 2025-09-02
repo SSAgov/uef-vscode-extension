@@ -2611,10 +2611,84 @@
 
     <h2>Layouts</h2>
 
-    <h3>1 Column Full-Width</h3>
+    <h3>1-Column Full-Width</h3>
 
     <uef-flex direction="column">
       <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>
     </uef-flex>
+
+    <h3>1-Column Centered</h3>
+
+    <uef-flex direction="column" align-items="center" align-content="center" justify-content="center">
+      <uef-flex-item align-self="center">
+        <p>[Flex Item: Insert anything here]</p>
+      </uef-flex-item>
+    </uef-flex>
+
+    <h3>1-Column Stacked</h3>
+
+    <uef-flex gap="var(--uef-space-4x)" direction="column">
+      <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>
+      <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>
+      <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>
+      <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>
+      <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>
+    </uef-flex>
+
+    <h3>1-Row Separated</h3>
+
+    <uef-flex gap="var(--uef-space-4x)" direction="row">
+      <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>
+      <uef-flex-item>[Flex Item: Insert anything here]</uef-flex-item>
+      <uef-flex-item sx='{"margin-left":"auto"}'>
+        [Flex Item: Insert anything here]
+      </uef-flex-item>
+    </uef-flex>
+
+    <h3>2-Column Even Split</h3>
+
+    <uef-grid grid-template-columns="minmax(300px, 50%) minmax(300px, 50%)" gap="1rem" breakpoint="48rem">
+      <uef-grid-item>Left Content</uef-grid-item>
+      <uef-grid-item>Right Content</uef-grid-item>
+    </uef-grid>
+
+    <h3>2-Column Left Sidebar</h3>
+
+    <uef-grid grid-template-columns="minmax(300px, 25%) minmax(300px, 1fr)" gap="1rem" breakpoint="48rem">
+      <nav>
+        Sidebar Content, such as Sub-Navigation.
+      </nav>
+      <main>
+        Main Content
+      </main>
+    </uef-grid>
+
+    <h3>2-Column Right Sidebar</h3>
+
+    <uef-grid grid-template-columns="minmax(300px, 1fr) minmax(300px, 25%)" gap="1rem" breakpoint="48rem">
+      <main>
+        Main Content
+      </main>
+      <nav>
+        Sidebar Content, such as Sub-Navigation.
+      </nav>
+    </uef-grid>
+
+    <h3>3-Column</h3>
+
+    <uef-grid grid-template-columns="repeat(3, minmax(250px, 1fr))" gap="1rem" breakpoint="48rem">
+      <uef-grid-item>Content A</uef-grid-item>
+      <uef-grid-item>Content B</uef-grid-item>
+      <uef-grid-item>Content C</uef-grid-item>
+    </uef-grid>
+
+    <h3>3-Column Dual Sidebar</h3>
+
+    <uef-grid grid-template-columns="minmax(25%, 200px) 1fr minmax(25%, 200px)" gap="1rem" breakpoint="48rem">
+      <nav>Sidebar Content, such as Sub-Navigation.</nav>
+      <main>Main Content</main>
+      <aside>Related Content</aside>
+    </uef-grid>
+
 </body>
 </html>
