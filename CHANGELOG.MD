@@ -13,6 +13,8 @@
 - Added `2 Column Right Sidebar` snippet
 - Added `3 Column` snippet
 - Added `3 Column Dual Sidebar` snippet
+- Added `4 Column` snippet
+- Added `5 Column` snippet
 
 ### Updates
 

@@ -31,6 +31,8 @@ uef-layout-2-col-left-sidebar | 2 Column Left Sidebar Layout
 uef-layout-2-col-right-sidebar | 2 Column Right Sidebar Layout
 uef-layout-3-col | 3 Column Layout
 uef-layout-3-col-dual-sidebar | 3 Column Dual Sidebar Layout
+uef-layout-4-col | 4 Column Layout
+uef-layout-5-col | 5 Column Layout
 
 ## Components
 
