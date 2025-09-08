@@ -153,14 +153,22 @@
         </uef-flex>
       </uef-toggle-input>
     </uef-compound>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Alert</h2>
-    <!-- ALERT ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-alert color="success" header="Insert Alert Heading">
       Insert Alert Content
       <p slot="uef-alert-footer">Insert Optional Alert Footer Content</p>
     </uef-alert>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────── -->
+
+    <uef-alert color="info" dismissible autofocus>
+      <h4 slot="uef-alert-header">
+        [[Insert Alert Heading]]
+      </h4>
+      Insert Alert Content
+      <p slot="uef-alert-footer">Insert Optional Alert Footer Content</p>
+    </uef-alert>
+
     <br>
     <h2>Avatar</h2>
      <uef-avatar
@@ -173,7 +181,7 @@
        alt=""
        accessibility-text=""
      >
-       <span></span>
+       <span slot="uef-avatar-overlay"><uef-pill>Test</uef-pill></span>
      </uef-avatar>
 
      <uef-back-to-top width="60px" height="60px" accessibility-text="" focus-selector="" name="">TOP</uef-back-to-top>

@@ -1,8 +1,12 @@
 # Change Log
 
-## Version 4.0.0
+## Version 4.2.0
 
-### Additions
+- Added `Alert Header Slot` snippet
+- Added `Alert Footer Slot` snippet
+- Added `Avatar Overlay Slot` snippet
+
+## Version 4.1.0
 
 - Added `1 Column Full Width` snippet
 - Added `1 Column Centered` snippet
@@ -16,18 +20,13 @@
 - Added `4 Column` snippet
 - Added `5 Column` snippet
 
-### Updates
+## Version 4.0.0
 
 - All snippets now use the `uef-` prefix
-
-### Deprecations
-
 - Removed snippet support for UEF 2.0 and 2.1
 - Removed snippet comment generation
 
 ## Version 3.1.0
-
-### Additions
 
 - Added `Avatar` snippet
 - Added `Back to Top` snippet
@@ -42,12 +41,8 @@
 - Added `Site Alert` snippet
 - Added `Switch` snippet
 
-### Updates
-
 - Updated `Error Summary` with `compact` attribute
 - Changed `Gender` snippet to `Sex` snippet
-
-### Bug Fixes
 
 - Fixed `Required Info` component with correct language
 

@@ -43,7 +43,10 @@ uef-accordion-item | Add an accordion item
 uef-address | Address (US)
 uef-address-intl | Address (International)
 uef-alert | Alert (Info, Warning, Danger, Success)
+uef-alert-slot-header | Alert Header Slot
+uef-alert-slot-footer | Alert Footer Slot
 uef-avatar | Avatar
+uef-avatar-slot-overlay | Avatar Overlay Slot
 uef-back-to-top | Back to Top
 uef-bank-info | Bank Information
 uef-banner | Federal government website banner

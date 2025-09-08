@@ -232,6 +232,26 @@
     "description": "UEF 3 Alert"
   },
 
+  "Alert Header Slot": {
+    "prefix": "uef-alert-slot-header",
+    "body": [
+      "<h4 slot=\"uef-alert-header\">",
+      "  ${0:[[Insert Alert Heading]]}",
+      "</h4>"
+    ],
+    "description": "Alert Header Slot"
+  },
+
+  "Alert Footer Slot": {
+    "prefix": "uef-alert-slot-footer",
+    "body": [
+      "<p slot=\"uef-alert-footer\">",
+      "  ${0:[[Insert text, links, buttons, icons, etc.]]}",
+      "</p>"
+    ],
+    "description": "Alert Footer Slot"
+  },
+
   "UEF 3 Avatar": {
     "prefix": "uef-avatar",
     "body": [
@@ -249,6 +269,14 @@
       "</uef-avatar>"
     ],
     "description": "UEF 3 Avatar"
+  },
+
+  "Avatar Overlay Slot": {
+    "prefix": "uef-avatar-slot-overlay",
+    "body": [
+      "<span slot=\"uef-avatar-overlay\">${0:[[Insert Pill, Tag, Text]]}</span>"
+    ],
+    "description": "Avatar Overlay Slot"
   },
 
   "UEF 3 Back to Top": {
