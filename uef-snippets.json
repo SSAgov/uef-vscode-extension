@@ -236,7 +236,7 @@
     "prefix": "uef-alert-slot-header",
     "body": [
       "<h4 slot=\"uef-alert-header\">",
-      "  ${0:[[Insert Alert Heading]]}",
+      "  ${0:Insert Alert Heading}",
       "</h4>"
     ],
     "description": "Alert Header Slot"
@@ -355,7 +355,7 @@
     "body": [
       "<uef-card width=\"${1:350px}\" sx='{\"padding\":\"var(--uef-space-inset-4x)\",\"boxShadow\":\"var(--uef-elevation-20)\",\"borderRadius\":\"var(--uef-border-radius-softest)\"}'>",
       "  <uef-typography variant=\"body-m\" line-height=\"1.2\">",
-      "    ${0:[INSERT YOUR CARD CONTENT HERE]}",
+      "    ${0:INSERT CARD CONTENT}",
       "  </uef-typography>",
       "</uef-card>"
     ],
@@ -370,18 +370,48 @@
       "    ${2:Card Title}",
       "  </uef-typography>",
       "  <uef-typography slot=\"uef-card-body\" variant=\"body-m\" line-height=\"1.5\" sx='{\"paddingTop\":\"--uef-space-stack-4x\",\"paddingBottom\":\"--uef-space-stack-3x\"}'>",
-      "    ${0:[INSERT YOUR CARD CONTENT HERE]}",
+      "    ${0:INSERT CARD CONTENT}",
       "  </uef-typography>",
       "</uef-card>"
     ],
     "description": "UEF 3 Card with Title"
   },
 
+  "Card Body Slot": {
+    "prefix": "uef-card-slot-body",
+    "body": [
+      "<uef-typography slot=\"uef-card-body\" variant=\"body-m\" line-height=\"1.5\" color=\"var(--uef-color-text-primary-on-light)\" sx='{\"paddingTop\":\"var(--uef-space-stack-4x)\",\"paddingBottom\":\"var(--uef-space-stack-3x)\"}'>",
+      "  <p>${0:INSERT CARD CONTENT}</p>",
+      "</uef-typography>"
+    ],
+    "description": "Card Body Slot"
+  },
+
+  "Card Header Slot": {
+    "prefix": "uef-card-slot-header",
+    "body": [
+      "<uef-typography variant=\"heading3\" slot=\"uef-card-header\" color=\"var(--uef-color-text-primary-on-light)\" weight=\"var(--uef-font-weight-semibold)\" sx='{\"paddingBottom\":\"var(--uef-space-stack-2x)\"}'>",
+      "  ${0:[[Card Title]]}",
+      "</uef-typography>"
+    ],
+    "description": "Card Header Slot"
+  },
+
+  "Card Footer Slot": {
+    "prefix": "uef-card-slot-footer",
+    "body": [
+      "<div slot=\"uef-card-footer\">",
+      "  ${0:[[INSERT FOOTER CONTENT]]}",
+      "</div>"
+    ],
+    "description": "Card Footer Slot"
+  },
+
   "UEF 3 Checkbox": {
     "prefix": "uef-checkbox",
     "body": [
       "<uef-checkbox ${1:required} ${2:standalone} ${3:critical} field-name=\"${4:INSERT-FIELD-NAME}\" value=\"${5:}\"",
-      "  label=\"${0:[I have read and agree with the above statement.]}\"",
+      "  label=\"${0:I have read and agree with the above statement.}\"",
       "></uef-checkbox>"
     ],
     "description": "UEF 3 Checkbox"
@@ -448,6 +478,14 @@
     "description": "UEF 3 Combobox Item"
   },
 
+  "Combobox No Results Slot": {
+    "prefix": "uef-combobox-slot-no-results",
+    "body": [
+      "<span slot=\"uef-combobox-no-results-found\">No results found</span>"
+    ],
+    "description": "Combobox No Results Found Slot"
+  },
+
   "UEF 3 Compound": {
     "prefix": "uef-compound",
     "body": [
@@ -463,6 +501,44 @@
       "</uef-compound>"
     ],
     "description": "UEF 3 Compound"
+  },
+
+    "Container Background Slot": {
+    "prefix": "uef-container-slot-background",
+    "body": [
+      "<div slot=\"uef-container-background\">INSERT BACKGROUND CONTENT</div>"
+    ],
+    "description": "Container Background Slot"
+  },
+
+  "UEF Datalist": {
+    "prefix": "uef-datalist",
+    "body": [
+      "<uef-datalist field-name=\"${1:insert-field-name}\" required=\"${2|true,false|}\"",
+      "  label=\"${3:[Pattern Label]}\"",
+      "  instructions=\"${4:[[Instruction Text]]}\"",
+      "  items='${0:}'",
+      "  >",
+      "  <uef-datalist-item slot=\"uef-datalist-no-results-found\" value=\"No results found.\"></uef-datalist-item>",
+      "</uef-datalist>"
+    ],
+    "description": "UEF Datalist"
+  },
+
+  "UEF Datalist Item": {
+    "prefix": "uef-datalist-item",
+    "body": [
+      "<uef-datalist-item value=\"${1:[Item]}\" description=\"${0:[[Item Description]]}\"></uef-datalist-item>"
+    ],
+    "description": "UEF Datalist Item"
+  },
+
+  "Datalist No Results Slot": {
+    "prefix": "uef-datalist-slot-no-results",
+    "body": [
+      "<uef-datalist-item slot=\"uef-datalist-no-results-found\" value=\"No results found.\"></uef-datalist-item>"
+    ],
+    "description": "Datalist No Results Found Slot"
   },
 
   "UEF 3 Address": {
@@ -1816,6 +1892,15 @@
     "description": "UEF 3 Name (First|Last textboxes)"
   },
 
+  "UEF Read-Only": {
+    "prefix": "uef-read-only",
+    "body": [
+      "<uef-typography variant=\"label\" line-height=\"1.5\" weight=\"var(--uef-font-weight-semibold)\">${1:[Pattern Label]}</uef-typography>",
+      "<uef-typography variant=\"body-m\" line-height=\"1.5\">${0:[Answer]}</uef-typography>"
+    ],
+    "description": "UEF Read-Only"
+  },
+
   "UEF 3 Page Timeout Warning": {
     "prefix": "uef-page-timeout-warning",
     "body": [
@@ -2107,6 +2192,34 @@
       "</div>"
     ],
     "description": "UEF 3 Dialog"
+  },
+
+  "UEF Dialog Header Slot": {
+    "prefix": "uef-dialog-slot-header",
+    "body": [
+      "<uef-typography variant=\"heading3\" slot=\"uef-dialog-header\">${0:Dialog Title}</uef-typography>"
+    ],
+    "description": "UEF Dialog Header Slot"
+  },
+
+  "UEF Dialog Body Slot": {
+    "prefix": "uef-dialog-slot-body",
+    "body": [
+      "<uef-typography line-height=\"1.5\" slot=\"uef-dialog-body\">",
+      "    ${0:INSERT DIALOG BODY CONTENT}",
+      "</uef-typography"
+    ],
+    "description": "UEF Dialog Body Slot"
+  },
+
+  "UEF Dialog Footer Slot": {
+    "prefix": "uef-dialog-slot-footer",
+    "body": [
+      "<div slot=\"uef-dialog-footer\">",
+      "  ${0:INSERT DIALOG FOOTER CONTENT}",
+      "</div>"
+    ],
+    "description": "UEF Dialog Footer Slot"
   },
 
   "UEF 3 Drawer": {

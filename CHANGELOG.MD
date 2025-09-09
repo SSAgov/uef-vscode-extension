@@ -5,6 +5,18 @@
 - Added `Alert Header Slot` snippet
 - Added `Alert Footer Slot` snippet
 - Added `Avatar Overlay Slot` snippet
+- Added `Card Body Slot` snippet
+- Added `Card Header Slot` snippet
+- Added `Card Footer Slot` snippet
+- Added `Combobox No Results Slot` snippet
+- Added `Container Background Slot` snippet
+- Added `Datalist` snippet
+- Added `Datalist Item` snippet
+- Added `Datalist No Results Slot` snippet
+- Added `Dialog Body Slot` snippet
+- Added `Dialog Footer Slot` snippet
+- Added `Dialog Header Slot` snippet
+- Added `Read-Only` snippet
 
 ## Version 4.1.0
 

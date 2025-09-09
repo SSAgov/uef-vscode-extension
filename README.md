@@ -43,10 +43,7 @@ uef-accordion-item | Add an accordion item
 uef-address | Address (US)
 uef-address-intl | Address (International)
 uef-alert | Alert (Info, Warning, Danger, Success)
-uef-alert-slot-header | Alert Header Slot
-uef-alert-slot-footer | Alert Footer Slot
 uef-avatar | Avatar
-uef-avatar-slot-overlay | Avatar Overlay Slot
 uef-back-to-top | Back to Top
 uef-bank-info | Bank Information
 uef-banner | Federal government website banner
@@ -181,3 +178,23 @@ uef-visually-hidden | Visually hidden text
 uef-yesno | Yes/No
 uef-zipcode | Zip Code
 uef-zipcode-plus-4 | Zip Code plus 4-digit extension
+
+## Named Slots
+
+Trigger | Description
+------- | -----------
+uef-alert-slot-header | Alert Header Slot
+uef-alert-slot-footer | Alert Footer Slot
+uef-avatar-slot-overlay | Avatar Overlay Slot
+uef-card-slot-body | Card Body Slot
+uef-card-slot-header | Card Header Slot
+uef-card-slot-footer | Card Footer Slot
+uef-combobox-slot-no-results | Combobox No Results Slot
+uef-container-slot-background | Container Background Slot
+uef-datalist | Datalist
+uef-datalist-item | Datalist Item
+uef-datalist-slot-no-results | Datalist No Results Slot
+uef-dialog-slot-body | Dialog Body Slot
+uef-dialog-slot-footer | Dialog Footer Slot
+uef-dialog-slot-header | Dialog Header Slot
+uef-read-only | Read-Only
