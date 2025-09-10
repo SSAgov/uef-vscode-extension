@@ -16,7 +16,16 @@
 - Added `Dialog Body Slot` snippet
 - Added `Dialog Footer Slot` snippet
 - Added `Dialog Header Slot` snippet
+- Added `Figure Caption Slot` snippet
+- Added `Footer Nav Slot` snippet
+- Added `Identifier Slot` snippet
+- Added `Input Instructions Slot` snippet
+- Added `Input Overlay Slot` snippet
+- Added `Menu Control Slot` snippet
+- Added `Popover Content Slot` snippet
+- Added `Popover Title Slot` snippet
 - Added `Read-Only` snippet
+- Added `Tooltip Content Slot` snippet
 
 ## Version 4.1.0
 

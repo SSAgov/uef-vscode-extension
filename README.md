@@ -197,4 +197,13 @@ uef-datalist-slot-no-results | Datalist No Results Slot
 uef-dialog-slot-body | Dialog Body Slot
 uef-dialog-slot-footer | Dialog Footer Slot
 uef-dialog-slot-header | Dialog Header Slot
+uef-figure-slot-caption | Figure Caption Slot
+uef-footer-slot-nav | Footer Nav Slot
+uef-identifier-slot | Identifier Slot
+uef-input-slot-instructions | Input Instructions Slot
+uef-input-overlay | Input Overlay Slot
+uef-menu-control-slot | Menu Control Slot
+uef-popover-slot-content | Popover Content Slot
+uef-popover-slot-title | Popover Title Slot
 uef-read-only | Read-Only
+uef-tooltip-slot-content | Tooltip Content Slot

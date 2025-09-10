@@ -2254,6 +2254,14 @@
     "description": "UEF 3 Figure"
   },
 
+  "UEF Figure Caption Slot": {
+    "prefix": "uef-figure-slot-caption",
+    "body": [
+      "<div slot=\"uef-figure-caption\">${0:INSERT FIGURE CAPTION}</div>"
+    ],
+    "description": "UEF Figure Caption Slot"
+  },
+
   "UEF 3 Icon": {
     "prefix": "uef-icon",
     "body": [
@@ -2420,6 +2428,30 @@
       "</uef-footer>"
     ],
     "description": "UEF 3 Footer (Identifier)"
+  },
+
+  "UEF Identifier Slot": {
+    "prefix": "uef-identifier-slot",
+    "body": [
+      "<div slot=\"uef-identifier\">${0:INSERT IDENTIFIER CONTENT}</div>"
+    ],
+    "description": "UEF Identifier Slot"
+  },
+
+  "UEF Input Instructions Slot": {
+    "prefix": "uef-input-slot-instructions",
+    "body": [
+      "<div slot=\"uef-input-instructions\">${0:INSERT INSTRUCTIONS}</div>"
+    ],
+    "description": "UEF Input Instructions Slot"
+  },
+
+  "UEF Input Overlay Slot": {
+    "prefix": "uef-input-slot-overlay",
+    "body": [
+      "<span slot=\"uef-input-overlay\">${0:}</span>"
+    ],
+    "description": "UEF Input Overlay Slot"
   },
 
   "UEF 3 Footer (Slim)": {
@@ -2766,6 +2798,14 @@
     "description": "UEF 3 Footer (Big)"
   },
 
+  "UEF Footer Nav Slot": {
+    "prefix": "uef-footer-slot-nav",
+    "body": [
+      "<div slot=\"uef-footer-nav\">${0:INSERT FOOTER NAV CONTENT}</div>"
+    ],
+    "description": "UEF Footer Nav Slot"
+  },
+
   "UEF 3 Grid": {
     "prefix": "uef-grid",
     "body": [
@@ -3033,6 +3073,16 @@
     "description": "UEF 3 Menu"
   },
 
+  "UEF Menu Control Slot": {
+    "prefix": "uef-menu-slot-control",
+    "body": [
+      "<uef-button slot=\"uef-menu-control\" id=\"${1:menu-control}\" accessibility-text=\"${2:Menu}\" fill=\"none\">",
+      "    <uef-icon type=\"solid\" name=\"${0:ellipsis-v}\"></uef-icon>",
+      "</uef-button>"
+    ],
+    "description": "UEF Menu Control Slot"
+  },
+
   "UEF 3 Navigation": {
     "prefix": "uef-nav-menu",
     "body": [
@@ -3137,6 +3187,26 @@
       "</uef-popover>"
     ],
     "description": "UEF 3 Popover"
+  },
+
+  "UEF Popover Title Slot": {
+    "prefix": "uef-popover-slot-title",
+    "body": [
+      "<uef-typography slot=\"uef-popover-title\" variant=\"heading3\">",
+      "    ${0:[Popover Title]}",
+      "</uef-typography>"
+    ],
+    "description": "UEF Popover Title Slot"
+  },
+
+  "UEF Popover Content Slot": {
+    "prefix": "uef-popover-slot-content",
+    "body": [
+      "<uef-typography slot=\"uef-popover-content\" variant=\"body-m\" line-height=\"var(--uef-font-line-height-regular)\">",
+      "  ${0:INSERT POPOVER CONTENT}",
+      "</uef-typography>"
+    ],
+    "description": "UEF Popover Content Slot"
   },
 
   "UEF 3 Progress": {
@@ -3861,6 +3931,14 @@
       "</uef-section>"
     ],
     "description": "UEF 3 Summary (Accordion)"
+  },
+
+  "UEF Tooltip Content Slot": {
+    "prefix": "uef-tooltip-slot-content",
+    "body": [
+      "<span slot=\"uef-tooltip-content\">${0:Insert brief tooltip text}</span>"
+    ],
+    "description": "UEF Tooltip Content Slot"
   },
 
   "UEF 3 Page Template (Business 1)": {
