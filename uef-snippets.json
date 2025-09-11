@@ -1593,6 +1593,50 @@
     "description": "UEF 3 Multi-Select"
   },
 
+  "UEF Multi-Select Dialog Body Slot": {
+    "prefix": "uef-multi-select-slot-dialog-body",
+    "body": [
+      "<div slot=\"uef-multi-select-dialog-body\">",
+      "  ${0:INSERT DIALOG BODY CONTENT}",
+      "</div>"
+    ],
+    "description": "UEF Multi-Select Dialog Body Slot"
+  },
+
+  "UEF Multi-Select Dialog No Results Slot": {
+    "prefix": "uef-multi-select-slot-dialog-no-results",
+    "body": [
+      "<div slot=\"uef-multi-select-dialog-no-results-found\">",
+      "  <span>${0:No results found.}</span>",
+      "</div>"
+    ],
+    "description": "UEF Multi-Select Dialog No Results Slot"
+  },
+
+  "UEF Input Help Slot": {
+    "prefix": "uef-input-slot-help",
+    "body": [
+      "<span slot=\"uef-input-help\">${0:INSERT HELP}</span>"
+    ],
+    "description": "UEF Input Help Slot"
+  },
+
+  "UEF Input Label Slot": {
+    "prefix": "uef-input-slot-label",
+    "body": [
+      "<span slot=\"uef-input-label\">${0:INSERT LABEL}</span>"
+    ],
+    "description": "UEF Input Label Slot"
+  },
+
+  "UEF Input Support Info Slot": {
+    "prefix": "uef-input-slot-support-info",
+    "body": [
+      "<span slot=\"uef-input-support-info\">${0:INSERT SUPPORT INFO CONTENT}</span>"
+    ],
+    "description": "UEF Input Support Info Slot"
+  },
+
   "UEF 3 Sex": {
     "prefix": "uef-sex",
     "body": [
@@ -3646,6 +3690,48 @@
       "</uef-table>"
     ],
     "description": "UEF 3 Table (8 Columns)"
+  },
+
+  "UEF Table Caption Slot": {
+    "prefix": "uef-table-slot-caption",
+    "body": [
+      "<div slot=\"uef-table-caption\">",
+      "  ${0:INSERT TABLE CAPTION CONTENT}",
+      "</div>"
+    ],
+    "description": "UEF Table Caption Slot"
+  },
+
+  "UEF Table Support Info Slot": {
+    "prefix": "uef-table-slot-support-info",
+    "body": [
+      "<div>",
+      "  <uef-typography slot=\"uef-table-support-info\" weight=\"var(--uef-font-weight-regular)\">",
+      "    ${0:An asterisk (*) indicates a required field.}",
+      "  </uef-typography>",
+      "</div>"
+    ],
+    "description": "UEF Table Support Info Slot"
+  },
+
+  "UEF Table Controls Top Slot": {
+    "prefix": "uef-table-slot-controls-top",
+    "body": [
+      "<div slot=\"uef-table-controls-top\">",
+      "  ${0:INSERT TOP TABLE CONTROLS}",
+      "</div>"
+    ],
+    "description": "UEF Table Controls Top Slot"
+  },
+
+  "UEF Table Controls Bottom Slot": {
+    "prefix": "uef-table-slot-controls-bottom",
+    "body": [
+      "<div slot=\"uef-table-controls-bottom\">",
+      "  ${0:INSERT BOTTOM TABLE CONTROLS}",
+      "</div>"
+    ],
+    "description": "UEF Table Controls Bottom Slot"
   },
 
   "UEF 3 Tabs": {

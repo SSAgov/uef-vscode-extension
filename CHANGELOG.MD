@@ -19,12 +19,21 @@
 - Added `Figure Caption Slot` snippet
 - Added `Footer Nav Slot` snippet
 - Added `Identifier Slot` snippet
+- Added `Input Help Slot` snippet
 - Added `Input Instructions Slot` snippet
+- Added `Input Label Slot` snippet
 - Added `Input Overlay Slot` snippet
+- Added `Input Support Info Slot` snippet
 - Added `Menu Control Slot` snippet
+- Added `Multi-Select Dialog Body Slot` snippet
+- Added `Multi-Select No Results Slot` snippet
 - Added `Popover Content Slot` snippet
 - Added `Popover Title Slot` snippet
 - Added `Read-Only` snippet
+- Added `Table Caption Slot` snippet
+- Added `Table Controls Top Slot` snippet
+- Added `Table Controls Bottom Slot` snippet
+- Added `Table Support Info Slot` snippet
 - Added `Tooltip Content Slot` snippet
 
 ## Version 4.1.0

@@ -200,10 +200,19 @@ uef-dialog-slot-header | Dialog Header Slot
 uef-figure-slot-caption | Figure Caption Slot
 uef-footer-slot-nav | Footer Nav Slot
 uef-identifier-slot | Identifier Slot
+uef-input-slot-help | Input Help Slot
 uef-input-slot-instructions | Input Instructions Slot
-uef-input-overlay | Input Overlay Slot
-uef-menu-control-slot | Menu Control Slot
+uef-input-slot-label | Input Label Slot
+uef-input-slot-support-info | Input Support Info Slot
+uef-input-slot-overlay | Input Overlay Slot
+uef-menu-slot-control | Menu Control Slot
+uef-multi-select-slot-dialog-body | Multi-Select Dialog Body Slot
+uef-multi-select-slot-no-results | Multi-Select No Results Found Slot
 uef-popover-slot-content | Popover Content Slot
 uef-popover-slot-title | Popover Title Slot
 uef-read-only | Read-Only
+uefuk-table-slot-caption | Table Caption Slot
+uef-table-slot-controls-top | Table Controls Top Slot
+uef-table-slot-controls-bottom | Table Controls Bottom Slot
+uef-table-slot-support-info | Table Support Info Slot
 uef-tooltip-slot-content | Tooltip Content Slot
