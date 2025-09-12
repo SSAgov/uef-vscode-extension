@@ -178,3 +178,41 @@ uef-visually-hidden | Visually hidden text
 uef-yesno | Yes/No
 uef-zipcode | Zip Code
 uef-zipcode-plus-4 | Zip Code plus 4-digit extension
+
+## Named Slots
+
+Trigger | Description
+------- | -----------
+uef-alert-slot-header | Alert Header Slot
+uef-alert-slot-footer | Alert Footer Slot
+uef-avatar-slot-overlay | Avatar Overlay Slot
+uef-card-slot-body | Card Body Slot
+uef-card-slot-header | Card Header Slot
+uef-card-slot-footer | Card Footer Slot
+uef-combobox-slot-no-results | Combobox No Results Slot
+uef-container-slot-background | Container Background Slot
+uef-datalist | Datalist
+uef-datalist-item | Datalist Item
+uef-datalist-slot-no-results | Datalist No Results Slot
+uef-dialog-slot-body | Dialog Body Slot
+uef-dialog-slot-footer | Dialog Footer Slot
+uef-dialog-slot-header | Dialog Header Slot
+uef-figure-slot-caption | Figure Caption Slot
+uef-footer-slot-nav | Footer Nav Slot
+uef-identifier-slot | Identifier Slot
+uef-input-slot-help | Input Help Slot
+uef-input-slot-instructions | Input Instructions Slot
+uef-input-slot-label | Input Label Slot
+uef-input-slot-support-info | Input Support Info Slot
+uef-input-slot-overlay | Input Overlay Slot
+uef-menu-slot-control | Menu Control Slot
+uef-multi-select-slot-dialog-body | Multi-Select Dialog Body Slot
+uef-multi-select-slot-no-results | Multi-Select No Results Found Slot
+uef-popover-slot-content | Popover Content Slot
+uef-popover-slot-title | Popover Title Slot
+uef-read-only | Read-Only
+uefuk-table-slot-caption | Table Caption Slot
+uef-table-slot-controls-top | Table Controls Top Slot
+uef-table-slot-controls-bottom | Table Controls Bottom Slot
+uef-table-slot-support-info | Table Support Info Slot
+uef-tooltip-slot-content | Tooltip Content Slot
