@@ -211,7 +211,7 @@ uef-multi-select-slot-no-results | Multi-Select No Results Found Slot
 uef-popover-slot-content | Popover Content Slot
 uef-popover-slot-title | Popover Title Slot
 uef-read-only | Read-Only
-uefuk-table-slot-caption | Table Caption Slot
+uef-table-slot-caption | Table Caption Slot
 uef-table-slot-controls-top | Table Controls Top Slot
 uef-table-slot-controls-bottom | Table Controls Bottom Slot
 uef-table-slot-support-info | Table Support Info Slot
