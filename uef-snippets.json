@@ -194,12 +194,12 @@
       "      ${5:[INSERT ACCORDION ITEM 1 CONTENT]}",
       "    </uef-typography>",
       "  </uef-accordion-item>",
-      "  <uef-accordion-item label=\"${6:[Label 2]}\" ${7:open}>",
+      "  <uef-accordion-item label=\"${6:[Label 2]}\">",
       "    <uef-typography variant=\"body-m\" line-height=\"1.5\">",
-      "      ${8:[INSERT ACCORDION ITEM 2 CONTENT]}",
+      "      ${7:[INSERT ACCORDION ITEM 2 CONTENT]}",
       "    </uef-typography>",
       "  </uef-accordion-item>",
-      "  <uef-accordion-item label=\"${9:[Label 3]}\" ${10:open}\">",
+      "  <uef-accordion-item label=\"${8:[Label 3]}\"\">",
       "    <uef-typography variant=\"body-m\" line-height=\"1.5\">",
       "      ${0:[INSERT ACCORDION ITEM 3 CONTENT]}",
       "    </uef-typography>",
@@ -224,9 +224,9 @@
   "UEF 3 Alert": {
     "prefix": "uef-alert",
     "body": [
-      "<uef-alert color=\"${1|info,warning,danger,success|}\" header=\"${2:Insert Alert Heading}\" ${3:compact} ${4:dismissible} ${5:autofocus}>",
-      "  ${6:Insert Alert Content}",
-      "  ${7:<p slot=\"uef-alert-footer\">${0:Insert Optional Alert Footer Content}</p>}",
+      "<uef-alert color=\"${1|info,warning,danger,success|}\" header=\"${2:Insert Alert Heading}\" ${3:compact}>",
+      "  ${4:Insert Alert Content}",
+      "  ${5:<p slot=\"uef-alert-footer\">${0:Insert Optional Alert Footer Content}</p>}",
       "</uef-alert>"
     ],
     "description": "UEF 3 Alert"
@@ -333,7 +333,7 @@
   "UEF 3 Button": {
     "prefix": "uef-button",
     "body": [
-      "<uef-button name=\"${1:[INSERT BUTTON NAME]}\" fill=\"${2|outline,solid,none|}\" type=\"${3|submit,button,reset|}\" ${4:rounded} ${5:width=\"\"} ${6:height=\"\"}>${0:Button Label}</uef-button>"
+      "<uef-button name=\"${1:[INSERT BUTTON NAME]}\" fill=\"${2|outline,solid,none|}\" type=\"${3|submit,button,reset|}\"}>${0:Button Label}</uef-button>"
     ],
     "description": "UEF 3 Button"
   },
@@ -380,9 +380,9 @@
   "Card Body Slot": {
     "prefix": "uef-card-slot-body",
     "body": [
-      "<uef-typography slot=\"uef-card-body\" variant=\"body-m\" line-height=\"1.5\" color=\"var(--uef-color-text-primary-on-light)\" sx='{\"paddingTop\":\"var(--uef-space-stack-4x)\",\"paddingBottom\":\"var(--uef-space-stack-3x)\"}'>",
-      "  <p>${0:INSERT CARD CONTENT}</p>",
-      "</uef-typography>"
+      "<div slot=\"uef-card-body\">",
+      "  ${0:INSERT CARD CONTENT}",
+      "</div>"
     ],
     "description": "Card Body Slot"
   },
@@ -401,7 +401,7 @@
     "prefix": "uef-card-slot-footer",
     "body": [
       "<div slot=\"uef-card-footer\">",
-      "  ${0:[[INSERT FOOTER CONTENT]]}",
+      "  ${0:INSERT FOOTER CONTENT}",
       "</div>"
     ],
     "description": "Card Footer Slot"
@@ -903,12 +903,12 @@
     "description": "UEF 3 Date (Month, Year)"
   },
 
-  "UEF 3 Date Picker": {
-    "prefix": "uef-date-picker",
+  "UEF 3 Datepicker": {
+    "prefix": "uef-datepicker",
     "body": [
-      "<uef-datepicker label=\"${1:[Pattern Label]}\" field-name=\"${2:INSERT-FIELD-NAME}-datepicker\" instructions=\"${0:[Instruction Text]}\"></uef-datepicker>",
+      "<uef-datepicker label=\"${1:[Pattern Label]}\" field-name=\"${2:INSERT-FIELD-NAME}-datepicker\" instructions=\"${0:[Instruction Text]}\"></uef-datepicker>"
     ],
-    "description": "UEF 3 Date Picker"
+    "description": "UEF 3 Datepicker"
   },
 
   "UEF 3 Drop List": {
@@ -994,13 +994,12 @@
   "UEF 3 File Input": {
     "prefix": "uef-file-input",
     "body": [
-      "<uef-form>",
-      "  <uef-file-input ${1:required} ${2:multiple}",
-      "    label=\"${3:[Pattern Label]}\" instructions=\"${4:[[Instruction Text]]}\"",
-      "    field-name=\"${5:INSERT-FIELD-NAME}\" accept=\"${6:}\" width=\"${0:}\"",
-      "  >",
-      "    <uef-visuallyhidden slot=\"uef-input-support-info\">Drag files here or choose files</uef-visuallyhidden></uef-file-input>",
-      "</uef-form>"
+      "<uef-file-input field-name=\"${1:INSERT-FIELD-NAME} ${2:required} ${3:multiple} accept=\"${4:}\"",
+      "  label=\"${5:[Pattern Label]} \"",
+      "  instructions=\"${0:[[Instruction Text]]}\"",
+      ">",
+      "  <uef-visuallyhidden slot=\"uef-input-support-info\">Drag files here or choose files</uef-visuallyhidden>",
+      "</uef-file-input>"
     ],
     "description": "UEF 3 File Input"
   },
@@ -1587,7 +1586,7 @@
       "  dialog-title=\"${5:[Dialog Title]}\"",
       "  dialog-instructions=\"${6:[[Instruction Text]]}\"",
       "  dialog-width=\"500px\"",
-      "  items='[{\"id\":\"id-one\",\"value\":\"item1\",\"label\":\"Item 1\"},{\"id\":\"id-two\",\"value\":\"item2\",\"label\":\"Item 2\"},{\"id\":\"id-three\",\"value\":\"item3\",\"label\":\"Item 3\"},{\"id\":\"id-four\",\"value\":\"item4\",\"label\":\"Item 4\"},{\"id\":\"id-five\",\"value\":\"item5\",\"label\":\"Item 5\"},{\"id\":\"id-six\",\"value\":\"item6\",\"label\":\"Item 6\"},{\"id\":\"id-seven\",\"value\":\"item7\",\"label\":\"Item 7\"},{\"id\":\"id-eight\",\"value\":\"item8\",\"label\":\"Item 8\"},{\"id\":\"id-nine\",\"value\":\"item9\",\"label\":\"Item 9\"},{\"id\":\"id-ten\",\"value\":\"item10\",\"label\":\"Item 10\"},{\"id\":\"id-eleven\",\"value\":\"item11\",\"label\":\"Item 11\"},{\"id\":\"id-twelve\",\"value\":\"item12\",\"label\":\"Item 12\"},{\"id\":\"id-thirteen\",\"value\":\"item13\",\"label\":\"Item 13\"},{\"id\":\"id-fourteen\",\"value\":\"item14\",\"label\":\"Item 14\"},{\"id\":\"id-fifteen\",\"value\":\"item15\",\"label\":\"Item 15\"},{\"id\":\"id-sixteen\",\"value\":\"item16\",\"label\":\"Item 16\"},{\"id\":\"id-seventeen\",\"value\":\"item17\",\"label\":\"Item 17\"},{\"id\":\"id-eighteen\",\"value\":\"item18\",\"label\":\"Item 18\"},{\"id\":\"id-nineteen\",\"value\":\"item19\",\"label\":\"Item 19\"},{\"id\":\"id-twenty\",\"value\":\"item20\",\"label\":\"Item 20\"}]'",
+      "  items='[{\"id\":\"id-one\",\"value\":\"item1\",\"label\":\"Item 1\"},{\"id\":\"id-two\",\"value\":\"item2\",\"label\":\"Item 2\"}]'",
       "></uef-multi-select>"
     ],
     "description": "UEF 3 Multi-Select"
@@ -2219,21 +2218,19 @@
   "UEF 3 Dialog": {
     "prefix": "uef-dialog",
     "body": [
-      "<div>",
-      "  <uef-dialog id=\"${1:INSERT-DIALOG-ID}\" ${2:backdrop} ${3:close-button} ${4:action-required} width=\"${5:500px}\">",
-      "    <uef-typography variant=\"heading2\" slot=\"uef-dialog-header\">${6:[Dialog Title]}</uef-typography>",
-      "    <uef-typography variant=\"body-m\" line-height=\"1.5\" slot=\"uef-dialog-body\">",
-      "      ${7:[INSERT DIALOG CONTENT]}",
-      "    </uef-typography>",
-      "    <uef-button-group slot=\"uef-dialog-footer\" alignment=\"right\" direction=\"rtl\">",
-      "      <uef-button fill=\"solid\">${8:[Accept]}</uef-button>",
-      "      <uef-button fill=\"outline\">${9:[Cancel]}</uef-button>",
-      "    </uef-button-group>",
-      "  </uef-dialog>",
-      "  <uef-control target=\"${1:INSERT-DIALOG-ID}\">",
-      "    <uef-button fill=\"outline\">${0:[Open Dialog]}</uef-button>",
-      "  </uef-control>",
-      "</div>"
+      "<uef-dialog id=\"${1:INSERT-DIALOG-ID}\" ${2:backdrop} ${3:close-button} ${4:action-required} width=\"${5:500px}\">",
+      "  <uef-typography variant=\"heading2\" slot=\"uef-dialog-header\">${6:[Dialog Title]}</uef-typography>",
+      "  <uef-typography variant=\"body-m\" line-height=\"1.5\" slot=\"uef-dialog-body\">",
+      "    ${7:[INSERT DIALOG CONTENT]}",
+      "  </uef-typography>",
+      "  <uef-button-group slot=\"uef-dialog-footer\" alignment=\"right\" direction=\"rtl\">",
+      "    <uef-button fill=\"solid\">${8:[Accept]}</uef-button>",
+      "    <uef-button fill=\"outline\">${9:[Cancel]}</uef-button>",
+      "  </uef-button-group>",
+      "</uef-dialog>",
+      "<uef-control target=\"${1:INSERT-DIALOG-ID}\">",
+      "  <uef-button fill=\"outline\">${0:[Open Dialog]}</uef-button>",
+      "</uef-control>"
     ],
     "description": "UEF 3 Dialog"
   },
@@ -2269,7 +2266,6 @@
   "UEF 3 Drawer": {
     "prefix": "uef-drawer",
     "body": [
-      "<div>",
       "  <uef-control target=\"${1:INSERT-DRAWER-NAME}\">",
       "    <uef-button>",
       "      <uef-icon type=\"solid\" name=\"bars\" sx='{\"margin-right\":\"var(--uef-space-1x)\"}'></uef-icon>",
@@ -2278,8 +2274,7 @@
       "  </uef-control>",
       "  <uef-drawer id=\"${1:INSERT-DRAWER-NAME}\">",
       "    ${0:[INSERT SUB-NAV OR CONTENT]}",
-      "  </uef-drawer>",
-      "</div>"
+      "  </uef-drawer>"
     ],
     "description": "UEF 3 Drawer"
   },
@@ -2289,7 +2284,6 @@
     "body": [
       "<uef-figure caption=\"${1:[[INSERT OPTIONAL CAPTION]]}\" alignment=\"${2|left,right|}\">",
       "  <img src=\"${3:https://api.lorem.space/image/face?w=500&amp;h=500}\" alt=\"${4:INSERT ALTERNATE IMAGE TEXT}\" />",
-      "  <!-- THE SLOTTED CAPTION IS OPTIONAL--DELETE THE NEXT 3 LINES IF YOU DON'T WANT IT -->",
       "  <div slot=\"uef-figure-caption\">",
       "    ${0:INSERT OPTIONAL FIGURE CAPTION}",
       "  </div>",
@@ -2309,7 +2303,7 @@
   "UEF 3 Icon": {
     "prefix": "uef-icon",
     "body": [
-      "<uef-icon name=\"${1:INSERT-ICON-NAME}\" type=\"${2|solid,regular,brand|}\" ${3:color=\"\"} ${0:size=\"\"}></uef-icon>"
+      "<uef-icon name=\"${1|address-card,bars,calendar-days,circle-check,circle-exclamation,circle-info,circle-xmark,print,spinner,user|}\" type=\"${2|solid,regular,brand|}\" size=\"${3:16px}\" color=\"${0:#000000}\"></uef-icon>"
     ],
     "description": "UEF 3 Icon"
   },
@@ -2377,8 +2371,7 @@
   "UEF 3 Typography": {
     "prefix": "uef-typography",
     "body": [
-      "<uef-typography variant=\"${1|heading1,heading2,heading3,heading4,heading5,heading6,subtitle1,subtitle2,body-2xs,body-xs,body-s,body-m,body-l,label,code,button-s,button-m,button-l,overline|}\" align=\"${2|left,center,right,justify,inherit|}\"",
-      "  ${3:tag=\"\"} ${4:color=\"\"} ${5:weight=\"\"} ${6:letterspacing=\"\"} ${7:line-height=\"\"} ${8:line-length=\"\"} ${9:decoration=\"\"} ${10:size=\"\"} ${11:font-family=\"\"}>",
+      "<uef-typography variant=\"${1|heading1,heading2,heading3,heading4,heading5,heading6,subtitle1,subtitle2,body-2xs,body-xs,body-s,body-m,body-l,label,code,button-s,button-m,button-l,overline|}\"",
       "  ${0:[INSERT TEXT]}",
       "</uef-typography>"
     ],
@@ -2406,7 +2399,7 @@
   "UEF 3 Flex Layout": {
     "prefix": "uef-flex",
     "body": [
-      "<uef-flex display=\"${1|flex,inline-flex|}\" direction=\"${2|row,row-reverse,column,column-reverse|}\" align-items=\"${3|flex-start,flex-end,center,space-between,space-around,stretch|}\" align-content=\"${4|flex-start,flex-end,center,space-between,space-around,stretch|}\" justify-content=\"${5|flex-start,flex-end,center,space-between,space-around,space-evenly|}\" wrap=\"${6|nowrap,wrap,wrap-reverse|}\" gap=\"${7:2em}\">",
+      "<uef-flex direction=\"${1|row,row-reverse,column,column-reverse|}\" gap=\"${2:2em}\">",
       "  ${0:INSERT FLEX ITEMS}",
       "</uef-flex>"
     ],
@@ -2416,7 +2409,7 @@
   "UEF 3 Flex Item": {
     "prefix": "uef-flex-item",
     "body": [
-      "  <uef-flex-item align-self=\"${1|auto,baseline,center,flex-start,flex-end,stretch|}\" flex-basis=\"${2|auto,content,insert-custom-css-size|}\" flex-grow=\"${3:0}\" flex-shrink=\"${4:1}\" ${5:order=\"\"} >",
+      "  <uef-flex-item flex-grow=\"${1:0}\">",
       "    ${0:INSERT CONTENT HERE}",
       "  </uef-flex-item>"
     ],
@@ -3311,12 +3304,9 @@
   "UEF 3 Table (1 Column)": {
     "prefix": "uef-table-1col",
     "body": [
-      "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
-      "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
-      "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
-      ">",
-      "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-top\"",
-      "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${13:25}\"",
+      "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\" ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search} breakpoint=\"${6:420px}\">",
+      "  <uef-pagination ${7:show-text} slot=\"uef-table-controls-top\"",
+      "    page=\"${8:1}\" dial=\"${9:3}\" limit=\"${10:10}\" results=\"${11:25}\"",
       "  ></uef-pagination>",
       "  <uef-thead>",
       "    <uef-tr>",
@@ -3335,7 +3325,7 @@
       "    </uef-tr>",
       "  </uef-tbody>",
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-bottom\"",
-      "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${0:25}\"",
+      "    page=\"${8:1}\" dial=\"${9:3}\" limit=\"${10:10}\" results=\"${11:25}\"",
       "  ></uef-pagination>",
       "</uef-table>"
     ],
@@ -3345,10 +3335,7 @@
   "UEF 3 Table (2 Columns)": {
     "prefix": "uef-table-2col",
     "body": [
-      "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\"",
-      "  ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search}",
-      "  ${6:width=\"\"} ${7:height=\"\"} ${8:breakpoint=\"\"}",
-      ">",
+      "<uef-table caption=\"${1:[[INSERT OPTIONAL TABLE CAPTION]]}\" ${2:sticky-header} ${3:sticky-footer} ${4:striped} ${5:search} breakpoint=\"${6:420px}\">",
       "  <uef-pagination ${9:show-text} slot=\"uef-table-controls-top\"",
       "    page=\"${10:1}\" dial=\"${11:3}\" limit=\"${12:10}\" results=\"${13:25}\"",
       "  ></uef-pagination>",

@@ -23,8 +23,9 @@
     <uef-skip-nav target-id="main" shortcut-key="K"></uef-skip-nav>
     <h1>UEF 3 Snippets Test Page</h1>
     <hr>
+
     <h2>Error Summary</h2>
-    <!-- ERROR SUMMARY ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-error-summary
       header="Please correct the following information:"
       errors='[
@@ -35,9 +36,9 @@
         }
       ]'
     ></uef-error-summary>
-    <!-- ─────────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Accordion</h2>
-    <!-- ACCORDION ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-accordion icon-position="left" multiple>
       <uef-accordion-item label="[Label 1]" open>
         <uef-typography variant="body-m" line-height="1.5">
@@ -55,9 +56,9 @@
         </uef-typography>
       </uef-accordion-item>
     </uef-accordion>
-    <!-- ──────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Address (US)</h2>
-    <!-- ADDRESS ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-compound label="[Pattern Label]" instructions="[Instructions]" compound-id="">
       <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
         <uef-flex-item flex-grow="1" flex-basis="25ch">
@@ -87,9 +88,9 @@
         </uef-flex-item>
       </uef-flex>
     </uef-compound>
-    <!-- ────────────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Address (International)</h2>
-    <!-- ADDRESS (INTERNATIONAL) ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-compound label="[Pattern Label]" instructions="[[Instruction Text]]">
       <uef-toggle-input toggle-name="test-address-intl-toggle" toggle-options="us,intl">
         <uef-toggle-group field-name="test-address-intl-toggle" accessibility-text="Toggle">
@@ -173,20 +174,20 @@
 
     <br>
     <h2>Avatar</h2>
-     <uef-avatar
-       variant="round"
-       size="medium"
-       img-src=""
-       initials="CC"
-       color="var(--uef-color-default-tertiary)"
-       background-color="var(--uef-color-blue-primary)"
-       alt=""
-       accessibility-text=""
-     >
-       <span slot="uef-avatar-overlay"><uef-pill>Test</uef-pill></span>
-     </uef-avatar>
+    <uef-avatar
+      variant="round"
+      size="medium"
+      img-src=""
+      initials="CC"
+      color="var(--uef-color-default-tertiary)"
+      background-color="var(--uef-color-blue-primary)"
+      alt=""
+      accessibility-text=""
+    >
+      <span slot="uef-avatar-overlay"><uef-pill>Test</uef-pill></span>
+    </uef-avatar>
 
-     <uef-back-to-top width="60px" height="60px" accessibility-text="" focus-selector="" name="">TOP</uef-back-to-top>
+    <uef-back-to-top width="60px" height="60px" accessibility-text="" focus-selector="" name="">TOP</uef-back-to-top>
 
     <h2>Bank Info</h2>
 
@@ -344,7 +345,7 @@
     </uef-textbox>
 
     <h2>Date</h2>
-    <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
       field-name-month="INSERT-FIELD-NAME-month" field-name-day="INSERT-FIELD-NAME-day">
       <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
@@ -360,8 +361,7 @@
         </uef-flex-item>
       </uef-flex>
     </uef-date>
-    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
-    <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
       field-name-day="INSERT-FIELD-NAME-date-day" field-name-month="INSERT-FIELD-NAME-date-month" field-name-year="INSERT-FIELD-NAME-date-year"
       format="MM-DD-YYYY" begin-year="2001" end-year="2026"
@@ -382,8 +382,7 @@
         </uef-flex-item>
       </uef-flex>
     </uef-date>
-    <!-- ────────────────────────────────────────────────────────────────────────────────────────── -->
-    <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
       field-name-day="INSERT-FIELD-NAME-date-day" field-name-month="INSERT-FIELD-NAME-date-month" field-name-year="INSERT-FIELD-NAME-date-year"
       format="MM-DD-YYYY" begin-year="2001" end-year="2026"
@@ -406,7 +405,7 @@
         </uef-flex-item>
       </uef-flex>
     </uef-date>
-    <!-- DATE ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-date label="[Pattern Label]" instructions="[[Instruction Text]]"
       field-name-month="INSERT-FIELD-NAME-month" field-name-year="INSERT-FIELD-NAME-year">
       <uef-flex gap="0 var(--uef-space-inline-4x)" direction="row" wrap="wrap">
@@ -425,25 +424,23 @@
     <uef-datepicker label="[Pattern Label]" field-name="INSERT-FIELD-NAME-datepicker" instructions="[Instruction Text]"></uef-datepicker>
 
     <h2>Dialog</h2>
-    <!-- DIALOG ───────────────────────────────────────────────────────────────────────────────────── -->
-    <div>
-      <uef-dialog id="test-dialog" close-button width="500px">
-        <uef-typography variant="heading2" slot="uef-dialog-header">[Dialog Title]</uef-typography>
-        <uef-typography variant="body-m" line-height="1.5" slot="uef-dialog-body">
-          [INSERT DIALOG CONTENT]
-        </uef-typography>
-        <uef-button-group slot="uef-dialog-footer" alignment="right" direction="rtl">
-          <uef-button fill="solid">[Accept]</uef-button>
-          <uef-button fill="outline">[Cancel]</uef-button>
-        </uef-button-group>
-      </uef-dialog>
-      <uef-control target="test-dialog">
-        <uef-button fill="outline">[Open Dialog]</uef-button>
-      </uef-control>
-    </div>
+
+    <uef-dialog id="test-dialog-1" backdrop close-button action-required width="500px">
+      <uef-typography variant="heading2" slot="uef-dialog-header">[Dialog Title]</uef-typography>
+      <uef-typography variant="body-m" line-height="1.5" slot="uef-dialog-body">
+        [INSERT DIALOG CONTENT]
+      </uef-typography>
+      <uef-button-group slot="uef-dialog-footer" alignment="right" direction="rtl">
+        <uef-button fill="solid">[Accept]</uef-button>
+        <uef-button fill="outline">[Cancel]</uef-button>
+      </uef-button-group>
+    </uef-dialog>
+    <uef-control target="test-dialog-1">
+      <uef-button fill="outline">[Open Dialog]</uef-button>
+    </uef-control>
 
     <h2>Drawer</h2>
-    <!-- DRAWER ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <div>
       <uef-control target="INSERT-DRAWER-NAME">
         <uef-button>
@@ -457,7 +454,7 @@
     </div>
 
     <h2>Droplist</h2>
-    <!-- DROP LIST ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-droplist required label="[Pattern Label]" instructions="[[Instruction Text]]"
       field-name="INSERT-FIELD-NAME" value="">
       <uef-droplist-item label="--" value=""></uef-droplist-item>
@@ -467,15 +464,15 @@
     </uef-droplist>
 
     <h2>EIN</h2>
-    <!-- EIN ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-textbox required label="[Person's] Employer Identification Number (EIN)"
       instructions="[[Instruction Text]]"
       support-info="[[Support Text]]"
       field-name="INSERT-FIELD-NAME" width="12ch" maxlength="9" inputmode="numeric" mask="  -       " format="**-*******"
     ></uef-textbox>
-    <!-- ───────────────────────────────────────────────────────────────────────────────────────── -->
+
     <h2>Email</h2>
-    <!-- EMAIL ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-textbox required label="[[Person's]] Email Address"
       instructions="[[Instruction Text]]"
       support-info="[[Support Text]]"
@@ -483,7 +480,7 @@
     ></uef-textbox>
 
     <h2>Email with Confirmation</h2>
-    <!-- EMAIL (WITH CONFIRMATION) ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <div>
       <uef-textbox required label="[[Person′s]] Email Address"
         instructions="[[Instruction Text]]"
@@ -495,7 +492,7 @@
     </div>
 
     <h2>Figure</h2>
-    <!-- FIGURE ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-figure caption="[[INSERT OPTIONAL CAPTION]]" alignment="left">
       <img src="https://api.lorem.space/image/face?w=500&amp;h=500" alt="INSERT ALTERNATE IMAGE TEXT" />
       <!-- THE SLOTTED CAPTION IS OPTIONAL--DELETE THE NEXT 3 LINES IF YOU DON'T WANT IT -->
@@ -505,7 +502,7 @@
     </uef-figure>
 
     <h2>File Input</h2>
-    <!-- FILE INPUT ───────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-form>
       <uef-file-input required multiple
         label="[Pattern Label]" instructions="[[Instruction Text]]"
@@ -515,25 +512,21 @@
     </uef-form>
 
     <h2>Flex & Flex Item</h2>
-    <!-- FLEX LAYOUT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <uef-flex display="flex" direction="row" align-items="flex-start"
       align-content="flex-start" justify-content="flex-start"
       wrap="nowrap" gap="2em"
     >
-      <!-- FLEX ITEM - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
         <uef-flex-item align-self="auto" flex-basis="auto" flex-grow="0" flex-shrink="1" order="" >
           INSERT CONTENT HERE
         </uef-flex-item>
-      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-      <!-- FLEX ITEM - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
         <uef-flex-item align-self="auto" flex-basis="auto" flex-grow="0" flex-shrink="1" order="" >
           INSERT CONTENT HERE
         </uef-flex-item>
-      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     </uef-flex>
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <h2>Footer (Big)</h2>
-    <!-- FOOTER (BIG) ─────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-footer sx='{"--uef-identifier-background-color":"var(--uef-color-uswds-blue-70v)"}'>
       <nav slot="uef-footer-nav">
         <uef-grid
@@ -688,7 +681,7 @@
     </uef-footer>
 
     <h2>Footer (Identifier)</h2>
-    <!-- FOOTER (IDENTIFIER) ─────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-footer sx='{"--uef-identifier-background-color":"var(--uef-color-uswds-blue-70v)","margin-top":"2em"}'>
       <div slot="uef-identifier">
         <uef-flex align-items="center" wrap="wrap" gap="var(--uef-space-4x) var(--uef-space-8x)">
@@ -735,7 +728,7 @@
     </uef-footer>
 
     <h2>Footer (Medium)</h2>
-    <!-- FOOTER (MEDIUM) ─────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-footer sx='{"--uef-identifier-background-color":"var(--uef-color-uswds-blue-70v)"}'>
       <nav slot="uef-footer-nav">
         <uef-grid
@@ -842,7 +835,7 @@
     </uef-footer>
 
     <h2>Footer (Slim)</h2>
-    <!-- FOOTER (SLIM) ─────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-footer sx='{"--uef-identifier-background-color":"var(--uef-color-uswds-blue-70v)"}'>
       <nav slot="uef-footer-nav">
         <uef-grid
@@ -919,23 +912,21 @@
     </div>
 
     <h2>Grid</h2>
-    <!-- GRID - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <uef-grid Add your Grid attribute settings>
       INSERT GRID ITEMS: uef-grid-item
     </uef-grid>
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <h2>Grid (3-Column)</h2>
-    <!-- GRID (3 COLUMN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <uef-grid grid-template-columns="minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr)" display="grid" grid-auto-flow="column">
       <nav>[[INSERT SUB-NAVIGATION]]</nav>
       <main>[[INSERT MAIN CONTENT]]</main>
       <aside>[[INSERT SIDEBAR CONTENT]]</aside>
     </uef-grid>
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <h2>Grid (3-Column with Template)</h2>
-    <!-- GRID (3 COLUMN TEMPLATE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <uef-grid display="grid"
       grid-template-areas='"header header header"
                            "subnav main sidebar"
@@ -956,10 +947,9 @@
         <footer>[[INSERT FOOTER CONTENT]]</footer>
       </uef-grid-item>
     </uef-grid>
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <h2>Grid (Fluid)</h2>
-    <!-- GRID (FLUID) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <uef-grid grid-template-columns="repeat(auto-fit, minmax(175px,1fr))">
       <div>Grid Item 1</div>
       <div>Grid Item 2</div>
@@ -967,7 +957,6 @@
       <div>Grid Item 4</div>
       <div>Grid Item 5</div>
     </uef-grid>
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <h2>Header (Public)</h2>
     <uef-container>
@@ -1522,7 +1511,7 @@
     </uef-header>
 
     <h2>Help</h2>
-    <!-- HELP ─────────────────────────────────────────────────────────────────────────────────── -->
+
     <div>
       <uef-help target="#INSERT-HELP-TARGET" label="Help"></uef-help>
       <uef-dialog id="INSERT-HELP-TARGET" backdrop="" close-button="" width="30em">
@@ -1539,7 +1528,7 @@
     </div>
 
     <h2>Hero</h2>
-    <!-- HERO ─────────────────────────────────────────────────────────────────────────────────── -->
+
     <uef-container sx='{"height":"300px","background":"#000"}'>
       <h3>[INSERT HERO TEXT]</h3>
       <uef-media slot="uef-container-background" overlay
@@ -1554,7 +1543,8 @@
     </uef-container>
 
     <h2>Icon</h2>
-    <uef-icon name="print" type="solid" color="--uef-color-text-link-on-light" sx='{"marginRight":"--uef-link-gap"}'></uef-icon>
+
+    <uef-icon name="bars" type="solid" size="16px"></uef-icon>
 
     <h2>Indicator</h2>
     <!-- INDICATOR ───────────────────────────────────────────────────────────────────────────────────── -->
