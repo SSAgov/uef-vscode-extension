@@ -564,7 +564,7 @@
       "      <uef-textbox field-name=\"${4:INSERT-FIELD-NAME}-city\" label=\"City/Town\"></uef-textbox>",
       "    </uef-flex-item>",
       "    <uef-flex-item flex-grow=\"1\" flex-basis=\"25ch\">",
-      "      <uef-droplist field-name=\"${4:INSERT-FIELD-NAME}-state\" label=\"State\" items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"Arizona\",\"value\":\"AZ\"},{\"label\":\"LINK TO REFERENCE TABLE FOR COMPLETE LIST\",\"value\":\"AR\"}]'>",
+      "      <uef-droplist field-name=\"${4:INSERT-FIELD-NAME}-state\" label=\"State\" items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"Arizona\",\"value\":\"AZ\"}]'>",
       "        <uef-droplist-item label=\"--\"></uef-droplist-item>",
       "      </uef-droplist>",
       "    </uef-flex-item>",
@@ -608,7 +608,7 @@
       "        <uef-textbox field-name=\"${3:INSERT-FIELD-NAME}-city\" field-id=\"${3:INSERT-FIELD-NAME}-city-us\" label=\"City/Town\"></uef-textbox>",
       "      </uef-flex-item>",
       "      <uef-flex-item flex-grow=\"1\" flex-basis=\"25ch\">",
-      "        <uef-droplist field-name=\"${4:INSERT-FIELD-NAME}-state\" label=\"State\" items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"Arizona\",\"value\":\"AZ\"},{\"label\":\"LINK TO REFERENCE TABLE FOR COMPLETE LIST\",\"value\":\"XX\"}]'>",
+      "        <uef-droplist field-name=\"${4:INSERT-FIELD-NAME}-state\" label=\"State\" items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"Arizona\",\"value\":\"AZ\"}]'>",
       "          <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "        </uef-droplist>",
       "      </uef-flex-item>",
@@ -636,7 +636,7 @@
       "      </uef-flex-item>",
       "      <uef-flex-item flex-basis=\"100%\">",
       "        <uef-droplist field-name=\"${3:INSERT-FIELD-NAME}-country\" label=\"Country\"",
-      "          items='[{\"label\":\"Australia\"},{\"label\":\"Canada\"},{\"label\":\"England\"},{\"label\":\"United States\",\"value\":\"US\"},{\"label\":\"LINK TO REFERENCE TABLE FOR COMPLETE LIST\",\"value\":\"XX\"}]'>",
+      "          items='[{\"label\":\"Australia\"},{\"label\":\"Canada\"},{\"label\":\"England\"},{\"label\":\"United States\",\"value\":\"US\"}]'>",
       "          <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "        </uef-droplist>",
       "      </uef-flex-item>",
@@ -773,7 +773,7 @@
     "body": [
       "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
       "  field-name=\"${4:INSERT-FIELD-NAME}\" value=\"${0:}\"",
-      "  items='[{\"label\":\"Australia\"},{\"label\":\"Canada\"},{\"label\":\"England\"},{\"label\":\"United States\",\"value\":\"US\"},{\"label\":\"LINK TO REFERENCE TABLE FOR COMPLETE LIST\",\"value\":\"XX\"}]'>",
+      "  items='[{\"label\":\"Australia\"},{\"label\":\"Canada\"},{\"label\":\"England\"},{\"label\":\"United States\",\"value\":\"US\"}]'>",
       ">",
       "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "</uef-droplist>"
@@ -786,7 +786,7 @@
     "body": [
       "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
       "  field-name=\"${4:INSERT-FIELD-NAME}\" value=\"${0:}\"",
-      "  items='[{\"label\":\"Australia\"},{\"label\":\"Canada\"},{\"label\":\"England\"},{\"label\":\"United States\",\"value\":\"US\"},{\"label\":\"LINK TO REFERENCE TABLE FOR COMPLETE LIST\",\"value\":\"XX\"}]'>",
+      "  items='[{\"label\":\"Australia\"},{\"label\":\"Canada\"},{\"label\":\"England\"},{\"label\":\"United States\",\"value\":\"US\"}]'>",
       ">",
       "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "</uef-droplist>"
@@ -1689,7 +1689,7 @@
       "      </uef-flex-item>",
       "      <uef-flex-item flex-grow=\"1\" flex-basis=\"40%\">",
       "        <uef-droplist field-name=\"${4:INSERT-FIELD-NAME}-state\" label=\"State\"",
-      "          items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"Arizona\",\"value\":\"AZ\"},{\"label\":\"LINK TO REFERENCE TABLE FOR COMPLETE LIST\",\"value\":\"XX\"}]'",
+      "          items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"Arizona\",\"value\":\"AZ\"}]'",
       "        >",
       "          <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "        </uef-droplist>",
@@ -1700,7 +1700,7 @@
       "        <uef-textbox field-name=\"${4:INSERT-FIELD-NAME}-city\" field-id=\"${4:INSERT-FIELD-NAME}-city-intl\" label=\"City/Town\"></uef-textbox>",
       "      </uef-flex-item>",
       "      <uef-flex-item flex-grow=\"1\" flex-basis=\"40%\">",
-      "        <uef-droplist field-name=\"${4:INSERT-FIELD-NAME}-country\" label=\"Country\" items='[{\"label\":\"Australia\"},{\"label\":\"Canada\"},{\"label\":\"England\"},{\"label\":\"United States\",\"value\":\"US\"},{\"label\":\"LINK TO REFERENCE TABLE FOR COMPLETE LIST\",\"value\":\"XX\"}]'>",
+      "        <uef-droplist field-name=\"${4:INSERT-FIELD-NAME}-country\" label=\"Country\" items='[{\"label\":\"Australia\"},{\"label\":\"Canada\"},{\"label\":\"England\"},{\"label\":\"United States\",\"value\":\"US\"}]'>",
       "          <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "        </uef-droplist>",
       "      </uef-flex-item>",
@@ -2074,7 +2074,7 @@
     "body": [
       "<uef-droplist ${1:required} label=\"${2:[Pattern Label]}\" instructions=\"${3:[[Instruction Text]]}\"",
       "  field-name=\"${0:INSERT-FIELD-NAME}\" value=\"\"",
-      "  items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"Arizona\",\"value\":\"AZ\"},{\"label\":\"LINK TO REFERENCE TABLE FOR COMPLETE LIST\",\"value\":\"XX\"}]'",
+      "  items='[{\"label\":\"Alabama\",\"value\":\"AL\"},{\"label\":\"Alaska\",\"value\":\"AK\"},{\"label\":\"Arizona\",\"value\":\"AZ\"}]'",
       ">",
       "  <uef-droplist-item label=\"--\" value=\"\"></uef-droplist-item>",
       "</uef-droplist>"
