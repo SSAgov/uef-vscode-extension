@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 4.3.0
+
+- Updated numerous snippets to streamline attribute use for developer productivity (e.g, common use cases)
+
 ## Version 4.2.0
 
 - Added `Alert Header Slot` snippet
