@@ -333,7 +333,7 @@
   "UEF 3 Button": {
     "prefix": "uef-button",
     "body": [
-      "<uef-button name=\"${1:[INSERT BUTTON NAME]}\" fill=\"${2|outline,solid,none|}\" type=\"${3|submit,button,reset|}\"}>${0:Button Label}</uef-button>"
+      "<uef-button name=\"${1:[INSERT BUTTON NAME]}\" fill=\"${2|outline,solid,none|}\" type=\"${3|button,submit,reset|}\">${0:Button Label}</uef-button>"
     ],
     "description": "UEF 3 Button"
   },

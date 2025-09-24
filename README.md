@@ -216,3 +216,22 @@ uef-table-slot-controls-top | Table Controls Top Slot
 uef-table-slot-controls-bottom | Table Controls Bottom Slot
 uef-table-slot-support-info | Table Support Info Slot
 uef-tooltip-slot-content | Tooltip Content Slot
+
+## Building & Publishing
+
+### To build a new VSIX extension file:
+
+1. Verify that you have the correct SemVer-compatible version of your extension listed in `package.json` and that you have the Extension Manifest fields filled out correctly.
+2. Run `vsce package` from the command line
+
+### To publish a new version to the marketplace:
+
+You can only publish extensions using Azure Personal Access Tokens. You need to create at least one in order to publish an extension. Then, you'll need to create a Publisher, if you haven't already.
+
+For more detailed instructions on setting up a Personal Access Token and Publisher, see [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension).
+
+1. Run `vsce publish` from the command line (you must have a Personal Access Token set up with the `vsce` tool)
+
+Your extension will be published to the marketplace if you have everything set up correctly.
+
+For more information, see [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension).
