@@ -133,6 +133,8 @@ uef-phone-simple | Simple U.S. Phone Number (Area Code + Number)
 uef-pill | Pill (Badge)
 uef-place | Place of an event
 uef-popover | Popover
+uef-processlist | Process List
+uef-processlist-item | Process List Item
 uef-progress | Progress
 uef-radiolist | Radio List
 uef-radiolist-other | Radio List with 'Other' option

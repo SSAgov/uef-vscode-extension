@@ -671,6 +671,32 @@
     "description": "UEF 3 Bank Information"
   },
 
+  "UEF 3 Process List": {
+    "prefix": "uef-processlist",
+    "body": [
+      "<uef-processlist>",
+      "  <uef-processlist-item header=\"${1:Step Title}\" status=\"${2|baseline,current,success,warning,danger|}\" connector=\"${3|show,hide,auto|}\" indicator-type=\"${4|outline,solid,subtle|}\">",
+      "    <uef-typography variant=\"body-m\">",
+      "      ${0:This is the content area for the step. It can contain text, buttons, or other components.}",
+      "    </uef-typography>",
+      "  </uef-processlist-item>",
+      "</uef-processlist>"
+    ],
+    "description": "UEF 3 Process List"
+  },
+
+  "UEF 3 Process List Item": {
+    "prefix": "uef-processlist-item",
+    "body": [
+      "<uef-processlist-item header=\"${1:Step Title}\" status=\"${2|baseline,current,success,warning,danger|}\" connector=\"${3|show,hide,auto|}\" indicator-type=\"${4|outline,solid,subtle|}\">",
+      "  <uef-typography variant=\"body-m\">",
+      "    ${0:This is the content area for the step. It can contain text, buttons, or other components.}",
+      "  </uef-typography>",
+      "</uef-processlist-item>"
+    ],
+    "description": "UEF 3 Process List Item"
+  },
+
   "UEF 3 Phone (Simple)": {
     "prefix": "uef-phone-simple",
     "body": [
