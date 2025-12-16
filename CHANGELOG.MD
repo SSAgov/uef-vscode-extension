@@ -1,5 +1,10 @@
 # Change Log
 
+## Version 4.4.0
+
+- Added `Process List` snippet
+- Added `Process List Item` snippet
+
 ## Version 4.3.0
 
 - Updated numerous snippets to streamline attribute use for developer productivity (e.g, common use cases)
