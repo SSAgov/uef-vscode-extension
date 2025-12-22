@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 4.1.1
+
+- Added `expand-collapse-button` attribute to `uef-accordion` snippet
+
 ## Version 4.4.0
 
 - Added `Process List` snippet
