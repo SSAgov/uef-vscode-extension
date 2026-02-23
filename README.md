@@ -14,7 +14,7 @@ Trigger | Description
 ------- | -----------
 !!uef | Start a new UEF 3 page from a blank document
 uef-page-business-1 | Business Page Template #1
-uef-page-business-2 | Business Page Template #2
+
 uef-page-public-1 | Public Page Template #1
 uef-page-public-2 | Public Page Template #2 (for more than 3-5 menu items)
 

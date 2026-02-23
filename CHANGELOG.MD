@@ -1,8 +1,14 @@
 # Change Log
 
-## Version 4.1.1
+## Version 4.5.0
+
+- Updated the `uef-alert` snippet to include the new `hide-icon` boolean attribute
+- Updated the responsive page footer code in the `uef-page-public-1` and `uef-page-public-2` snippets
+
+## Version 4.4.1
 
 - Added `expand-collapse-button` attribute to `uef-accordion` snippet
+- Fixed the `!!uef3` snippet (was using an incorrect JS file reference)
 
 ## Version 4.4.0
 
