@@ -1,5 +1,12 @@
 # Change Log
 
+## Version 4.6.0
+
+- Added `npm run preview` script to generate snippet previews in `dist/preview` and open them in the browser
+- Moved the preview generator to `scripts/generate-previews.js`
+- Changed `npm run generate` to package the `.vsix` into `dist/` using `@vscode/vsce`
+- Added `.gitignore` entries for `dist/`, `node_modules/`, logs, OS files, and `.env` files, and fixed the `.vsix` pattern
+
 ## Version 4.5.0
 
 - Updated the `uef-alert` snippet to include the new `hide-icon` boolean attribute
